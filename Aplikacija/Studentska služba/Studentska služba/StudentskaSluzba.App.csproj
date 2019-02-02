@@ -262,7 +262,13 @@
   <ItemGroup>
     <Folder Include="Converters\" />
     <Folder Include="Helpers\" />
-    <Folder Include="ViewModels\" />
+    <Folder Include="ViewModels\DokumentacijaZaProfesore\" />
+    <Folder Include="ViewModels\MainPage\" />
+    <Folder Include="ViewModels\Podaci\" />
+    <Folder Include="ViewModels\PotvrdeUverenja\" />
+    <Folder Include="ViewModels\PrijemniIspit\" />
+    <Folder Include="ViewModels\Settings\" />
+    <Folder Include="ViewModels\Statistika\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
