@@ -1,20 +1,10 @@
-﻿using StudentskaSluzba.Models;
+﻿using Studentska_služba.Views;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Popups;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -26,6 +16,15 @@ namespace Studentska_služba
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private readonly Dictionary<string, Type> pages = new Dictionary<string, Type>
+        {
+            { "Podaci", typeof(PodaciView) },
+            { "Potvrde i uverenja", typeof(PotvrdeUverenjaView) },
+            { "Statistika", typeof(StatistikaView) },
+            { "Dokumentacija za profesore", typeof(DokumentacijaZaProfesoreView) },
+            { "Prijemni ispit", typeof(PrijemniIspitView) }
+        };
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -36,15 +35,34 @@ namespace Studentska_služba
             await new MessageDialog("Ovo je help", "Help").ShowAsync();
         }
 
-        private void MyNavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+        private async void MyNavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
+            Type selectedPage;
 
+            if (args.IsSettingsSelected)
+                selectedPage = typeof(SettingsView);
+            else
+            {
+                var item = (NavigationViewItem)args.SelectedItem;
+                string tag = item.Tag.ToString();
+                selectedPage = pages[tag];
+            }
+            try
+            {
+
+                if (selectedPage != null)
+                    ContentFrame.Navigate(selectedPage, true);
+            }
+            catch (Exception ex)
+            {
+                await new MessageDialog(ex.Message).ShowAsync();
+            }
         }
 
         private void MyNavigationView_BackRequested(NavigationView sender, NavigationViewBackRequestedEventArgs args)
         {
-            if (Frame.CanGoBack)
-                Frame.GoBack();
+            if (ContentFrame.CanGoBack)
+                ContentFrame.GoBack();
         }
 
         private void ContentFrame_NavigationFailed(object sender, NavigationFailedEventArgs e)

@@ -10,6 +10,12 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Children" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Studentska_služba.Views.DokumentacijaZaProfesoreView" />
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
       <RootProperty Name="Name" />
       <RootProperty Name="IsSettingsVisible" />
@@ -41,5 +47,10 @@
       <RootEvent Name="NavigationFailed" />
     </RootType>
     <RootType FullName="Studentska_služba.MainPage" />
+    <RootType FullName="Studentska_služba.Views.PodaciView" />
+    <RootType FullName="Studentska_služba.Views.PotvrdeUverenjaView" />
+    <RootType FullName="Studentska_služba.Views.PrijemniIspitView" />
+    <RootType FullName="Studentska_služba.Views.SettingsView" />
+    <RootType FullName="Studentska_služba.Views.StatistikaView" />
   </Roots.RootTypes>
 </Roots>

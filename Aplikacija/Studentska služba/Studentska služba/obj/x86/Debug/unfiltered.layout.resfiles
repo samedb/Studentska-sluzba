@@ -7,6 +7,12 @@ Assets\Square44x44Logo.targetsize-24_altform-unplated.png
 Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
-MainPage.xbf
 Studentska služba.xr.xml
+Views\DokumentacijaZaProfesoreView.xbf
+Views\MainPage.xbf
+Views\PodaciView.xbf
+Views\PotvrdeUverenjaView.xbf
+Views\PrijemniIspitView.xbf
+Views\SettingsView.xbf
+Views\StatistikaView.xbf
 Properties\Default.rd.xml
