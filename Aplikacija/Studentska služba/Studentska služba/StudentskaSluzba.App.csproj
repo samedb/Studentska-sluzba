@@ -119,26 +119,50 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\DokumentacijaZaProfesoreView.xaml.cs">
+    <Compile Include="Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xaml.cs">
       <DependentUpon>DokumentacijaZaProfesoreView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainPage.xaml.cs">
+    <Compile Include="Views\MainPage\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\PodaciView.xaml.cs">
+    <Compile Include="Views\Podaci\Departmani\DepartmaniView.xaml.cs">
+      <DependentUpon>DepartmaniView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Ispiti\IspitiView.xaml.cs">
+      <DependentUpon>IspitiView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Ocene\OceneView.xaml.cs">
+      <DependentUpon>OceneView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\PodaciView.xaml.cs">
       <DependentUpon>PodaciView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\PotvrdeUverenjaView.xaml.cs">
+    <Compile Include="Views\Podaci\Predmeti\PredmetiView.xaml.cs">
+      <DependentUpon>PredmetiView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Profesori\ProfesoriView.xaml.cs">
+      <DependentUpon>ProfesoriView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Referenti\ReferentiView.xaml.cs">
+      <DependentUpon>ReferentiView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Smerovi\SmeroviView.xaml.cs">
+      <DependentUpon>SmeroviView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Studenti\StudentiView.xaml.cs">
+      <DependentUpon>StudentiView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PotvrdeUverenja\PotvrdeUverenjaView.xaml.cs">
       <DependentUpon>PotvrdeUverenjaView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\PrijemniIspitView.xaml.cs">
+    <Compile Include="Views\PrijemniIspit\PrijemniIspitView.xaml.cs">
       <DependentUpon>PrijemniIspitView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\SettingsView.xaml.cs">
+    <Compile Include="Views\Settings\SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\StatistikaView.xaml.cs">
+    <Compile Include="Views\Statistika\StatistikaView.xaml.cs">
       <DependentUpon>StatistikaView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -163,31 +187,63 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Views\DokumentacijaZaProfesoreView.xaml">
+    <Page Include="Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\MainPage.xaml">
+    <Page Include="Views\MainPage\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\PodaciView.xaml">
+    <Page Include="Views\Podaci\Departmani\DepartmaniView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\PotvrdeUverenjaView.xaml">
+    <Page Include="Views\Podaci\Ispiti\IspitiView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\PrijemniIspitView.xaml">
+    <Page Include="Views\Podaci\Ocene\OceneView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\SettingsView.xaml">
+    <Page Include="Views\Podaci\PodaciView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\StatistikaView.xaml">
+    <Page Include="Views\Podaci\Predmeti\PredmetiView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Profesori\ProfesoriView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Referenti\ReferentiView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Smerovi\SmeroviView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Studenti\StudentiView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PotvrdeUverenja\PotvrdeUverenjaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PrijemniIspit\PrijemniIspitView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Settings\SettingsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Statistika\StatistikaView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -8,11 +8,19 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
 Studentska služba.xr.xml
-Views\DokumentacijaZaProfesoreView.xbf
-Views\MainPage.xbf
-Views\PodaciView.xbf
-Views\PotvrdeUverenjaView.xbf
-Views\PrijemniIspitView.xbf
-Views\SettingsView.xbf
-Views\StatistikaView.xbf
+Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xbf
+Views\MainPage\MainPage.xbf
+Views\Podaci\Departmani\DepartmaniView.xbf
+Views\Podaci\Ispiti\IspitiView.xbf
+Views\Podaci\Ocene\OceneView.xbf
+Views\Podaci\PodaciView.xbf
+Views\Podaci\Predmeti\PredmetiView.xbf
+Views\Podaci\Profesori\ProfesoriView.xbf
+Views\Podaci\Referenti\ReferentiView.xbf
+Views\Podaci\Smerovi\SmeroviView.xbf
+Views\Podaci\Studenti\StudentiView.xbf
+Views\PotvrdeUverenja\PotvrdeUverenjaView.xbf
+Views\PrijemniIspit\PrijemniIspitView.xbf
+Views\Settings\SettingsView.xbf
+Views\Statistika\StatistikaView.xbf
 Properties\Default.rd.xml

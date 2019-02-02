@@ -24,6 +24,8 @@
       <RootProperty Name="MenuItems" />
       <RootProperty Name="PaneFooter" />
       <RootProperty Name="Content" />
+      <RootProperty Name="PaneDisplayMode" />
+      <RootProperty Name="IsBackButtonVisible" />
       <RootEvent Name="SelectionChanged" />
       <RootEvent Name="BackRequested" />
     </RootType>
@@ -47,7 +49,18 @@
       <RootEvent Name="NavigationFailed" />
     </RootType>
     <RootType FullName="Studentska_služba.MainPage" />
+    <RootType FullName="Studentska_služba.Views.Podaci.DepartmaniView" />
+    <RootType FullName="Studentska_služba.Views.Podaci.IspitiView" />
+    <RootType FullName="Studentska_služba.Views.Podaci.OceneView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="Studentska_služba.Views.PodaciView" />
+    <RootType FullName="Studentska_služba.Views.Podaci.PredmetiView" />
+    <RootType FullName="Studentska_služba.Views.Podaci.ProfesoriView" />
+    <RootType FullName="Studentska_služba.Views.Podaci.ReferentiView" />
+    <RootType FullName="Studentska_služba.Views.Podaci.SmeroviView" />
+    <RootType FullName="Studentska_služba.Views.Podaci.StudentiView" />
     <RootType FullName="Studentska_služba.Views.PotvrdeUverenjaView" />
     <RootType FullName="Studentska_služba.Views.PrijemniIspitView" />
     <RootType FullName="Studentska_služba.Views.SettingsView" />

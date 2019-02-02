@@ -127,26 +127,50 @@
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\DokumentacijaZaProfesoreView.xbf">
-      <PackagePath>Views\DokumentacijaZaProfesoreView.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xbf">
+      <PackagePath>Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\MainPage.xbf">
-      <PackagePath>Views\MainPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\MainPage\MainPage.xbf">
+      <PackagePath>Views\MainPage\MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\PodaciView.xbf">
-      <PackagePath>Views\PodaciView.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Departmani\DepartmaniView.xbf">
+      <PackagePath>Views\Podaci\Departmani\DepartmaniView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\PotvrdeUverenjaView.xbf">
-      <PackagePath>Views\PotvrdeUverenjaView.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ispiti\IspitiView.xbf">
+      <PackagePath>Views\Podaci\Ispiti\IspitiView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\PrijemniIspitView.xbf">
-      <PackagePath>Views\PrijemniIspitView.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ocene\OceneView.xbf">
+      <PackagePath>Views\Podaci\Ocene\OceneView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\SettingsView.xbf">
-      <PackagePath>Views\SettingsView.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\PodaciView.xbf">
+      <PackagePath>Views\Podaci\PodaciView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\StatistikaView.xbf">
-      <PackagePath>Views\StatistikaView.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Predmeti\PredmetiView.xbf">
+      <PackagePath>Views\Podaci\Predmeti\PredmetiView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Profesori\ProfesoriView.xbf">
+      <PackagePath>Views\Podaci\Profesori\ProfesoriView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Referenti\ReferentiView.xbf">
+      <PackagePath>Views\Podaci\Referenti\ReferentiView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Smerovi\SmeroviView.xbf">
+      <PackagePath>Views\Podaci\Smerovi\SmeroviView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Studenti\StudentiView.xbf">
+      <PackagePath>Views\Podaci\Studenti\StudentiView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\PotvrdeUverenja\PotvrdeUverenjaView.xbf">
+      <PackagePath>Views\PotvrdeUverenja\PotvrdeUverenjaView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\PrijemniIspit\PrijemniIspitView.xbf">
+      <PackagePath>Views\PrijemniIspit\PrijemniIspitView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Settings\SettingsView.xbf">
+      <PackagePath>Views\Settings\SettingsView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Statistika\StatistikaView.xbf">
+      <PackagePath>Views\Statistika\StatistikaView.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
