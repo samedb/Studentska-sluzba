@@ -18,7 +18,9 @@ Views\Podaci\Predmeti\PredmetiView.xbf
 Views\Podaci\Profesori\ProfesoriView.xbf
 Views\Podaci\Referenti\ReferentiView.xbf
 Views\Podaci\Smerovi\SmeroviView.xbf
+Views\Podaci\Studenti\StudentDetails.xbf
 Views\Podaci\Studenti\StudentiView.xbf
+Views\Podaci\Studenti\StudentList.xbf
 Views\PotvrdeUverenja\PotvrdeUverenjaView.xbf
 Views\PrijemniIspit\PrijemniIspitView.xbf
 Views\Settings\SettingsView.xbf

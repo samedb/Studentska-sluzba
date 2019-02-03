@@ -1,0 +1,59 @@
+﻿<UserControl
+    x:Class="Studentska_služba.StudentDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Studentska_služba"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <UserControl.Resources>
+        <local:TimeConverter x:Key="TimeConverter"/>
+        <local:DetailsModeToBoolean x:Key="DetailsModeToBooleanConverter"/>
+
+        <Style x:Key="DetailsElement" TargetType="Control">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Width" Value="300"/>
+            <!--<Setter Property="IsEnabled" Value="{x:Bind DetailsMode, Mode=OneWay, Converter={StaticResource DetailsModeToBooleanConverter}}"/>-->
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        
+        <controls:WrapPanel Margin="2"
+                            HorizontalAlignment="Center"
+                            VerticalSpacing="10" 
+                            HorizontalSpacing="10"
+                            Orientation="Horizontal">
+            <TextBox Text="{x:Bind Student.Ime, Mode=TwoWay, FallbackValue=''}"  
+                         Header="Ime"
+                         Style="{StaticResource DetailsElement}"/>
+            <TextBox Text="{x:Bind Student.Prezime, Mode=TwoWay, FallbackValue=''}" 
+                         Header="Prezime"
+                         Style="{StaticResource DetailsElement}" />
+            <TextBox Text="{x:Bind Student.Jmbg, Mode=TwoWay, FallbackValue=''}"
+                         Header="JMBG"
+                         Style="{StaticResource DetailsElement}" />
+            <DatePicker Date="{x:Bind Student.DatumRodjenja, Mode=TwoWay, Converter={StaticResource TimeConverter}}" 
+                            HorizontalAlignment="Stretch"
+                            Header="Datum rodjenja"
+                            Style="{StaticResource DetailsElement}" />
+            <ComboBox ItemsSource="{x:Bind Polovi, Mode=OneWay}" 
+                          HorizontalAlignment="Stretch"
+                          Header="Pol"
+                          SelectedItem="{x:Bind Student.Pol, Mode=TwoWay}"
+                          Style="{StaticResource DetailsElement}" />
+            <ComboBox ItemsSource="{x:Bind Smerovi, Mode=OneWay}"
+                          HorizontalAlignment="Stretch"
+                          DisplayMemberPath="Naziv"
+                          SelectedValuePath="IdSmera"
+                          Header="Smer"
+                          SelectedValue="{x:Bind Student.IdSmera, Mode=TwoWay}"
+                          Style="{StaticResource DetailsElement}" />
+        </controls:WrapPanel>
+        
+    </Grid>
+</UserControl>

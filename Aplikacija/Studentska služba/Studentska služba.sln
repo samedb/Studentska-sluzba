@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentskaSluzba.App", "Studentska služba\StudentskaSluzba.App.csproj", "{BA586F0D-7749-4ABF-BD74-86102F8B1190}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Studentska_služba", "Studentska služba\Studentska_služba.csproj", "{BA586F0D-7749-4ABF-BD74-86102F8B1190}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentskaSluzba.Model", "..\..\..\..\..\source\repos\ClassLibrary4\ClassLibrary4\StudentskaSluzba.Model.csproj", "{1221BB44-8EDE-4F1A-99DB-B51EE7E08E03}"
 EndProject

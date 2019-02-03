@@ -13,17 +13,17 @@ namespace Studentska_služba
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.17.0")]
-        private global::Studentska_služba.StudentskaSluzba_App_XamlTypeInfo.XamlMetaDataProvider __appProvider;
+        private global::Studentska_služba.Studentska_služba_XamlTypeInfo.XamlMetaDataProvider __appProvider;
 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.17.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        private global::Studentska_služba.StudentskaSluzba_App_XamlTypeInfo.XamlMetaDataProvider _AppProvider
+        private global::Studentska_služba.Studentska_služba_XamlTypeInfo.XamlMetaDataProvider _AppProvider
         {
             get
             {
                 if (__appProvider == null)
                 {
-                    __appProvider = new global::Studentska_služba.StudentskaSluzba_App_XamlTypeInfo.XamlMetaDataProvider();
+                    __appProvider = new global::Studentska_služba.Studentska_služba_XamlTypeInfo.XamlMetaDataProvider();
                 }
                 return __appProvider;
             }
@@ -61,7 +61,7 @@ namespace Studentska_služba
     }
 }
 
-namespace Studentska_služba.StudentskaSluzba_App_XamlTypeInfo
+namespace Studentska_služba.Studentska_služba_XamlTypeInfo
 {
     /// <summary>
     /// Main class for providing metadata for the app or library
@@ -70,15 +70,15 @@ namespace Studentska_služba.StudentskaSluzba_App_XamlTypeInfo
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class XamlMetaDataProvider : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::Studentska_služba.StudentskaSluzba_App_XamlTypeInfo.XamlTypeInfoProvider _provider = null;
+        private global::Studentska_služba.Studentska_služba_XamlTypeInfo.XamlTypeInfoProvider _provider = null;
 
-        private global::Studentska_služba.StudentskaSluzba_App_XamlTypeInfo.XamlTypeInfoProvider Provider
+        private global::Studentska_služba.Studentska_služba_XamlTypeInfo.XamlTypeInfoProvider Provider
         {
             get
             {
                 if (_provider == null)
                 {
-                    _provider = new global::Studentska_služba.StudentskaSluzba_App_XamlTypeInfo.XamlTypeInfoProvider();
+                    _provider = new global::Studentska_služba.Studentska_služba_XamlTypeInfo.XamlTypeInfoProvider();
                 }
                 return _provider;
             }

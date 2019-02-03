@@ -1,1 +1,1 @@
-C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\StudentskaSluzba.App.csproj;x86
+C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Studentska_služba.csproj;x86

@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>E06F57FC04C4EAD7F91EAA24006A46722CCEA230D8ECDBDC21F19E25B527E99C</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>97D70166DA554901723176DF183725432D036FA0BDCB3C8238052353A3D3EF9D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c1ba085e-bf5b-4b64-ae62-2bf795af3e16_1.0.0.0_x86__cb8zv91g8eaym</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c1ba085e-bf5b-4b64-ae62-2bf795af3e16_cb8zv91g8eaym!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c1ba085e-bf5b-4b64-ae62-2bf795af3e16</RegisteredPackageID>
@@ -30,13 +30,25 @@
     <AppXManifest Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-02T15:50:42.024</Modified>
+      <Modified>2019-02-03T15:46:24.752</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Studentska služba.exe">
       <PackagePath>entrypoint\Studentska služba.exe</PackagePath>
-      <Modified>2019-02-02T15:50:41.107</Modified>
+      <Modified>2019-02-03T15:46:22.883</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
+      <PackagePath>ColorCode.Core.dll</PackagePath>
+      <Modified>2018-10-05T21:30:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\colorcode.uwp\2.0.6\lib\uap10.0\ColorCode.UWP.dll">
+      <PackagePath>ColorCode.UWP.dll</PackagePath>
+      <Modified>2018-10-05T21:30:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\commonservicelocator\2.0.2\lib\netstandard2.0\CommonServiceLocator.dll">
+      <PackagePath>CommonServiceLocator.dll</PackagePath>
+      <Modified>2018-01-03T11:27:08.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.entityframeworkcore\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll">
       <PackagePath>Microsoft.EntityFrameworkCore.dll</PackagePath>
@@ -98,9 +110,69 @@
       <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
       <Modified>2018-11-10T23:26:36.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.identity.client\1.1.2-preview0008\lib\win81\Microsoft.Identity.Client.dll">
+      <PackagePath>Microsoft.Identity.Client.dll</PackagePath>
+      <Modified>2018-02-02T17:02:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit\5.0.0\lib\netstandard2.0\Microsoft.Toolkit.dll">
+      <PackagePath>Microsoft.Toolkit.dll</PackagePath>
+      <Modified>2018-10-31T02:08:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.parsers\5.0.0\lib\netstandard2.0\Microsoft.Toolkit.Parsers.dll">
+      <PackagePath>Microsoft.Toolkit.Parsers.dll</PackagePath>
+      <Modified>2018-10-31T02:08:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.dll</PackagePath>
+      <Modified>2018-10-31T02:08:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.dll</PackagePath>
+      <Modified>2018-10-31T02:09:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.animations\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Animations.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Animations.dll</PackagePath>
+      <Modified>2018-10-31T02:09:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.dll</PackagePath>
+      <Modified>2018-10-31T02:09:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll</PackagePath>
+      <Modified>2018-10-31T02:09:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+      <Modified>2016-02-22T12:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+      <Modified>2016-02-22T12:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\mvvmlightlibs\5.4.1.1\lib\uap10.0\GalaSoft.MvvmLight.Extras.dll">
+      <PackagePath>GalaSoft.MvvmLight.Extras.dll</PackagePath>
+      <Modified>2018-02-04T22:10:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\mvvmlightlibs\5.4.1.1\lib\uap10.0\GalaSoft.MvvmLight.Platform.dll">
+      <PackagePath>GalaSoft.MvvmLight.Platform.dll</PackagePath>
+      <Modified>2018-02-04T22:10:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\mvvmlightlibs\5.4.1.1\lib\uap10.0\GalaSoft.MvvmLight.dll">
+      <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
+      <Modified>2018-02-04T22:10:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2017-06-18T11:57:10.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\remotion.linq\2.2.0\lib\portable-net45+win+wpa81+wp80\Remotion.Linq.dll">
       <PackagePath>Remotion.Linq.dll</PackagePath>
       <Modified>2018-02-06T21:25:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\robmikh.compositionsurfacefactory\0.7.3\runtimes\win10-x86\native\Robmikh.CompositionSurfaceFactory.dll">
+      <PackagePath>Robmikh.CompositionSurfaceFactory.dll</PackagePath>
+      <Modified>2017-09-27T17:20:54.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.3\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -114,9 +186,25 @@
       <PackagePath>System.Interactive.Async.dll</PackagePath>
       <Modified>2018-07-11T11:48:42.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\system.linq.dynamic.core\1.0.9.2\lib\uap10.0\System.Linq.Dynamic.Core.dll">
+      <PackagePath>System.Linq.Dynamic.Core.dll</PackagePath>
+      <Modified>2019-01-10T15:17:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\win2d.uwp\1.21.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+      <Modified>2017-06-26T01:01:44.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\source\repos\ClassLibrary4\ClassLibrary4\bin\Debug\netstandard2.0\StudentskaSluzba.Model.dll">
       <PackagePath>StudentskaSluzba.Model.dll</PackagePath>
-      <Modified>2019-01-20T18:09:38.934</Modified>
+      <Modified>2019-02-03T14:23:55.125</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\robmikh.compositionsurfacefactory\0.7.3\lib\uap10.0\Robmikh.CompositionSurfaceFactory.winmd">
+      <PackagePath>Robmikh.CompositionSurfaceFactory.winmd</PackagePath>
+      <Modified>2017-09-27T17:20:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\win2d.uwp\1.21.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+      <Modified>2017-06-26T01:01:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -162,83 +250,235 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Studentska služba.xr.xml">
       <PackagePath>Studentska služba.xr.xml</PackagePath>
-      <Modified>2019-02-02T15:38:51.794</Modified>
+      <Modified>2019-02-03T15:37:08.553</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.683</Modified>
+      <Modified>2019-02-03T15:46:22.463</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xbf">
       <PackagePath>Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.684</Modified>
+      <Modified>2019-02-03T15:46:22.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\MainPage\MainPage.xbf">
       <PackagePath>Views\MainPage\MainPage.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.685</Modified>
+      <Modified>2019-02-03T15:46:22.466</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Departmani\DepartmaniView.xbf">
       <PackagePath>Views\Podaci\Departmani\DepartmaniView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.685</Modified>
+      <Modified>2019-02-03T15:46:22.467</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ispiti\IspitiView.xbf">
       <PackagePath>Views\Podaci\Ispiti\IspitiView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.686</Modified>
+      <Modified>2019-02-03T15:46:22.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ocene\OceneView.xbf">
       <PackagePath>Views\Podaci\Ocene\OceneView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.687</Modified>
+      <Modified>2019-02-03T15:46:22.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\PodaciView.xbf">
       <PackagePath>Views\Podaci\PodaciView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.688</Modified>
+      <Modified>2019-02-03T15:46:22.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Predmeti\PredmetiView.xbf">
       <PackagePath>Views\Podaci\Predmeti\PredmetiView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.689</Modified>
+      <Modified>2019-02-03T15:46:22.471</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Profesori\ProfesoriView.xbf">
       <PackagePath>Views\Podaci\Profesori\ProfesoriView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.689</Modified>
+      <Modified>2019-02-03T15:46:22.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Referenti\ReferentiView.xbf">
       <PackagePath>Views\Podaci\Referenti\ReferentiView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.690</Modified>
+      <Modified>2019-02-03T15:46:22.473</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Smerovi\SmeroviView.xbf">
       <PackagePath>Views\Podaci\Smerovi\SmeroviView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.690</Modified>
+      <Modified>2019-02-03T15:46:22.474</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Studenti\StudentDetails.xbf">
+      <PackagePath>Views\Podaci\Studenti\StudentDetails.xbf</PackagePath>
+      <Modified>2019-02-03T15:46:22.475</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Studenti\StudentiView.xbf">
       <PackagePath>Views\Podaci\Studenti\StudentiView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.691</Modified>
+      <Modified>2019-02-03T15:46:22.458</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Studenti\StudentList.xbf">
+      <PackagePath>Views\Podaci\Studenti\StudentList.xbf</PackagePath>
+      <Modified>2019-02-03T15:46:22.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\PotvrdeUverenja\PotvrdeUverenjaView.xbf">
       <PackagePath>Views\PotvrdeUverenja\PotvrdeUverenjaView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.691</Modified>
+      <Modified>2019-02-03T15:46:22.477</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\PrijemniIspit\PrijemniIspitView.xbf">
       <PackagePath>Views\PrijemniIspit\PrijemniIspitView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.692</Modified>
+      <Modified>2019-02-03T15:46:22.478</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Settings\SettingsView.xbf">
       <PackagePath>Views\Settings\SettingsView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.693</Modified>
+      <Modified>2019-02-03T15:46:22.479</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Statistika\StatistikaView.xbf">
       <PackagePath>Views\Statistika\StatistikaView.xbf</PackagePath>
-      <Modified>2019-02-02T15:50:40.694</Modified>
+      <Modified>2019-02-03T15:46:22.480</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2018-10-22T23:44:28.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml</PackagePath>
+      <Modified>2018-10-31T02:04:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\CameraPreview\CameraPreview.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\CameraPreview\CameraPreview.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\HeaderedContentControl\HeaderedContentControl.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\HeaderedContentControl\HeaderedContentControl.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\HeaderedItemsControl\HeaderedItemsControl.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\HeaderedItemsControl\HeaderedItemsControl.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\InAppNotification\InAppNotification.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\InAppNotification\InAppNotification.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\InAppNotification\Styles\MSEdgeNotificationStyle.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\InAppNotification\Styles\MSEdgeNotificationStyle.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\InAppNotification\Styles\VSCodeNotificationStyle.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\InAppNotification\Styles\VSCodeNotificationStyle.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\InfiniteCanvas\InfiniteCanvas.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\InfiniteCanvas\InfiniteCanvas.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\LayoutTransformControl\LayoutTransformControl.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\LayoutTransformControl\LayoutTransformControl.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Menu\Menu.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Menu\Menu.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\OrbitView\OrbitView.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\OrbitView\OrbitView.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\RadialProgressBar\RadialProgressBar.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RadialProgressBar\RadialProgressBar.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\TabView\TabView.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\TabView\TabView.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\TextToolbar\TextToolbar.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\TextToolbar\TextToolbar.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\TextToolbar\Symbols\Symbols.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\TextToolbar\Symbols\Symbols.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\TextToolbar\ToolbarItems\ToolbarButton.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\TextToolbar\ToolbarItems\ToolbarButton.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\TextToolbar\ToolbarItems\ToolbarSeparator.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\TextToolbar\ToolbarItems\ToolbarSeparator.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml</PackagePath>
+      <Modified>2018-10-31T02:06:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</PackagePath>
+      <Modified>2018-10-31T02:03:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\DataGrid\DataGrid.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\DataGrid\DataGrid.xaml</PackagePath>
+      <Modified>2018-10-31T02:05:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Themes\Generic.xaml">
+      <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Themes\Generic.xaml</PackagePath>
+      <Modified>2018-10-31T02:05:48.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-02-02T15:50:41.397</Modified>
+      <Modified>2019-02-03T15:46:23.356</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Core\Studentska služba.exe">
       <PackagePath>Studentska služba.exe</PackagePath>
-      <Modified>2019-02-02T15:50:42.015</Modified>
+      <Modified>2019-02-03T15:46:24.742</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

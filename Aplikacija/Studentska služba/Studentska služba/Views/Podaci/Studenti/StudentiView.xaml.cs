@@ -15,16 +15,31 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Studentska_služba.Views.Podaci
+namespace Studentska_služba
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class StudentiView : Page
     {
+        public MainPageViewModel vm;
         public StudentiView()
         {
-            this.InitializeComponent();
+            try
+            {
+                vm = new MainPageViewModel();
+                this.InitializeComponent();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        }
+
+        private void StayWhite(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            var b = sender as Button;
+            b.Background = new SolidColorBrush(Windows.UI.Colors.White);
         }
     }
 }
