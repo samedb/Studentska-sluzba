@@ -1,6 +1,7 @@
 ﻿using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -24,7 +25,16 @@ namespace Studentska_služba
         public Student Student
         {
             get { return (Student)GetValue(StudentProperty); }
-            set { SetValue(StudentProperty, value); }
+            set
+            {
+                try {
+                    SetValue(StudentProperty, value);
+                }
+                catch (Exception e)
+                {
+                    Debug.WriteLine(e);
+                }
+            }
         }
 
         // Using a DependencyProperty as the backing store for Student.  This enables animation, styling, binding, etc...
