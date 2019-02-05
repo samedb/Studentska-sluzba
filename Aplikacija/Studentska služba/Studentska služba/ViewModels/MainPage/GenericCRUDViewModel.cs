@@ -1,9 +1,11 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using Microsoft.EntityFrameworkCore;
 using StudentskaSluzba.Models;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Text;
@@ -11,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace Studentska_služba
 {
-    abstract public class GenericCRUDViewModel<TModel> : ViewModelBase where TModel : new() 
+    abstract public class GenericCRUDViewModel<TModel> : ViewModelBase where TModel : class, new() 
     {
 
         #region Atributi
@@ -87,6 +89,11 @@ namespace Studentska_služba
             CancelCommand = new RelayCommand(Cancel);
             RefreshTableCommand = new RelayCommand(RefreshTable);
             RefreshTable();
+        }
+
+        private DbSet<object> GetDbSet()
+        {
+            return context.GetType().GetProperty("Student").GetValue(context) as DbSet<object>;
         }
 
         #endregion
@@ -183,7 +190,10 @@ namespace Studentska_služba
         /// <summary>
         /// Ovo su funkcije koje pojedini ViewModel treba da prekolopi
         /// </summary>
-        abstract protected void RemoveItem();
+        virtual protected void RemoveItem()
+        {
+            GetDbSet().Remove(SelectedItem);
+        }
         abstract protected void AddItem();
         abstract protected void ReloadItem();
         abstract protected void GetItems();

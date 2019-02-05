@@ -36,10 +36,10 @@ namespace Studentska_služba
             context.Entry(SelectedItem).Reload();
         }
 
-        protected override void RemoveItem()
-        {
-            context.Student.Remove(SelectedItem);
-        }
+        //protected override void RemoveItem()
+        //{
+        //    context.Student.Remove(SelectedItem);
+        //}
 
         protected override List<Student> SearchForItem(string text)
         {
