@@ -12,14 +12,9 @@ namespace Studentska_služba
 {
     public class MainPageViewModel : GenericCRUDViewModel<Student>
     {
-        protected override void AddItem()
+        protected override object GetDbSet()
         {
-            context.Student.Add(SelectedItem);
-        }
-
-        protected override void GetItems()
-        {
-            ItemList = context.Student.ToList();
+            return context.Student;
         }
 
         protected override bool NoEmptyFiels()
@@ -29,16 +24,6 @@ namespace Studentska_služba
                      string.IsNullOrEmpty(SelectedItem.Prezime) ||
                      string.IsNullOrEmpty(SelectedItem.Jmbg) ||
                      string.IsNullOrEmpty(SelectedItem.Pol));
-        }
-
-        protected override void ReloadItem()
-        {
-            context.Entry(SelectedItem).Reload();
-        }
-
-        protected override void RemoveItem()
-        {
-            context.Student.Remove(SelectedItem);
         }
 
         protected override List<Student> SearchForItem(string text)

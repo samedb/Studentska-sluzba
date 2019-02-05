@@ -1,17 +1,20 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using Microsoft.EntityFrameworkCore;
 using StudentskaSluzba.Models;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Linq.Dynamic.Core;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Studentska_služba
 {
-    abstract public class GenericCRUDViewModel<TModel> : ViewModelBase where TModel : new() 
+    abstract public class GenericCRUDViewModel<TModel> : ViewModelBase where TModel : class, new() 
     {
 
         #region Atributi
@@ -138,14 +141,32 @@ namespace Studentska_služba
         }
 
 
-        abstract protected bool NoEmptyFiels();
-
         private void RefreshTable()
         {
             GetItems();
             SelectedItem = default(TModel); // Sa promenom studenta automatski se i DetailsMode stavlja na View
             if (!string.IsNullOrEmpty(SearchBoxText))
                 SearchBoxText = string.Empty;
+        }
+
+        virtual protected void RemoveItem()
+        {
+            (GetDbSet() as DbSet<TModel>).Remove(SelectedItem);
+        }
+
+        virtual protected void AddItem()
+        {
+            (GetDbSet() as DbSet<TModel>).Add(SelectedItem);
+        }
+
+        virtual protected void ReloadItem()
+        {
+            context.Entry(SelectedItem).Reload();
+        }
+
+        virtual protected void GetItems()
+        {
+            ItemList = (GetDbSet() as DbSet<TModel>).ToList();
         }
 
         #endregion
@@ -183,11 +204,13 @@ namespace Studentska_služba
         /// <summary>
         /// Ovo su funkcije koje pojedini ViewModel treba da prekolopi
         /// </summary>
-        abstract protected void RemoveItem();
-        abstract protected void AddItem();
-        abstract protected void ReloadItem();
-        abstract protected void GetItems();
+  
+
         abstract protected List<TModel> SearchForItem(string text);
+
+        abstract protected object GetDbSet();
+
+        abstract protected bool NoEmptyFiels();
 
         #endregion
     }
