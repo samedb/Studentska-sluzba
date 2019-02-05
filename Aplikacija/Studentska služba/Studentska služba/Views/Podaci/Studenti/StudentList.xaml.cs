@@ -21,15 +21,15 @@ namespace Studentska_služba
 {
     public sealed partial class StudentList : UserControl
     {
-        public MainPageViewModel vm
+        public StudentiViewModel vm
         {
-            get { return (MainPageViewModel)GetValue(vmProperty); }
+            get { return (StudentiViewModel)GetValue(vmProperty); }
             set { SetValue(vmProperty, value); }
         }
 
         // Using a DependencyProperty as the backing store for vm.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty vmProperty =
-            DependencyProperty.Register("vm", typeof(MainPageViewModel), typeof(StudentList), new PropertyMetadata(0));
+            DependencyProperty.Register("vm", typeof(StudentiViewModel), typeof(StudentList), new PropertyMetadata(0));
 
         public StudentList()
         {

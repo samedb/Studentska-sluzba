@@ -199,11 +199,29 @@
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\MainPage\MainPage.xbf">
       <PackagePath>Views\MainPage\MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Departmani\DepartmanDetails.xbf">
+      <PackagePath>Views\Podaci\Departmani\DepartmanDetails.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Departmani\DepartmaniView.xbf">
       <PackagePath>Views\Podaci\Departmani\DepartmaniView.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Departmani\DepartmanList.xbf">
+      <PackagePath>Views\Podaci\Departmani\DepartmanList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ispiti\IspitDetails.xbf">
+      <PackagePath>Views\Podaci\Ispiti\IspitDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ispiti\IspitiList.xbf">
+      <PackagePath>Views\Podaci\Ispiti\IspitiList.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ispiti\IspitiView.xbf">
       <PackagePath>Views\Podaci\Ispiti\IspitiView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ocene\OcenaDetails.xbf">
+      <PackagePath>Views\Podaci\Ocene\OcenaDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ocene\OceneList.xbf">
+      <PackagePath>Views\Podaci\Ocene\OceneList.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ocene\OceneView.xbf">
       <PackagePath>Views\Podaci\Ocene\OceneView.xbf</PackagePath>
@@ -211,14 +229,38 @@
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\PodaciView.xbf">
       <PackagePath>Views\Podaci\PodaciView.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Predmeti\PredmetDetails.xbf">
+      <PackagePath>Views\Podaci\Predmeti\PredmetDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Predmeti\PredmetiList.xbf">
+      <PackagePath>Views\Podaci\Predmeti\PredmetiList.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Predmeti\PredmetiView.xbf">
       <PackagePath>Views\Podaci\Predmeti\PredmetiView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Profesori\ProfesorDetails.xbf">
+      <PackagePath>Views\Podaci\Profesori\ProfesorDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Profesori\ProfesoriList.xbf">
+      <PackagePath>Views\Podaci\Profesori\ProfesoriList.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Profesori\ProfesoriView.xbf">
       <PackagePath>Views\Podaci\Profesori\ProfesoriView.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Referenti\ReferentDetails.xbf">
+      <PackagePath>Views\Podaci\Referenti\ReferentDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Referenti\ReferentiList.xbf">
+      <PackagePath>Views\Podaci\Referenti\ReferentiList.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Referenti\ReferentiView.xbf">
       <PackagePath>Views\Podaci\Referenti\ReferentiView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Smerovi\SmerDetails.xbf">
+      <PackagePath>Views\Podaci\Smerovi\SmerDetails.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Smerovi\SmeroviList.xbf">
+      <PackagePath>Views\Podaci\Smerovi\SmeroviList.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Smerovi\SmeroviView.xbf">
       <PackagePath>Views\Podaci\Smerovi\SmeroviView.xbf</PackagePath>

@@ -1,0 +1,49 @@
+﻿<UserControl
+    x:Class="Studentska_služba.Views.Podaci.Smerovi.SmeroviList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Studentska_služba.Views.Podaci.Smerovi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid>
+        <!--<controls:DataGrid Name="dataGrid"
+                               IsReadOnly="True"
+                               CanUserSortColumns="True"
+                               Sorting="DataGrid_Sorting"
+                               ItemsSource="{x:Bind vm.ItemList, Mode=TwoWay}"
+                               AutoGenerateColumns="False"
+                               SelectedItem="{x:Bind vm.SelectedItem, Mode=TwoWay}">
+            <controls:DataGrid.Columns>
+                <controls:DataGridTextColumn
+                        Header="Broj indeksa"
+                        Binding="{Binding BrojIndeksa}"
+                        Tag="BrojIndeksa"/>
+                <controls:DataGridTextColumn
+                        Header="Ime"
+                        Binding="{Binding Ime}"
+                        Tag="Ime"/>
+                <controls:DataGridTextColumn
+                        Header="Prezime"
+                        Binding="{Binding Prezime}"
+                        Tag="Prezime"/>
+                <controls:DataGridTextColumn
+                        Header="JMBG"
+                        Binding="{Binding Jmbg}"
+                        Tag="Jmbg"/>
+                <controls:DataGridTextColumn
+                        Header="Pol"
+                        Binding="{Binding Pol}"
+                        Tag="Pol"/>
+                <controls:DataGridTextColumn
+                        Header="Smer"
+                        Binding="{Binding IdSmera, Converter={StaticResource IDSmeraToNazivConverter}}"
+                        Tag="IdSmera"/>
+            </controls:DataGrid.Columns>
+        </controls:DataGrid>-->
+    </Grid>
+</UserControl>
+

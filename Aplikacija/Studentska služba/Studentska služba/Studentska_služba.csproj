@@ -127,6 +127,9 @@
     <Compile Include="Converters\TimeConverter.cs" />
     <Compile Include="Helpers\DetailsMode.cs" />
     <Compile Include="ViewModels\MainPage\GenericCRUDViewModel.cs" />
+    <Compile Include="ViewModels\Podaci\Departmani\DepartmaniViewModel.cs" />
+    <Compile Include="ViewModels\Podaci\Ispiti\IspitiViewModel.cs" />
+    <Compile Include="ViewModels\Podaci\Profesori\ProfesoriViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Studenti\StudentiViewModel.cs" />
     <Compile Include="Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xaml.cs">
       <DependentUpon>DokumentacijaZaProfesoreView.xaml</DependentUpon>
@@ -135,11 +138,29 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Podaci\Departmani\DepartmanDetails.xaml.cs">
+      <DependentUpon>DepartmanDetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Podaci\Departmani\DepartmaniView.xaml.cs">
       <DependentUpon>DepartmaniView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Podaci\Departmani\DepartmanList.xaml.cs">
+      <DependentUpon>DepartmanList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Ispiti\IspitDetails.xaml.cs">
+      <DependentUpon>IspitDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Ispiti\IspitiList.xaml.cs">
+      <DependentUpon>IspitiList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Podaci\Ispiti\IspitiView.xaml.cs">
       <DependentUpon>IspitiView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Ocene\OcenaDetails.xaml.cs">
+      <DependentUpon>OcenaDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Ocene\OceneList.xaml.cs">
+      <DependentUpon>OceneList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Podaci\Ocene\OceneView.xaml.cs">
       <DependentUpon>OceneView.xaml</DependentUpon>
@@ -147,14 +168,38 @@
     <Compile Include="Views\Podaci\PodaciView.xaml.cs">
       <DependentUpon>PodaciView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Podaci\Predmeti\PredmetDetails.xaml.cs">
+      <DependentUpon>PredmetDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Predmeti\PredmetiList.xaml.cs">
+      <DependentUpon>PredmetiList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Podaci\Predmeti\PredmetiView.xaml.cs">
       <DependentUpon>PredmetiView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Profesori\ProfesorDetails.xaml.cs">
+      <DependentUpon>ProfesorDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Profesori\ProfesoriList.xaml.cs">
+      <DependentUpon>ProfesoriList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Podaci\Profesori\ProfesoriView.xaml.cs">
       <DependentUpon>ProfesoriView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Podaci\Referenti\ReferentDetails.xaml.cs">
+      <DependentUpon>ReferentDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Referenti\ReferentiList.xaml.cs">
+      <DependentUpon>ReferentiList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Podaci\Referenti\ReferentiView.xaml.cs">
       <DependentUpon>ReferentiView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Smerovi\SmerDetails.xaml.cs">
+      <DependentUpon>SmerDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Smerovi\SmeroviList.xaml.cs">
+      <DependentUpon>SmeroviList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Podaci\Smerovi\SmeroviView.xaml.cs">
       <DependentUpon>SmeroviView.xaml</DependentUpon>
@@ -210,11 +255,35 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\Podaci\Departmani\DepartmanDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Podaci\Departmani\DepartmaniView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Podaci\Departmani\DepartmanList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Ispiti\IspitDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Ispiti\IspitiList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Podaci\Ispiti\IspitiView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Ocene\OcenaDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Ocene\OceneList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -226,7 +295,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Podaci\Predmeti\PredmetDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Predmeti\PredmetiList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Podaci\Predmeti\PredmetiView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Profesori\ProfesorDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Profesori\ProfesoriList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -234,7 +319,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Podaci\Referenti\ReferentDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Referenti\ReferentiList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Podaci\Referenti\ReferentiView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Smerovi\SmerDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Smerovi\SmeroviList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -296,6 +397,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\DokumentacijaZaProfesore\" />
+    <Folder Include="ViewModels\Podaci\NewFolder2\" />
+    <Folder Include="ViewModels\Podaci\NewFolder3\" />
+    <Folder Include="ViewModels\Podaci\NewFolder4\" />
+    <Folder Include="ViewModels\Podaci\NewFolder5\" />
     <Folder Include="ViewModels\PotvrdeUverenja\" />
     <Folder Include="ViewModels\PrijemniIspit\" />
     <Folder Include="ViewModels\Settings\" />

@@ -19,11 +19,11 @@ namespace Studentska_služba
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         private static class XamlBindingSetters
         {
-            public static void Set_Studentska_služba_StudentList_vm(global::Studentska_služba.StudentList obj, global::Studentska_služba.MainPageViewModel value, string targetNullValue)
+            public static void Set_Studentska_služba_StudentList_vm(global::Studentska_služba.StudentList obj, global::Studentska_služba.StudentiViewModel value, string targetNullValue)
             {
                 if (value == null && targetNullValue != null)
                 {
-                    value = (global::Studentska_služba.MainPageViewModel) global::Windows.UI.Xaml.Markup.XamlBindingHelper.ConvertValue(typeof(global::Studentska_služba.MainPageViewModel), targetNullValue);
+                    value = (global::Studentska_služba.StudentiViewModel) global::Windows.UI.Xaml.Markup.XamlBindingHelper.ConvertValue(typeof(global::Studentska_služba.StudentiViewModel), targetNullValue);
                 }
                 obj.vm = value;
             }
@@ -291,7 +291,7 @@ namespace Studentska_služba
                     }
                 }
             }
-            private void Update_vm(global::Studentska_služba.MainPageViewModel obj, int phase)
+            private void Update_vm(global::Studentska_služba.StudentiViewModel obj, int phase)
             {
                 this.bindingsTracking.UpdateChildListeners_vm(obj);
                 if (obj != null)
@@ -507,7 +507,7 @@ namespace Studentska_služba
                     if (bindings != null)
                     {
                         string propName = e.PropertyName;
-                        global::Studentska_služba.MainPageViewModel obj = sender as global::Studentska_služba.MainPageViewModel;
+                        global::Studentska_služba.StudentiViewModel obj = sender as global::Studentska_služba.StudentiViewModel;
                         if (global::System.String.IsNullOrEmpty(propName))
                         {
                             if (obj != null)
@@ -569,8 +569,8 @@ namespace Studentska_služba
                         }
                     }
                 }
-                private global::Studentska_služba.MainPageViewModel cache_vm = null;
-                public void UpdateChildListeners_vm(global::Studentska_služba.MainPageViewModel obj)
+                private global::Studentska_služba.StudentiViewModel cache_vm = null;
+                public void UpdateChildListeners_vm(global::Studentska_služba.StudentiViewModel obj)
                 {
                     if (obj != cache_vm)
                     {

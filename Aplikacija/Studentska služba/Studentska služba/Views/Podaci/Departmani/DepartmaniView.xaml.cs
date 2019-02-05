@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Studentska_služba.ViewModels.Podaci.Departmani;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,18 @@ namespace Studentska_služba.Views.Podaci
     /// </summary>
     public sealed partial class DepartmaniView : Page
     {
+        public DepartmaniViewModel vm;
         public DepartmaniView()
         {
-            this.InitializeComponent();
+            try
+            {
+                vm = new DepartmaniViewModel();
+                this.InitializeComponent();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
     }
 }

@@ -27,7 +27,8 @@ namespace Studentska_služba
             get { return (Student)GetValue(StudentProperty); }
             set
             {
-                try {
+                try
+                {
                     SetValue(StudentProperty, value);
                 }
                 catch (Exception e)

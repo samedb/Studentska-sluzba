@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Studentska_služba.ViewModels.Podaci.Ispiti;
+using Studentska_služba.ViewModels.Podaci.Profesori;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +24,18 @@ namespace Studentska_služba.Views.Podaci
     /// </summary>
     public sealed partial class ProfesoriView : Page
     {
+        public ProfesoriViewModel vm;
         public ProfesoriView()
         {
-            this.InitializeComponent();
+            try
+            {
+                vm = new ProfesoriViewModel();
+                this.InitializeComponent();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
     }
 }

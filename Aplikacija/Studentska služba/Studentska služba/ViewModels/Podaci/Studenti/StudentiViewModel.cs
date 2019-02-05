@@ -1,16 +1,11 @@
-﻿using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
-using StudentskaSluzba.Models;
-using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using StudentskaSluzba.Models;
+  using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic.Core;
-using System.Threading.Tasks;
 
 namespace Studentska_služba
 {
-    public class MainPageViewModel : GenericCRUDViewModel<Student>
+    public class StudentiViewModel : GenericCRUDViewModel<Student>
     {
         protected override object GetDbSet()
         {

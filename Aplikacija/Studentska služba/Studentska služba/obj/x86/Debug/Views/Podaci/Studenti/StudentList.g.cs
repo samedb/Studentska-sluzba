@@ -158,7 +158,7 @@ namespace Studentska_služba
                     }
                 }
             }
-            private void Update_vm(global::Studentska_služba.MainPageViewModel obj, int phase)
+            private void Update_vm(global::Studentska_služba.StudentiViewModel obj, int phase)
             {
                 this.bindingsTracking.UpdateChildListeners_vm(obj);
                 if (obj != null)
@@ -286,7 +286,7 @@ namespace Studentska_služba
                     if (bindings != null)
                     {
                         string propName = e.PropertyName;
-                        global::Studentska_služba.MainPageViewModel obj = sender as global::Studentska_služba.MainPageViewModel;
+                        global::Studentska_služba.StudentiViewModel obj = sender as global::Studentska_služba.StudentiViewModel;
                         if (global::System.String.IsNullOrEmpty(propName))
                         {
                             if (obj != null)
@@ -321,8 +321,8 @@ namespace Studentska_služba
                         }
                     }
                 }
-                private global::Studentska_služba.MainPageViewModel cache_vm = null;
-                public void UpdateChildListeners_vm(global::Studentska_služba.MainPageViewModel obj)
+                private global::Studentska_služba.StudentiViewModel cache_vm = null;
+                public void UpdateChildListeners_vm(global::Studentska_služba.StudentiViewModel obj)
                 {
                     if (obj != cache_vm)
                     {

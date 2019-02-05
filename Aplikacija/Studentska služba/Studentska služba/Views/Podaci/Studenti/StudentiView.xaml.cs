@@ -22,12 +22,12 @@ namespace Studentska_služba
     /// </summary>
     public sealed partial class StudentiView : Page
     {
-        public MainPageViewModel vm;
+        public StudentiViewModel vm;
         public StudentiView()
         {
             try
             {
-                vm = new MainPageViewModel();
+                vm = new StudentiViewModel();
                 this.InitializeComponent();
             }
             catch (Exception e)

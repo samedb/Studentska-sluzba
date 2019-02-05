@@ -10,13 +10,27 @@ App.xbf
 Studentska služba.xr.xml
 Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xbf
 Views\MainPage\MainPage.xbf
+Views\Podaci\Departmani\DepartmanDetails.xbf
 Views\Podaci\Departmani\DepartmaniView.xbf
+Views\Podaci\Departmani\DepartmanList.xbf
+Views\Podaci\Ispiti\IspitDetails.xbf
+Views\Podaci\Ispiti\IspitiList.xbf
 Views\Podaci\Ispiti\IspitiView.xbf
+Views\Podaci\Ocene\OcenaDetails.xbf
+Views\Podaci\Ocene\OceneList.xbf
 Views\Podaci\Ocene\OceneView.xbf
 Views\Podaci\PodaciView.xbf
+Views\Podaci\Predmeti\PredmetDetails.xbf
+Views\Podaci\Predmeti\PredmetiList.xbf
 Views\Podaci\Predmeti\PredmetiView.xbf
+Views\Podaci\Profesori\ProfesorDetails.xbf
+Views\Podaci\Profesori\ProfesoriList.xbf
 Views\Podaci\Profesori\ProfesoriView.xbf
+Views\Podaci\Referenti\ReferentDetails.xbf
+Views\Podaci\Referenti\ReferentiList.xbf
 Views\Podaci\Referenti\ReferentiView.xbf
+Views\Podaci\Smerovi\SmerDetails.xbf
+Views\Podaci\Smerovi\SmeroviList.xbf
 Views\Podaci\Smerovi\SmeroviView.xbf
 Views\Podaci\Studenti\StudentDetails.xbf
 Views\Podaci\Studenti\StudentiView.xbf
