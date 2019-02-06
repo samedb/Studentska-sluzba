@@ -21,10 +21,8 @@
                 <NavigationViewItem Tag="Referenti" Content="Referenti"/>
             </NavigationView.MenuItems>
 
-            <ScrollViewer>
-                <Frame Name="ContentFrame" Padding="12,24" IsTabStop="True"
+            <Frame Name="ContentFrame" Padding="12,24" IsTabStop="True"
                     NavigationFailed="ContentFrame_NavigationFailed"/>
-            </ScrollViewer>
 
         </NavigationView>
     </Grid>

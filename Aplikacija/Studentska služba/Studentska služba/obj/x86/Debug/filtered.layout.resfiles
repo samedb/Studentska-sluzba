@@ -10,6 +10,7 @@ App.xbf
 Studentska služba.xr.xml
 Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xbf
 Views\MainPage\MainPage.xbf
+Views\Podaci\CommandLine.xbf
 Views\Podaci\Departmani\DepartmanDetails.xbf
 Views\Podaci\Departmani\DepartmaniView.xbf
 Views\Podaci\Departmani\DepartmanList.xbf

@@ -279,3 +279,8 @@ C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\
 C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Castle.Core.dll
 C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\obj\x86\Debug\Microsoft.EntityFrameworkCore.Proxies\en-US\Microsoft.EntityFrameworkCore.Properties.ProxiesStrings.resw
+C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\CommandLine.xbf
+C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\obj\x86\Debug\Views\Podaci\CommandLine.g.i.cs
+C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\obj\x86\Debug\Views\Podaci\CommandLine.g.cs
+C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\obj\x86\Debug\Views\Podaci\CommandLine.xaml
+C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\obj\x86\Debug\Views\Podaci\CommandLine.xbf

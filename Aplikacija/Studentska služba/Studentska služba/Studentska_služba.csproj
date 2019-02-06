@@ -144,6 +144,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Podaci\Base\DetailsBase.cs" />
     <Compile Include="Views\Podaci\Base\ListBase.cs" />
+    <Compile Include="Views\Podaci\CommandLine.xaml.cs">
+      <DependentUpon>CommandLine.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Podaci\Departmani\DepartmanDetails.xaml.cs">
       <DependentUpon>DepartmanDetails.xaml</DependentUpon>
     </Compile>
@@ -260,6 +263,10 @@
     <Page Include="Views\MainPage\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Podaci\CommandLine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Podaci\Departmani\DepartmanDetails.xaml">
       <SubType>Designer</SubType>

@@ -5,6 +5,7 @@
     xmlns:local="using:Studentska_služba"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:podaci="using:Studentska_služba.Views.Podaci"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -16,133 +17,20 @@
         <local:IDSmeraToNazivConverter x:Key="IDSmeraToNazivConverter"/>
         <local:ObjectToVisibility x:Key="ObjectToVisibilityConverter"/>
 
-        <!--#region AlwaysWhiteButton Style-->
-        <Style x:Key="AlwaysWhiteButton" TargetType="Button">
-            <Setter Property="Background" Value="{ThemeResource ButtonBackground}"/>
-            <Setter Property="BackgroundSizing" Value="OuterBorderEdge"/>
-            <Setter Property="Foreground" Value="{ThemeResource ButtonForeground}"/>
-            <Setter Property="BorderBrush" Value="{ThemeResource ButtonBorderBrush}"/>
-            <Setter Property="BorderThickness" Value="{ThemeResource ButtonBorderThemeThickness}"/>
-            <Setter Property="Padding" Value="{StaticResource ButtonPadding}"/>
-            <Setter Property="HorizontalAlignment" Value="Left"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
-            <Setter Property="FontWeight" Value="Normal"/>
-            <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
-            <Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}"/>
-            <Setter Property="FocusVisualMargin" Value="-3"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw" BackgroundSizing="{TemplateBinding BackgroundSizing}" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" CornerRadius="{TemplateBinding CornerRadius}" ContentTransitions="{TemplateBinding ContentTransitions}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}">
-                            <VisualStateManager.VisualStateGroups>
-                                <VisualStateGroup x:Name="CommonStates">
-                                    <VisualState x:Name="Normal">
-                                        <Storyboard>
-                                            <PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter"/>
-                                        </Storyboard>
-                                    </VisualState>
-                                    <VisualState x:Name="PointerOver">
-                                        <Storyboard>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonBackgroundPointerOver}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonBorderBrushPointerOver}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonForegroundPointerOver}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter"/>
-                                        </Storyboard>
-                                    </VisualState>
-                                    <VisualState x:Name="Pressed">
-                                        <Storyboard>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonBackgroundPressed}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonBorderBrushPressed}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonForegroundPressed}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <PointerDownThemeAnimation Storyboard.TargetName="ContentPresenter"/>
-                                        </Storyboard>
-                                    </VisualState>
-                                    <VisualState x:Name="Disabled">
-                                        <Storyboard>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="White"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonBorderBrushDisabled}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonForegroundDisabled}"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                        </Storyboard>
-                                    </VisualState>
-                                </VisualStateGroup>
-                            </VisualStateManager.VisualStateGroups>
-                        </ContentPresenter>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        <!--#endregion-->
-
     </Page.Resources>
 
-    <Grid x:ConnectionId='4' Name="MainGrid">
+    <Grid x:ConnectionId='2' Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
-            <Button x:ConnectionId='11' Background="White"
-                                                           >
-                <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Symbol="Add" Margin="10, 0"/>
-                    <TextBlock Text="Dodaj"/>
-                </StackPanel>
-            </Button>
-
-            <Button x:ConnectionId='12' Style="{StaticResource AlwaysWhiteButton}"
-                    Background="White"
-                                                           >
-                <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Symbol="Edit" Margin="10, 0"/>
-                    <TextBlock Text="Izmeni"/>
-                </StackPanel>
-            </Button>
-
-            <Button x:ConnectionId='13' Style="{StaticResource AlwaysWhiteButton}" 
-                    Background="White"
-                                                           >
-                <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Symbol="Delete" Margin="10, 0"/>
-                    <TextBlock Text="Izbriši"/>
-                </StackPanel>
-            </Button>
-
-            <Button x:ConnectionId='14' Background="White"
-                                                             >
-                <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Symbol="Refresh" Margin="10, 0"/>
-                    <TextBlock Text="Osveži"/>
-                </StackPanel>
-            </Button>
-
-            <AutoSuggestBox x:ConnectionId='15' Name="MyAutoSuggestBox" 
-                            Width="200"
-                                                                         
-                            PlaceholderText="Traži..."
-                            Margin="20, 0" 
-                            QueryIcon="Find"/>
-
-        </StackPanel>
+        <podaci:CommandLine x:ConnectionId='3' HorizontalAlignment="Right"
+                                                                             
+                                                                             
+                                                                             
+                                                                                 
+                                                                                  />
 
         <Grid Grid.Row="1">
 
@@ -151,25 +39,26 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <local:StudentList x:ConnectionId='5'                              />
+            <ScrollViewer>
+                <local:StudentList x:ConnectionId='9'                              />
+            </ScrollViewer>
 
-            <StackPanel x:ConnectionId='6' Margin="10"
+            <StackPanel x:ConnectionId='4' Margin="10"
                         Background="WhiteSmoke"
                         Grid.Column="1"
                                                                                                                                   >
-                <!--Visibility="{x:Bind vm.SelectedItem, Mode=OneWay, Converter={StaticResource ObjectToVisibilityConverter}}"-->
-                <local:StudentDetails x:ConnectionId='7'                                                
+                <local:StudentDetails x:ConnectionId='5'                                                
                                                                                                                                                          />
 
-                <StackPanel x:ConnectionId='8' Orientation="Horizontal"
+                <StackPanel x:ConnectionId='6' Orientation="Horizontal"
                                                                                                                                           
                             HorizontalAlignment="Center">
 
-                    <Button x:ConnectionId='9' Content="Save" 
+                    <Button x:ConnectionId='7' Content="Save" 
                                                                                   
                             Margin="10"/>
 
-                    <Button x:ConnectionId='10' Content="Cancel" 
+                    <Button x:ConnectionId='8' Content="Cancel" 
                                                                             
                             Margin="10"/>
 

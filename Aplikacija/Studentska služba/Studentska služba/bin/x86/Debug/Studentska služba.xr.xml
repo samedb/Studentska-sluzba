@@ -91,75 +91,17 @@
     </RootType>
     <RootType FullName="Studentska_služba.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
-      <RootProperty Name="Content" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Resources" />
-    </RootType>
-    <RootType FullName="Studentska_služba.Views.Podaci.Departmani.DepartmanDetails" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Departmani.DepartmanList">
-      <RootProperty Name="vm" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
-      <RootProperty Name="Mode" />
-      <RootProperty Name="Converter" />
-      <RootProperty Name="FallbackValue" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Converter" />
-    </RootType>
-    <RootType FullName="Studentska_služba.Views.Podaci.DepartmaniView" />
-    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
-      <RootProperty Name="Name" />
-      <RootProperty Name="IsReadOnly" />
-      <RootProperty Name="CanUserSortColumns" />
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="AutoGenerateColumns" />
-      <RootProperty Name="SelectedItem" />
-      <RootProperty Name="Columns" />
-      <RootEvent Name="Sorting" />
-    </RootType>
-    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn">
-      <RootProperty Name="Header" />
-      <RootProperty Name="Binding" />
-      <RootProperty Name="Tag" />
-    </RootType>
-    <RootType FullName="Studentska_služba.Views.Podaci.Ispiti.IspitDetails" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Ispiti.IspitiList">
-      <RootProperty Name="vm" />
-    </RootType>
-    <RootType FullName="Studentska_služba.Views.Podaci.IspitiView" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Ocene.OcenaDetails" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Ocene.OceneList">
-      <RootProperty Name="vm" />
-    </RootType>
-    <RootType FullName="Studentska_služba.Views.Podaci.OceneView" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Content" />
     </RootType>
-    <RootType FullName="Studentska_služba.Views.PodaciView" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Predmeti.PredmetDetails" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Predmeti.PredmetiList">
-      <RootProperty Name="vm" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Margin" />
     </RootType>
-    <RootType FullName="Studentska_služba.Views.Podaci.PredmetiView" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Profesori.ProfesorDetails" />
-    <RootType FullName="Studentska_služba.IDSmeraToNazivConverter" />
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Profesori.ProfesoriList">
-      <RootProperty Name="vm" />
-    </RootType>
-    <RootType FullName="Studentska_služba.Views.Podaci.ProfesoriView" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Referenti.ReferentDetails" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Referenti.ReferentiList">
-      <RootProperty Name="vm" />
-    </RootType>
-    <RootType FullName="Studentska_služba.Views.Podaci.ReferentiView" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Smerovi.SmerDetails" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Smerovi.SmeroviList">
-      <RootProperty Name="vm" />
-    </RootType>
-    <RootType FullName="Studentska_služba.Views.Podaci.SmeroviView" />
-    <RootType FullName="Studentska_služba.TimeConverter" />
-    <RootType FullName="Studentska_služba.DetailsModeToBoolean" />
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="Background" />
       <RootProperty Name="BackgroundSizing" />
@@ -174,57 +116,15 @@
       <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FocusVisualMargin" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
-    </RootType>
-    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.WrapPanel">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalSpacing" />
-      <RootProperty Name="HorizontalSpacing" />
-      <RootProperty Name="Orientation" />
-      <RootProperty Name="Children" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="Text" />
-      <RootProperty Name="Header" />
-      <RootProperty Name="Style" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
-      <RootProperty Name="Date" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Header" />
-      <RootProperty Name="Style" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Header" />
-      <RootProperty Name="SelectedItem" />
-      <RootProperty Name="Style" />
-      <RootProperty Name="DisplayMemberPath" />
-      <RootProperty Name="SelectedValuePath" />
-      <RootProperty Name="SelectedValue" />
-    </RootType>
-    <RootType FullName="Studentska_služba.StudentDetails">
-      <RootProperty Name="Student" />
-      <RootProperty Name="IsEnabled" />
-    </RootType>
-    <RootType FullName="Studentska_služba.DetailsModeToVisibilityConverter" />
-    <RootType FullName="Studentska_služba.ObjectToVisibility" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="Command" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Style" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
       <RootProperty Name="TargetType" />
@@ -273,15 +173,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
-      <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Studentska_služba.StudentList">
-      <RootProperty Name="vm" />
-    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
       <RootProperty Name="Name" />
       <RootProperty Name="Width" />
@@ -290,9 +182,126 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="QueryIcon" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="FallbackValue" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
       <RootProperty Name="Symbol" />
       <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Studentska_služba.Views.Podaci.CommandLine">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="AddNewItemCommand" />
+      <RootProperty Name="UpdateItemCommand" />
+      <RootProperty Name="DeleteItemCommand" />
+      <RootProperty Name="RefreshTableCommand" />
+      <RootProperty Name="SearchBoxText" />
+    </RootType>
+    <RootType FullName="Studentska_služba.Views.Podaci.Departmani.DepartmanDetails" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Departmani.DepartmanList">
+      <RootProperty Name="vm" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Converter" />
+    </RootType>
+    <RootType FullName="Studentska_služba.Views.Podaci.DepartmaniView" />
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
+      <RootProperty Name="Name" />
+      <RootProperty Name="IsReadOnly" />
+      <RootProperty Name="CanUserSortColumns" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="AutoGenerateColumns" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="Columns" />
+      <RootEvent Name="Sorting" />
+    </RootType>
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Binding" />
+      <RootProperty Name="Tag" />
+    </RootType>
+    <RootType FullName="Studentska_služba.Views.Podaci.Ispiti.IspitDetails" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Ispiti.IspitiList">
+      <RootProperty Name="vm" />
+    </RootType>
+    <RootType FullName="Studentska_služba.Views.Podaci.IspitiView" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Ocene.OcenaDetails" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Ocene.OceneList">
+      <RootProperty Name="vm" />
+    </RootType>
+    <RootType FullName="Studentska_služba.Views.Podaci.OceneView" />
+    <RootType FullName="Studentska_služba.Views.PodaciView" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Predmeti.PredmetDetails" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Predmeti.PredmetiList">
+      <RootProperty Name="vm" />
+    </RootType>
+    <RootType FullName="Studentska_služba.Views.Podaci.PredmetiView" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Profesori.ProfesorDetails" />
+    <RootType FullName="Studentska_služba.IDSmeraToNazivConverter" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Profesori.ProfesoriList">
+      <RootProperty Name="vm" />
+    </RootType>
+    <RootType FullName="Studentska_služba.Views.Podaci.ProfesoriView" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Referenti.ReferentDetails" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Referenti.ReferentiList">
+      <RootProperty Name="vm" />
+    </RootType>
+    <RootType FullName="Studentska_služba.Views.Podaci.ReferentiView" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Smerovi.SmerDetails" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Smerovi.SmeroviList">
+      <RootProperty Name="vm" />
+    </RootType>
+    <RootType FullName="Studentska_služba.Views.Podaci.SmeroviView" />
+    <RootType FullName="Studentska_služba.TimeConverter" />
+    <RootType FullName="Studentska_služba.DetailsModeToBoolean" />
+    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.WrapPanel">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalSpacing" />
+      <RootProperty Name="HorizontalSpacing" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="Style" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+      <RootProperty Name="Date" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="Style" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="DisplayMemberPath" />
+      <RootProperty Name="SelectedValuePath" />
+      <RootProperty Name="SelectedValue" />
+    </RootType>
+    <RootType FullName="Studentska_služba.StudentDetails">
+      <RootProperty Name="Student" />
+      <RootProperty Name="IsEnabled" />
+    </RootType>
+    <RootType FullName="Studentska_služba.DetailsModeToVisibilityConverter" />
+    <RootType FullName="Studentska_služba.ObjectToVisibility" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Studentska_služba.StudentList">
+      <RootProperty Name="vm" />
     </RootType>
     <RootType FullName="Studentska_služba.StudentiView" />
     <RootType FullName="Studentska_služba.Views.PotvrdeUverenjaView" />

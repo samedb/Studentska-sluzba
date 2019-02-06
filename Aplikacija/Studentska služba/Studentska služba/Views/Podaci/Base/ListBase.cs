@@ -8,18 +8,18 @@ using Windows.UI.Xaml.Controls;
 
 namespace Studentska_služba.Views.Podaci.Base
 {
-    public class ListBase<TModel> : UserControl where TModel : class, new()
+    public class ListBase : UserControl
     {
 
-        public GenericCRUDViewModel<TModel> vm
+        public GenericCRUDViewModel<object> vm
         {
-            get { return (GenericCRUDViewModel<TModel>)GetValue(vmProperty); }
+            get { return (GenericCRUDViewModel<object>)GetValue(vmProperty); }
             set { SetValue(vmProperty, value); }
         }
 
         // Using a DependencyProperty as the backing store for vm.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty vmProperty =
-            DependencyProperty.Register("vm", typeof(GenericCRUDViewModel<TModel>), typeof(ListBase<TModel>), new PropertyMetadata(0));
+            DependencyProperty.Register("vm", typeof(GenericCRUDViewModel<object>), typeof(ListBase), new PropertyMetadata(0));
 
         public ListBase()
         {
