@@ -47,7 +47,7 @@
                         Tag="Pol"/>
                 <controls:DataGridTextColumn
                         Header="Smer"
-                        Binding="{Binding IdSmera, Converter={StaticResource IDSmeraToNazivConverter}}"
+                        Binding="{Binding IdSmeraNavigation.Naziv}"
                         Tag="IdSmera"/>
             </controls:DataGrid.Columns>
         </controls:DataGrid>

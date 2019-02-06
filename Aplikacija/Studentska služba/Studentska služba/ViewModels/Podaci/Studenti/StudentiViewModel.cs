@@ -1,4 +1,5 @@
-﻿using StudentskaSluzba.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using StudentskaSluzba.Models;
   using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic.Core;
@@ -10,6 +11,11 @@ namespace Studentska_služba
         protected override object GetDbSet()
         {
             return context.Student;
+        }
+
+        protected override void GetItems()
+        {
+            ItemList = (GetDbSet() as DbSet<Student>).Include(s => s.IdSmeraNavigation).ToList();
         }
 
         protected override bool NoEmptyFiels()

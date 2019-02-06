@@ -4,8 +4,11 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="IDSefaDepartmanaNavigation" />
+    <RootPropertyPathName Name="vm" />
+    <RootPropertyPathName Name="SelectedItem" />
+    <RootPropertyPathName Name="IdSefaDepartmanaNavigation" />
     <RootPropertyPathName Name="Ime" />
+    <RootPropertyPathName Name="Prezime" />
     <RootPropertyPathName Name="IdSefaDepartmana" />
     <RootPropertyPathName Name="Naziv" />
     <RootPropertyPathName Name="IdDepartmana" />
@@ -20,9 +23,9 @@
     <RootPropertyPathName Name="IdSmera" />
     <RootPropertyPathName Name="Pol" />
     <RootPropertyPathName Name="Jmbg" />
-    <RootPropertyPathName Name="Prezime" />
     <RootPropertyPathName Name="IdProfesora" />
     <RootPropertyPathName Name="UsernameReferenta" />
+    <RootPropertyPathName Name="IdSmeraNavigation" />
     <RootPropertyPathName Name="BrojIndeksa" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -100,6 +103,9 @@
       <RootProperty Name="Converter" />
       <RootProperty Name="FallbackValue" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Converter" />
+    </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.DepartmaniView" />
     <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
       <RootProperty Name="Name" />
@@ -115,9 +121,6 @@
       <RootProperty Name="Header" />
       <RootProperty Name="Binding" />
       <RootProperty Name="Tag" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Converter" />
     </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.Ispiti.IspitDetails" />
     <RootType FullName="Studentska_služba.Views.Podaci.Ispiti.IspitiList">

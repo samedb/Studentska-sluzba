@@ -1,4 +1,5 @@
-﻿using StudentskaSluzba.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,11 @@ namespace Studentska_služba.ViewModels.Podaci.Departmani
         protected override object GetDbSet()
         {
             return context.Departman;
+        }
+
+        protected override void GetItems()
+        {
+            ItemList = (GetDbSet() as DbSet<Departman>).Include(dep => dep.IdSefaDepartmanaNavigation).ToList();
         }
 
         protected override bool NoEmptyFiels()

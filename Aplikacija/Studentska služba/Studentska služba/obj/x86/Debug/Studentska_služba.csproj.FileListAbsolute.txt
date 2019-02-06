@@ -276,3 +276,6 @@ C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\
 C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Referenti\ReferentiList.xbf
 C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Smerovi\SmerDetails.xbf
 C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Smerovi\SmeroviList.xbf
+C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Castle.Core.dll
+C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\obj\x86\Debug\Microsoft.EntityFrameworkCore.Proxies\en-US\Microsoft.EntityFrameworkCore.Properties.ProxiesStrings.resw

@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel>
-        <TextBlock Text="DepartmaniView"
+        <TextBlock Text="{Binding vm.SelectedItem.IdSefaDepartmanaNavigation.Ime}"
                    FontSize="48"
                    HorizontalAlignment="Center"/>
         <local:DepartmanList vm="{x:Bind vm, Mode=TwoWay}"/>

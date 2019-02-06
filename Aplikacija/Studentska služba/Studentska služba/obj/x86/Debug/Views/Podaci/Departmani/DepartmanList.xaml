@@ -33,8 +33,27 @@
                         Tag="IdSefaDepartmana"/>
                 <controls:DataGridTextColumn
                         Header="Ime sefa"
-                        Binding="{Binding IDSefaDepartmanaNavigation.Ime}"
-                        Tag="Jmbg"/>
+                        Binding="{Binding IdSefaDepartmanaNavigation.Ime}"/>
+                <controls:DataGridTextColumn
+                        Header="Prezime sefa"
+                        Binding="{Binding IdSefaDepartmanaNavigation.Prezime}"/>
+                <!--<controls:DataGridTextColumn
+                        Header="Ime sefa"
+                        Binding="{Binding Source=IdSefaDepartmanaNavigation, Path=Ime}"/>
+                <controls:DataGridTextColumn
+                        Header="Ime sefa"
+                        Binding="{Binding ElementName=IdSefaDepartmanaNavigation, Path=Ime}"/>-->
+                <!--<controls:DataGridTemplateColumn Tag="Col">
+                    <controls:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate  >
+                            <Grid Name="Grid1" Tag="{Binding BlogId, Mode=TwoWay , UpdateSourceTrigger=PropertyChanged}">
+                                
+                            </Grid>
+                        </DataTemplate>
+                    </controls:DataGridTemplateColumn.CellTemplate>
+                </controls:DataGridTemplateColumn>-->
+
+                
             </controls:DataGrid.Columns>
         </controls:DataGrid>
     </Grid>

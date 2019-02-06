@@ -40,7 +40,7 @@ namespace Studentska_služba.Views
         public PodaciView()
         {
             this.InitializeComponent();
-            MyNavigationView.SelectedItem = MyNavigationView.MenuItems[0];
+            MyNavigationView.SelectedItem = MyNavigationView.MenuItems[5];
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
