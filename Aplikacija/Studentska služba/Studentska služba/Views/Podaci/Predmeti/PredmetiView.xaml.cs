@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Studentska_služba.ViewModels.Podaci.Predmeti;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,20 @@ namespace Studentska_služba.Views.Podaci
     /// </summary>
     public sealed partial class PredmetiView : Page
     {
+        public PredmetiViewModel vm;
+
         public PredmetiView()
         {
-            this.InitializeComponent();
+            try
+            {
+                vm = new PredmetiViewModel();
+                this.InitializeComponent();
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
     }
 }

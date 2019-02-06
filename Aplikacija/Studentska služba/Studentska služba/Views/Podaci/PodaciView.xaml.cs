@@ -30,7 +30,7 @@ namespace Studentska_služba.Views
             {"Studenti", typeof(StudentiView) },
             {"Ocene", typeof(OceneView) },
             {"Ispiti", typeof(IspitiView) },
-            {"Ispitni rokovi", typeof(PredmetiView) },
+            {"Predmeti", typeof(PredmetiView) },
             {"Departmani", typeof(DepartmaniView) },
             {"Smerovi", typeof(SmeroviView) },
             {"Profesori", typeof(ProfesoriView) },

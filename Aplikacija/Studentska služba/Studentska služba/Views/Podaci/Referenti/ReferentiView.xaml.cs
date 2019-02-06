@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Studentska_služba.ViewModels.Podaci.Referenti;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,19 @@ namespace Studentska_služba.Views.Podaci
     /// </summary>
     public sealed partial class ReferentiView : Page
     {
+        public ReferentiViewModel vm;
         public ReferentiView()
         {
-            this.InitializeComponent();
+            try
+            {
+                vm = new ReferentiViewModel();
+                this.InitializeComponent();
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
     }
 }

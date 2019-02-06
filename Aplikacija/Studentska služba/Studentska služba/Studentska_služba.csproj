@@ -129,7 +129,11 @@
     <Compile Include="ViewModels\MainPage\GenericCRUDViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Departmani\DepartmaniViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Ispiti\IspitiViewModel.cs" />
+    <Compile Include="ViewModels\Podaci\Ocene\OceneViewModel.cs" />
+    <Compile Include="ViewModels\Podaci\Predmeti\PredmetiViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Profesori\ProfesoriViewModel.cs" />
+    <Compile Include="ViewModels\Podaci\Referenti\ReferentiViewModel.cs" />
+    <Compile Include="ViewModels\Podaci\Smerovi\SmeroviViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Studenti\StudentiViewModel.cs" />
     <Compile Include="Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xaml.cs">
       <DependentUpon>DokumentacijaZaProfesoreView.xaml</DependentUpon>
@@ -397,10 +401,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\DokumentacijaZaProfesore\" />
-    <Folder Include="ViewModels\Podaci\NewFolder2\" />
-    <Folder Include="ViewModels\Podaci\NewFolder3\" />
-    <Folder Include="ViewModels\Podaci\NewFolder4\" />
-    <Folder Include="ViewModels\Podaci\NewFolder5\" />
     <Folder Include="ViewModels\PotvrdeUverenja\" />
     <Folder Include="ViewModels\PrijemniIspit\" />
     <Folder Include="ViewModels\Settings\" />

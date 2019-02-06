@@ -14,7 +14,7 @@
                 <NavigationViewItem Tag="Studenti" Content="Studenti"/>
                 <NavigationViewItem Tag="Ocene" Content="Ocene"/>
                 <NavigationViewItem Tag="Ispiti" Content="Ispiti"/>
-                <NavigationViewItem Tag="Ispitni rokovi" Content="Ispitni rokovi"/>
+                <NavigationViewItem Tag="Predmeti" Content="Predmeti"/>
                 <NavigationViewItem Tag="Smerovi" Content="Smerovi"/>
                 <NavigationViewItem Tag="Departmani" Content="Departmani"/>
                 <NavigationViewItem Tag="Profesori" Content="Profesori"/>

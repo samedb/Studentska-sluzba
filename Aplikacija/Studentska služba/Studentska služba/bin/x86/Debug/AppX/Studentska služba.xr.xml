@@ -15,11 +15,14 @@
     <RootPropertyPathName Name="BrojIndeksaStudentaNavigation" />
     <RootPropertyPathName Name="BrojIndeksaStudenta" />
     <RootPropertyPathName Name="IdIspita" />
+    <RootPropertyPathName Name="Ocena1" />
+    <RootPropertyPathName Name="Espb" />
     <RootPropertyPathName Name="IdSmera" />
     <RootPropertyPathName Name="Pol" />
     <RootPropertyPathName Name="Jmbg" />
     <RootPropertyPathName Name="Prezime" />
     <RootPropertyPathName Name="IdProfesora" />
+    <RootPropertyPathName Name="UsernameReferenta" />
     <RootPropertyPathName Name="BrojIndeksa" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -122,14 +125,18 @@
     </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.IspitiView" />
     <RootType FullName="Studentska_služba.Views.Podaci.Ocene.OcenaDetails" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Ocene.OceneList" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Ocene.OceneList">
+      <RootProperty Name="vm" />
+    </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.OceneView" />
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Studentska_služba.Views.PodaciView" />
     <RootType FullName="Studentska_služba.Views.Podaci.Predmeti.PredmetDetails" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Predmeti.PredmetiList" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Predmeti.PredmetiList">
+      <RootProperty Name="vm" />
+    </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.PredmetiView" />
     <RootType FullName="Studentska_služba.Views.Podaci.Profesori.ProfesorDetails" />
     <RootType FullName="Studentska_služba.IDSmeraToNazivConverter" />
@@ -139,10 +146,14 @@
     </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.ProfesoriView" />
     <RootType FullName="Studentska_služba.Views.Podaci.Referenti.ReferentDetails" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Referenti.ReferentiList" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Referenti.ReferentiList">
+      <RootProperty Name="vm" />
+    </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.ReferentiView" />
     <RootType FullName="Studentska_služba.Views.Podaci.Smerovi.SmerDetails" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Smerovi.SmeroviList" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Smerovi.SmeroviList">
+      <RootProperty Name="vm" />
+    </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.SmeroviView" />
     <RootType FullName="Studentska_služba.TimeConverter" />
     <RootType FullName="Studentska_služba.DetailsModeToBoolean" />
