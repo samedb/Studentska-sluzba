@@ -23,6 +23,8 @@
     <RootPropertyPathName Name="Jmbg" />
     <RootPropertyPathName Name="Prezime" />
     <RootPropertyPathName Name="UsernameReferenta" />
+    <RootPropertyPathName Name="IdDepartmanaNavigation" />
+    <RootPropertyPathName Name="UsernameReferentaNavigation" />
     <RootPropertyPathName Name="IdSmeraNavigation" />
     <RootPropertyPathName Name="BrojIndeksa" />
   </Roots.PropertyPathNames>
@@ -288,7 +290,10 @@
       <RootProperty Name="vm" />
     </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.ReferentiView" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Smerovi.SmerDetails" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Smerovi.SmerDetails">
+      <RootProperty Name="Smer" />
+      <RootProperty Name="IsEnabled" />
+    </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.Smerovi.SmeroviList">
       <RootProperty Name="vm" />
     </RootType>

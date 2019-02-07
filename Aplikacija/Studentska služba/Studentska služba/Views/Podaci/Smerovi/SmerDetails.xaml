@@ -5,11 +5,44 @@
     xmlns:local="using:Studentska_služba.Views.Podaci.Smerovi"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <Grid>
+    <UserControl.Resources>
+        <Style x:Key="DetailsElement" TargetType="Control">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Width" Value="300"/>
+        </Style>
+    </UserControl.Resources>
 
+    <Grid>
+        <controls:WrapPanel Margin="2"
+                            HorizontalAlignment="Center"
+                            VerticalSpacing="10" 
+                            HorizontalSpacing="10"
+                            Orientation="Horizontal">
+
+            <TextBox Text="{x:Bind Smer.Naziv, Mode=TwoWay, FallbackValue=''}"
+                     Header="Naziv departmana"
+                     Style="{StaticResource DetailsElement}"/>
+
+            <ComboBox ItemsSource="{x:Bind Referenti, Mode=OneWay}"
+                          HorizontalAlignment="Stretch"
+                          DisplayMemberPath="PunoIme"
+                          SelectedValuePath="UsernameReferenta"
+                          Header="Referent smera"
+                          SelectedValue="{x:Bind Smer.UsernameReferenta, Mode=TwoWay}"
+                          Style="{StaticResource DetailsElement}" />
+            
+            <ComboBox ItemsSource="{x:Bind Departmani, Mode=OneWay}"
+                          HorizontalAlignment="Stretch"
+                          DisplayMemberPath="Naziv"
+                          SelectedValuePath="IdDepartmana"
+                          Header="Sef departmana"
+                          SelectedValue="{x:Bind Smer.IdDepartmana, Mode=TwoWay}"
+                          Style="{StaticResource DetailsElement}" />
+        </controls:WrapPanel>
     </Grid>
 </UserControl>

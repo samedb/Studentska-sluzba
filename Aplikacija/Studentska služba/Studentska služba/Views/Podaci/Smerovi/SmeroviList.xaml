@@ -29,11 +29,11 @@
                         Tag="Naziv"/>
                 <controls:DataGridTextColumn
                         Header="Referent"
-                        Binding="{Binding UsernameReferenta}"
+                        Binding="{Binding UsernameReferentaNavigation.PunoIme}"
                         Tag="UsernameReferenta"/>
                 <controls:DataGridTextColumn
-                        Header="ID departmana"
-                        Binding="{Binding IdDepartmana}"
+                        Header="Naziv departmana"
+                        Binding="{Binding IdDepartmanaNavigation.Naziv}"
                         Tag="IdDepartmana"/>
             </controls:DataGrid.Columns>
         </controls:DataGrid>

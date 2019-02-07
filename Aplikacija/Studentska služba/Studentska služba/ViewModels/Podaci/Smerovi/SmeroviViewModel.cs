@@ -1,4 +1,5 @@
-﻿using StudentskaSluzba.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,19 +15,30 @@ namespace Studentska_služba.ViewModels.Podaci.Smerovi
             return context.Smer;
         }
 
+        protected override void GetItems()
+        {
+            ItemList = (GetDbSet() as DbSet<Smer>)
+                .Include(s => s.IdDepartmanaNavigation)
+                .Include(s => s.UsernameReferentaNavigation)
+                .ToList();
+        }
+
         protected override bool NoEmptyFiels()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         protected override List<Smer> SearchForItem(string text)
         {
-            throw new NotImplementedException();
-        }
-
-        public static implicit operator SmeroviViewModel(StudentiViewModel v)
-        {
-            throw new NotImplementedException();
+            return context.Smer
+                .Include(s => s.IdDepartmanaNavigation)
+                .Include(s => s.UsernameReferentaNavigation)
+                .Where(t =>
+                    t.Naziv.Contains(text) ||
+                    t.IdDepartmanaNavigation.Naziv.Contains(text) ||
+                    t.UsernameReferentaNavigation.Ime.Contains(text) ||
+                    t.UsernameReferentaNavigation.Prezime.Contains(text))
+                .ToList();
         }
     }
 }
