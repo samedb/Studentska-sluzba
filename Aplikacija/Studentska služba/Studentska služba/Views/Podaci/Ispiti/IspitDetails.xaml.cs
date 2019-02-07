@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentskaSluzba.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,9 +20,44 @@ namespace Studentska_služba.Views.Podaci.Ispiti
 {
     public sealed partial class IspitDetails : UserControl
     {
+
+
+        public Ispit Ispit
+        {
+            get { return (Ispit)GetValue(IspitProperty); }
+            set
+            {
+                try
+                {
+                    SetValue(IspitProperty, value);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+            }
+        }
+
+        // Using a DependencyProperty as the backing store for Ispit.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IspitProperty =
+            DependencyProperty.Register("Ispit", typeof(Ispit), typeof(IspitDetails), new PropertyMetadata(0));
+
+
+
+        public Student[] Studenti;
+        public Predmet[] Predmeti;
+        public int[] Godine;
+        public string[] Rokovi;
+
+
         public IspitDetails()
         {
             this.InitializeComponent();
+            var context = new StudentskaSluzbaDBContext();
+            Studenti = context.Student.ToArray();
+            Predmeti = context.Predmet.ToArray();
+            Godine = new int[] { 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030 };
+            Rokovi = new string[] { "Januar", "Februar", "Mart", "Jun", "Jul", "Septembar", "Oktobar", "Oktobar II", "Novembar" };   
         }
     }
 }

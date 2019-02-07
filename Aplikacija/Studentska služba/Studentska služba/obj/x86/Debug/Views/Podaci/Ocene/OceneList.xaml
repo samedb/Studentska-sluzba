@@ -20,9 +20,29 @@
                                                                                    >
             <controls:DataGrid.Columns>
                 <controls:DataGridTextColumn
-                        Header="ID ispita"
+                        Header="ID prijave ispita"
                         Binding="{Binding IdIspita}"
                         Tag="IdIspita"/>
+                <controls:DataGridTextColumn
+                        Header="Broj indeksa studenta"
+                        Binding="{Binding IdIspitaNavigation.BrojIndeksaStudenta}"
+                        Tag="BrojIndeksaStudenta"/>
+                <controls:DataGridTextColumn
+                        Header="Student"
+                        Binding="{Binding IdIspitaNavigation.BrojIndeksaStudentaNavigation.PunoIme}"
+                        Tag="BrojIndeksaStudentaNavigation.PunoIme"/>
+                <controls:DataGridTextColumn
+                        Header="Predmet"
+                        Binding="{Binding IdIspitaNavigation.IdPredmetaNavigation.Naziv}"
+                        Tag="IdPredmetaNavigation.Naziv"/>
+                <controls:DataGridTextColumn
+                        Header="Rok"
+                        Binding="{Binding IdIspitaNavigation.NazivRoka}"
+                        Tag="NazivRoka"/>
+                <controls:DataGridTextColumn
+                        Header="Godina"
+                        Binding="{Binding IdIspitaNavigation.Godina}"
+                        Tag="Godina"/>
                 <controls:DataGridTextColumn
                         Header="Ocena"
                         Binding="{Binding Ocena1}"

@@ -13,7 +13,7 @@
             <NavigationView.MenuItems>
                 <NavigationViewItem Tag="Studenti" Content="Studenti"/>
                 <NavigationViewItem Tag="Ocene" Content="Ocene"/>
-                <NavigationViewItem Tag="Ispiti" Content="Ispiti"/>
+                <NavigationViewItem Tag="Ispiti" Content="Prijave ispita"/>
                 <NavigationViewItem Tag="Predmeti" Content="Predmeti"/>
                 <NavigationViewItem Tag="Smerovi" Content="Smerovi"/>
                 <NavigationViewItem Tag="Departmani" Content="Departmani"/>

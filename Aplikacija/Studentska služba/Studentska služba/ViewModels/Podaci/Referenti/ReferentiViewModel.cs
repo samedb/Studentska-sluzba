@@ -1,4 +1,5 @@
-﻿using StudentskaSluzba.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,14 +15,58 @@ namespace Studentska_služba.ViewModels.Podaci.Referenti
             return context.Referent;
         }
 
+        protected override void GetItems()
+        {
+            ItemList = (GetDbSet() as DbSet<Referent>)
+                .Include(r => r.UsernameReferentaNavigation)
+                .ToList();
+        }
+
         protected override bool NoEmptyFiels()
         {
-            throw new NotImplementedException();
+            return true;
+        }
+
+
+        ///// <summary>
+        ///// Kad dodajem novog refeernta moram da dodam i novog korsinika u tabeli Korisnik
+        ///// </summary>
+        protected override void AddItem()
+        {
+            context.Korisnik.Add(new Korisnik
+            {
+                Username = SelectedItem.UsernameReferenta,
+                Password = "1234",
+                Usertype = "referent"
+            });
+            base.AddItem();
+        }
+
+
+        ///// <summary>
+        ///// Takodje kad brisem referenta moram posle toga i da ga izbirsem iz tabele korisnik
+        ///// </summary>
+        protected override async void DeleteSelectedStudent()
+        {
+            var k = new Korisnik { Username = SelectedItem.UsernameReferenta };
+            using (var context = new StudentskaSluzbaDBContext())
+            {
+                context.Korisnik.Remove(k);
+                context.Referent.Remove(SelectedItem);
+                await context.SaveChangesAsync();
+            }
+            SelectedItem = default(Referent);
+            RefreshTable();
         }
 
         protected override List<Referent> SearchForItem(string text)
         {
-            throw new NotImplementedException();
+            return context.Referent
+                .Where(t =>
+                    t.UsernameReferenta.Contains(text) ||
+                    t.Ime.Contains(text) ||
+                    t.Prezime.Contains(text))
+                .ToList();
         }
     }
 }

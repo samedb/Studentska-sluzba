@@ -69,12 +69,12 @@ namespace Studentska_služba
 
         #region Komande
 
-        public RelayCommand AddNewItemCommand { get; private set; }
-        public RelayCommand UpdateItemCommand { get; private set; }
-        public RelayCommand DeleteItemCommand { get; private set; }
-        public RelayCommand RefreshTableCommand { get; private set; }
-        public RelayCommand SaveChangesCommand { get; private set; }
-        public RelayCommand CancelCommand { get; private set; }
+        public RelayCommand AddNewItemCommand { get; protected set; }
+        public RelayCommand UpdateItemCommand { get; protected set; }
+        public RelayCommand DeleteItemCommand { get; protected set; }
+        public RelayCommand RefreshTableCommand { get; protected set; }
+        public RelayCommand SaveChangesCommand { get; protected set; }
+        public RelayCommand CancelCommand { get; protected set; }
 
         #endregion
 
@@ -112,7 +112,7 @@ namespace Studentska_služba
             return SelectedItem != null;
         }
 
-        private async void DeleteSelectedStudent()
+        virtual protected async void DeleteSelectedStudent()
         {
             RemoveItem();
             SelectedItem = default(TModel);
@@ -141,7 +141,7 @@ namespace Studentska_služba
         }
 
 
-        private void RefreshTable()
+        protected void RefreshTable()
         {
             GetItems();
             SelectedItem = default(TModel); // Sa promenom studenta automatski se i DetailsMode stavlja na View

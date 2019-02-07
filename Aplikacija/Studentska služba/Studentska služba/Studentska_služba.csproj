@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converters\DetailsModeIsAdd.cs" />
     <Compile Include="Converters\DetailsModeToBoolean.cs" />
     <Compile Include="Converters\DetailsModeToVisibilityConverter.cs" />
     <Compile Include="Converters\IDSmeraToNazivConverter.cs" />

@@ -1,4 +1,5 @@
-﻿using StudentskaSluzba.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,14 +15,38 @@ namespace Studentska_služba.ViewModels.Podaci.Ispiti
             return context.Ispit;
         }
 
+        protected override void GetItems()
+        {
+            ItemList = (GetDbSet() as DbSet<Ispit>)
+                .Include(i => i.BrojIndeksaStudentaNavigation)
+                .Include(i => i.IdPredmetaNavigation)
+                .ToList();
+
+        }
+
         protected override bool NoEmptyFiels()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         protected override List<Ispit> SearchForItem(string text)
         {
-            throw new NotImplementedException();
+            int broj = -1;
+            int.TryParse(text, out broj);
+
+
+            return context.Ispit
+                .Include(i => i.BrojIndeksaStudentaNavigation)
+                .Include(i => i.IdPredmetaNavigation)
+                .Where( t =>
+                    t.IdIspita == broj ||
+                    t.BrojIndeksaStudenta == broj ||
+                    t.BrojIndeksaStudentaNavigation.Ime.Contains(text) ||
+                    t.BrojIndeksaStudentaNavigation.Prezime.Contains(text) ||
+                    t.NazivRoka.Contains(text) ||
+                    t.Godina == broj ||
+                    t.IdPredmetaNavigation.Naziv.Contains(text))
+                .ToList();
         }
     }
 }

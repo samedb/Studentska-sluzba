@@ -5,11 +5,61 @@
     xmlns:local="using:Studentska_služba.Views.Podaci.Ocene"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <Grid>
+    <UserControl.Resources>
 
-    </Grid>
+        <Style x:Key="DetailsElement" TargetType="Control">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Width" Value="300"/>
+        </Style>
+    </UserControl.Resources>
+
+    <StackPanel>
+        <TextBlock Text="Ovo je propalo, mora bolje da se uradi"
+                   FontSize="24"
+                   TextWrapping="WrapWholeWords"
+                   HorizontalAlignment="Center"/>
+
+        <controls:WrapPanel Margin="2"
+                            HorizontalAlignment="Center"
+                            VerticalSpacing="10" 
+                            HorizontalSpacing="10"
+                            Orientation="Horizontal">
+            <ComboBox ItemsSource="{x:Bind Ispiti, Mode=OneWay}"
+                          HorizontalAlignment="Stretch"
+                          DisplayMemberPath="IdIspita"
+                          SelectedValuePath="IdIspita"
+                          Header="ID ispita"
+                          SelectedValue="{x:Bind Ocena.IdIspita, Mode=TwoWay}"
+                          Style="{StaticResource DetailsElement}"/>
+
+            <TextBox Text="{x:Bind Ocena.IdIspitaNavigation.IdPredmetaNavigation.Naziv, Mode=OneWay}"
+                     Header="Predmet"
+                     Width="150"
+                     Margin="10"/>
+
+            <TextBox Text="{x:Bind Ocena.IdIspitaNavigation.BrojIndeksaStudentaNavigation.PunoImeIndeks, Mode=OneWay}"
+                     Header="Student"
+                     Width="150"
+                     Margin="10"/>
+
+            <TextBox Text="{x:Bind Ocena.IdIspitaNavigation.NazivRoka, Mode=OneWay}"
+                     Header="Ispitni rok"
+                     Width="150"
+                     Margin="10"/>
+            
+            <TextBox Text="{x:Bind Ocena.IdIspitaNavigation.Godina, Mode=OneWay}"
+                     Header="Godina"
+                     Width="150"
+                     Margin="10"/>
+            <TextBox Text="{x:Bind Ocena.Ocena1, Mode=TwoWay, FallbackValue=''}" 
+                         Header="Ocena"
+                         Style="{StaticResource DetailsElement}" />
+        </controls:WrapPanel>
+
+    </StackPanel>
 </UserControl>

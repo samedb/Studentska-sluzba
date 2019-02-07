@@ -11,10 +11,6 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <UserControl.Resources>
-        <local1:IDSmeraToNazivConverter x:Key="IDSmeraToNazivConverter"/>
-    </UserControl.Resources>
-
     <Grid>
         <controls:DataGrid Name="dataGrid"
                                IsReadOnly="True"
@@ -27,7 +23,7 @@
                 <controls:DataGridTextColumn
                         Header="ID profesora"
                         Binding="{Binding IdProfesora}"
-                        Tag="BrojIndeksa"/>
+                        Tag="IdProfesora"/>
                 <controls:DataGridTextColumn
                         Header="Ime"
                         Binding="{Binding Ime}"
@@ -37,17 +33,9 @@
                         Binding="{Binding Prezime}"
                         Tag="Prezime"/>
                 <controls:DataGridTextColumn
-                        Header="JMBG"
-                        Binding="{Binding Jmbg}"
-                        Tag="Jmbg"/>
-                <controls:DataGridTextColumn
                         Header="Pol"
                         Binding="{Binding Pol}"
                         Tag="Pol"/>
-                <controls:DataGridTextColumn
-                        Header="Smer"
-                        Binding="{Binding IdSmera, Converter={StaticResource IDSmeraToNazivConverter}}"
-                        Tag="IdSmera"/>
             </controls:DataGrid.Columns>
         </controls:DataGrid>
     </Grid>

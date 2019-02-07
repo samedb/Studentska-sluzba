@@ -9,25 +9,28 @@
     <RootPropertyPathName Name="IdSefaDepartmanaNavigation" />
     <RootPropertyPathName Name="Naziv" />
     <RootPropertyPathName Name="IdDepartmana" />
-    <RootPropertyPathName Name="NazivRoka" />
-    <RootPropertyPathName Name="Godina" />
+    <RootPropertyPathName Name="PunoImeIndeks" />
+    <RootPropertyPathName Name="BrojIndeksa" />
     <RootPropertyPathName Name="IdPredmeta" />
+    <RootPropertyPathName Name="Godina" />
+    <RootPropertyPathName Name="NazivRoka" />
+    <RootPropertyPathName Name="IdPredmetaNavigation" />
     <RootPropertyPathName Name="BrojIndeksaStudentaNavigation" />
-    <RootPropertyPathName Name="Ime" />
     <RootPropertyPathName Name="BrojIndeksaStudenta" />
     <RootPropertyPathName Name="IdIspita" />
     <RootPropertyPathName Name="Ocena1" />
+    <RootPropertyPathName Name="IdIspitaNavigation" />
     <RootPropertyPathName Name="Espb" />
     <RootPropertyPathName Name="IdProfesoraNavigation" />
-    <RootPropertyPathName Name="IdSmera" />
     <RootPropertyPathName Name="Pol" />
-    <RootPropertyPathName Name="Jmbg" />
     <RootPropertyPathName Name="Prezime" />
+    <RootPropertyPathName Name="Ime" />
     <RootPropertyPathName Name="UsernameReferenta" />
     <RootPropertyPathName Name="IdDepartmanaNavigation" />
     <RootPropertyPathName Name="UsernameReferentaNavigation" />
+    <RootPropertyPathName Name="IdSmera" />
     <RootPropertyPathName Name="IdSmeraNavigation" />
-    <RootPropertyPathName Name="BrojIndeksa" />
+    <RootPropertyPathName Name="Jmbg" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
@@ -53,6 +56,7 @@
       <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="TextWrapping" />
     </RootType>
     <RootType FullName="Studentska_služba.Views.DokumentacijaZaProfesoreView" />
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
@@ -214,6 +218,9 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Header" />
       <RootProperty Name="Style" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IsEnabled" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="ItemsSource" />
@@ -262,15 +269,19 @@
       <RootProperty Name="Binding" />
       <RootProperty Name="Tag" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Converter" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Ispiti.IspitDetails">
+      <RootProperty Name="Ispit" />
+      <RootProperty Name="IsEnabled" />
     </RootType>
-    <RootType FullName="Studentska_služba.Views.Podaci.Ispiti.IspitDetails" />
     <RootType FullName="Studentska_služba.Views.Podaci.Ispiti.IspitiList">
       <RootProperty Name="vm" />
     </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.IspitiView" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Ocene.OcenaDetails" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Ocene.OcenaDetails">
+      <RootProperty Name="Ocena" />
+      <RootProperty Name="IsEnabled" />
+    </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.Ocene.OceneList">
       <RootProperty Name="vm" />
     </RootType>
@@ -284,12 +295,26 @@
       <RootProperty Name="vm" />
     </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.PredmetiView" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Profesori.ProfesorDetails" />
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+      <RootProperty Name="Date" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="Style" />
+    </RootType>
+    <RootType FullName="Studentska_služba.Views.Podaci.Profesori.ProfesorDetails">
+      <RootProperty Name="Profesor" />
+      <RootProperty Name="IsEnabled" />
+    </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.Profesori.ProfesoriList">
       <RootProperty Name="vm" />
     </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.ProfesoriView" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Referenti.ReferentDetails" />
+    <RootType FullName="Studentska_služba.DetailsModeIsAdd" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Referenti.ReferentDetails">
+      <RootProperty Name="Referent" />
+      <RootProperty Name="DetailsMode" />
+      <RootProperty Name="IsEnabled" />
+    </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.Referenti.ReferentiList">
       <RootProperty Name="vm" />
     </RootType>
@@ -302,12 +327,6 @@
       <RootProperty Name="vm" />
     </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.SmeroviView" />
-    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
-      <RootProperty Name="Date" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Header" />
-      <RootProperty Name="Style" />
-    </RootType>
     <RootType FullName="Studentska_služba.StudentDetails">
       <RootProperty Name="Student" />
       <RootProperty Name="IsEnabled" />

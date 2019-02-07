@@ -5,13 +5,69 @@
     xmlns:local="using:Studentska_služba.Views.Podaci.Referenti"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:podaci="using:Studentska_služba.Views.Podaci"
+    xmlns:local1="using:Studentska_služba"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel>
-        <TextBlock Text="ReferentiView"
-                   FontSize="48"
-                   HorizontalAlignment="Center"/>
-        <local:ReferentiList vm="{x:Bind vm, Mode=TwoWay}"/>
-    </StackPanel>
+    <Page.Resources>
+
+        <local1:DetailsModeToVisibilityConverter x:Key="DetailsButtonVisibilityConverter"/>
+        <local1:DetailsModeToBoolean x:Key="DetailsModeToBooleanConverter"/>
+        <local1:TimeConverter x:Key="TimeConverter"/>
+        <local1:IDSmeraToNazivConverter x:Key="IDSmeraToNazivConverter"/>
+        <local1:ObjectToVisibility x:Key="ObjectToVisibilityConverter"/>
+
+    </Page.Resources>
+
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <podaci:CommandLine HorizontalAlignment="Right"
+                        Grid.ColumnSpan="2"
+                        AddNewItemCommand="{x:Bind vm.AddNewItemCommand}"
+                        UpdateItemCommand="{x:Bind vm.UpdateItemCommand}"
+                        DeleteItemCommand="{x:Bind vm.DeleteItemCommand}"
+                        RefreshTableCommand="{x:Bind vm.RefreshTableCommand}"
+                        SearchBoxText="{x:Bind vm.SearchBoxText, Mode=TwoWay}"/>
+
+
+        <ScrollViewer Grid.Row="1">
+            <local:ReferentiList vm="{x:Bind vm, Mode=TwoWay}"/>
+        </ScrollViewer>
+
+        <StackPanel Margin="10"
+                Background="WhiteSmoke"
+                Grid.Row="1"
+                Grid.Column="1"
+                Visibility="{x:Bind vm.SelectedItem, Mode=OneWay, Converter={StaticResource ObjectToVisibilityConverter}}">
+
+            <local:ReferentDetails Referent="{x:Bind vm.SelectedItem, Mode=TwoWay}"
+                                   DetailsMode="{x:Bind vm.DetailsMode, Mode=OneWay}"
+                                   IsEnabled="{x:Bind  vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsModeToBooleanConverter}}"/>
+
+            <StackPanel Orientation="Horizontal"
+                        Visibility="{x:Bind vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsButtonVisibilityConverter}}"
+                        HorizontalAlignment="Center">
+
+                <Button Content="Save" 
+                        Command="{x:Bind vm.SaveChangesCommand, Mode=OneWay}" 
+                        Margin="10"/>
+
+                <Button Content="Cancel" 
+                        Command="{x:Bind vm.CancelCommand, Mode=OneWay}"
+                        Margin="10"/>
+
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
 </Page>

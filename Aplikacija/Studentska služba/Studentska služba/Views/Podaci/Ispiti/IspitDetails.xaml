@@ -5,11 +5,54 @@
     xmlns:local="using:Studentska_služba.Views.Podaci.Ispiti"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <Grid>
+    <UserControl.Resources>
+        <Style x:Key="DetailsElement" TargetType="Control">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Width" Value="300"/>
+        </Style>
+    </UserControl.Resources>
 
+    <Grid>
+        <controls:WrapPanel Margin="2"
+                            HorizontalAlignment="Center"
+                            VerticalSpacing="10" 
+                            HorizontalSpacing="10"
+                            Orientation="Horizontal">
+
+            <ComboBox ItemsSource="{x:Bind Studenti, Mode=OneWay}"
+                          HorizontalAlignment="Stretch"
+                          DisplayMemberPath="PunoImeIndeks"
+                          SelectedValuePath="BrojIndeksa"
+                          Header="Student"
+                          SelectedValue="{x:Bind Ispit.BrojIndeksaStudenta, Mode=TwoWay, FallbackValue=''}"
+                          Style="{StaticResource DetailsElement}" />
+            
+            <ComboBox ItemsSource="{x:Bind Predmeti, Mode=OneWay}"
+                          HorizontalAlignment="Stretch"
+                          DisplayMemberPath="Naziv"
+                          SelectedValuePath="IdPredmeta"
+                          Header="Predmet"
+                          SelectedValue="{x:Bind Ispit.IdPredmeta, Mode=TwoWay, FallbackValue=''}"
+                          Style="{StaticResource DetailsElement}" />
+
+            <ComboBox ItemsSource="{x:Bind Rokovi, Mode=OneWay}"
+                          HorizontalAlignment="Stretch"
+                          Header="Naziv roka"
+                          SelectedValue="{x:Bind Ispit.NazivRoka, Mode=TwoWay, FallbackValue=''}"
+                          Style="{StaticResource DetailsElement}" />
+
+            <ComboBox ItemsSource="{x:Bind Godine, Mode=OneWay}"
+                          HorizontalAlignment="Stretch"
+                          Header="Godina"
+                          SelectedValue="{x:Bind Ispit.Godina, Mode=TwoWay, FallbackValue=''}"
+                          Style="{StaticResource DetailsElement}" />
+            
+            
+        </controls:WrapPanel>
     </Grid>
 </UserControl>

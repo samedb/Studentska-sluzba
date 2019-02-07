@@ -31,14 +31,6 @@
                         Header="Prezime"
                         Binding="{Binding Prezime}"
                         Tag="Prezime"/>
-                <controls:DataGridTextColumn
-                        Header="JMBG"
-                        Binding="{Binding Jmbg}"
-                        Tag="Jmbg"/>
-                <controls:DataGridTextColumn
-                        Header="Pol"
-                        Binding="{Binding Pol}"
-                        Tag="Pol"/>
             </controls:DataGrid.Columns>
         </controls:DataGrid>
     </Grid>

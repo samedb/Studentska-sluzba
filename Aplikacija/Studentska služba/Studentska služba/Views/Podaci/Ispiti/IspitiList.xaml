@@ -20,29 +20,29 @@
                                SelectedItem="{x:Bind vm.SelectedItem, Mode=TwoWay}">
             <controls:DataGrid.Columns>
                 <controls:DataGridTextColumn
-                        Header="ID ispita"
+                        Header="ID prijave ispita"
                         Binding="{Binding IdIspita}"
-                        Tag="BrojIndeksa"/>
+                        Tag="IdIspita"/>
                 <controls:DataGridTextColumn
-                        Header="Ime"
+                        Header="Broj indeksa studenta"
                         Binding="{Binding BrojIndeksaStudenta}"
-                        Tag="Ime"/>
+                        Tag="BrojIndeksaStudenta"/>
                 <controls:DataGridTextColumn
-                        Header="Ime"
-                        Binding="{Binding BrojIndeksaStudentaNavigation.Ime}"
-                        Tag="Ime"/>
+                        Header="Student"
+                        Binding="{Binding BrojIndeksaStudentaNavigation.PunoIme}"
+                        Tag="BrojIndeksaStudentaNavigation.PunoIme"/>
                 <controls:DataGridTextColumn
-                        Header="Prezime"
-                        Binding="{Binding IdPredmeta}"
-                        Tag="Prezime"/>
+                        Header="Predmet"
+                        Binding="{Binding IdPredmetaNavigation.Naziv}"
+                        Tag="IdPredmetaNavigation.Naziv"/>
                 <controls:DataGridTextColumn
-                        Header="JMBG"
-                        Binding="{Binding Godina}"
-                        Tag="Jmbg"/>
-                <controls:DataGridTextColumn
-                        Header="Pol"
+                        Header="Rok"
                         Binding="{Binding NazivRoka}"
-                        Tag="Pol"/>
+                        Tag="NazivRoka"/>
+                <controls:DataGridTextColumn
+                        Header="Godina"
+                        Binding="{Binding Godina}"
+                        Tag="Godina"/>
             </controls:DataGrid.Columns>
         </controls:DataGrid>
     </Grid>

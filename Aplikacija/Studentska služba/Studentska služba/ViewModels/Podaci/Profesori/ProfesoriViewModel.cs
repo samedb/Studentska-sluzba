@@ -1,4 +1,5 @@
-﻿using StudentskaSluzba.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,15 +14,20 @@ namespace Studentska_služba.ViewModels.Podaci.Profesori
         {
             return context.Profesor;
         }
-
+        
         protected override bool NoEmptyFiels()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         protected override List<Profesor> SearchForItem(string text)
         {
-            throw new NotImplementedException();
+            return context.Profesor
+                .Where(t =>
+                    t.Ime.Contains(text) ||
+                    t.Prezime.Contains(text) ||
+                    t.Pol.Contains(text))
+                .ToList();
         }
     }
 }

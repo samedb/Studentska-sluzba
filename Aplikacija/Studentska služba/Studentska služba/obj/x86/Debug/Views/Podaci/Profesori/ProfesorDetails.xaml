@@ -1,16 +1,51 @@
-﻿<UserControl
+﻿<UserControl x:ConnectionId='1'
     x:Class="Studentska_služba.Views.Podaci.Profesori.ProfesorDetails"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Studentska_služba.Views.Podaci.Profesori"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:local1="using:Studentska_služba"
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <Grid>
+    <UserControl.Resources>
+        <local1:TimeConverter x:Key="TimeConverter"/>
+        
+        <Style x:Key="DetailsElement" TargetType="Control">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Width" Value="300"/>
+        </Style>
+    </UserControl.Resources>
 
+    <Grid>
+        <controls:WrapPanel Margin="2"
+                            HorizontalAlignment="Center"
+                            VerticalSpacing="10" 
+                            HorizontalSpacing="10"
+                            Orientation="Horizontal">
+
+            <TextBox x:ConnectionId='2'                                                              
+                         Header="Ime"
+                         Style="{StaticResource DetailsElement}"/>
+            <TextBox x:ConnectionId='3'                                                                 
+                         Header="Prezime"
+                         Style="{StaticResource DetailsElement}" />
+            <TextBox x:ConnectionId='4'                                                             
+                         Header="JMBG"
+                         Style="{StaticResource DetailsElement}" />
+            <DatePicker x:ConnectionId='5'                                                                                               
+                            HorizontalAlignment="Stretch"
+                            Header="Datum rodjenja"
+                            Style="{StaticResource DetailsElement}" />
+            <ComboBox x:ConnectionId='6'                                            
+                          HorizontalAlignment="Stretch"
+                          Header="Pol"
+                                                                           
+                          Style="{StaticResource DetailsElement}" />
+        </controls:WrapPanel>
     </Grid>
 </UserControl>
 
