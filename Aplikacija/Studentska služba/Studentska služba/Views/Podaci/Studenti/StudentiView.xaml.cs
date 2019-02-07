@@ -35,11 +35,5 @@ namespace Studentska_služba
                 Console.WriteLine(e);
             }
         }
-
-        private void StayWhite(object sender, DependencyPropertyChangedEventArgs e)
-        {
-            var b = sender as Button;
-            b.Background = new SolidColorBrush(Windows.UI.Colors.White);
-        }
     }
 }

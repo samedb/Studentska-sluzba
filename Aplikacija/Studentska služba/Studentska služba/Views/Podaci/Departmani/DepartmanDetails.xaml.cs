@@ -1,5 +1,7 @@
-﻿using System;
+﻿using StudentskaSluzba.Models;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -19,9 +21,33 @@ namespace Studentska_služba.Views.Podaci.Departmani
 {
     public sealed partial class DepartmanDetails : UserControl
     {
+
+        public Departman Departman
+        {
+            get { return (Departman)GetValue(DepartmanProperty); }
+            set
+            {
+                try
+                {
+                    SetValue(DepartmanProperty, value);
+                }
+                catch (Exception e)
+                {
+                    Debug.WriteLine(e);
+                }
+            }
+        }
+
+        // Using a DependencyProperty as the backing store for Departman.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty DepartmanProperty =
+            DependencyProperty.Register("Departman", typeof(Departman), typeof(DepartmanDetails), new PropertyMetadata(0));
+
+        public Profesor[] Profesori { get; private set; }
+
         public DepartmanDetails()
         {
             this.InitializeComponent();
+            Profesori = new StudentskaSluzbaDBContext().Profesor.ToArray();
         }
     }
 }

@@ -12,12 +12,11 @@
 
     <UserControl.Resources>
         <local:TimeConverter x:Key="TimeConverter"/>
-        <local:DetailsModeToBoolean x:Key="DetailsModeToBooleanConverter"/>
+        <!--<local:DetailsModeToBoolean x:Key="DetailsModeToBooleanConverter"/>-->
 
         <Style x:Key="DetailsElement" TargetType="Control">
             <Setter Property="Margin" Value="10"/>
             <Setter Property="Width" Value="300"/>
-            <!--<Setter Property="IsEnabled" Value="{x:Bind DetailsMode, Mode=OneWay, Converter={StaticResource DetailsModeToBooleanConverter}}"/>-->
         </Style>
     </UserControl.Resources>
 

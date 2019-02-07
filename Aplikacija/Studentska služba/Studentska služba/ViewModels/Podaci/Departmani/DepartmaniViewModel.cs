@@ -22,12 +22,18 @@ namespace Studentska_služba.ViewModels.Podaci.Departmani
 
         protected override bool NoEmptyFiels()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         protected override List<Departman> SearchForItem(string text)
         {
-            throw new NotImplementedException();
+            return context.Departman
+                .Include(d => d.IdSefaDepartmanaNavigation)
+                .Where(t =>
+                    t.Naziv.Contains(text) ||
+                    t.IdSefaDepartmanaNavigation.Ime.Contains(text) ||
+                    t.IdSefaDepartmanaNavigation.Prezime.Contains(text))
+                .ToList();
         }
     }
 }

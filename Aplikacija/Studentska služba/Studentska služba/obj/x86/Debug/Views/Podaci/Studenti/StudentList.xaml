@@ -11,10 +11,6 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <UserControl.Resources>
-        <studentska_služba:IDSmeraToNazivConverter x:Key="IDSmeraToNazivConverter"/>
-    </UserControl.Resources>
-
     <Grid>
         
         <controls:DataGrid x:ConnectionId='2' Name="dataGrid"
