@@ -18,6 +18,7 @@
     <RootPropertyPathName Name="IdIspita" />
     <RootPropertyPathName Name="Ocena1" />
     <RootPropertyPathName Name="Espb" />
+    <RootPropertyPathName Name="IdProfesoraNavigation" />
     <RootPropertyPathName Name="IdSmera" />
     <RootPropertyPathName Name="Pol" />
     <RootPropertyPathName Name="Jmbg" />
@@ -275,7 +276,10 @@
     </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.OceneView" />
     <RootType FullName="Studentska_služba.Views.PodaciView" />
-    <RootType FullName="Studentska_služba.Views.Podaci.Predmeti.PredmetDetails" />
+    <RootType FullName="Studentska_služba.Views.Podaci.Predmeti.PredmetDetails">
+      <RootProperty Name="Predmet" />
+      <RootProperty Name="IsEnabled" />
+    </RootType>
     <RootType FullName="Studentska_služba.Views.Podaci.Predmeti.PredmetiList">
       <RootProperty Name="vm" />
     </RootType>

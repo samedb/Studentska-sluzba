@@ -25,7 +25,7 @@
                             Orientation="Horizontal">
 
             <TextBox x:ConnectionId='2'                                                          
-                     Header="Naziv departmana"
+                     Header="Naziv smera"
                      Style="{StaticResource DetailsElement}"/>
 
             <ComboBox x:ConnectionId='3'                                              
@@ -40,7 +40,7 @@
                           HorizontalAlignment="Stretch"
                           DisplayMemberPath="Naziv"
                           SelectedValuePath="IdDepartmana"
-                          Header="Sef departmana"
+                          Header="Departman"
                                                                                  
                           Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>

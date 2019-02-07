@@ -28,8 +28,8 @@
                         Binding="{Binding Naziv}"
                         Tag="Naziv"/>
                 <controls:DataGridTextColumn
-                        Header="ID profesora"
-                        Binding="{Binding IdPredmeta}"
+                        Header="Profesor"
+                        Binding="{Binding IdProfesoraNavigation.PunoIme}"
                         Tag="IdPredmeta"/>
                 <controls:DataGridTextColumn
                         Header="ESPB"

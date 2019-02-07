@@ -1,4 +1,5 @@
-﻿using StudentskaSluzba.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,14 +15,26 @@ namespace Studentska_služba.ViewModels.Podaci.Predmeti
             return context.Predmet;
         }
 
+        protected override void GetItems()
+        {
+            ItemList = (GetDbSet() as DbSet<Predmet>)
+                .Include(p => p.IdProfesoraNavigation).ToList();
+        }
+
         protected override bool NoEmptyFiels()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         protected override List<Predmet> SearchForItem(string text)
         {
-            throw new NotImplementedException();
+            return context.Predmet
+                .Include(p => p.IdProfesoraNavigation)
+                .Where(t =>
+                    t.Naziv.Contains(text) ||
+                    t.IdProfesoraNavigation.Ime.Contains(text) ||
+                    t.IdProfesoraNavigation.Prezime.Contains(text))
+                .ToList();
         }
     }
 }
