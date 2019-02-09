@@ -108,6 +108,10 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Style" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="Background" />
@@ -221,6 +225,8 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
       <RootProperty Name="IsEnabled" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="ItemsSource" />

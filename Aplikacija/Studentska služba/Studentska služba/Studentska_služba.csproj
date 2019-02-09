@@ -136,6 +136,7 @@
     <Compile Include="ViewModels\Podaci\Referenti\ReferentiViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Smerovi\SmeroviViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Studenti\StudentiViewModel.cs" />
+    <Compile Include="ViewModels\PotvrdeUverenja\PotvrdeUverenjaViewModel.cs" />
     <Compile Include="Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xaml.cs">
       <DependentUpon>DokumentacijaZaProfesoreView.xaml</DependentUpon>
     </Compile>
@@ -243,6 +244,7 @@
     <None Include="Studentska služba_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\logo.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -387,6 +389,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="itext7">
+      <Version>7.1.5</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies">
       <Version>2.2.1</Version>
     </PackageReference>
@@ -411,10 +416,13 @@
       <Project>{1221bb44-8ede-4f1a-99db-b51ee7e08e03}</Project>
       <Name>StudentskaSluzba.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\source\repos\pdf uwp drugi pokusaj\iText7Wrapper\iText7Wrapper.csproj">
+      <Project>{a423e2b8-9578-49e7-b8e7-b3cea88d3627}</Project>
+      <Name>iText7Wrapper</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\DokumentacijaZaProfesore\" />
-    <Folder Include="ViewModels\PotvrdeUverenja\" />
     <Folder Include="ViewModels\PrijemniIspit\" />
     <Folder Include="ViewModels\Settings\" />
     <Folder Include="ViewModels\Statistika\" />

@@ -1,4 +1,4 @@
-﻿<Page
+﻿<Page x:ConnectionId='1'
     x:Class="Studentska_služba.Views.PotvrdeUverenjaView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -8,10 +8,40 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock Text="PotvrdeUverenjaView"
-                   FontSize="48"
-                   HorizontalAlignment="Center"/>
-    </Grid>
+    <Page.Resources>
+        <Style x:Key="DetailsElement" TargetType="Control">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Width" Value="400"/>
+        </Style>
+    </Page.Resources>
+
+    <StackPanel Margin="20" HorizontalAlignment="Center">
+        <ComboBox x:ConnectionId='2' Header="Tip dokumenta"
+                                                                         
+                                                                      
+                  Style="{StaticResource DetailsElement}"/>
+        <ComboBox x:ConnectionId='3' Header="Student"
+                  DisplayMemberPath="PunoImeIndeks"
+                                                                 
+                                                                         
+                  Style="{StaticResource DetailsElement}"/>
+        <TextBox x:ConnectionId='4' Header="Potvrda služi za"
+                 TextWrapping="Wrap"
+                 Height="100"
+                                                      
+                 Style="{StaticResource DetailsElement}"/>
+        <TextBox x:ConnectionId='5' Header="Dodatak"
+                 TextWrapping="Wrap"
+                 Height="100"
+                                                             
+                 Style="{StaticResource DetailsElement}"/>
+        <Button x:ConnectionId='6' Content="Štampaj"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="20"
+                Padding="20"
+                FontSize="24"
+                                                     />
+    </StackPanel>
 </Page>
 

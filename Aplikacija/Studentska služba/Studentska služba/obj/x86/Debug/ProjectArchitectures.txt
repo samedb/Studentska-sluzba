@@ -1,1 +1,2 @@
 C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Studentska_služba.csproj;x86
+C:\Users\Samed\source\repos\pdf uwp drugi pokusaj\iText7Wrapper\iText7Wrapper.csproj;x86

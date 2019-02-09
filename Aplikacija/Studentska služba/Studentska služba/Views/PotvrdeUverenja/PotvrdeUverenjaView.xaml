@@ -8,9 +8,39 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock Text="PotvrdeUverenjaView"
-                   FontSize="48"
-                   HorizontalAlignment="Center"/>
-    </Grid>
+    <Page.Resources>
+        <Style x:Key="DetailsElement" TargetType="Control">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Width" Value="400"/>
+        </Style>
+    </Page.Resources>
+
+    <StackPanel Margin="20" HorizontalAlignment="Center">
+        <ComboBox Header="Tip dokumenta"
+                  ItemsSource="{x:Bind vm.TipoviDokumenata, Mode=OneWay}"
+                  SelectedItem="{x:Bind vm.TipDokumenta, Mode=TwoWay}"
+                  Style="{StaticResource DetailsElement}"/>
+        <ComboBox Header="Student"
+                  DisplayMemberPath="PunoImeIndeks"
+                  ItemsSource="{x:Bind vm.Studenti, Mode=OneWay}"
+                  SelectedItem="{x:Bind vm.SelectedStudent, Mode=TwoWay}"
+                  Style="{StaticResource DetailsElement}"/>
+        <TextBox Header="Potvrda služi za"
+                 TextWrapping="Wrap"
+                 Height="100"
+                 Text="{x:Bind vm.Svrha, Mode=TwoWay}"
+                 Style="{StaticResource DetailsElement}"/>
+        <TextBox Header="Dodatak"
+                 TextWrapping="Wrap"
+                 Height="100"
+                 Text="{x:Bind vm.DodatniTekst, Mode=TwoWay}"
+                 Style="{StaticResource DetailsElement}"/>
+        <Button Content="Štampaj"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="20"
+                Padding="20"
+                FontSize="24"
+                Command="{x:Bind vm.StampajDokument}"/>
+    </StackPanel>
 </Page>
