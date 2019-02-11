@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Studentska_služba.ViewModels.DokumentacijaZaProfesore;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,11 @@ namespace Studentska_služba.Views
     /// </summary>
     public sealed partial class DokumentacijaZaProfesoreView : Page
     {
+        public DokumentacijaZaProfesoreViewModel vm;
         public DokumentacijaZaProfesoreView()
         {
             this.InitializeComponent();
+            vm = new DokumentacijaZaProfesoreViewModel();
         }
     }
 }

@@ -15,11 +15,11 @@ namespace Studentska_služba.ViewModels.Podaci.Referenti
             return context.Referent;
         }
 
-        protected override void GetItems()
+        protected async override Task<List<Referent>> GetItems()
         {
-            ItemList = (GetDbSet() as DbSet<Referent>)
+            return await (GetDbSet() as DbSet<Referent>)
                 .Include(r => r.UsernameReferentaNavigation)
-                .ToList();
+                .ToListAsync();
         }
 
         protected override bool NoEmptyFiels()

@@ -33,35 +33,5 @@ namespace Studentska_služba.Views
             this.InitializeComponent();
             vm = new PotvrdeUverenjaViewModel();
         }
-
-        private async void Button_Click(object sender, RoutedEventArgs e)
-        {
-            StorageFolder folder = ApplicationData.Current.TemporaryFolder;
-            StorageFile file = await folder.CreateFileAsync("temp.pdf", CreationCollisionOption.ReplaceExisting);
-
-            var lista = new StudentskaSluzbaDBContext().Profesor
-                .Where(p => p.Pol == "musko")
-                .Select(p => new
-                {
-                    p.Ime,
-                    p.Prezime,
-                    p.Pol,
-                    p.DatumRodjenja
-                })
-                .ToList();
-
-            using (var doc = new PdfWrapper(file))
-            {
-                doc.DodajSliku("Assets/logo.png", 0.5f);
-                doc.DodajNaslov("Državni univerzitet u Novom Pazaru", 14);
-                doc.DodajNaslov("Uverenje o polozenom ispitu", 22);
-                doc.DodajParagraf("Ovo je lista profesora koji rade na fakultetu. U listi je prikazano ime, prezime, pol i datum rodjenja profesora. I ja ovde sad pisem neki tekst da bi imas sta da stampam.");
-                doc.DodajTabelu(lista);
-                doc.DodajMPiPotpis();
-            }
-
-            await PdfWrapper.OtvoriFile(file);
-        }
-
     }
 }

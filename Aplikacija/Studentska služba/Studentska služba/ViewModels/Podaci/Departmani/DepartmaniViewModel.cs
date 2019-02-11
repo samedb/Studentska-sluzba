@@ -15,10 +15,11 @@ namespace Studentska_služba.ViewModels.Podaci.Departmani
             return context.Departman;
         }
 
-        protected override void GetItems()
+        protected async override Task<List<Departman>> GetItems()
         {
-            ItemList = (GetDbSet() as DbSet<Departman>).Include(dep => dep.IdSefaDepartmanaNavigation).ToList();
+            return await (GetDbSet() as DbSet<Departman>).Include(dep => dep.IdSefaDepartmanaNavigation).ToListAsync();
         }
+
 
         protected override bool NoEmptyFiels()
         {

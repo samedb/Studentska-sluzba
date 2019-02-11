@@ -15,12 +15,12 @@ namespace Studentska_služba.ViewModels.Podaci.Ispiti
             return context.Ispit;
         }
 
-        protected override void GetItems()
+        protected async override Task<List<Ispit>> GetItems()
         {
-            ItemList = (GetDbSet() as DbSet<Ispit>)
+            return await (GetDbSet() as DbSet<Ispit>)
                 .Include(i => i.BrojIndeksaStudentaNavigation)
                 .Include(i => i.IdPredmetaNavigation)
-                .ToList();
+                .ToListAsync();
 
         }
 

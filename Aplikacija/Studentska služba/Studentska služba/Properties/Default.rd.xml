@@ -26,6 +26,9 @@
     
     <!-- Add your application specific runtime directives here. -->
 
+    <Assembly Name="DocumentFormat.OpenXml" Dynamic="Auto"/>
+    <Assembly Name="UWPCommunityToolkit" Dynamic="All" />
+
 
   </Application>
 </Directives>

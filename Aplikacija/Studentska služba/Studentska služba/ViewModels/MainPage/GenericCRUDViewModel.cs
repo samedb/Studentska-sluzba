@@ -141,9 +141,9 @@ namespace Studentska_služba
         }
 
 
-        protected void RefreshTable()
+        public async void RefreshTable()
         {
-            GetItems();
+            ItemList = await GetItems();
             SelectedItem = default(TModel); // Sa promenom studenta automatski se i DetailsMode stavlja na View
             if (!string.IsNullOrEmpty(SearchBoxText))
                 SearchBoxText = string.Empty;
@@ -164,9 +164,9 @@ namespace Studentska_služba
             context.Entry(SelectedItem).Reload();
         }
 
-        virtual protected void GetItems()
+        virtual protected async Task<List<TModel>>  GetItems()
         {
-            ItemList = (GetDbSet() as DbSet<TModel>).ToList();
+            return await (GetDbSet() as DbSet<TModel>).ToListAsync();
         }
 
         #endregion

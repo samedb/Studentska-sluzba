@@ -15,10 +15,10 @@ namespace Studentska_služba.ViewModels.Podaci.Predmeti
             return context.Predmet;
         }
 
-        protected override void GetItems()
+        protected async override Task<List<Predmet>> GetItems()
         {
-            ItemList = (GetDbSet() as DbSet<Predmet>)
-                .Include(p => p.IdProfesoraNavigation).ToList();
+            return await (GetDbSet() as DbSet<Predmet>)
+                .Include(p => p.IdProfesoraNavigation).ToListAsync();
         }
 
         protected override bool NoEmptyFiels()

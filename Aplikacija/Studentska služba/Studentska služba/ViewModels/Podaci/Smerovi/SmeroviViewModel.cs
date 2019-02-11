@@ -15,12 +15,12 @@ namespace Studentska_služba.ViewModels.Podaci.Smerovi
             return context.Smer;
         }
 
-        protected override void GetItems()
+        protected async override Task<List<Smer>> GetItems()
         {
-            ItemList = (GetDbSet() as DbSet<Smer>)
+            return await (GetDbSet() as DbSet<Smer>)
                 .Include(s => s.IdDepartmanaNavigation)
                 .Include(s => s.UsernameReferentaNavigation)
-                .ToList();
+                .ToListAsync();
         }
 
         protected override bool NoEmptyFiels()

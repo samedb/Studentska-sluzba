@@ -23,15 +23,14 @@ namespace Studentska_služba.ViewModels.Podaci.Ocene
             return context.Ocena;
         }
 
-        protected override void GetItems()
+        protected async override Task<List<Ocena>> GetItems()
         {
-            ItemList = (GetDbSet() as DbSet<Ocena>)
+            return await (GetDbSet() as DbSet<Ocena>)
                 .Include(o => o.IdIspitaNavigation)
                     .ThenInclude(i => i.BrojIndeksaStudentaNavigation)
                 .Include(o => o.IdIspitaNavigation)
                     .ThenInclude(i => i.IdPredmetaNavigation)
-                .ToList();
-
+                .ToListAsync();
         }
 
         protected override bool NoEmptyFiels()

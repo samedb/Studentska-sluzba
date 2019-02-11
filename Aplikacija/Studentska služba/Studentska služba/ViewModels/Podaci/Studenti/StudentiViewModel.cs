@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StudentskaSluzba.Models;
-  using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic.Core;
+using System.Threading.Tasks;
 
 namespace Studentska_služba
 {
@@ -13,9 +14,9 @@ namespace Studentska_služba
             return context.Student;
         }
 
-        protected override void GetItems()
+        protected async override Task<List<Student>> GetItems()
         {
-            ItemList = (GetDbSet() as DbSet<Student>).Include(s => s.IdSmeraNavigation).ToList();
+            return await (GetDbSet() as DbSet<Student>).Include(s => s.IdSmeraNavigation).ToListAsync();
         }
 
         protected override bool NoEmptyFiels()

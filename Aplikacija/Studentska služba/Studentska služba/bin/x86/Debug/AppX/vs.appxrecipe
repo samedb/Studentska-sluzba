@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>97D70166DA554901723176DF183725432D036FA0BDCB3C8238052353A3D3EF9D</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>495110815F8B35B1928BD506E9A2E838B4A5786A5F301D338131D89D4E75BAB1</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c1ba085e-bf5b-4b64-ae62-2bf795af3e16_1.0.0.0_x86__cb8zv91g8eaym</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c1ba085e-bf5b-4b64-ae62-2bf795af3e16_cb8zv91g8eaym!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c1ba085e-bf5b-4b64-ae62-2bf795af3e16</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-09T23:42:20.445</Modified>
+      <Modified>2019-02-10T14:15:39.619</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Studentska služba.exe">
       <PackagePath>entrypoint\Studentska služba.exe</PackagePath>
-      <Modified>2019-02-09T23:42:17.964</Modified>
+      <Modified>2019-02-10T14:15:36.834</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\castle.core\4.2.1\lib\netstandard1.3\Castle.Core.dll">
       <PackagePath>Castle.Core.dll</PackagePath>
@@ -264,7 +264,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\source\repos\pdf uwp drugi pokusaj\iText7Wrapper\bin\x86\Debug\iText7Wrapper.dll">
       <PackagePath>iText7Wrapper.dll</PackagePath>
-      <Modified>2019-02-09T22:33:46.244</Modified>
+      <Modified>2019-02-10T13:54:40.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\source\repos\ClassLibrary4\ClassLibrary4\bin\Debug\netstandard2.0\StudentskaSluzba.Model.dll">
       <PackagePath>StudentskaSluzba.Model.dll</PackagePath>
@@ -282,9 +282,209 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2018-10-23T00:33:40.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:54.553</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:54.599</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:54.658</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:54.744</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.041</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\logo.png">
       <PackagePath>Assets\logo.png</PackagePath>
-      <Modified>2019-02-09T15:27:08.442</Modified>
+      <Modified>2019-02-09T23:49:40.050</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:53.878</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:53.903</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:53.924</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:53.948</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:53.998</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.378</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.458</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.558</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:56.178</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:54.029</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:54.065</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:54.093</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:54.242</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.239</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.327</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.274</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.296</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.059</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.075</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.091</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.131</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.146</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.164</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.225</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.180</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:55.196</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:56.194</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:56.211</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:56.228</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:56.246</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:56.271</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:54.267</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:54.296</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:54.331</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-02-10T14:14:54.517</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -293,32 +493,27 @@
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-30T01:54:25.842</Modified>
+      <Modified>2019-02-10T14:14:55.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-30T01:54:25.842</Modified>
+      <Modified>2019-02-10T14:14:54.139</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-30T01:54:25.842</Modified>
+      <Modified>2019-02-10T14:14:55.108</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-30T01:54:25.842</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-30T01:54:25.842</Modified>
+      <Modified>2019-02-10T14:14:55.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-30T01:54:25.842</Modified>
+      <Modified>2019-02-10T14:14:54.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -326,139 +521,139 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Studentska služba.xr.xml">
       <PackagePath>Studentska služba.xr.xml</PackagePath>
-      <Modified>2019-02-09T22:26:11.560</Modified>
+      <Modified>2019-02-10T13:46:50.654</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.147</Modified>
+      <Modified>2019-02-10T14:15:36.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xbf">
       <PackagePath>Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.148</Modified>
+      <Modified>2019-02-10T14:15:36.019</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\MainPage\MainPage.xbf">
       <PackagePath>Views\MainPage\MainPage.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.148</Modified>
+      <Modified>2019-02-10T14:15:36.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\CommandLine.xbf">
       <PackagePath>Views\Podaci\CommandLine.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.149</Modified>
+      <Modified>2019-02-10T14:15:36.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Departmani\DepartmanDetails.xbf">
       <PackagePath>Views\Podaci\Departmani\DepartmanDetails.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.150</Modified>
+      <Modified>2019-02-10T14:15:36.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Departmani\DepartmaniView.xbf">
       <PackagePath>Views\Podaci\Departmani\DepartmaniView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.150</Modified>
+      <Modified>2019-02-10T14:15:36.024</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Departmani\DepartmanList.xbf">
       <PackagePath>Views\Podaci\Departmani\DepartmanList.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.151</Modified>
+      <Modified>2019-02-10T14:15:36.025</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ispiti\IspitDetails.xbf">
       <PackagePath>Views\Podaci\Ispiti\IspitDetails.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.152</Modified>
+      <Modified>2019-02-10T14:15:36.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ispiti\IspitiList.xbf">
       <PackagePath>Views\Podaci\Ispiti\IspitiList.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.152</Modified>
+      <Modified>2019-02-10T14:15:36.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ispiti\IspitiView.xbf">
       <PackagePath>Views\Podaci\Ispiti\IspitiView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.153</Modified>
+      <Modified>2019-02-10T14:15:36.027</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ocene\OcenaDetails.xbf">
       <PackagePath>Views\Podaci\Ocene\OcenaDetails.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.153</Modified>
+      <Modified>2019-02-10T14:15:36.028</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ocene\OceneList.xbf">
       <PackagePath>Views\Podaci\Ocene\OceneList.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.154</Modified>
+      <Modified>2019-02-10T14:15:36.028</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ocene\OceneView.xbf">
       <PackagePath>Views\Podaci\Ocene\OceneView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.155</Modified>
+      <Modified>2019-02-10T14:15:36.029</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\PodaciView.xbf">
       <PackagePath>Views\Podaci\PodaciView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.156</Modified>
+      <Modified>2019-02-10T14:15:36.030</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Predmeti\PredmetDetails.xbf">
       <PackagePath>Views\Podaci\Predmeti\PredmetDetails.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.156</Modified>
+      <Modified>2019-02-10T14:15:36.030</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Predmeti\PredmetiList.xbf">
       <PackagePath>Views\Podaci\Predmeti\PredmetiList.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.157</Modified>
+      <Modified>2019-02-10T14:15:36.031</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Predmeti\PredmetiView.xbf">
       <PackagePath>Views\Podaci\Predmeti\PredmetiView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.158</Modified>
+      <Modified>2019-02-10T14:15:36.032</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Profesori\ProfesorDetails.xbf">
       <PackagePath>Views\Podaci\Profesori\ProfesorDetails.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.158</Modified>
+      <Modified>2019-02-10T14:15:36.033</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Profesori\ProfesoriList.xbf">
       <PackagePath>Views\Podaci\Profesori\ProfesoriList.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.159</Modified>
+      <Modified>2019-02-10T14:15:36.033</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Profesori\ProfesoriView.xbf">
       <PackagePath>Views\Podaci\Profesori\ProfesoriView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.159</Modified>
+      <Modified>2019-02-10T14:15:36.034</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Referenti\ReferentDetails.xbf">
       <PackagePath>Views\Podaci\Referenti\ReferentDetails.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.160</Modified>
+      <Modified>2019-02-10T14:15:36.035</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Referenti\ReferentiList.xbf">
       <PackagePath>Views\Podaci\Referenti\ReferentiList.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.161</Modified>
+      <Modified>2019-02-10T14:15:36.035</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Referenti\ReferentiView.xbf">
       <PackagePath>Views\Podaci\Referenti\ReferentiView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.162</Modified>
+      <Modified>2019-02-10T14:15:36.036</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Smerovi\SmerDetails.xbf">
       <PackagePath>Views\Podaci\Smerovi\SmerDetails.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.163</Modified>
+      <Modified>2019-02-10T14:15:36.036</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Smerovi\SmeroviList.xbf">
       <PackagePath>Views\Podaci\Smerovi\SmeroviList.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.164</Modified>
+      <Modified>2019-02-10T14:15:36.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Smerovi\SmeroviView.xbf">
       <PackagePath>Views\Podaci\Smerovi\SmeroviView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.165</Modified>
+      <Modified>2019-02-10T14:15:36.039</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Studenti\StudentDetails.xbf">
       <PackagePath>Views\Podaci\Studenti\StudentDetails.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.166</Modified>
+      <Modified>2019-02-10T14:15:36.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Studenti\StudentiView.xbf">
       <PackagePath>Views\Podaci\Studenti\StudentiView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.167</Modified>
+      <Modified>2019-02-10T14:15:36.041</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Studenti\StudentList.xbf">
       <PackagePath>Views\Podaci\Studenti\StudentList.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.168</Modified>
+      <Modified>2019-02-10T14:15:36.042</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\PotvrdeUverenja\PotvrdeUverenjaView.xbf">
       <PackagePath>Views\PotvrdeUverenja\PotvrdeUverenjaView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.169</Modified>
+      <Modified>2019-02-10T14:15:36.042</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\PrijemniIspit\PrijemniIspitView.xbf">
       <PackagePath>Views\PrijemniIspit\PrijemniIspitView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.169</Modified>
+      <Modified>2019-02-10T14:15:36.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Settings\SettingsView.xbf">
       <PackagePath>Views\Settings\SettingsView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.171</Modified>
+      <Modified>2019-02-10T14:15:36.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Statistika\StatistikaView.xbf">
       <PackagePath>Views\Statistika\StatistikaView.xbf</PackagePath>
-      <Modified>2019-02-09T23:42:17.171</Modified>
+      <Modified>2019-02-10T14:15:36.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -610,11 +805,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-02-09T22:17:21.285</Modified>
+      <Modified>2019-02-10T14:15:38.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Core\Studentska služba.exe">
       <PackagePath>Studentska služba.exe</PackagePath>
-      <Modified>2019-02-09T23:42:20.435</Modified>
+      <Modified>2019-02-10T14:15:39.609</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
