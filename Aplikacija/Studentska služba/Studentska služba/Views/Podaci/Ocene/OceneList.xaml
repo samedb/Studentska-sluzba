@@ -26,11 +26,11 @@
                 <controls:DataGridTextColumn
                         Header="Broj indeksa studenta"
                         Binding="{Binding IdIspitaNavigation.BrojIndeksaStudenta}"
-                        Tag="BrojIndeksaStudenta"/>
+                        Tag="IdIspitaNavigation.BrojIndeksaStudenta"/>
                 <controls:DataGridTextColumn
                         Header="Student"
                         Binding="{Binding IdIspitaNavigation.BrojIndeksaStudentaNavigation.PunoIme}"
-                        Tag="BrojIndeksaStudentaNavigation.PunoIme"/>
+                        Tag="IdIspitaNavigation.BrojIndeksaStudentaNavigation.PunoIme"/>
                 <controls:DataGridTextColumn
                         Header="Predmet"
                         Binding="{Binding IdIspitaNavigation.IdPredmetaNavigation.Naziv}"

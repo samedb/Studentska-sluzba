@@ -5,12 +5,117 @@
     xmlns:local="using:Studentska_služba.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.Resources>
+        <Style x:Key="NaslovGrafikona" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5, 35, 5, 0"/>
+        </Style>
+    </Page.Resources>
+
     <Grid>
-        <TextBlock Text="StatistikaView"
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Statistički podaci"
                    FontSize="48"
                    HorizontalAlignment="Center"/>
+        
+        <ScrollViewer Grid.Row="1">
+
+            <StackPanel>
+
+                <TextBlock Text="Uspesnost polaganja ispita po ispitnim rokovima"
+                           Style="{StaticResource NaslovGrafikona}"/>
+                <charting:Chart HorizontalAlignment="Center" 
+                                Margin="0" 
+                                Width="600"
+                                Height="400">
+                    <charting:ColumnSeries Title="" 
+                                           IndependentValuePath="Name" 
+                                           DependentValuePath="Amount"
+                                           IsSelectionEnabled="True"
+                                           ItemsSource="{x:Bind vm.PrijavljeniIspitiPoRokovima}"/>
+                    
+                    <charting:ColumnSeries Title="" 
+                                           IndependentValuePath="Name" 
+                                           DependentValuePath="Amount"
+                                           IsSelectionEnabled="True"
+                                           ItemsSource="{x:Bind vm.PolozeniIspitiPoRokovima}"/>
+                </charting:Chart>
+
+                <TextBlock Text="Broj studenata po departmanima"
+                           Style="{StaticResource NaslovGrafikona}"/>
+                <charting:Chart HorizontalAlignment="Center" 
+                                Margin="0" 
+                                Width="600"
+                                Height="400">
+                    <charting:PieSeries Title=""
+                                        IndependentValuePath="Name"  
+                                        DependentValuePath="Amount"  
+                                        IsSelectionEnabled="True"
+                                        ItemsSource="{x:Bind vm.BrojStudenataPoDepartmanima}"/>
+                </charting:Chart>
+
+                <!--<TextBlock Text="Uspesnost polaganja predmeta"
+                           Style="{StaticResource NaslovGrafikona}"/>
+                <charting:Chart HorizontalAlignment="Center" 
+                                Margin="0" 
+                                Width="600"
+                                Height="400">
+                    <charting:BarSeries Title=""
+                                        IndependentValuePath="Name"  
+                                        DependentValuePath="Amount"  
+                                        IsSelectionEnabled="True"
+                                        ItemsSource="{x:Bind vm.UspesnostPolaganjePredmeta}"/>
+                </charting:Chart>-->
+
+                <TextBlock Text="Prosecna ocena po predmetu"
+                           Style="{StaticResource NaslovGrafikona}"/>
+                <charting:Chart HorizontalAlignment="Center" 
+                                Margin="0"
+                                Height="600"
+                                Width="600">
+                    <charting:BarSeries  Title=""
+                                         IndependentValuePath="Name"  
+                                         DependentValuePath="Amount" CharacterSpacing="5"  
+                                         IsSelectionEnabled="True"
+                                         ItemsSource="{x:Bind vm.ProsecnaOcenaPoPredmetu}"/>
+                </charting:Chart>
+
+                <TextBlock Text="Prosecna ocena po departmanu"
+                           Style="{StaticResource NaslovGrafikona}"/>
+                <charting:Chart HorizontalAlignment="Center" 
+                                Margin="0" 
+                                Width="600"
+                                Height="400">
+                    <charting:BarSeries Title=""
+                                        IndependentValuePath="Name"  
+                                        DependentValuePath="Amount" CharacterSpacing="5"  
+                                        IsSelectionEnabled="True"
+                                        ItemsSource="{x:Bind vm.ProsecnaOcenaPoDepartmanu}"/>
+                </charting:Chart>
+
+
+                <TextBlock Text="Najbolji studenti"
+                           Style="{StaticResource NaslovGrafikona}"/>
+                <charting:Chart HorizontalAlignment="Center" 
+                                Margin="0" 
+                                Width="600"
+                                Height="400">
+                    <charting:BarSeries Title=""
+                                        IndependentValuePath="Name"  
+                                        DependentValuePath="Amount" CharacterSpacing="5"  
+                                        IsSelectionEnabled="True"
+                                        ItemsSource="{x:Bind vm.NajboljiStudenti}"/>
+                </charting:Chart>
+            </StackPanel>
+
+        </ScrollViewer>
     </Grid>
 </Page>

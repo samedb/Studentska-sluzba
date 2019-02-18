@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Studentska_služba.ViewModels.Statistika;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,19 @@ namespace Studentska_služba.Views
     /// </summary>
     public sealed partial class StatistikaView : Page
     {
+        StatistikaViewModel vm;
         public StatistikaView()
         {
-            this.InitializeComponent();
+            try
+            {
+                vm = new StatistikaViewModel();
+                this.InitializeComponent();
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
     }
 }

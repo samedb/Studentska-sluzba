@@ -25,12 +25,23 @@ namespace Studentska_služba.ViewModels.Podaci.Ocene
 
         protected async override Task<List<Ocena>> GetItems()
         {
-            return await (GetDbSet() as DbSet<Ocena>)
+            //return await (GetDbSet() as DbSet<Ocena>)
+            //    .Include(o => o.IdIspitaNavigation)
+            //        .ThenInclude(i => i.BrojIndeksaStudentaNavigation)
+            //    .Include(o => o.IdIspitaNavigation)
+            //        .ThenInclude(i => i.IdPredmetaNavigation)
+            //    .ToListAsync();
+            List<Ocena> lista = new List<Ocena>();
+            using (var context = new StudentskaSluzbaDBContext())
+            {
+                lista = await (GetDbSet() as DbSet<Ocena>)
                 .Include(o => o.IdIspitaNavigation)
                     .ThenInclude(i => i.BrojIndeksaStudentaNavigation)
                 .Include(o => o.IdIspitaNavigation)
                     .ThenInclude(i => i.IdPredmetaNavigation)
                 .ToListAsync();
+            }
+            return lista;
         }
 
         protected override bool NoEmptyFiels()
