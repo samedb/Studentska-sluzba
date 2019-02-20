@@ -14,7 +14,6 @@
         <local:DetailsModeToVisibilityConverter x:Key="DetailsButtonVisibilityConverter"/>
         <local:DetailsModeToBoolean x:Key="DetailsModeToBooleanConverter"/>
         <local:TimeConverter x:Key="TimeConverter"/>
-        <local:IDSmeraToNazivConverter x:Key="IDSmeraToNazivConverter"/>
         <local:ObjectToVisibility x:Key="ObjectToVisibilityConverter"/>
 
     </Page.Resources>

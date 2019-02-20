@@ -36,11 +36,5 @@ namespace Studentska_služba.Views.Podaci
                 Console.WriteLine(e);
             }
         }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            vm.RefreshTable();
-        }
-
     }
 }

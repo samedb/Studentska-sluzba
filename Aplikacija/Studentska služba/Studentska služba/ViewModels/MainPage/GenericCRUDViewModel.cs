@@ -5,6 +5,7 @@ using StudentskaSluzba.Models;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Linq.Dynamic.Core;
@@ -18,8 +19,8 @@ namespace Studentska_služba
     {
 
         #region Atributi
-        private List<TModel> _itemList;
-        public List<TModel> ItemList
+        private ObservableCollection<TModel> _itemList;
+        public ObservableCollection<TModel> ItemList
         {
             get => _itemList;
             set { Set(nameof(ItemList), ref _itemList, value); }
@@ -115,9 +116,10 @@ namespace Studentska_služba
         virtual protected async void DeleteSelectedStudent()
         {
             RemoveItem();
+            ItemList.Remove(SelectedItem);
             SelectedItem = default(TModel);
             await context.SaveChangesAsync();
-            RefreshTable();
+            //RefreshTable();
         }
         
         private async void SaveChanges()
@@ -133,17 +135,15 @@ namespace Studentska_služba
             }
         }
 
-
         private void Cancel()
         {
             ReloadItem();
             RefreshTable();
         }
 
-
         public async void RefreshTable()
         {
-            ItemList = await GetItems();
+            ItemList = new ObservableCollection<TModel>(await GetItems());
             SelectedItem = default(TModel); // Sa promenom studenta automatski se i DetailsMode stavlja na View
             if (!string.IsNullOrEmpty(SearchBoxText))
                 SearchBoxText = string.Empty;
@@ -193,7 +193,7 @@ namespace Studentska_služba
                 //Ovo nije dobro, mora da se porpravi
                 // Uopste ne radi asinhrono
                 // Treba da procitam kako to tacno da uradim
-                ItemList = await Task<IList>.Run(() => SearchForItem(text));
+                ItemList = new ObservableCollection<TModel>(await Task<IList>.Run(() => SearchForItem(text)));
             }
         }
 

@@ -2,6 +2,7 @@
 using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,16 +32,19 @@ namespace Studentska_služba.ViewModels.Podaci.Ocene
             //    .Include(o => o.IdIspitaNavigation)
             //        .ThenInclude(i => i.IdPredmetaNavigation)
             //    .ToListAsync();
+            var time = DateTime.Now;
             List<Ocena> lista = new List<Ocena>();
             using (var context = new StudentskaSluzbaDBContext())
             {
-                lista = await (GetDbSet() as DbSet<Ocena>)
-                .Include(o => o.IdIspitaNavigation)
-                    .ThenInclude(i => i.BrojIndeksaStudentaNavigation)
-                .Include(o => o.IdIspitaNavigation)
-                    .ThenInclude(i => i.IdPredmetaNavigation)
-                .ToListAsync();
+                lista = await context.Ocena
+                        .AsNoTracking()
+                        .Include(o => o.IdIspitaNavigation)
+                            .ThenInclude(i => i.BrojIndeksaStudentaNavigation)
+                        .Include(o => o.IdIspitaNavigation)
+                            .ThenInclude(i => i.IdPredmetaNavigation)
+                        .ToListAsync();
             }
+            Debug.WriteLine($"Vreme za izvrsavanje {(DateTime.Now - time).Seconds}");
             return lista;
         }
 

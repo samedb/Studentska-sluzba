@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,7 +52,7 @@ namespace Studentska_služba.ViewModels.PotvrdeUverenja
         }
 
         public string[] TipoviDokumenata = { "Potvrda o studiranju", "Uverenje o položenim ispitiva" };
-        public Student[] Studenti;
+        public ObservableCollection<Student> Studenti;
 
         public RelayCommand StampajDokument { get; protected set; }
 
@@ -60,10 +62,10 @@ namespace Studentska_služba.ViewModels.PotvrdeUverenja
 
         public PotvrdeUverenjaViewModel()
         {
-            Studenti = new StudentskaSluzbaDBContext().Student
-                .Include(s => s.IdSmeraNavigation)
-                .ThenInclude(s => s.IdDepartmanaNavigation)
-                .ToArray();
+            Studenti = new ObservableCollection<Student>(new StudentskaSluzbaDBContext().Student
+                                                            .Include(s => s.IdSmeraNavigation)
+                                                            .ThenInclude(s => s.IdDepartmanaNavigation)
+                                                            .ToArray());
 
             StampajDokument = new RelayCommand(Stampaj, PopunjenaPolja);
             KreirajFajl();

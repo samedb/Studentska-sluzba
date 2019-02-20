@@ -125,7 +125,6 @@
     <Compile Include="Converters\DetailsModeIsAdd.cs" />
     <Compile Include="Converters\DetailsModeToBoolean.cs" />
     <Compile Include="Converters\DetailsModeToVisibilityConverter.cs" />
-    <Compile Include="Converters\IDSmeraToNazivConverter.cs" />
     <Compile Include="Converters\NegateBooleanConverter.cs" />
     <Compile Include="Converters\ObjectToVisibility.cs" />
     <Compile Include="Converters\TimeConverter.cs" />
