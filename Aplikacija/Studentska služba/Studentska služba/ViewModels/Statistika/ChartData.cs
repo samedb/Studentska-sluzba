@@ -18,10 +18,10 @@ namespace Studentska_služba.ViewModels.Statistika
             Amount = amount;
         }
 
-        public ChartData(DataRow dr)
+        public ChartData(DataRow row)
         {
-            Name = dr[0].ToString();
-            Amount = (double) dr[1];
+            Name = row[0].ToString();
+            Amount = (double) row[1];
         }
 
         public static List<ChartData> GetDummyData()

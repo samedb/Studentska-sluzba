@@ -32,17 +32,16 @@
 
                 <TextBlock Text="Uspesnost polaganja ispita po ispitnim rokovima"
                            Style="{StaticResource NaslovGrafikona}"/>
-                <charting:Chart HorizontalAlignment="Center" 
-                                Margin="0" 
-                                Width="600"
+                <charting:Chart HorizontalAlignment="Stretch" 
+                                Margin="50, 0"
                                 Height="400">
-                    <charting:ColumnSeries Title="" 
+                    <charting:ColumnSeries Title="Broj prijavljenih ispita" 
                                            IndependentValuePath="Name" 
                                            DependentValuePath="Amount"
                                            IsSelectionEnabled="True"
                                            ItemsSource="{x:Bind vm.PrijavljeniIspitiPoRokovima}"/>
                     
-                    <charting:ColumnSeries Title="" 
+                    <charting:ColumnSeries Title="Broj polozenih ispita" 
                                            IndependentValuePath="Name" 
                                            DependentValuePath="Amount"
                                            IsSelectionEnabled="True"
