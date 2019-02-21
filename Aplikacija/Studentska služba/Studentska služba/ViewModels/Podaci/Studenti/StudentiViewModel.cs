@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StudentskaSluzba.Models;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
@@ -9,14 +10,25 @@ namespace Studentska_služba
 {
     public class StudentiViewModel : GenericCRUDViewModel<Student>
     {
-        protected override object GetDbSet()
+
+        protected async override Task<IList<Student>> GetItems()
         {
-            return context.Student;
+            return await dataProvider.GetStudentsAsync();
         }
 
-        protected async override Task<List<Student>> GetItems()
+        protected override async void AddItemAsync()
         {
-            return await (GetDbSet() as DbSet<Student>).Include(s => s.IdSmeraNavigation).ToListAsync();
+            await dataProvider.AddStudentAsync(SelectedItem);
+        }
+
+        protected override void UpdateItem()
+        {
+            dataProvider.UpdateStudentAsync(SelectedItem);
+        }
+
+        protected override void RemoveItemAsync()
+        {
+            dataProvider.DeleteStudentAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()
@@ -28,9 +40,9 @@ namespace Studentska_služba
                      string.IsNullOrEmpty(SelectedItem.Pol));
         }
 
-        protected override List<Student> SearchForItem(string text)
+        protected override async Task<ObservableCollection<Student>> SearchForItemAsync(string text)
         {
-            return context.Student
+            var list = (await GetItems() as List<Student>)
                           .Where(t =>
                               t.Ime.Contains(text) ||
                               t.Prezime.Contains(text) ||
@@ -38,6 +50,7 @@ namespace Studentska_služba
                               t.Pol.Contains(text) ||
                               t.BrojIndeksa.ToString().Contains(text))
                           .ToList();
+            return new ObservableCollection<Student>(list);
         }
     }
 }

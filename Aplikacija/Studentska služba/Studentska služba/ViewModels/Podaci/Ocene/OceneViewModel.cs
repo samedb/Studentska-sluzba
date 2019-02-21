@@ -2,6 +2,7 @@
 using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -15,37 +16,29 @@ namespace Studentska_služba.ViewModels.Podaci.Ocene
             :base()
         {
             // Trenutno je ugasena mogucnost azuriranja ocena, moze samo da se doda i da se brise
-            UpdateItemCommand = new GalaSoft.MvvmLight.Command.RelayCommand(() => { }, () => { return false; } );
+            UpdateItemCommand = new GalaSoft.MvvmLight.Command.RelayCommand(() => { });
             UpdateItemCommand.RaiseCanExecuteChanged();
         }
 
-        protected override object GetDbSet()
+
+        protected async override Task<IList<Ocena>> GetItems()
         {
-            return context.Ocena;
+            return await dataProvider.GetOceneAsync();
         }
 
-        protected async override Task<List<Ocena>> GetItems()
+        protected override async void AddItemAsync()
         {
-            //return await (GetDbSet() as DbSet<Ocena>)
-            //    .Include(o => o.IdIspitaNavigation)
-            //        .ThenInclude(i => i.BrojIndeksaStudentaNavigation)
-            //    .Include(o => o.IdIspitaNavigation)
-            //        .ThenInclude(i => i.IdPredmetaNavigation)
-            //    .ToListAsync();
-            var time = DateTime.Now;
-            List<Ocena> lista = new List<Ocena>();
-            using (var context = new StudentskaSluzbaDBContext())
-            {
-                lista = await context.Ocena
-                        .AsNoTracking()
-                        .Include(o => o.IdIspitaNavigation)
-                            .ThenInclude(i => i.BrojIndeksaStudentaNavigation)
-                        .Include(o => o.IdIspitaNavigation)
-                            .ThenInclude(i => i.IdPredmetaNavigation)
-                        .ToListAsync();
-            }
-            Debug.WriteLine($"Vreme za izvrsavanje {(DateTime.Now - time).Seconds}");
-            return lista;
+            await dataProvider.AddOCenaAsync(SelectedItem);
+        }
+
+        protected override void UpdateItem()
+        {
+            dataProvider.UpdateOcenaAsync(SelectedItem);
+        }
+
+        protected override void RemoveItemAsync()
+        {
+            dataProvider.DeleteOcenaAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()
@@ -53,16 +46,12 @@ namespace Studentska_služba.ViewModels.Podaci.Ocene
             return true;
         }
 
-        protected override List<Ocena> SearchForItem(string text)
+        protected override async Task<ObservableCollection<Ocena>> SearchForItemAsync(string text)
         {
             int broj = -1;
             int.TryParse(text, out broj);
 
-            return context.Ocena
-                .Include(o => o.IdIspitaNavigation)
-                    .ThenInclude(i => i.BrojIndeksaStudentaNavigation)
-                .Include(o => o.IdIspitaNavigation)
-                    .ThenInclude(i => i.IdPredmetaNavigation)
+            var list = (await GetItems() as List<Ocena>)
                 .Where(t =>
                     t.Ocena1 == broj ||
                     t.IdIspita == broj ||
@@ -73,6 +62,8 @@ namespace Studentska_služba.ViewModels.Podaci.Ocene
                     t.IdIspitaNavigation.Godina == broj ||
                     t.IdIspitaNavigation.IdPredmetaNavigation.Naziv.Contains(text))
                 .ToList();
+
+            return new ObservableCollection<Ocena>(list);
         }
     }
 }

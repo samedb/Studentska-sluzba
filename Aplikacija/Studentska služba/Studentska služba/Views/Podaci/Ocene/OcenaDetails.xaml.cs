@@ -48,10 +48,12 @@ namespace Studentska_služba.Views.Podaci.Ocene
         public OcenaDetails()
         {
             this.InitializeComponent();
-            Ispiti = new StudentskaSluzbaDBContext().Ispit
-                .Include(i => i.BrojIndeksaStudentaNavigation)
-                .Include(i => i.IdPredmetaNavigation)
-                .ToList();
+            //Ispiti = new StudentskaSluzbaDBContext().Ispit
+            //    .Include(i => i.BrojIndeksaStudentaNavigation)
+            //    .Include(i => i.IdPredmetaNavigation)
+            //    .ToList();
         }
+
+       
     }
 }

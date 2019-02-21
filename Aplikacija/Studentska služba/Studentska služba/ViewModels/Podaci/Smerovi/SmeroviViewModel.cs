@@ -2,6 +2,7 @@
 using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,17 +11,25 @@ namespace Studentska_služba.ViewModels.Podaci.Smerovi
 {
     public class SmeroviViewModel : GenericCRUDViewModel<Smer>
     {
-        protected override object GetDbSet()
+
+        protected async override Task<IList<Smer>> GetItems()
         {
-            return context.Smer;
+            return await dataProvider.GetSmeroviAsync();
         }
 
-        protected async override Task<List<Smer>> GetItems()
+        protected override async void AddItemAsync()
         {
-            return await (GetDbSet() as DbSet<Smer>)
-                .Include(s => s.IdDepartmanaNavigation)
-                .Include(s => s.UsernameReferentaNavigation)
-                .ToListAsync();
+            await dataProvider.AddSmerAsync(SelectedItem);
+        }
+
+        protected override void UpdateItem()
+        {
+            dataProvider.UpdateSmerAsync(SelectedItem);
+        }
+
+        protected override void RemoveItemAsync()
+        {
+            dataProvider.DeleteSmerAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()
@@ -28,17 +37,16 @@ namespace Studentska_služba.ViewModels.Podaci.Smerovi
             return true;
         }
 
-        protected override List<Smer> SearchForItem(string text)
+        protected override async Task<ObservableCollection<Smer>> SearchForItemAsync(string text)
         {
-            return context.Smer
-                .Include(s => s.IdDepartmanaNavigation)
-                .Include(s => s.UsernameReferentaNavigation)
+            var list = (await GetItems() as List<Smer>)
                 .Where(t =>
                     t.Naziv.Contains(text) ||
                     t.IdDepartmanaNavigation.Naziv.Contains(text) ||
                     t.UsernameReferentaNavigation.Ime.Contains(text) ||
                     t.UsernameReferentaNavigation.Prezime.Contains(text))
                 .ToList();
+            return new ObservableCollection<Smer>(list);
         }
     }
 }

@@ -23,48 +23,52 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
 
-        <podaci:CommandLine HorizontalAlignment="Right"
-                            Grid.ColumnSpan="2"
-                            AddNewItemCommand="{x:Bind vm.AddNewItemCommand}"
-                            UpdateItemCommand="{x:Bind vm.UpdateItemCommand}"
-                            DeleteItemCommand="{x:Bind vm.DeleteItemCommand}"
-                            RefreshTableCommand="{x:Bind vm.RefreshTableCommand}"
-                            SearchBoxText="{x:Bind vm.SearchBoxText, Mode=TwoWay}"/>
+        <Grid HorizontalAlignment="Right">
+            <podaci:CommandLine 
+                        AddNewItemCommand="{x:Bind vm.AddNewItemCommand}"
+                        UpdateItemCommand="{x:Bind vm.UpdateItemCommand}"
+                        DeleteItemCommand="{x:Bind vm.DeleteItemCommand}"
+                        RefreshTableCommand="{x:Bind vm.RefreshTableCommand}"
+                        SearchBoxText="{x:Bind vm.SearchBoxText, Mode=TwoWay}"/>
+
+        </Grid>
 
 
-            <ScrollViewer Grid.Row="1">
-                <local:StudentList vm="{x:Bind vm, Mode=TwoWay}"/>
-            </ScrollViewer>
+        <Grid Grid.Row="1">
 
-        <StackPanel Margin="10"
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <local:StudentList vm="{x:Bind vm, Mode=TwoWay}"/>
+
+
+            <StackPanel Margin="10"
                     Background="WhiteSmoke"
-                    Grid.Row="1"
                     Grid.Column="1"
                     Visibility="{x:Bind vm.SelectedItem, Mode=OneWay, Converter={StaticResource ObjectToVisibilityConverter}}">
-            
-            <local:StudentDetails Student="{x:Bind vm.SelectedItem, Mode=TwoWay}"
-                                              IsEnabled="{x:Bind  vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsModeToBooleanConverter}}"/>
 
-            <StackPanel Orientation="Horizontal"
+                <local:StudentDetails Student="{x:Bind vm.SelectedItem, Mode=TwoWay}"
+                                                IsEnabled="{x:Bind  vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsModeToBooleanConverter}}"/>
+
+                <StackPanel Orientation="Horizontal"
                             Visibility="{x:Bind vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsButtonVisibilityConverter}}"
                             HorizontalAlignment="Center">
 
-                <Button Content="Save" 
+                    <Button Content="Save" 
                             Command="{x:Bind vm.SaveChangesCommand, Mode=OneWay}" 
                             Margin="10"/>
 
-                <Button Content="Cancel" 
+                    <Button Content="Cancel" 
                             Command="{x:Bind vm.CancelCommand, Mode=OneWay}"
                             Margin="10"/>
 
-            </StackPanel>
+                </StackPanel>
 
-        </StackPanel>
+            </StackPanel>
+        </Grid>
 
     </Grid>
 </Page>

@@ -2,6 +2,7 @@
 using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,18 +11,25 @@ namespace Studentska_služba.ViewModels.Podaci.Ispiti
 {
     public class IspitiViewModel : GenericCRUDViewModel<Ispit>
     {
-        protected override object GetDbSet()
+
+        protected async override Task<IList<Ispit>> GetItems()
         {
-            return context.Ispit;
+            return await dataProvider.GetIspitiAsync();
         }
 
-        protected async override Task<List<Ispit>> GetItems()
+        protected override async void AddItemAsync()
         {
-            return await (GetDbSet() as DbSet<Ispit>)
-                .Include(i => i.BrojIndeksaStudentaNavigation)
-                .Include(i => i.IdPredmetaNavigation)
-                .ToListAsync();
+            await dataProvider.AddIspitAsync(SelectedItem);
+        }
 
+        protected override void UpdateItem()
+        {
+            dataProvider.UpdateIspitAsync(SelectedItem);
+        }
+
+        protected override void RemoveItemAsync()
+        {
+            dataProvider.DeleteIspitAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()
@@ -29,15 +37,13 @@ namespace Studentska_služba.ViewModels.Podaci.Ispiti
             return true;
         }
 
-        protected override List<Ispit> SearchForItem(string text)
+        protected override async Task<ObservableCollection<Ispit>> SearchForItemAsync(string text)
         {
             int broj = -1;
             int.TryParse(text, out broj);
 
 
-            return context.Ispit
-                .Include(i => i.BrojIndeksaStudentaNavigation)
-                .Include(i => i.IdPredmetaNavigation)
+            var list = (await GetItems() as List<Ispit>)
                 .Where( t =>
                     t.IdIspita == broj ||
                     t.BrojIndeksaStudenta == broj ||
@@ -47,6 +53,7 @@ namespace Studentska_služba.ViewModels.Podaci.Ispiti
                     t.Godina == broj ||
                     t.IdPredmetaNavigation.Naziv.Contains(text))
                 .ToList();
+            return new ObservableCollection<Ispit>(list);
         }
     }
 }

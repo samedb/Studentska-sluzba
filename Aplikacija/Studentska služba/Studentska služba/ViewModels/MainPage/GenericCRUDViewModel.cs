@@ -1,6 +1,7 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using Microsoft.EntityFrameworkCore;
+using StudentskaSluzba.Model.Models;
 using StudentskaSluzba.Models;
 using System;
 using System.Collections;
@@ -64,7 +65,7 @@ namespace Studentska_služba
             }
         }
 
-        protected StudentskaSluzbaDBContext context;
+        protected IDataProvider dataProvider;
 
         #endregion
 
@@ -82,7 +83,7 @@ namespace Studentska_služba
         #region Konstruktor
         public GenericCRUDViewModel()
         {
-            context = new StudentskaSluzbaDBContext();
+            dataProvider = new EFCoreDataProvider();
             DetailsMode = DetailsMode.View;
             AddNewItemCommand = new RelayCommand(AddNewItem);
             UpdateItemCommand = new RelayCommand(BeginEdit, IsAnySelected);
@@ -115,10 +116,9 @@ namespace Studentska_služba
 
         virtual protected async void DeleteSelectedStudent()
         {
-            RemoveItem();
+            RemoveItemAsync();
             ItemList.Remove(SelectedItem);
             SelectedItem = default(TModel);
-            await context.SaveChangesAsync();
             //RefreshTable();
         }
         
@@ -128,16 +128,19 @@ namespace Studentska_služba
             {
                 if (DetailsMode == DetailsMode.Add)
                 {
-                    AddItem();
+                    AddItemAsync();
                 }
-                await context.SaveChangesAsync();
+                else
+                {
+                    UpdateItem();
+                }
                 RefreshTable();
             }
         }
 
         private void Cancel()
         {
-            ReloadItem();
+            //ReloadItem();
             RefreshTable();
         }
 
@@ -149,25 +152,18 @@ namespace Studentska_služba
                 SearchBoxText = string.Empty;
         }
 
-        virtual protected void RemoveItem()
-        {
-            (GetDbSet() as DbSet<TModel>).Remove(SelectedItem);
-        }
 
-        virtual protected void AddItem()
-        {
-            (GetDbSet() as DbSet<TModel>).Add(SelectedItem);
-        }
+        protected abstract void AddItemAsync();
+        protected abstract void UpdateItem();
+        protected abstract void RemoveItemAsync();
 
-        virtual protected void ReloadItem()
-        {
-            context.Entry(SelectedItem).Reload();
-        }
+        // Ne znam koja je svrha ove funkcije
+        //virtual protected void ReloadItem()
+        //{
+        //    context.Entry(SelectedItem).Reload();
+        //}
 
-        virtual protected async Task<List<TModel>>  GetItems()
-        {
-            return await (GetDbSet() as DbSet<TModel>).ToListAsync();
-        }
+        protected abstract Task<IList<TModel>> GetItems();
 
         #endregion
 
@@ -193,7 +189,7 @@ namespace Studentska_služba
                 //Ovo nije dobro, mora da se porpravi
                 // Uopste ne radi asinhrono
                 // Treba da procitam kako to tacno da uradim
-                ItemList = new ObservableCollection<TModel>(await Task<IList>.Run(() => SearchForItem(text)));
+                ItemList = await Task<IList>.Run(() => SearchForItemAsync(text));
             }
         }
 
@@ -206,9 +202,9 @@ namespace Studentska_služba
         /// </summary>
   
 
-        abstract protected List<TModel> SearchForItem(string text);
+        abstract protected Task<ObservableCollection<TModel>> SearchForItemAsync(string text);
 
-        abstract protected object GetDbSet();
+        //abstract protected object GetDbSet();
 
         abstract protected bool NoEmptyFiels();
 

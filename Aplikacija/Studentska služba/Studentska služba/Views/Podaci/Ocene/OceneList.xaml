@@ -15,7 +15,7 @@
                                IsReadOnly="True"
                                CanUserSortColumns="True"
                                Sorting="DataGrid_Sorting"
-                               ItemsSource="{x:Bind vm.ItemList, Mode=TwoWay}"
+                               ItemsSource="{x:Bind vm.ItemList, Mode=OneWay}"
                                AutoGenerateColumns="False"
                                SelectedItem="{x:Bind vm.SelectedItem, Mode=TwoWay}">
             <controls:DataGrid.Columns>

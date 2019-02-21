@@ -259,8 +259,9 @@ namespace Studentska_služba.Views
                     }
                 }
             }
-            private void Update_vm_Studenti(global::StudentskaSluzba.Models.Student[] obj, int phase)
+            private void Update_vm_Studenti(global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Student> obj, int phase)
             {
+                this.bindingsTracking.UpdateChildListeners_vm_Studenti(obj);
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     // Views\PotvrdeUverenja\PotvrdeUverenjaView.xaml line 23
@@ -396,6 +397,7 @@ namespace Studentska_služba.Views
                 public void ReleaseAllListeners()
                 {
                     UpdateChildListeners_vm(null);
+                    UpdateChildListeners_vm_Studenti(null);
                 }
 
                 public void PropertyChanged_vm(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
@@ -489,6 +491,53 @@ namespace Studentska_služba.Views
                         {
                             cache_vm = obj;
                             ((global::System.ComponentModel.INotifyPropertyChanged)obj).PropertyChanged += PropertyChanged_vm;
+                        }
+                    }
+                }
+                public void PropertyChanged_vm_Studenti(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
+                {
+                    PotvrdeUverenjaView_obj1_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
+                    {
+                        string propName = e.PropertyName;
+                        global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Student> obj = sender as global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Student>;
+                        if (global::System.String.IsNullOrEmpty(propName))
+                        {
+                        }
+                        else
+                        {
+                            switch (propName)
+                            {
+                                default:
+                                    break;
+                            }
+                        }
+                    }
+                }
+                public void CollectionChanged_vm_Studenti(object sender, global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+                {
+                    PotvrdeUverenjaView_obj1_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
+                    {
+                        global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Student> obj = sender as global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Student>;
+                    }
+                }
+                private global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Student> cache_vm_Studenti = null;
+                public void UpdateChildListeners_vm_Studenti(global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Student> obj)
+                {
+                    if (obj != cache_vm_Studenti)
+                    {
+                        if (cache_vm_Studenti != null)
+                        {
+                            ((global::System.ComponentModel.INotifyPropertyChanged)cache_vm_Studenti).PropertyChanged -= PropertyChanged_vm_Studenti;
+                            ((global::System.Collections.Specialized.INotifyCollectionChanged)cache_vm_Studenti).CollectionChanged -= CollectionChanged_vm_Studenti;
+                            cache_vm_Studenti = null;
+                        }
+                        if (obj != null)
+                        {
+                            cache_vm_Studenti = obj;
+                            ((global::System.ComponentModel.INotifyPropertyChanged)obj).PropertyChanged += PropertyChanged_vm_Studenti;
+                            ((global::System.Collections.Specialized.INotifyCollectionChanged)obj).CollectionChanged += CollectionChanged_vm_Studenti;
                         }
                     }
                 }

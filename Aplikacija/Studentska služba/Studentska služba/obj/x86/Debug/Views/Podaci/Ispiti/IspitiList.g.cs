@@ -170,8 +170,9 @@ namespace Studentska_služba.Views.Podaci.Ispiti
                     }
                 }
             }
-            private void Update_vm_ItemList(global::System.Collections.Generic.List<global::StudentskaSluzba.Models.Ispit> obj, int phase)
+            private void Update_vm_ItemList(global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Ispit> obj, int phase)
             {
+                this.bindingsTracking.UpdateChildListeners_vm_ItemList(obj);
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
                     // Views\Podaci\Ispiti\IspitiList.xaml line 14
@@ -200,7 +201,7 @@ namespace Studentska_služba.Views.Podaci.Ispiti
                     {
                         if (this.dataRoot.vm != null)
                         {
-                            this.dataRoot.vm.ItemList = (global::System.Collections.Generic.List<global::StudentskaSluzba.Models.Ispit>)this.obj2.ItemsSource;
+                            this.dataRoot.vm.ItemList = (global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Ispit>)this.obj2.ItemsSource;
                         }
                     }
                 }
@@ -249,6 +250,7 @@ namespace Studentska_služba.Views.Podaci.Ispiti
                 {
                     UpdateChildListeners_(null);
                     UpdateChildListeners_vm(null);
+                    UpdateChildListeners_vm_ItemList(null);
                 }
 
                 public void DependencyPropertyChanged_vm(global::Windows.UI.Xaml.DependencyObject sender, global::Windows.UI.Xaml.DependencyProperty prop)
@@ -335,6 +337,53 @@ namespace Studentska_služba.Views.Podaci.Ispiti
                         {
                             cache_vm = obj;
                             ((global::System.ComponentModel.INotifyPropertyChanged)obj).PropertyChanged += PropertyChanged_vm;
+                        }
+                    }
+                }
+                public void PropertyChanged_vm_ItemList(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
+                {
+                    IspitiList_obj1_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
+                    {
+                        string propName = e.PropertyName;
+                        global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Ispit> obj = sender as global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Ispit>;
+                        if (global::System.String.IsNullOrEmpty(propName))
+                        {
+                        }
+                        else
+                        {
+                            switch (propName)
+                            {
+                                default:
+                                    break;
+                            }
+                        }
+                    }
+                }
+                public void CollectionChanged_vm_ItemList(object sender, global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+                {
+                    IspitiList_obj1_Bindings bindings = TryGetBindingObject();
+                    if (bindings != null)
+                    {
+                        global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Ispit> obj = sender as global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Ispit>;
+                    }
+                }
+                private global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Ispit> cache_vm_ItemList = null;
+                public void UpdateChildListeners_vm_ItemList(global::System.Collections.ObjectModel.ObservableCollection<global::StudentskaSluzba.Models.Ispit> obj)
+                {
+                    if (obj != cache_vm_ItemList)
+                    {
+                        if (cache_vm_ItemList != null)
+                        {
+                            ((global::System.ComponentModel.INotifyPropertyChanged)cache_vm_ItemList).PropertyChanged -= PropertyChanged_vm_ItemList;
+                            ((global::System.Collections.Specialized.INotifyCollectionChanged)cache_vm_ItemList).CollectionChanged -= CollectionChanged_vm_ItemList;
+                            cache_vm_ItemList = null;
+                        }
+                        if (obj != null)
+                        {
+                            cache_vm_ItemList = obj;
+                            ((global::System.ComponentModel.INotifyPropertyChanged)obj).PropertyChanged += PropertyChanged_vm_ItemList;
+                            ((global::System.Collections.Specialized.INotifyCollectionChanged)obj).CollectionChanged += CollectionChanged_vm_ItemList;
                         }
                     }
                 }

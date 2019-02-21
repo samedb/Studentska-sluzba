@@ -14,8 +14,6 @@
 
         <local1:DetailsModeToVisibilityConverter x:Key="DetailsButtonVisibilityConverter"/>
         <local1:DetailsModeToBoolean x:Key="DetailsModeToBooleanConverter"/>
-        <local1:TimeConverter x:Key="TimeConverter"/>
-        <local1:IDSmeraToNazivConverter x:Key="IDSmeraToNazivConverter"/>
         <local1:ObjectToVisibility x:Key="ObjectToVisibilityConverter"/>
 
     </Page.Resources>
@@ -25,48 +23,52 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
 
-        <podaci:CommandLine x:ConnectionId='3' HorizontalAlignment="Right"
-                        Grid.ColumnSpan="2"
+        <Grid HorizontalAlignment="Right">
+            <podaci:CommandLine x:ConnectionId='9' 
                                                                          
                                                                          
                                                                          
                                                                              
                                                                               />
 
+        </Grid>
 
-        <ScrollViewer Grid.Row="1">
-            <local:IspitiList x:ConnectionId='9'                              />
-        </ScrollViewer>
 
-        <StackPanel x:ConnectionId='4' Margin="10"
-                Background="WhiteSmoke"
-                Grid.Row="1"
-                Grid.Column="1"
-                                                                                                                          >
+        <Grid Grid.Row="1">
 
-            <local:IspitDetails x:ConnectionId='5'                                              
-                                                                                                                                                       />
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-            <StackPanel x:ConnectionId='6' Orientation="Horizontal"
-                                                                                                                                      
-                        HorizontalAlignment="Center">
+            <local:IspitiList x:ConnectionId='3'                              />
 
-                <Button x:ConnectionId='7' Content="Save" 
-                                                                              
-                        Margin="10"/>
 
-                <Button x:ConnectionId='8' Content="Cancel" 
-                                                                        
-                        Margin="10"/>
+            <StackPanel x:ConnectionId='4' Margin="10"
+                    Background="WhiteSmoke"
+                    Grid.Column="1"
+                                                                                                                              >
+
+                <local:IspitDetails x:ConnectionId='5'                                              
+                                                                                                                                                           />
+
+                <StackPanel x:ConnectionId='6' Orientation="Horizontal"
+                                                                                                                                          
+                            HorizontalAlignment="Center">
+
+                    <Button x:ConnectionId='7' Content="Save" 
+                                                                                  
+                            Margin="10"/>
+
+                    <Button x:ConnectionId='8' Content="Cancel" 
+                                                                            
+                            Margin="10"/>
+
+                </StackPanel>
 
             </StackPanel>
-
-        </StackPanel>
+        </Grid>
 
     </Grid>
 </Page>

@@ -1,7 +1,9 @@
 ﻿using Microsoft.Toolkit.Uwp.UI.Controls;
 using Studentska_služba.ViewModels.Podaci.Ocene;
+using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -21,6 +23,8 @@ namespace Studentska_služba.Views.Podaci.Ocene
 {
     public sealed partial class OceneList : UserControl
     {
+
+
         public OceneViewModel vm
         {
             get { return (OceneViewModel)GetValue(vmProperty); }
@@ -29,7 +33,9 @@ namespace Studentska_služba.Views.Podaci.Ocene
 
         // Using a DependencyProperty as the backing store for vm.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty vmProperty =
-            DependencyProperty.Register("vm", typeof(StudentiViewModel), typeof(StudentList), new PropertyMetadata(0));
+            DependencyProperty.Register("vm", typeof(OceneViewModel), typeof(OceneList), new PropertyMetadata(0));
+
+
 
         public OceneList()
         {

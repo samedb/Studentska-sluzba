@@ -2,6 +2,7 @@
 using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,24 +11,40 @@ namespace Studentska_služba.ViewModels.Podaci.Profesori
 {
     public class ProfesoriViewModel : GenericCRUDViewModel<Profesor>
     {
-        protected override object GetDbSet()
+
+        protected async override Task<IList<Profesor>> GetItems()
         {
-            return context.Profesor;
+            return await dataProvider.GetProfesorsAsync();
         }
-        
+
+        protected override async void AddItemAsync()
+        {
+            await dataProvider.AddProfesorAsync(SelectedItem);
+        }
+
+        protected override void UpdateItem()
+        {
+            dataProvider.UpdateProfesorAsync(SelectedItem);
+        }
+
+        protected override void RemoveItemAsync()
+        {
+            dataProvider.DeleteProfesorAsync(SelectedItem);
+        }
+
         protected override bool NoEmptyFiels()
         {
             return true;
         }
-
-        protected override List<Profesor> SearchForItem(string text)
+        protected override async Task<ObservableCollection<Profesor>> SearchForItemAsync(string text)
         {
-            return context.Profesor
+            var list = (await GetItems() as List<Profesor>)
                 .Where(t =>
                     t.Ime.Contains(text) ||
                     t.Prezime.Contains(text) ||
                     t.Pol.Contains(text))
                 .ToList();
+            return new ObservableCollection<Profesor>(list);
         }
     }
 }

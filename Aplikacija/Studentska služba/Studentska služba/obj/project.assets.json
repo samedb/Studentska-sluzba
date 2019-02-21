@@ -175,11 +175,11 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/2.2.1": {
+      "Microsoft.EntityFrameworkCore/2.2.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.1",
-          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.1",
+          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.2",
+          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.2",
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
@@ -196,7 +196,7 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Abstractions/2.2.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -205,14 +205,14 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Analyzers/2.2.2": {
         "type": "package"
       },
-      "Microsoft.EntityFrameworkCore.Proxies/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Proxies/2.2.2": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.2.1",
-          "Microsoft.EntityFrameworkCore": "2.2.1"
+          "Microsoft.EntityFrameworkCore": "2.2.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Proxies.dll": {}
@@ -394,15 +394,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
-        }
-      },
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.1": {
@@ -618,7 +609,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
+      "Microsoft.Toolkit/5.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
@@ -627,10 +618,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
         }
       },
-      "Microsoft.Toolkit.Parsers/5.0.0": {
+      "Microsoft.Toolkit.Parsers/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit": "5.0.0"
+          "Microsoft.Toolkit": "5.1.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
@@ -639,11 +630,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
+      "Microsoft.Toolkit.Uwp/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
+          "Microsoft.Toolkit": "5.1.0",
           "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
@@ -653,10 +643,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0",
+          "Microsoft.Toolkit.Uwp": "5.1.0",
           "Win2D.uwp": "1.21.0"
         },
         "compile": {
@@ -666,10 +656,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.UI": "5.0.0",
+          "Microsoft.Toolkit.Uwp.UI": "5.1.0",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "System.ValueTuple": "4.4.0",
           "Win2D.uwp": "1.21.0"
@@ -681,12 +671,12 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/5.1.0": {
         "type": "package",
         "dependencies": {
           "ColorCode.UWP": "2.0.6",
-          "Microsoft.Toolkit.Parsers": "5.0.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "5.0.0",
+          "Microsoft.Toolkit.Parsers": "5.1.0",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "5.1.0",
           "Robmikh.CompositionSurfaceFactory": "0.7.3",
           "System.ValueTuple": "4.4.0"
         },
@@ -697,7 +687,7 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.1.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll": {}
@@ -1465,7 +1455,7 @@
           "lib/netcore50/System.Linq.dll": {}
         }
       },
-      "System.Linq.Dynamic.Core/1.0.9.2": {
+      "System.Linq.Dynamic.Core/1.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.10",
@@ -2581,11 +2571,11 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/2.2.1": {
+      "Microsoft.EntityFrameworkCore/2.2.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.1",
-          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.1",
+          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.2",
+          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.2",
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
@@ -2602,7 +2592,7 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Abstractions/2.2.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -2611,14 +2601,14 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Analyzers/2.2.2": {
         "type": "package"
       },
-      "Microsoft.EntityFrameworkCore.Proxies/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Proxies/2.2.2": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.2.1",
-          "Microsoft.EntityFrameworkCore": "2.2.1"
+          "Microsoft.EntityFrameworkCore": "2.2.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Proxies.dll": {}
@@ -2800,15 +2790,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
-        }
-      },
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.1": {
@@ -3025,7 +3006,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
+      "Microsoft.Toolkit/5.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
@@ -3034,10 +3015,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
         }
       },
-      "Microsoft.Toolkit.Parsers/5.0.0": {
+      "Microsoft.Toolkit.Parsers/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit": "5.0.0"
+          "Microsoft.Toolkit": "5.1.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
@@ -3046,11 +3027,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
+      "Microsoft.Toolkit.Uwp/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
+          "Microsoft.Toolkit": "5.1.0",
           "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
@@ -3060,10 +3040,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0",
+          "Microsoft.Toolkit.Uwp": "5.1.0",
           "Win2D.uwp": "1.21.0"
         },
         "compile": {
@@ -3073,10 +3053,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.UI": "5.0.0",
+          "Microsoft.Toolkit.Uwp.UI": "5.1.0",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "System.ValueTuple": "4.4.0",
           "Win2D.uwp": "1.21.0"
@@ -3088,12 +3068,12 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/5.1.0": {
         "type": "package",
         "dependencies": {
           "ColorCode.UWP": "2.0.6",
-          "Microsoft.Toolkit.Parsers": "5.0.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "5.0.0",
+          "Microsoft.Toolkit.Parsers": "5.1.0",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "5.1.0",
           "Robmikh.CompositionSurfaceFactory": "0.7.3",
           "System.ValueTuple": "4.4.0"
         },
@@ -3104,7 +3084,7 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.1.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll": {}
@@ -4158,7 +4138,7 @@
           "lib/netcore50/System.Linq.dll": {}
         }
       },
-      "System.Linq.Dynamic.Core/1.0.9.2": {
+      "System.Linq.Dynamic.Core/1.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.10",
@@ -5178,11 +5158,11 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/2.2.1": {
+      "Microsoft.EntityFrameworkCore/2.2.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.1",
-          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.1",
+          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.2",
+          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.2",
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
@@ -5199,7 +5179,7 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Abstractions/2.2.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -5208,14 +5188,14 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Analyzers/2.2.2": {
         "type": "package"
       },
-      "Microsoft.EntityFrameworkCore.Proxies/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Proxies/2.2.2": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.2.1",
-          "Microsoft.EntityFrameworkCore": "2.2.1"
+          "Microsoft.EntityFrameworkCore": "2.2.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Proxies.dll": {}
@@ -5397,15 +5377,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
-        }
-      },
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.1": {
@@ -5622,7 +5593,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
+      "Microsoft.Toolkit/5.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
@@ -5631,10 +5602,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
         }
       },
-      "Microsoft.Toolkit.Parsers/5.0.0": {
+      "Microsoft.Toolkit.Parsers/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit": "5.0.0"
+          "Microsoft.Toolkit": "5.1.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
@@ -5643,11 +5614,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
+      "Microsoft.Toolkit.Uwp/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
+          "Microsoft.Toolkit": "5.1.0",
           "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
@@ -5657,10 +5627,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0",
+          "Microsoft.Toolkit.Uwp": "5.1.0",
           "Win2D.uwp": "1.21.0"
         },
         "compile": {
@@ -5670,10 +5640,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.UI": "5.0.0",
+          "Microsoft.Toolkit.Uwp.UI": "5.1.0",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "System.ValueTuple": "4.4.0",
           "Win2D.uwp": "1.21.0"
@@ -5685,12 +5655,12 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/5.1.0": {
         "type": "package",
         "dependencies": {
           "ColorCode.UWP": "2.0.6",
-          "Microsoft.Toolkit.Parsers": "5.0.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "5.0.0",
+          "Microsoft.Toolkit.Parsers": "5.1.0",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "5.1.0",
           "Robmikh.CompositionSurfaceFactory": "0.7.3",
           "System.ValueTuple": "4.4.0"
         },
@@ -5701,7 +5671,7 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.1.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll": {}
@@ -6798,7 +6768,7 @@
           "lib/netcore50/System.Linq.dll": {}
         }
       },
-      "System.Linq.Dynamic.Core/1.0.9.2": {
+      "System.Linq.Dynamic.Core/1.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.10",
@@ -7818,11 +7788,11 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/2.2.1": {
+      "Microsoft.EntityFrameworkCore/2.2.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.1",
-          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.1",
+          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.2",
+          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.2",
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
@@ -7839,7 +7809,7 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Abstractions/2.2.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -7848,14 +7818,14 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Analyzers/2.2.2": {
         "type": "package"
       },
-      "Microsoft.EntityFrameworkCore.Proxies/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Proxies/2.2.2": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.2.1",
-          "Microsoft.EntityFrameworkCore": "2.2.1"
+          "Microsoft.EntityFrameworkCore": "2.2.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Proxies.dll": {}
@@ -8037,15 +8007,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
-        }
-      },
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.1": {
@@ -8262,7 +8223,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
+      "Microsoft.Toolkit/5.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
@@ -8271,10 +8232,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
         }
       },
-      "Microsoft.Toolkit.Parsers/5.0.0": {
+      "Microsoft.Toolkit.Parsers/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit": "5.0.0"
+          "Microsoft.Toolkit": "5.1.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
@@ -8283,11 +8244,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
+      "Microsoft.Toolkit.Uwp/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
+          "Microsoft.Toolkit": "5.1.0",
           "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
@@ -8297,10 +8257,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0",
+          "Microsoft.Toolkit.Uwp": "5.1.0",
           "Win2D.uwp": "1.21.0"
         },
         "compile": {
@@ -8310,10 +8270,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.UI": "5.0.0",
+          "Microsoft.Toolkit.Uwp.UI": "5.1.0",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "System.ValueTuple": "4.4.0",
           "Win2D.uwp": "1.21.0"
@@ -8325,12 +8285,12 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/5.1.0": {
         "type": "package",
         "dependencies": {
           "ColorCode.UWP": "2.0.6",
-          "Microsoft.Toolkit.Parsers": "5.0.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "5.0.0",
+          "Microsoft.Toolkit.Parsers": "5.1.0",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "5.1.0",
           "Robmikh.CompositionSurfaceFactory": "0.7.3",
           "System.ValueTuple": "4.4.0"
         },
@@ -8341,7 +8301,7 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.1.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll": {}
@@ -9433,7 +9393,7 @@
           "lib/netcore50/System.Linq.dll": {}
         }
       },
-      "System.Linq.Dynamic.Core/1.0.9.2": {
+      "System.Linq.Dynamic.Core/1.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.10",
@@ -10450,11 +10410,11 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/2.2.1": {
+      "Microsoft.EntityFrameworkCore/2.2.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.1",
-          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.1",
+          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.2",
+          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.2",
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
@@ -10471,7 +10431,7 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Abstractions/2.2.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -10480,14 +10440,14 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Analyzers/2.2.2": {
         "type": "package"
       },
-      "Microsoft.EntityFrameworkCore.Proxies/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Proxies/2.2.2": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.2.1",
-          "Microsoft.EntityFrameworkCore": "2.2.1"
+          "Microsoft.EntityFrameworkCore": "2.2.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Proxies.dll": {}
@@ -10669,15 +10629,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
-        }
-      },
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.1": {
@@ -10894,7 +10845,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
+      "Microsoft.Toolkit/5.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
@@ -10903,10 +10854,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
         }
       },
-      "Microsoft.Toolkit.Parsers/5.0.0": {
+      "Microsoft.Toolkit.Parsers/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit": "5.0.0"
+          "Microsoft.Toolkit": "5.1.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
@@ -10915,11 +10866,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
+      "Microsoft.Toolkit.Uwp/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
+          "Microsoft.Toolkit": "5.1.0",
           "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
@@ -10929,10 +10879,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0",
+          "Microsoft.Toolkit.Uwp": "5.1.0",
           "Win2D.uwp": "1.21.0"
         },
         "compile": {
@@ -10942,10 +10892,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.UI": "5.0.0",
+          "Microsoft.Toolkit.Uwp.UI": "5.1.0",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "System.ValueTuple": "4.4.0",
           "Win2D.uwp": "1.21.0"
@@ -10957,12 +10907,12 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/5.1.0": {
         "type": "package",
         "dependencies": {
           "ColorCode.UWP": "2.0.6",
-          "Microsoft.Toolkit.Parsers": "5.0.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "5.0.0",
+          "Microsoft.Toolkit.Parsers": "5.1.0",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "5.1.0",
           "Robmikh.CompositionSurfaceFactory": "0.7.3",
           "System.ValueTuple": "4.4.0"
         },
@@ -10973,7 +10923,7 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.1.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll": {}
@@ -12027,7 +11977,7 @@
           "lib/netcore50/System.Linq.dll": {}
         }
       },
-      "System.Linq.Dynamic.Core/1.0.9.2": {
+      "System.Linq.Dynamic.Core/1.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.10",
@@ -13047,11 +12997,11 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/2.2.1": {
+      "Microsoft.EntityFrameworkCore/2.2.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.1",
-          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.1",
+          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.2",
+          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.2",
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
@@ -13068,7 +13018,7 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Abstractions/2.2.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -13077,14 +13027,14 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Analyzers/2.2.2": {
         "type": "package"
       },
-      "Microsoft.EntityFrameworkCore.Proxies/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Proxies/2.2.2": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.2.1",
-          "Microsoft.EntityFrameworkCore": "2.2.1"
+          "Microsoft.EntityFrameworkCore": "2.2.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Proxies.dll": {}
@@ -13266,15 +13216,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
-        }
-      },
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.1": {
@@ -13491,7 +13432,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
+      "Microsoft.Toolkit/5.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
@@ -13500,10 +13441,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
         }
       },
-      "Microsoft.Toolkit.Parsers/5.0.0": {
+      "Microsoft.Toolkit.Parsers/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit": "5.0.0"
+          "Microsoft.Toolkit": "5.1.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
@@ -13512,11 +13453,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
+      "Microsoft.Toolkit.Uwp/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
+          "Microsoft.Toolkit": "5.1.0",
           "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
@@ -13526,10 +13466,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0",
+          "Microsoft.Toolkit.Uwp": "5.1.0",
           "Win2D.uwp": "1.21.0"
         },
         "compile": {
@@ -13539,10 +13479,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.UI": "5.0.0",
+          "Microsoft.Toolkit.Uwp.UI": "5.1.0",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "System.ValueTuple": "4.4.0",
           "Win2D.uwp": "1.21.0"
@@ -13554,12 +13494,12 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/5.1.0": {
         "type": "package",
         "dependencies": {
           "ColorCode.UWP": "2.0.6",
-          "Microsoft.Toolkit.Parsers": "5.0.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "5.0.0",
+          "Microsoft.Toolkit.Parsers": "5.1.0",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "5.1.0",
           "Robmikh.CompositionSurfaceFactory": "0.7.3",
           "System.ValueTuple": "4.4.0"
         },
@@ -13570,7 +13510,7 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.1.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll": {}
@@ -14667,7 +14607,7 @@
           "lib/netcore50/System.Linq.dll": {}
         }
       },
-      "System.Linq.Dynamic.Core/1.0.9.2": {
+      "System.Linq.Dynamic.Core/1.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.10",
@@ -15687,11 +15627,11 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/2.2.1": {
+      "Microsoft.EntityFrameworkCore/2.2.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.1",
-          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.1",
+          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.2",
+          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.2",
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
@@ -15708,7 +15648,7 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Abstractions/2.2.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -15717,14 +15657,14 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Analyzers/2.2.2": {
         "type": "package"
       },
-      "Microsoft.EntityFrameworkCore.Proxies/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Proxies/2.2.2": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.2.1",
-          "Microsoft.EntityFrameworkCore": "2.2.1"
+          "Microsoft.EntityFrameworkCore": "2.2.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Proxies.dll": {}
@@ -15906,15 +15846,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
-        }
-      },
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.1": {
@@ -16131,7 +16062,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
+      "Microsoft.Toolkit/5.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
@@ -16140,10 +16071,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
         }
       },
-      "Microsoft.Toolkit.Parsers/5.0.0": {
+      "Microsoft.Toolkit.Parsers/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit": "5.0.0"
+          "Microsoft.Toolkit": "5.1.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
@@ -16152,11 +16083,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
+      "Microsoft.Toolkit.Uwp/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
+          "Microsoft.Toolkit": "5.1.0",
           "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
@@ -16166,10 +16096,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0",
+          "Microsoft.Toolkit.Uwp": "5.1.0",
           "Win2D.uwp": "1.21.0"
         },
         "compile": {
@@ -16179,10 +16109,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.UI": "5.0.0",
+          "Microsoft.Toolkit.Uwp.UI": "5.1.0",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "System.ValueTuple": "4.4.0",
           "Win2D.uwp": "1.21.0"
@@ -16194,12 +16124,12 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/5.1.0": {
         "type": "package",
         "dependencies": {
           "ColorCode.UWP": "2.0.6",
-          "Microsoft.Toolkit.Parsers": "5.0.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "5.0.0",
+          "Microsoft.Toolkit.Parsers": "5.1.0",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "5.1.0",
           "Robmikh.CompositionSurfaceFactory": "0.7.3",
           "System.ValueTuple": "4.4.0"
         },
@@ -16210,7 +16140,7 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.1.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll": {}
@@ -17264,7 +17194,7 @@
           "lib/netcore50/System.Linq.dll": {}
         }
       },
-      "System.Linq.Dynamic.Core/1.0.9.2": {
+      "System.Linq.Dynamic.Core/1.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.10",
@@ -18284,11 +18214,11 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/2.2.1": {
+      "Microsoft.EntityFrameworkCore/2.2.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.1",
-          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.1",
+          "Microsoft.EntityFrameworkCore.Abstractions": "2.2.2",
+          "Microsoft.EntityFrameworkCore.Analyzers": "2.2.2",
           "Microsoft.Extensions.Caching.Memory": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "Microsoft.Extensions.Logging": "2.2.0",
@@ -18305,7 +18235,7 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Abstractions/2.2.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -18314,14 +18244,14 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Analyzers/2.2.2": {
         "type": "package"
       },
-      "Microsoft.EntityFrameworkCore.Proxies/2.2.1": {
+      "Microsoft.EntityFrameworkCore.Proxies/2.2.2": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "4.2.1",
-          "Microsoft.EntityFrameworkCore": "2.2.1"
+          "Microsoft.EntityFrameworkCore": "2.2.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Proxies.dll": {}
@@ -18503,15 +18433,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
-        }
-      },
-      "Microsoft.Identity.Client/1.1.2-preview0008": {
-        "type": "package",
-        "compile": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.Identity.Client.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.1": {
@@ -18728,7 +18649,7 @@
           "build/Microsoft.NetCore.UniversalWindowsPlatform.targets": {}
         }
       },
-      "Microsoft.Toolkit/5.0.0": {
+      "Microsoft.Toolkit/5.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
@@ -18737,10 +18658,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.dll": {}
         }
       },
-      "Microsoft.Toolkit.Parsers/5.0.0": {
+      "Microsoft.Toolkit.Parsers/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit": "5.0.0"
+          "Microsoft.Toolkit": "5.1.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
@@ -18749,11 +18670,10 @@
           "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp/5.0.0": {
+      "Microsoft.Toolkit.Uwp/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Identity.Client": "1.1.2-preview0008",
-          "Microsoft.Toolkit": "5.0.0",
+          "Microsoft.Toolkit": "5.1.0",
           "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
@@ -18763,10 +18683,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp": "5.0.0",
+          "Microsoft.Toolkit.Uwp": "5.1.0",
           "Win2D.uwp": "1.21.0"
         },
         "compile": {
@@ -18776,10 +18696,10 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Animations/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Animations/5.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Toolkit.Uwp.UI": "5.0.0",
+          "Microsoft.Toolkit.Uwp.UI": "5.1.0",
           "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
           "System.ValueTuple": "4.4.0",
           "Win2D.uwp": "1.21.0"
@@ -18791,12 +18711,12 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls/5.1.0": {
         "type": "package",
         "dependencies": {
           "ColorCode.UWP": "2.0.6",
-          "Microsoft.Toolkit.Parsers": "5.0.0",
-          "Microsoft.Toolkit.Uwp.UI.Animations": "5.0.0",
+          "Microsoft.Toolkit.Parsers": "5.1.0",
+          "Microsoft.Toolkit.Uwp.UI.Animations": "5.1.0",
           "Robmikh.CompositionSurfaceFactory": "0.7.3",
           "System.ValueTuple": "4.4.0"
         },
@@ -18807,7 +18727,7 @@
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.dll": {}
         }
       },
-      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.0.0": {
+      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.1.0": {
         "type": "package",
         "compile": {
           "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll": {}
@@ -19904,7 +19824,7 @@
           "lib/netcore50/System.Linq.dll": {}
         }
       },
-      "System.Linq.Dynamic.Core/1.0.9.2": {
+      "System.Linq.Dynamic.Core/1.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.10",
@@ -20980,54 +20900,54 @@
         "microsoft.dotnet.platformabstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore/2.2.1": {
-      "sha512": "NPLUN0CjvxirJYcsXdmxQKUKxKGlRikTYk3DYJZN2EZmfvtqgyphwe2wDM6rii8DAIJG/Yb5NeMapkT+eHGrLA==",
+    "Microsoft.EntityFrameworkCore/2.2.2": {
+      "sha512": "WBQhms1wB9V43TRXB/V8qUw8j8dEI2Ew5LZvqkBYct6khD9QpIuVpzUtUwJATOFC8WKaGgowSA0E0L7pNoLQfw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/2.2.1",
+      "path": "microsoft.entityframeworkcore/2.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.2.2.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.2.2.2.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/2.2.1": {
-      "sha512": "ps+DT7pm2v/hp+fL1IFFOO/IcklhvRpWJhEfnVG5SOKHQkCAMmm6bOKiBPMvf34AyjJE57REUFsyqJxl/j7g+w==",
+    "Microsoft.EntityFrameworkCore.Abstractions/2.2.2": {
+      "sha512": "qTR9OSjKEoxxoZ/G/XbSPZsdxueiWUHgWU+XrOfQAm4+dcY0XEenR4BXT5gQeVGzPrLsQb3loQhgjmKKLdI5LA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/2.2.1",
+      "path": "microsoft.entityframeworkcore.abstractions/2.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.2.2.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.2.2.2.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/2.2.1": {
-      "sha512": "4gmeUeD1WFCXJLelSTRmS0O0ozYSPzUsectv6lLfhiCtS7AIIk1MBsRZzSrHiVzOv7b+ksLn76mmM0rG1f1kFg==",
+    "Microsoft.EntityFrameworkCore.Analyzers/2.2.2": {
+      "sha512": "t+9kW6MwDDrGPPx15c2AIE2f6DM9nbGcHThagg9rcUZz6shmC8LS1Qhd5TSocKHmJafa+hHhBfDNGPyDDeNfHQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/2.2.1",
+      "path": "microsoft.entityframeworkcore.analyzers/2.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
-        "microsoft.entityframeworkcore.analyzers.2.2.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.2.2.2.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Proxies/2.2.1": {
-      "sha512": "BcNt1uYPf8awEKLlHHKpIhKmwbSVjLOSreFGWV4YgBfh3xmiZ5iOJR5NNqrfB5CJqdrLksOhJCh9ivsTD14mbg==",
+    "Microsoft.EntityFrameworkCore.Proxies/2.2.2": {
+      "sha512": "IXP/2bSWv9IG70JS9GB1STKE+pR16xwsYJ/mP89Cl9uKrtPQrouVDlp2U5hDu1cxe+MbvdrVPULLrG8AaIjnyg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.proxies/2.2.1",
+      "path": "microsoft.entityframeworkcore.proxies/2.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Proxies.dll",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Proxies.xml",
-        "microsoft.entityframeworkcore.proxies.2.2.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.proxies.2.2.2.nupkg.sha512",
         "microsoft.entityframeworkcore.proxies.nuspec"
       ]
     },
@@ -21216,26 +21136,6 @@
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
         "microsoft.extensions.primitives.2.2.0.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec"
-      ]
-    },
-    "Microsoft.Identity.Client/1.1.2-preview0008": {
-      "sha512": "GSWnZr7XekI8scRVsBd5G86qbl1IFlS99x35TP1ItrxXR1kuYxbYqnO9DNO3/omu2XPi0JOIJ5uBXzt4EgD0+A==",
-      "type": "package",
-      "path": "microsoft.identity.client/1.1.2-preview0008",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Microsoft.Identity.Client.dll",
-        "Microsoft.Identity.Client.pri",
-        "Microsoft.Identity.Client.xml",
-        "lib/monoandroid7/Microsoft.Identity.Client.dll",
-        "lib/net45/Microsoft.Identity.Client.dll",
-        "lib/netstandard1.1/Microsoft.Identity.Client.dll",
-        "lib/netstandard1.3/Microsoft.Identity.Client.dll",
-        "lib/win81/Microsoft.Identity.Client.dll",
-        "lib/xamarin.ios10/Microsoft.Identity.Client.dll",
-        "microsoft.identity.client.1.1.2-preview0008.nupkg.sha512",
-        "microsoft.identity.client.nuspec"
       ]
     },
     "Microsoft.Net.Native.Compiler/2.2.1": {
@@ -21624,38 +21524,38 @@
         "runtime.json"
       ]
     },
-    "Microsoft.Toolkit/5.0.0": {
-      "sha512": "43FYYR8HT2WoPi2svmDoiwJBOpJ5yd5x6la3ddn51t2G2XNZDVUcM0m2aDZQp+swPt68MU5ud6tgR8OymUx+4Q==",
+    "Microsoft.Toolkit/5.1.0": {
+      "sha512": "K4qw3x+fkOM8xMIjBDr4/zptOZqRx28+tU6KYxbfR1rJBek/eh3JTKNvU9fHyAeNu5s7mStoM+db2UatLSJu7A==",
       "type": "package",
-      "path": "microsoft.toolkit/5.0.0",
+      "path": "microsoft.toolkit/5.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Toolkit.dll",
         "lib/netstandard2.0/Microsoft.Toolkit.pdb",
         "lib/netstandard2.0/Microsoft.Toolkit.xml",
-        "microsoft.toolkit.5.0.0.nupkg.sha512",
+        "microsoft.toolkit.5.1.0.nupkg.sha512",
         "microsoft.toolkit.nuspec"
       ]
     },
-    "Microsoft.Toolkit.Parsers/5.0.0": {
-      "sha512": "PHmRO6AqdNdMUK/jGWAEgzjYlEr/hyt2leadqJWWiDL3cs3SgOpFj2DO4srfK7OwOuR6282OAJP5MRVi2D1zlg==",
+    "Microsoft.Toolkit.Parsers/5.1.0": {
+      "sha512": "l+Y6A8S998ICRn5NIPzebyEt88MYRN/vWXIesZfcFBb8yUK6TmbfZz8lsO92bbzJwFuEFHNE3NSkRb53j4co3w==",
       "type": "package",
-      "path": "microsoft.toolkit.parsers/5.0.0",
+      "path": "microsoft.toolkit.parsers/5.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Toolkit.Parsers.dll",
         "lib/netstandard2.0/Microsoft.Toolkit.Parsers.pdb",
         "lib/netstandard2.0/Microsoft.Toolkit.Parsers.xml",
-        "microsoft.toolkit.parsers.5.0.0.nupkg.sha512",
+        "microsoft.toolkit.parsers.5.1.0.nupkg.sha512",
         "microsoft.toolkit.parsers.nuspec"
       ]
     },
-    "Microsoft.Toolkit.Uwp/5.0.0": {
-      "sha512": "l7djLNhW2G1KifqtFUuxRBN1+zBgP0FUuoNIT3PBBzarM/KU+bqLm0cJeNmH/hcH53sSWcbHATuKBoqS59qMeQ==",
+    "Microsoft.Toolkit.Uwp/5.1.0": {
+      "sha512": "p0gYTfC9t4bH/hm0MbO3foKCd7TPoZvYXXd9l0XQGXLCyUwDPKV/lXxJFLWMWehyJoGwBcDEM3ZS7QIiDZqTdQ==",
       "type": "package",
-      "path": "microsoft.toolkit.uwp/5.0.0",
+      "path": "microsoft.toolkit.uwp/5.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -21663,14 +21563,14 @@
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.pdb",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.pri",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.xml",
-        "microsoft.toolkit.uwp.5.0.0.nupkg.sha512",
+        "microsoft.toolkit.uwp.5.1.0.nupkg.sha512",
         "microsoft.toolkit.uwp.nuspec"
       ]
     },
-    "Microsoft.Toolkit.Uwp.UI/5.0.0": {
-      "sha512": "t96HlrRMur5ymKPRvX15INA1FzXT5XNpFabYKdS6XGhj4/v3KVIG1fWjFQ1MdBQwKt3BMd6bAgdXXXozuYIx+w==",
+    "Microsoft.Toolkit.Uwp.UI/5.1.0": {
+      "sha512": "ucYyCxT8NBSXa37ayO98nFAs63t2jQQXAoORQCy8s+uGUZ9vbpcoRXcyQ9hR+3f1xHmXEDDU2woWb79D3W/FRA==",
       "type": "package",
-      "path": "microsoft.toolkit.uwp.ui/5.0.0",
+      "path": "microsoft.toolkit.uwp.ui/5.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -21678,14 +21578,14 @@
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.pdb",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.pri",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.xml",
-        "microsoft.toolkit.uwp.ui.5.0.0.nupkg.sha512",
+        "microsoft.toolkit.uwp.ui.5.1.0.nupkg.sha512",
         "microsoft.toolkit.uwp.ui.nuspec"
       ]
     },
-    "Microsoft.Toolkit.Uwp.UI.Animations/5.0.0": {
-      "sha512": "aVTqEH3b6gxWHE2e6Or7xE9w36XQDTJbw9vleSI7ioqA38BrJWOdOUh4eJBzWBurZmyfOiwK0jZ1Ujlu4SRegQ==",
+    "Microsoft.Toolkit.Uwp.UI.Animations/5.1.0": {
+      "sha512": "4CokIq7f20v+vd1ZLFDHlnXQ5W6OExXC7lpnZkay0Qty/DH4seqEopF82G41df9oeGTVRXGQq2PX2bKbsP0Q/A==",
       "type": "package",
-      "path": "microsoft.toolkit.uwp.ui.animations/5.0.0",
+      "path": "microsoft.toolkit.uwp.ui.animations/5.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -21693,14 +21593,14 @@
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.pdb",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.pri",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Animations.xml",
-        "microsoft.toolkit.uwp.ui.animations.5.0.0.nupkg.sha512",
+        "microsoft.toolkit.uwp.ui.animations.5.1.0.nupkg.sha512",
         "microsoft.toolkit.uwp.ui.animations.nuspec"
       ]
     },
-    "Microsoft.Toolkit.Uwp.UI.Controls/5.0.0": {
-      "sha512": "HSXU3ca0aZ0B0QDpkBuOI15n1O2BbKOpSFWVwtppvfbNOSYe4vA0d0Qn/S6x9MYPIUH3AbLHAlVbeXvSjIZpPw==",
+    "Microsoft.Toolkit.Uwp.UI.Controls/5.1.0": {
+      "sha512": "WcIKkzCQMwIVIN0Zp7R0NwbU7+6HPWjftowcOmMvNuTweS9vqfKERovU9vNXIT4CT1CNfu2nEyJRHIig/sxQfQ==",
       "type": "package",
-      "path": "microsoft.toolkit.uwp.ui.controls/5.0.0",
+      "path": "microsoft.toolkit.uwp.ui.controls/5.1.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -21719,6 +21619,8 @@
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedContentControl/HeaderedContentControl.xaml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedItemsControl/HeaderedItemsControl.xaml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock/HeaderedTextBlock.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropper.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropperThumb.xaml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx/ImageEx.xaml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/InAppNotification.xaml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/MSEdgeNotificationStyle.xaml",
@@ -21734,6 +21636,7 @@
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/RadialGauge/RadialGauge.xaml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/RadialProgressBar/RadialProgressBar.xaml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector/RangeSelector.xaml",
+        "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/RemoteDevicePicker/RemoteDevicePicker.xaml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile/RotatorTile.xaml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/ScrollHeader/ScrollHeader.xaml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TabView/TabView.xaml",
@@ -21743,15 +21646,15 @@
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/ToolbarItems/ToolbarSeparator.xaml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/Themes/Generic.xaml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls/TileControl/TileControl.xaml",
-        "microsoft.toolkit.uwp.ui.controls.5.0.0.nupkg.sha512",
+        "microsoft.toolkit.uwp.ui.controls.5.1.0.nupkg.sha512",
         "microsoft.toolkit.uwp.ui.controls.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.0.0": {
-      "sha512": "EcVQlQ8ffy/LQIRrIuxVo4+HYpK61ITJAEZrA0F8+3qTfu9FQwNpiY7Ru0ZyGdOg02IQ+vszDB95XnSwSejcjA==",
+    "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/5.1.0": {
+      "sha512": "OJhJ6GhflU5RdjvqTagdvd+zKwaQswQRXjLT12KwLDlrxQqdSa7lLchqVPYZpgHlLZLaGKJpzcxbdkgVYPN8FQ==",
       "type": "package",
-      "path": "microsoft.toolkit.uwp.ui.controls.datagrid/5.0.0",
+      "path": "microsoft.toolkit.uwp.ui.controls.datagrid/5.1.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -21764,7 +21667,7 @@
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/DataGrid/DataGrid.xaml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml",
         "lib/uap10.0.16299/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/Themes/Generic.xaml",
-        "microsoft.toolkit.uwp.ui.controls.datagrid.5.0.0.nupkg.sha512",
+        "microsoft.toolkit.uwp.ui.controls.datagrid.5.1.0.nupkg.sha512",
         "microsoft.toolkit.uwp.ui.controls.datagrid.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
@@ -28410,10 +28313,10 @@
         "system.linq.nuspec"
       ]
     },
-    "System.Linq.Dynamic.Core/1.0.9.2": {
-      "sha512": "HBNdfZYBF54qfHPdHVe3MgEOtKzhdJkQ0++R3OXg0b6HBJZkPkTt1a5Xg3V3qSlxXEa0moXJi/GIHiEYpUSIzg==",
+    "System.Linq.Dynamic.Core/1.0.10": {
+      "sha512": "JZSJMljN0X4fy8QcnK8z01PIYJyzzXhbmleTVIrva7DGc6dYAhSV6ADuXlzLvnoD+P31mmY1MMr7OVJsHRuB3A==",
       "type": "package",
-      "path": "system.linq.dynamic.core/1.0.9.2",
+      "path": "system.linq.dynamic.core/1.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -28439,7 +28342,7 @@
         "lib/uap10.0/System.Linq.Dynamic.Core.pdb",
         "lib/uap10.0/System.Linq.Dynamic.Core.pri",
         "lib/uap10.0/System.Linq.Dynamic.Core.xml",
-        "system.linq.dynamic.core.1.0.9.2.nupkg.sha512",
+        "system.linq.dynamic.core.1.0.10.nupkg.sha512",
         "system.linq.dynamic.core.nuspec"
       ]
     },
@@ -31639,13 +31542,13 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
-      "Microsoft.EntityFrameworkCore.Proxies >= 2.2.1",
+      "Microsoft.EntityFrameworkCore.Proxies >= 2.2.2",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.3",
-      "Microsoft.Toolkit.Uwp.UI.Controls >= 5.0.0",
-      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid >= 5.0.0",
+      "Microsoft.Toolkit.Uwp.UI.Controls >= 5.1.0",
+      "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid >= 5.1.0",
       "MvvmLightLibs >= 5.4.1.1",
       "StudentskaSluzba.Model >= 1.0.0",
-      "System.Linq.Dynamic.Core >= 1.0.9.2",
+      "System.Linq.Dynamic.Core >= 1.0.10",
       "WinRTXamlToolkit.Controls.DataVisualization.UWP >= 2.3.0",
       "iText7Wrapper >= 1.0.0",
       "itext7 >= 7.1.5"
@@ -31698,7 +31601,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Proxies": {
             "target": "Package",
-            "version": "[2.2.1, )"
+            "version": "[2.2.2, )"
           },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
@@ -31706,11 +31609,11 @@
           },
           "Microsoft.Toolkit.Uwp.UI.Controls": {
             "target": "Package",
-            "version": "[5.0.0, )"
+            "version": "[5.1.0, )"
           },
           "Microsoft.Toolkit.Uwp.UI.Controls.DataGrid": {
             "target": "Package",
-            "version": "[5.0.0, )"
+            "version": "[5.1.0, )"
           },
           "MvvmLightLibs": {
             "target": "Package",
@@ -31718,7 +31621,7 @@
           },
           "System.Linq.Dynamic.Core": {
             "target": "Package",
-            "version": "[1.0.9.2, )"
+            "version": "[1.0.10, )"
           },
           "WinRTXamlToolkit.Controls.DataVisualization.UWP": {
             "target": "Package",

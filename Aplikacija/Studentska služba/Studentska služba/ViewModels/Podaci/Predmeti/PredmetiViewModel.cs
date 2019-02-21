@@ -2,6 +2,7 @@
 using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,15 +11,25 @@ namespace Studentska_služba.ViewModels.Podaci.Predmeti
 {
     public class PredmetiViewModel : GenericCRUDViewModel<Predmet>
     {
-        protected override object GetDbSet()
+
+        protected async override Task<IList<Predmet>> GetItems()
         {
-            return context.Predmet;
+            return await dataProvider.GetPredmetiAsync();
         }
 
-        protected async override Task<List<Predmet>> GetItems()
+        protected override async void AddItemAsync()
         {
-            return await (GetDbSet() as DbSet<Predmet>)
-                .Include(p => p.IdProfesoraNavigation).ToListAsync();
+            await dataProvider.AddPredmetAsync(SelectedItem);
+        }
+
+        protected override void UpdateItem()
+        {
+            dataProvider.UpdatePredmetAsync(SelectedItem);
+        }
+
+        protected override void RemoveItemAsync()
+        {
+            dataProvider.DeletePredmetAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()
@@ -26,15 +37,15 @@ namespace Studentska_služba.ViewModels.Podaci.Predmeti
             return true;
         }
 
-        protected override List<Predmet> SearchForItem(string text)
+        protected override async Task<ObservableCollection<Predmet>> SearchForItemAsync(string text)
         {
-            return context.Predmet
-                .Include(p => p.IdProfesoraNavigation)
+            var list = (await GetItems() as List<Predmet>)
                 .Where(t =>
                     t.Naziv.Contains(text) ||
                     t.IdProfesoraNavigation.Ime.Contains(text) ||
                     t.IdProfesoraNavigation.Prezime.Contains(text))
                 .ToList();
+            return new ObservableCollection<Predmet>(list);
         }
     }
 }

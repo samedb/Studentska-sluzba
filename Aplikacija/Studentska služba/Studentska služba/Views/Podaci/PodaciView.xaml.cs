@@ -72,7 +72,7 @@ namespace Studentska_služba.Views
 
         private void ContentFrame_NavigationFailed(object sender, NavigationFailedEventArgs e)
         {
-            throw new NotImplementedException();
+            //using (var context = new StudentskaSluzbaDBContext()) {}
         }
     }
 }

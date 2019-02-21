@@ -141,6 +141,7 @@
     <Compile Include="ViewModels\Podaci\Smerovi\SmeroviViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Studenti\StudentiViewModel.cs" />
     <Compile Include="ViewModels\PotvrdeUverenja\PotvrdeUverenjaViewModel.cs" />
+    <Compile Include="ViewModels\PrijemniIspit\PrijemniIspitViewModel.cs" />
     <Compile Include="ViewModels\Statistika\ChartData.cs" />
     <Compile Include="ViewModels\Statistika\StatistikaViewModel.cs" />
     <Compile Include="Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xaml.cs">
@@ -440,22 +441,22 @@
       <Version>7.1.5</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies">
-      <Version>2.2.1</Version>
+      <Version>2.2.2</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.3</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
-      <Version>5.0.0</Version>
+      <Version>5.1.0</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
-      <Version>5.0.0</Version>
+      <Version>5.1.0</Version>
     </PackageReference>
     <PackageReference Include="MvvmLightLibs">
       <Version>5.4.1.1</Version>
     </PackageReference>
     <PackageReference Include="System.Linq.Dynamic.Core">
-      <Version>1.0.9.2</Version>
+      <Version>1.0.10</Version>
     </PackageReference>
     <PackageReference Include="WinRTXamlToolkit.Controls.DataVisualization.UWP">
       <Version>2.3.0</Version>
@@ -472,7 +473,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ViewModels\PrijemniIspit\" />
     <Folder Include="ViewModels\Settings\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

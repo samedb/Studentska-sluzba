@@ -2,6 +2,7 @@
 using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,16 +11,25 @@ namespace Studentska_služba.ViewModels.Podaci.Referenti
 {
     public class ReferentiViewModel : GenericCRUDViewModel<Referent>
     {
-        protected override object GetDbSet()
+
+        protected async override Task<IList<Referent>> GetItems()
         {
-            return context.Referent;
+            return await dataProvider.GetReferentsAsync();
         }
 
-        protected async override Task<List<Referent>> GetItems()
+        protected override async void AddItemAsync()
         {
-            return await (GetDbSet() as DbSet<Referent>)
-                .Include(r => r.UsernameReferentaNavigation)
-                .ToListAsync();
+            await dataProvider.AddReferentAsync(SelectedItem);
+        }
+
+        protected override void UpdateItem()
+        {
+            dataProvider.UpdateReferentAsync(SelectedItem);
+        }
+
+        protected override void RemoveItemAsync()
+        {
+            dataProvider.DeleteReferentAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()
@@ -31,16 +41,17 @@ namespace Studentska_služba.ViewModels.Podaci.Referenti
         ///// <summary>
         ///// Kad dodajem novog refeernta moram da dodam i novog korsinika u tabeli Korisnik
         ///// </summary>
-        protected override void AddItem()
-        {
-            context.Korisnik.Add(new Korisnik
-            {
-                Username = SelectedItem.UsernameReferenta,
-                Password = "1234",
-                Usertype = "referent"
-            });
-            base.AddItem();
-        }
+        //protected override void AddItemAsync()
+        //{
+        //    //TODO Da ispravim ovo
+        //    //context.Korisnik.Add(new Korisnik
+        //    //{
+        //    //    Username = SelectedItem.UsernameReferenta,
+        //    //    Password = "1234",
+        //    //    Usertype = "referent"
+        //    //});
+        //    //base.AddItemAsync();
+        //}
 
 
         ///// <summary>
@@ -59,14 +70,15 @@ namespace Studentska_služba.ViewModels.Podaci.Referenti
             RefreshTable();
         }
 
-        protected override List<Referent> SearchForItem(string text)
+        protected override async Task<ObservableCollection<Referent>> SearchForItemAsync(string text)
         {
-            return context.Referent
+            var list = (await GetItems() as List<Referent>)
                 .Where(t =>
                     t.UsernameReferenta.Contains(text) ||
                     t.Ime.Contains(text) ||
                     t.Prezime.Contains(text))
                 .ToList();
+            return new ObservableCollection<Referent>(list);
         }
     }
 }

@@ -14,7 +14,6 @@
 
         <local1:DetailsModeToVisibilityConverter x:Key="DetailsButtonVisibilityConverter"/>
         <local1:DetailsModeToBoolean x:Key="DetailsModeToBooleanConverter"/>
-        <local1:TimeConverter x:Key="TimeConverter"/>
         <local1:ObjectToVisibility x:Key="ObjectToVisibilityConverter"/>
 
     </Page.Resources>
@@ -24,48 +23,52 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
 
-        <podaci:CommandLine HorizontalAlignment="Right"
-                        Grid.ColumnSpan="2"
+        <Grid HorizontalAlignment="Right">
+            <podaci:CommandLine 
                         AddNewItemCommand="{x:Bind vm.AddNewItemCommand}"
                         UpdateItemCommand="{x:Bind vm.UpdateItemCommand}"
                         DeleteItemCommand="{x:Bind vm.DeleteItemCommand}"
                         RefreshTableCommand="{x:Bind vm.RefreshTableCommand}"
                         SearchBoxText="{x:Bind vm.SearchBoxText, Mode=TwoWay}"/>
 
+        </Grid>
 
-        <ScrollViewer Grid.Row="1">
+
+        <Grid Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
             <local:ProfesoriList vm="{x:Bind vm, Mode=TwoWay}"/>
-        </ScrollViewer>
 
-        <StackPanel Margin="10"
-                Background="WhiteSmoke"
-                Grid.Row="1"
-                Grid.Column="1"
-                Visibility="{x:Bind vm.SelectedItem, Mode=OneWay, Converter={StaticResource ObjectToVisibilityConverter}}">
 
-            <local:ProfesorDetails Profesor="{x:Bind vm.SelectedItem, Mode=TwoWay}"
-                                            IsEnabled="{x:Bind  vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsModeToBooleanConverter}}"/>
+            <StackPanel Margin="10"
+                    Background="WhiteSmoke"
+                    Grid.Column="1"
+                    Visibility="{x:Bind vm.SelectedItem, Mode=OneWay, Converter={StaticResource ObjectToVisibilityConverter}}">
 
-            <StackPanel Orientation="Horizontal"
-                        Visibility="{x:Bind vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsButtonVisibilityConverter}}"
-                        HorizontalAlignment="Center">
+                <local:ProfesorDetails Profesor="{x:Bind vm.SelectedItem, Mode=TwoWay}"
+                                                IsEnabled="{x:Bind  vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsModeToBooleanConverter}}"/>
 
-                <Button Content="Save" 
-                        Command="{x:Bind vm.SaveChangesCommand, Mode=OneWay}" 
-                        Margin="10"/>
+                <StackPanel Orientation="Horizontal"
+                            Visibility="{x:Bind vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsButtonVisibilityConverter}}"
+                            HorizontalAlignment="Center">
 
-                <Button Content="Cancel" 
-                        Command="{x:Bind vm.CancelCommand, Mode=OneWay}"
-                        Margin="10"/>
+                    <Button Content="Save" 
+                            Command="{x:Bind vm.SaveChangesCommand, Mode=OneWay}" 
+                            Margin="10"/>
+
+                    <Button Content="Cancel" 
+                            Command="{x:Bind vm.CancelCommand, Mode=OneWay}"
+                            Margin="10"/>
+
+                </StackPanel>
 
             </StackPanel>
-
-        </StackPanel>
+        </Grid>
 
     </Grid>
 </Page>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <PriInfo>
 	<ResourceMap name="Microsoft.Toolkit.Uwp.UI.Controls" version="1.0" primary="true">
-		<Qualifiers/>
+		<Qualifiers>
+			<Language>EN-US</Language>
+		</Qualifiers>
 		<ResourceMapSubtree name="Files">
 			<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls">
 				<NamedResource name="Microsoft.Toolkit.Uwp.UI.Controls.xr.xml" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Files/Microsoft.Toolkit.Uwp.UI.Controls/Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
@@ -112,6 +114,28 @@
 						</Candidate>
 					</NamedResource>
 					<NamedResource name="HeaderedTextBlock.xbf" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Files/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock/HeaderedTextBlock.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ImageCropper">
+					<NamedResource name="ImageCropper.xaml" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Files/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropper.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\ImageCropper\ImageCropper.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ImageCropper.xbf" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Files/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropper.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ImageCropperThumb.xaml" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Files/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropperThumb.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\ImageCropper\ImageCropperThumb.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ImageCropperThumb.xbf" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Files/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropperThumb.xbf">
 						<Candidate type="EmbeddedData">
 							<Base64Value>[Embedded Binary Data]</Base64Value>
 						</Candidate>
@@ -283,6 +307,18 @@
 						</Candidate>
 					</NamedResource>
 				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RemoteDevicePicker">
+					<NamedResource name="RemoteDevicePicker.xaml" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Files/Microsoft.Toolkit.Uwp.UI.Controls/RemoteDevicePicker/RemoteDevicePicker.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\RemoteDevicePicker\RemoteDevicePicker.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="RemoteDevicePicker.xbf" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Files/Microsoft.Toolkit.Uwp.UI.Controls/RemoteDevicePicker/RemoteDevicePicker.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
 				<ResourceMapSubtree name="RotatorTile">
 					<NamedResource name="RotatorTile.xaml" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Files/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile/RotatorTile.xaml">
 						<Candidate type="Path">
@@ -388,6 +424,51 @@
 							<Base64Value>[Embedded Binary Data]</Base64Value>
 						</Candidate>
 					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls">
+			<ResourceMapSubtree name="Resources">
+				<NamedResource name="WindowsCommunityToolkit_BladeView_ExpandButton_Collapsed" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_BladeView_ExpandButton_Collapsed">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Collapse Blade</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WindowsCommunityToolkit_BladeView_ExpandButton_Expanded" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_BladeView_ExpandButton_Expanded">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Expand Blade</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WindowsCommunityToolkit_GridSplitter_AutomationName" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_GridSplitter_AutomationName">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>GridSpliter</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WindowsCommunityToolkit_InAppNotification_Events_NewNotificationMessage" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_InAppNotification_Events_NewNotificationMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>New notification</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WindowsCommunityToolkit_InAppNotification_NameProperty" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_InAppNotification_NameProperty">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Notification</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="WindowsCommunityToolkit_TabView_CloseButton">
+					<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+						<NamedResource name="Name" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_TabView_CloseButton/[using:Windows.UI.Xaml.Automation]AutomationProperties/Name">
+							<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+								<Value>Close tab</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="[using:Windows.UI.Xaml.Controls]ToolTipService">
+						<NamedResource name="ToolTip" uri="ms-resource://Microsoft.Toolkit.Uwp.UI.Controls/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_TabView_CloseButton/[using:Windows.UI.Xaml.Controls]ToolTipService/ToolTip">
+							<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+								<Value>Close tab</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
 				</ResourceMapSubtree>
 			</ResourceMapSubtree>
 		</ResourceMapSubtree>

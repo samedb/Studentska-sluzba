@@ -47,7 +47,10 @@ namespace Studentska_služba.Views.Podaci.Departmani
         public DepartmanDetails()
         {
             this.InitializeComponent();
-            Profesori = new StudentskaSluzbaDBContext().Profesor.ToArray();
+            using (var context = new StudentskaSluzbaDBContext())
+            {
+                Profesori = context.Profesor.ToArray();
+            }
         }
     }
 }

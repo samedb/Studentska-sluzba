@@ -15,6 +15,8 @@ namespace Studentska_služba.Views.Podaci.Referenti
 
 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.17.0")]
+        private global::Microsoft.Toolkit.Uwp.UI.Controls.DataGrid dataGrid; 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.17.0")]
         private bool _contentLoaded;
 
         /// <summary>
