@@ -17,19 +17,19 @@ namespace Studentska_služba.ViewModels.Podaci.Smerovi
             return await dataProvider.GetSmeroviAsync();
         }
 
-        protected override async void AddItemAsync()
+        protected override async Task AddItemAsync()
         {
             await dataProvider.AddSmerAsync(SelectedItem);
         }
 
-        protected override void UpdateItem()
+        protected override async Task UpdateItem()
         {
-            dataProvider.UpdateSmerAsync(SelectedItem);
+            await dataProvider.UpdateSmerAsync(SelectedItem);
         }
 
-        protected override void RemoveItemAsync()
+        protected override async Task RemoveItemAsync()
         {
-            dataProvider.DeleteSmerAsync(SelectedItem);
+            await dataProvider.DeleteSmerAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()

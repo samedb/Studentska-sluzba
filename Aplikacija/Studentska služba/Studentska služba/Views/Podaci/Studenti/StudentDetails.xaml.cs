@@ -1,4 +1,5 @@
-﻿using StudentskaSluzba.Models;
+﻿using StudentskaSluzba.Model.Models;
+using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -43,13 +44,18 @@ namespace Studentska_služba
             DependencyProperty.Register("Student", typeof(Student), typeof(StudentDetails), new PropertyMetadata(0));
 
         public string[] Polovi { get; private set; }
-        public Smer[] Smerovi { get; private set; }
+        public List<Smer> Smerovi { get; private set; }
 
         public StudentDetails()
         {
             this.InitializeComponent();
             Polovi = new string[]{ "musko", "zensko"};
-            Smerovi = new StudentskaSluzbaDBContext().Smer.ToArray();
+            PopuniSmerove();
+        }
+
+        private async void PopuniSmerove()
+        {
+            Smerovi = await new EFCoreDataProvider().GetSmeroviAsync() as List<Smer>;
         }
     }
 }

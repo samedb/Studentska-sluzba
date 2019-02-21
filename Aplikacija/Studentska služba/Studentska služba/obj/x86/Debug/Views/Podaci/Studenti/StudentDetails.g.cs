@@ -356,7 +356,7 @@ namespace Studentska_služba
                     }
                 }
             }
-            private void Update_Smerovi(global::StudentskaSluzba.Models.Smer[] obj, int phase)
+            private void Update_Smerovi(global::System.Collections.Generic.List<global::StudentskaSluzba.Models.Smer> obj, int phase)
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {

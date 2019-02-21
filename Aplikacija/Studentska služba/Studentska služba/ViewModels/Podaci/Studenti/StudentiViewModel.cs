@@ -16,19 +16,19 @@ namespace Studentska_služba
             return await dataProvider.GetStudentsAsync();
         }
 
-        protected override async void AddItemAsync()
+        protected override async Task AddItemAsync()
         {
             await dataProvider.AddStudentAsync(SelectedItem);
         }
 
-        protected override void UpdateItem()
+        protected override async Task UpdateItem()
         {
-            dataProvider.UpdateStudentAsync(SelectedItem);
+            await dataProvider.UpdateStudentAsync(SelectedItem);
         }
 
-        protected override void RemoveItemAsync()
+        protected override async Task RemoveItemAsync()
         {
-            dataProvider.DeleteStudentAsync(SelectedItem);
+            await dataProvider.DeleteStudentAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()

@@ -4,6 +4,7 @@ using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,19 +19,19 @@ namespace Studentska_služba.ViewModels.Podaci.Departmani
             return await dataProvider.GetDepartmaniAsync();
         }
 
-        protected override async void AddItemAsync()
+        protected override async Task AddItemAsync()
         {
             await dataProvider.AddDepartmanAsync(SelectedItem);
         }
 
-        protected override void UpdateItem()
+        protected override async Task UpdateItem()
         {
-            dataProvider.UpdateDepartmanAsync(SelectedItem);
+            await dataProvider.UpdateDepartmanAsync(SelectedItem);
         }
 
-        protected override void RemoveItemAsync()
+        protected override async Task RemoveItemAsync()
         {
-            dataProvider.DeleteDepartmanAsync(SelectedItem);
+            await dataProvider.DeleteDepartmanAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()

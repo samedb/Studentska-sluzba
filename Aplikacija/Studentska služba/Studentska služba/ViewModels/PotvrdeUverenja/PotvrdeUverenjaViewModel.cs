@@ -2,6 +2,7 @@
 using GalaSoft.MvvmLight.Command;
 using iText7Wrapper;
 using Microsoft.EntityFrameworkCore;
+using StudentskaSluzba.Model.Models;
 using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
@@ -51,8 +52,15 @@ namespace Studentska_služba.ViewModels.PotvrdeUverenja
             set { Set(nameof(DodatniTekst), ref _dodatniTekst, value); }
         }
 
+        private ObservableCollection<Student> _studenti;
+
+        public ObservableCollection<Student> Studenti
+        {
+            get { return _studenti; }
+            set { Set(nameof(Studenti), ref _studenti, value); }
+        }
+
         public string[] TipoviDokumenata = { "Potvrda o studiranju", "Uverenje o položenim ispitiva" };
-        public ObservableCollection<Student> Studenti;
 
         public RelayCommand StampajDokument { get; protected set; }
 
@@ -62,13 +70,15 @@ namespace Studentska_služba.ViewModels.PotvrdeUverenja
 
         public PotvrdeUverenjaViewModel()
         {
-            Studenti = new ObservableCollection<Student>(new StudentskaSluzbaDBContext().Student
-                                                            .Include(s => s.IdSmeraNavigation)
-                                                            .ThenInclude(s => s.IdDepartmanaNavigation)
-                                                            .ToArray());
+            PopuniListuStudenata();
 
             StampajDokument = new RelayCommand(Stampaj, PopunjenaPolja);
             KreirajFajl();
+        }
+
+        private async void PopuniListuStudenata()
+        {
+            Studenti = new ObservableCollection<Student>(await new EFCoreDataProvider().GetStudentsAsync());
         }
 
         #endregion

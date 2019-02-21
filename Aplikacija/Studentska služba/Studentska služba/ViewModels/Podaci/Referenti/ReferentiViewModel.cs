@@ -17,19 +17,19 @@ namespace Studentska_služba.ViewModels.Podaci.Referenti
             return await dataProvider.GetReferentsAsync();
         }
 
-        protected override async void AddItemAsync()
+        protected override async Task AddItemAsync()
         {
             await dataProvider.AddReferentAsync(SelectedItem);
         }
 
-        protected override void UpdateItem()
+        protected override async Task UpdateItem()
         {
-            dataProvider.UpdateReferentAsync(SelectedItem);
+            await dataProvider.UpdateReferentAsync(SelectedItem);
         }
 
-        protected override void RemoveItemAsync()
+        protected override async Task RemoveItemAsync()
         {
-            dataProvider.DeleteReferentAsync(SelectedItem);
+            await dataProvider.DeleteReferentAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()

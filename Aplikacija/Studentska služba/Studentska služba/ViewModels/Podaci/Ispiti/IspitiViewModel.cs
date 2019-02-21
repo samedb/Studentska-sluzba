@@ -17,19 +17,19 @@ namespace Studentska_služba.ViewModels.Podaci.Ispiti
             return await dataProvider.GetIspitiAsync();
         }
 
-        protected override async void AddItemAsync()
+        protected override async Task AddItemAsync()
         {
             await dataProvider.AddIspitAsync(SelectedItem);
         }
 
-        protected override void UpdateItem()
+        protected override async Task UpdateItem()
         {
-            dataProvider.UpdateIspitAsync(SelectedItem);
+            await dataProvider.UpdateIspitAsync(SelectedItem);
         }
 
-        protected override void RemoveItemAsync()
+        protected override async Task RemoveItemAsync()
         {
-            dataProvider.DeleteIspitAsync(SelectedItem);
+            await dataProvider.DeleteIspitAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()

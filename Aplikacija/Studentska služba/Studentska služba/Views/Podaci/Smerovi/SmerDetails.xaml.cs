@@ -1,5 +1,7 @@
-﻿using StudentskaSluzba.Models;
+﻿using StudentskaSluzba.Model.Models;
+using StudentskaSluzba.Models;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -35,15 +37,21 @@ namespace Studentska_služba.Views.Podaci.Smerovi
             DependencyProperty.Register("Smer", typeof(Smer), typeof(SmerDetails), new PropertyMetadata(0));
 
 
-        public Referent[] Referenti { get; private set; }
-        public Departman[] Departmani { get; private set; }
+        public List<Referent> Referenti { get; private set; }
+        public List<Departman> Departmani { get; private set; }
 
         public SmerDetails()
         {
             this.InitializeComponent();
             var context = new StudentskaSluzbaDBContext();
-            Referenti = context.Referent.ToArray();
-            Departmani = context.Departman.ToArray();
+            PopuniListe();
+        }
+
+        private async void PopuniListe()
+        {
+            var dataProvider = new EFCoreDataProvider();
+            Referenti = await dataProvider.GetReferentsAsync() as List<Referent>;
+            Departmani = await dataProvider.GetDepartmaniAsync() as List<Departman>;
         }
     }
 }

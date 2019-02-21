@@ -26,19 +26,19 @@ namespace Studentska_služba.ViewModels.Podaci.Ocene
             return await dataProvider.GetOceneAsync();
         }
 
-        protected override async void AddItemAsync()
+        protected override async Task AddItemAsync()
         {
             await dataProvider.AddOCenaAsync(SelectedItem);
         }
 
-        protected override void UpdateItem()
+        protected override async Task UpdateItem()
         {
-            dataProvider.UpdateOcenaAsync(SelectedItem);
+            await dataProvider.UpdateOcenaAsync(SelectedItem);
         }
 
-        protected override void RemoveItemAsync()
+        protected override async Task RemoveItemAsync()
         {
-            dataProvider.DeleteOcenaAsync(SelectedItem);
+            await dataProvider.DeleteOcenaAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()

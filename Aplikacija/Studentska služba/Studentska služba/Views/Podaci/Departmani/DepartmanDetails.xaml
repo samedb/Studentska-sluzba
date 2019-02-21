@@ -28,7 +28,7 @@
                      Header="Naziv departmana"
                      Style="{StaticResource DetailsElement}"/>
 
-            <ComboBox ItemsSource="{x:Bind Profesori, Mode=OneWay}"
+            <ComboBox ItemsSource="{x:Bind Profesori, Mode=TwoWay}"
                           HorizontalAlignment="Stretch"
                           DisplayMemberPath="PunoIme"
                           SelectedValuePath="IdProfesora"

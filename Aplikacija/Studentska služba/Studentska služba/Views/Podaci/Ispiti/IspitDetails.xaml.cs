@@ -1,4 +1,5 @@
-﻿using StudentskaSluzba.Models;
+﻿using StudentskaSluzba.Model.Models;
+using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -44,8 +45,8 @@ namespace Studentska_služba.Views.Podaci.Ispiti
 
 
 
-        public Student[] Studenti;
-        public Predmet[] Predmeti;
+        public List<Student> Studenti;
+        public List<Predmet> Predmeti;
         public int[] Godine;
         public string[] Rokovi;
 
@@ -54,10 +55,16 @@ namespace Studentska_služba.Views.Podaci.Ispiti
         {
             this.InitializeComponent();
             var context = new StudentskaSluzbaDBContext();
-            Studenti = context.Student.ToArray();
-            Predmeti = context.Predmet.ToArray();
+            PopuniStudenteIPredmeteAsync();
             Godine = new int[] { 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030 };
             Rokovi = new string[] { "Januar", "Februar", "Mart", "Jun", "Jul", "Septembar", "Oktobar", "Oktobar II", "Novembar" };   
+        }
+
+        private async void PopuniStudenteIPredmeteAsync()
+        {
+            var dataProvider = new EFCoreDataProvider();
+            Studenti = await dataProvider.GetStudentsAsync() as List<Student>;
+            Predmeti = await dataProvider.GetPredmetiAsync() as List<Predmet>;
         }
     }
 }

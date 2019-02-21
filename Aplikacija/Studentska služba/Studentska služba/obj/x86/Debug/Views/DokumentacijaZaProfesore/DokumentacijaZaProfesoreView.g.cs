@@ -224,7 +224,7 @@ namespace Studentska_služba.Views
                     }
                 }
             }
-            private void Update_vm_Predmeti(global::StudentskaSluzba.Models.Predmet[] obj, int phase)
+            private void Update_vm_Predmeti(global::System.Collections.Generic.List<global::StudentskaSluzba.Models.Predmet> obj, int phase)
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {

@@ -2,6 +2,7 @@
 using GalaSoft.MvvmLight.Command;
 using iText7Wrapper;
 using Microsoft.EntityFrameworkCore;
+using StudentskaSluzba.Model.Models;
 using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
@@ -42,22 +43,34 @@ namespace Studentska_služba.ViewModels.DokumentacijaZaProfesore
             set { Set(nameof(Godina), ref _godina, value); StampajDokumentaCommand.RaiseCanExecuteChanged(); }
         }
 
-        public RelayCommand StampajDokumentaCommand { get; private set; }
+        private List<Predmet> _predmeti;
 
-        public Predmet[] Predmeti;
+        public List<Predmet> Predmeti
+        {
+            get { return _predmeti; }
+            set { Set(nameof(Predmeti), ref _predmeti, value); }
+        }
+
+        public RelayCommand StampajDokumentaCommand { get; private set; }
+        
         public string[] Rokovi;
         public int[] Godine;
 
-#endregion
+        #endregion
 
         #region Konsturktor
         public DokumentacijaZaProfesoreViewModel()
         {
             Godine = new int[] { 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030 };
             Rokovi = new string[] { "Januar", "Februar", "Mart", "Jun", "Jul", "Septembar", "Oktobar", "Oktobar II", "Novembar" };
-            Predmeti = new StudentskaSluzbaDBContext().Predmet.ToArray();
+            PopuniPredmeteAsync();
             StampajDokumentaCommand = new RelayCommand(StampajDokumenta, PopunjenaSvaPolja);
             KreirajFajl();
+        }
+
+        private async void PopuniPredmeteAsync()
+        {
+            Predmeti = await new EFCoreDataProvider().GetPredmetiAsync() as List<Predmet>;
         }
         #endregion
 
@@ -76,9 +89,7 @@ namespace Studentska_služba.ViewModels.DokumentacijaZaProfesore
         #region Pomocne funkcije
         private async void StampajDokumenta()
         {
-            var lista = new StudentskaSluzbaDBContext().Ispit
-                .Include(i => i.BrojIndeksaStudentaNavigation)
-                .Include (i => i.IdPredmetaNavigation)
+            var lista = (await new EFCoreDataProvider().GetIspitiAsync())
                 .Where(i => i.IdPredmeta == SelectedPredmet.IdPredmeta &&
                        i.Godina == Godina && i.NazivRoka == NazivRoka)
                 .Select(i => new
@@ -88,6 +99,7 @@ namespace Studentska_služba.ViewModels.DokumentacijaZaProfesore
                     BrojBodova = "",
                     Ocena = ""
                 })
+                .OrderBy(i => i.BrojIndeksa)
                 .ToList();
 
             using (var doc = new PdfWrapper(file))

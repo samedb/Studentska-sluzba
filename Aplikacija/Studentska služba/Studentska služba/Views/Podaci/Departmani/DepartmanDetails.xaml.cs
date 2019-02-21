@@ -1,10 +1,12 @@
-﻿using StudentskaSluzba.Models;
+﻿using StudentskaSluzba.Model.Models;
+using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -42,15 +44,17 @@ namespace Studentska_služba.Views.Podaci.Departmani
         public static readonly DependencyProperty DepartmanProperty =
             DependencyProperty.Register("Departman", typeof(Departman), typeof(DepartmanDetails), new PropertyMetadata(0));
 
-        public Profesor[] Profesori { get; private set; }
+        public List<Profesor> Profesori { get; private set; }
 
         public DepartmanDetails()
         {
             this.InitializeComponent();
-            using (var context = new StudentskaSluzbaDBContext())
-            {
-                Profesori = context.Profesor.ToArray();
-            }
+            UcitajProfesore();
+        }
+
+        private async void UcitajProfesore()
+        {
+            Profesori = await new EFCoreDataProvider().GetProfesorsAsync() as List<Profesor>;
         }
     }
 }

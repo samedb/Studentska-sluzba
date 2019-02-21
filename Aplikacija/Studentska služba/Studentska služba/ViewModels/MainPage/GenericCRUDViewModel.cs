@@ -116,7 +116,7 @@ namespace Studentska_služba
 
         virtual protected async void DeleteSelectedStudent()
         {
-            RemoveItemAsync();
+            await RemoveItemAsync();
             ItemList.Remove(SelectedItem);
             SelectedItem = default(TModel);
             //RefreshTable();
@@ -128,17 +128,17 @@ namespace Studentska_služba
             {
                 if (DetailsMode == DetailsMode.Add)
                 {
-                    AddItemAsync();
+                    await AddItemAsync();
                 }
                 else
                 {
-                    UpdateItem();
+                    await UpdateItem();
                 }
                 RefreshTable();
             }
         }
 
-        private void Cancel()
+        private async void Cancel()
         {
             //ReloadItem();
             RefreshTable();
@@ -153,9 +153,9 @@ namespace Studentska_služba
         }
 
 
-        protected abstract void AddItemAsync();
-        protected abstract void UpdateItem();
-        protected abstract void RemoveItemAsync();
+        protected abstract Task AddItemAsync();
+        protected abstract Task UpdateItem();
+        protected abstract Task RemoveItemAsync();
 
         // Ne znam koja je svrha ove funkcije
         //virtual protected void ReloadItem()
@@ -169,14 +169,14 @@ namespace Studentska_služba
 
         #region Search i sort
 
-        internal IList<TModel> SortData(string tag, bool asc)
+        internal ObservableCollection<TModel> SortData(string tag, bool asc)
         {
             var list = ItemList.AsQueryable().OrderBy($"{tag} ASC").ToList();
 
             if (!asc)
                 list.Reverse();
 
-            return list;
+            return new ObservableCollection<TModel>(list);
 
         }
 
@@ -189,7 +189,7 @@ namespace Studentska_služba
                 //Ovo nije dobro, mora da se porpravi
                 // Uopste ne radi asinhrono
                 // Treba da procitam kako to tacno da uradim
-                ItemList = await Task<IList>.Run(() => SearchForItemAsync(text));
+                ItemList = await SearchForItemAsync(text);
             }
         }
 

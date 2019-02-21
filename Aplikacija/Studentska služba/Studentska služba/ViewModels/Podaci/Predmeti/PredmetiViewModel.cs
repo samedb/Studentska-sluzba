@@ -17,19 +17,19 @@ namespace Studentska_služba.ViewModels.Podaci.Predmeti
             return await dataProvider.GetPredmetiAsync();
         }
 
-        protected override async void AddItemAsync()
+        protected override async Task AddItemAsync()
         {
             await dataProvider.AddPredmetAsync(SelectedItem);
         }
 
-        protected override void UpdateItem()
+        protected override async Task UpdateItem()
         {
-            dataProvider.UpdatePredmetAsync(SelectedItem);
+            await dataProvider.UpdatePredmetAsync(SelectedItem);
         }
 
-        protected override void RemoveItemAsync()
+        protected override async Task RemoveItemAsync()
         {
-            dataProvider.DeletePredmetAsync(SelectedItem);
+            await dataProvider.DeletePredmetAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()

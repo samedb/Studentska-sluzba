@@ -17,19 +17,19 @@ namespace Studentska_služba.ViewModels.Podaci.Profesori
             return await dataProvider.GetProfesorsAsync();
         }
 
-        protected override async void AddItemAsync()
+        protected override async Task AddItemAsync()
         {
             await dataProvider.AddProfesorAsync(SelectedItem);
         }
 
-        protected override void UpdateItem()
+        protected override async Task UpdateItem()
         {
-            dataProvider.UpdateProfesorAsync(SelectedItem);
+            await dataProvider.UpdateProfesorAsync(SelectedItem);
         }
 
-        protected override void RemoveItemAsync()
+        protected override async Task RemoveItemAsync()
         {
-            dataProvider.DeleteProfesorAsync(SelectedItem);
+            await dataProvider.DeleteProfesorAsync(SelectedItem);
         }
 
         protected override bool NoEmptyFiels()

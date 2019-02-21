@@ -228,7 +228,7 @@ namespace Studentska_služba.Views.Podaci.Predmeti
                     }
                 }
             }
-            private void Update_Profesori(global::StudentskaSluzba.Models.Profesor[] obj, int phase)
+            private void Update_Profesori(global::System.Collections.Generic.List<global::StudentskaSluzba.Models.Profesor> obj, int phase)
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {

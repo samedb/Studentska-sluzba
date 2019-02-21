@@ -1,4 +1,5 @@
-﻿using StudentskaSluzba.Models;
+﻿using StudentskaSluzba.Model.Models;
+using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -43,12 +44,17 @@ namespace Studentska_služba.Views.Podaci.Predmeti
         public static readonly DependencyProperty PredmetProperty =
             DependencyProperty.Register("Predmet", typeof(Predmet), typeof(PredmetDetails), new PropertyMetadata(0));
 
-        public Profesor[] Profesori { get; private set; }
+        public List<Profesor> Profesori { get; private set; }
 
         public PredmetDetails()
         {
             this.InitializeComponent();
-            Profesori = new StudentskaSluzbaDBContext().Profesor.ToArray();
+            PopuniProfesore();
+        }
+
+        private async void PopuniProfesore()
+        {
+            Profesori = await new EFCoreDataProvider().GetProfesorsAsync() as List<Profesor>;                
         }
     }
 }

@@ -230,7 +230,7 @@ namespace Studentska_služba.Views.Podaci.Smerovi
                     }
                 }
             }
-            private void Update_Referenti(global::StudentskaSluzba.Models.Referent[] obj, int phase)
+            private void Update_Referenti(global::System.Collections.Generic.List<global::StudentskaSluzba.Models.Referent> obj, int phase)
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
@@ -252,7 +252,7 @@ namespace Studentska_služba.Views.Podaci.Smerovi
                     }
                 }
             }
-            private void Update_Departmani(global::StudentskaSluzba.Models.Departman[] obj, int phase)
+            private void Update_Departmani(global::System.Collections.Generic.List<global::StudentskaSluzba.Models.Departman> obj, int phase)
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {

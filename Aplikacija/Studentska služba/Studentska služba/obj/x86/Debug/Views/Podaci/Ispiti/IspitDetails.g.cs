@@ -214,7 +214,7 @@ namespace Studentska_služba.Views.Podaci.Ispiti
                     }
                 }
             }
-            private void Update_Studenti(global::StudentskaSluzba.Models.Student[] obj, int phase)
+            private void Update_Studenti(global::System.Collections.Generic.List<global::StudentskaSluzba.Models.Student> obj, int phase)
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
@@ -268,7 +268,7 @@ namespace Studentska_služba.Views.Podaci.Ispiti
                     }
                 }
             }
-            private void Update_Predmeti(global::StudentskaSluzba.Models.Predmet[] obj, int phase)
+            private void Update_Predmeti(global::System.Collections.Generic.List<global::StudentskaSluzba.Models.Predmet> obj, int phase)
             {
                 if ((phase & ((1 << 0) | NOT_PHASED | DATA_CHANGED)) != 0)
                 {
