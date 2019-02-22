@@ -33,7 +33,7 @@
                           DisplayMemberPath="PunoIme"
                           SelectedValuePath="IdProfesora"
                           Header="Profesor"
-                                                                                   
+                                                                                                     
                           Style="{StaticResource DetailsElement}" />
 
             <TextBox x:ConnectionId='4'                                                            

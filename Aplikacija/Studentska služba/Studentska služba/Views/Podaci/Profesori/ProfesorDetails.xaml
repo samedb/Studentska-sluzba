@@ -43,7 +43,7 @@
             <ComboBox ItemsSource="{x:Bind Polovi, Mode=OneWay}" 
                           HorizontalAlignment="Stretch"
                           Header="Pol"
-                          SelectedItem="{x:Bind Profesor.Pol, Mode=TwoWay}"
+                          SelectedItem="{x:Bind Profesor.Pol, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>
     </Grid>

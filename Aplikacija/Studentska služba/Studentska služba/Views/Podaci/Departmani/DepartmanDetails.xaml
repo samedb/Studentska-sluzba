@@ -33,7 +33,7 @@
                           DisplayMemberPath="PunoIme"
                           SelectedValuePath="IdProfesora"
                           Header="Sef departmana"
-                          SelectedValue="{x:Bind Departman.IdSefaDepartmana, Mode=TwoWay}"
+                          SelectedValue="{x:Bind Departman.IdSefaDepartmana, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>
     </Grid>

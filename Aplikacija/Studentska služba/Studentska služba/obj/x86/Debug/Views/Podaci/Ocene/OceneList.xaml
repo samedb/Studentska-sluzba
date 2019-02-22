@@ -34,15 +34,15 @@
                 <controls:DataGridTextColumn
                         Header="Predmet"
                         Binding="{Binding IdIspitaNavigation.IdPredmetaNavigation.Naziv}"
-                        Tag="IdPredmetaNavigation.Naziv"/>
+                        Tag="IdIspitaNavigation.IdPredmetaNavigation.Naziv"/>
                 <controls:DataGridTextColumn
                         Header="Rok"
                         Binding="{Binding IdIspitaNavigation.NazivRoka}"
-                        Tag="NazivRoka"/>
+                        Tag="IdIspitaNavigation.NazivRoka"/>
                 <controls:DataGridTextColumn
                         Header="Godina"
                         Binding="{Binding IdIspitaNavigation.Godina}"
-                        Tag="Godina"/>
+                        Tag="IdIspitaNavigation.Godina"/>
                 <controls:DataGridTextColumn
                         Header="Ocena"
                         Binding="{Binding Ocena1}"

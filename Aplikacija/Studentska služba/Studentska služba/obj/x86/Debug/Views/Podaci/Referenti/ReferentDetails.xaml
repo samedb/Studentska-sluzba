@@ -48,7 +48,7 @@
             <ComboBox x:ConnectionId='7'                                            
                           HorizontalAlignment="Stretch"
                           Header="Pol"
-                                                                           
+                                                                                             
                           Style="{StaticResource DetailsElement}" />
             <TextBox x:ConnectionId='8'                                                               
                          Header="Adresa"

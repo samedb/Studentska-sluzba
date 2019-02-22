@@ -43,14 +43,14 @@
             <ComboBox ItemsSource="{x:Bind Polovi, Mode=OneWay}" 
                           HorizontalAlignment="Stretch"
                           Header="Pol"
-                          SelectedItem="{x:Bind Student.Pol, Mode=TwoWay}"
+                          SelectedItem="{x:Bind Student.Pol, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
             <ComboBox ItemsSource="{x:Bind Smerovi, Mode=OneWay}"
                           HorizontalAlignment="Stretch"
                           DisplayMemberPath="Naziv"
                           SelectedValuePath="IdSmera"
                           Header="Smer"
-                          SelectedValue="{x:Bind Student.IdSmera, Mode=TwoWay}"
+                          SelectedValue="{x:Bind Student.IdSmera, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>
         

@@ -18,12 +18,12 @@
     <StackPanel Margin="20" HorizontalAlignment="Center">
         <ComboBox Header="Tip dokumenta"
                   ItemsSource="{x:Bind vm.TipoviDokumenata, Mode=OneWay}"
-                  SelectedItem="{x:Bind vm.TipDokumenta, Mode=TwoWay}"
+                  SelectedItem="{x:Bind vm.TipDokumenta, Mode=TwoWay, FallbackValue=''}"
                   Style="{StaticResource DetailsElement}"/>
         <ComboBox Header="Student"
                   DisplayMemberPath="PunoImeIndeks"
                   ItemsSource="{x:Bind vm.Studenti, Mode=OneWay}"
-                  SelectedItem="{x:Bind vm.SelectedStudent, Mode=TwoWay}"
+                  SelectedItem="{x:Bind vm.SelectedStudent, Mode=TwoWay, FallbackValue=''}"
                   Style="{StaticResource DetailsElement}"/>
         <TextBox Header="Potvrda služi za"
                  TextWrapping="Wrap"

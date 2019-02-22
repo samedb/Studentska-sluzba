@@ -138,32 +138,20 @@ namespace Studentska_služba
             }
         }
 
-        private async void Cancel()
+        private void Cancel()
         {
-            //ReloadItem();
             RefreshTable();
         }
 
         public async void RefreshTable()
         {
             ItemList = new ObservableCollection<TModel>(await GetItems());
-            SelectedItem = default(TModel); // Sa promenom studenta automatski se i DetailsMode stavlja na View
+            SelectedItem = default(TModel); // Sa promenom TModel-a automatski se i DetailsMode stavlja na View
             if (!string.IsNullOrEmpty(SearchBoxText))
                 SearchBoxText = string.Empty;
         }
 
 
-        protected abstract Task AddItemAsync();
-        protected abstract Task UpdateItem();
-        protected abstract Task RemoveItemAsync();
-
-        // Ne znam koja je svrha ove funkcije
-        //virtual protected void ReloadItem()
-        //{
-        //    context.Entry(SelectedItem).Reload();
-        //}
-
-        protected abstract Task<IList<TModel>> GetItems();
 
         #endregion
 
@@ -181,7 +169,7 @@ namespace Studentska_služba
         }
 
         // Ovo mora da se uradi asinhrono jer blokira aplikaciju, ali kasnije
-        public async Task SearchAsync()
+        public async void SearchAsync()
         {
             string text = SearchBoxText;
             if (text.Length > 1)
@@ -193,6 +181,25 @@ namespace Studentska_služba
             }
         }
 
+        // Ove dve funkcije ispod se koriste u SearchForItemAsync pri pretrazi
+
+        /// <summary>
+        /// Proverava da li string a sadrzi string b, nije case sensitive
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns>True ako a sadrzi b inace false</returns>
+        protected bool Sadrzi(string a, string b)
+        {
+            return a.ToUpper().Contains(b.ToUpper());
+        }
+
+        // Radi isto sto i funkcija iznad kao prvi parametar prima double koji pretvara u string
+        protected bool Sadrzi(double a, string b)
+        {
+            return a.ToString().ToUpper().Contains(b.ToUpper());
+        }
+
         #endregion
 
         #region Abstraktne funkcije
@@ -201,23 +208,13 @@ namespace Studentska_služba
         /// Ovo su funkcije koje pojedini ViewModel treba da prekolopi
         /// </summary>
         /// 
-  
 
+        protected abstract Task AddItemAsync();
+        protected abstract Task UpdateItem();
+        protected abstract Task RemoveItemAsync();
+        protected abstract Task<IList<TModel>> GetItems();
         abstract protected Task<ObservableCollection<TModel>> SearchForItemAsync(string text);
-
-        //abstract protected object GetDbSet();
-
         abstract protected bool NoEmptyFiels();
-
-        protected bool Sadrzi(string a, string b)
-        {
-            return a.ToUpper().Contains(b.ToUpper());
-        }
-
-        protected bool Sadrzi(double a, string b)
-        {
-            return a.ToString().ToUpper().Contains(b.ToUpper());
-        }
 
         #endregion
     }

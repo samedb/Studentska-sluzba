@@ -33,7 +33,7 @@
                           DisplayMemberPath="PunoIme"
                           SelectedValuePath="UsernameReferenta"
                           Header="Referent smera"
-                                                                                      
+                                                                                                        
                           Style="{StaticResource DetailsElement}" />
             
             <ComboBox x:ConnectionId='4'                                               
@@ -41,7 +41,7 @@
                           DisplayMemberPath="Naziv"
                           SelectedValuePath="IdDepartmana"
                           Header="Departman"
-                                                                                 
+                                                                                                   
                           Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>
     </Grid>

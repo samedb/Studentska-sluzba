@@ -43,7 +43,7 @@
             <ComboBox x:ConnectionId='6'                                            
                           HorizontalAlignment="Stretch"
                           Header="Pol"
-                                                                           
+                                                                                             
                           Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>
     </Grid>

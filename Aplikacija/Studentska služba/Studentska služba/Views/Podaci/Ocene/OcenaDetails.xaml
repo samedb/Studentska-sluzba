@@ -34,7 +34,7 @@
                           DisplayMemberPath="IdIspita"
                           SelectedValuePath="IdIspita"
                           Header="ID ispita"
-                          SelectedValue="{x:Bind Ocena.IdIspita, Mode=TwoWay}"
+                          SelectedValue="{x:Bind Ocena.IdIspita, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}"/>
 
             <TextBox Text="{x:Bind Ocena.IdIspitaNavigation.IdPredmetaNavigation.Naziv, Mode=OneWay}"

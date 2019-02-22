@@ -48,7 +48,7 @@
             <ComboBox ItemsSource="{x:Bind Polovi, Mode=OneWay}" 
                           HorizontalAlignment="Stretch"
                           Header="Pol"
-                          SelectedItem="{x:Bind Referent.Pol, Mode=TwoWay}"
+                          SelectedItem="{x:Bind Referent.Pol, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
             <TextBox Text="{x:Bind Referent.Adresa, Mode=TwoWay, FallbackValue=''}"
                          Header="Adresa"

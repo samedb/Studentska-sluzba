@@ -30,7 +30,7 @@
                 <controls:DataGridTextColumn
                         Header="Profesor"
                         Binding="{Binding IdProfesoraNavigation.PunoIme}"
-                        Tag="IdPredmeta"/>
+                        Tag="IdProfesoraNavigation.PunoIme"/>
                 <controls:DataGridTextColumn
                         Header="ESPB"
                         Binding="{Binding Espb}"

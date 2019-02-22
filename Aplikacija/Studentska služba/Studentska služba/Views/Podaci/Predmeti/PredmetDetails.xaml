@@ -33,7 +33,7 @@
                           DisplayMemberPath="PunoIme"
                           SelectedValuePath="IdProfesora"
                           Header="Profesor"
-                          SelectedValue="{x:Bind Predmet.IdProfesora, Mode=TwoWay}"
+                          SelectedValue="{x:Bind Predmet.IdProfesora, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
 
             <TextBox Text="{x:Bind Predmet.Espb, Mode=TwoWay, FallbackValue=''}"

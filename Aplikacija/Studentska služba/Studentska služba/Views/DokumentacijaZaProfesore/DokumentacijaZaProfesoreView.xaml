@@ -19,15 +19,15 @@
         <ComboBox Header="Predmet"
                   ItemsSource="{x:Bind vm.Predmeti, Mode=OneWay}"
                   DisplayMemberPath="Naziv"
-                  SelectedItem="{x:Bind vm.SelectedPredmet, Mode=TwoWay}"
+                  SelectedItem="{x:Bind vm.SelectedPredmet, Mode=TwoWay, FallbackValue=''}"
                   Style="{StaticResource DetailsElement}"/>
         <ComboBox Header="Naziv roka"
                   ItemsSource="{x:Bind vm.Rokovi, Mode=OneWay}"
-                  SelectedItem="{x:Bind vm.NazivRoka, Mode=TwoWay}"
+                  SelectedItem="{x:Bind vm.NazivRoka, Mode=TwoWay, FallbackValue=''}"
                   Style="{StaticResource DetailsElement}"/>
         <ComboBox Header="Godina"
                   ItemsSource="{x:Bind vm.Godine, Mode=OneWay}"
-                  SelectedItem="{x:Bind vm.Godina, Mode=TwoWay}"
+                  SelectedItem="{x:Bind vm.Godina, Mode=TwoWay, FallbackValue=''}"
                   Style="{StaticResource DetailsElement}"/>
         <Button Content="Štampaj"
                 HorizontalAlignment="Center"

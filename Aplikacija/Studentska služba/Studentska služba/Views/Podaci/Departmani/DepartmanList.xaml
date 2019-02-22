@@ -29,7 +29,8 @@
                         Tag="Naziv"/>
                 <controls:DataGridTextColumn
                         Header="Sef departmana"
-                        Binding="{Binding IdSefaDepartmanaNavigation.PunoIme}"/>
+                        Binding="{Binding IdSefaDepartmanaNavigation.PunoIme}"
+                        Tag="IdSefaDepartmanaNavigation.PunoIme"/>
             </controls:DataGrid.Columns>
         </controls:DataGrid>
     </Grid>

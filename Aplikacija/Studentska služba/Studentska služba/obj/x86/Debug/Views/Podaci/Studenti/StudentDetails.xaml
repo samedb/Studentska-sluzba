@@ -43,14 +43,14 @@
             <ComboBox x:ConnectionId='6'                                            
                           HorizontalAlignment="Stretch"
                           Header="Pol"
-                                                                          
+                                                                                            
                           Style="{StaticResource DetailsElement}" />
             <ComboBox x:ConnectionId='7'                                            
                           HorizontalAlignment="Stretch"
                           DisplayMemberPath="Naziv"
                           SelectedValuePath="IdSmera"
                           Header="Smer"
-                                                                               
+                                                                                                 
                           Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>
         

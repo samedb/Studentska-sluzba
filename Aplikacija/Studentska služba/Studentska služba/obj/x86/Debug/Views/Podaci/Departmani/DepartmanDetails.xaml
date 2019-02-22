@@ -33,7 +33,7 @@
                           DisplayMemberPath="PunoIme"
                           SelectedValuePath="IdProfesora"
                           Header="Sef departmana"
-                                                                                          
+                                                                                                            
                           Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>
     </Grid>

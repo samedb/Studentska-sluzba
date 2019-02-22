@@ -19,15 +19,15 @@
         <ComboBox x:ConnectionId='2' Header="Predmet"
                                                                  
                   DisplayMemberPath="Naziv"
-                                                                         
+                                                                                           
                   Style="{StaticResource DetailsElement}"/>
         <ComboBox x:ConnectionId='3' Header="Naziv roka"
                                                                
-                                                                   
+                                                                                     
                   Style="{StaticResource DetailsElement}"/>
         <ComboBox x:ConnectionId='4' Header="Godina"
                                                                
-                                                                
+                                                                                  
                   Style="{StaticResource DetailsElement}"/>
         <Button x:ConnectionId='5' Content="Štampaj"
                 HorizontalAlignment="Center"

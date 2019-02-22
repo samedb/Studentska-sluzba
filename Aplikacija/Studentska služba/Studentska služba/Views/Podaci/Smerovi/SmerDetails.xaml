@@ -33,7 +33,7 @@
                           DisplayMemberPath="PunoIme"
                           SelectedValuePath="UsernameReferenta"
                           Header="Referent smera"
-                          SelectedValue="{x:Bind Smer.UsernameReferenta, Mode=TwoWay}"
+                          SelectedValue="{x:Bind Smer.UsernameReferenta, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
             
             <ComboBox ItemsSource="{x:Bind Departmani, Mode=OneWay}"
@@ -41,7 +41,7 @@
                           DisplayMemberPath="Naziv"
                           SelectedValuePath="IdDepartmana"
                           Header="Departman"
-                          SelectedValue="{x:Bind Smer.IdDepartmana, Mode=TwoWay}"
+                          SelectedValue="{x:Bind Smer.IdDepartmana, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>
     </Grid>
