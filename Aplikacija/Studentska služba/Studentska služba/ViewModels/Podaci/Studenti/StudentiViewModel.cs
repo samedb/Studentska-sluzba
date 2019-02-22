@@ -36,6 +36,8 @@ namespace Studentska_služba
             return SelectedItem != null &&
                     !(string.IsNullOrEmpty(SelectedItem.Ime) ||
                      string.IsNullOrEmpty(SelectedItem.Prezime) ||
+                     string.IsNullOrEmpty(SelectedItem.IdSmera.ToString()) ||
+                     string.IsNullOrEmpty(SelectedItem.DatumRodjenja.ToString()) ||
                      string.IsNullOrEmpty(SelectedItem.Jmbg) ||
                      string.IsNullOrEmpty(SelectedItem.Pol));
         }

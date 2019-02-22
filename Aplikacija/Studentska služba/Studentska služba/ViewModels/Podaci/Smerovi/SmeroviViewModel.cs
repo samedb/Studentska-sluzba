@@ -34,7 +34,11 @@ namespace Studentska_služba.ViewModels.Podaci.Smerovi
 
         protected override bool NoEmptyFiels()
         {
-            return true;
+            return SelectedItem != null &&
+                    !(string.IsNullOrEmpty(SelectedItem.IdSmera.ToString()) ||
+                     string.IsNullOrEmpty(SelectedItem.Naziv) ||
+                     string.IsNullOrEmpty(SelectedItem.UsernameReferenta) ||
+                     string.IsNullOrEmpty(SelectedItem.IdDepartmana.ToString()));
         }
 
         protected override async Task<ObservableCollection<Smer>> SearchForItemAsync(string text)

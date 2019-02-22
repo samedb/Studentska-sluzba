@@ -34,7 +34,10 @@ namespace Studentska_služba.ViewModels.Podaci.Predmeti
 
         protected override bool NoEmptyFiels()
         {
-            return true;
+            return SelectedItem != null &&
+                    !(string.IsNullOrEmpty(SelectedItem.IdProfesora.ToString()) ||
+                     string.IsNullOrEmpty(SelectedItem.Naziv) ||
+                     string.IsNullOrEmpty(SelectedItem.Espb.ToString()));
         }
 
         protected override async Task<ObservableCollection<Predmet>> SearchForItemAsync(string text)

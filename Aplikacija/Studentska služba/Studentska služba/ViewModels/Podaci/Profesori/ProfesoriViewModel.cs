@@ -34,7 +34,12 @@ namespace Studentska_služba.ViewModels.Podaci.Profesori
 
         protected override bool NoEmptyFiels()
         {
-            return true;
+            return SelectedItem != null &&
+                    !(string.IsNullOrEmpty(SelectedItem.Ime) ||
+                     string.IsNullOrEmpty(SelectedItem.Prezime) ||
+                     string.IsNullOrEmpty(SelectedItem.DatumRodjenja.ToString()) ||
+                     string.IsNullOrEmpty(SelectedItem.Jmbg) ||
+                     string.IsNullOrEmpty(SelectedItem.Pol));
         }
         protected override async Task<ObservableCollection<Profesor>> SearchForItemAsync(string text)
         {

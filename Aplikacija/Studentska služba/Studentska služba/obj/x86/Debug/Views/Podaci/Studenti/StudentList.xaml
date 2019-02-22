@@ -44,7 +44,7 @@
                 <controls:DataGridTextColumn
                         Header="Smer"
                         Binding="{Binding IdSmeraNavigation.Naziv}"
-                        Tag="IdSmera"/>
+                        Tag="IdSmeraNavigation.Naziv"/>
             </controls:DataGrid.Columns>
         </controls:DataGrid>
 

@@ -30,11 +30,11 @@
                 <controls:DataGridTextColumn
                         Header="Referent smera"
                         Binding="{Binding UsernameReferentaNavigation.PunoIme}"
-                        Tag="UsernameReferenta"/>
+                        Tag="UsernameReferentaNavigation.PunoIme"/>
                 <controls:DataGridTextColumn
                         Header="Departman"
                         Binding="{Binding IdDepartmanaNavigation.Naziv}"
-                        Tag="IdDepartmana"/>
+                        Tag="IdDepartmanaNavigation.Naziv"/>
             </controls:DataGrid.Columns>
         </controls:DataGrid>
     </Grid>

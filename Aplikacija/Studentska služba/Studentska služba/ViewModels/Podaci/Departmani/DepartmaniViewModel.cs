@@ -36,7 +36,9 @@ namespace Studentska_služba.ViewModels.Podaci.Departmani
 
         protected override bool NoEmptyFiels()
         {
-            return true;
+            return SelectedItem != null &&
+                    !(string.IsNullOrEmpty(SelectedItem.Naziv) ||
+                     string.IsNullOrEmpty(SelectedItem.IdSefaDepartmana.ToString()));
         }
 
         protected override async Task<ObservableCollection<Departman>> SearchForItemAsync(string text)

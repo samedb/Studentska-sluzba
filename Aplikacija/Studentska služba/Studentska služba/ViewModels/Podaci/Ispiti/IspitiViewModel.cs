@@ -34,7 +34,11 @@ namespace Studentska_služba.ViewModels.Podaci.Ispiti
 
         protected override bool NoEmptyFiels()
         {
-            return true;
+            return SelectedItem != null &&
+                    !(string.IsNullOrEmpty(SelectedItem.BrojIndeksaStudenta.ToString()) ||
+                     string.IsNullOrEmpty(SelectedItem.IdPredmeta.ToString()) ||
+                     string.IsNullOrEmpty(SelectedItem.NazivRoka) ||
+                     string.IsNullOrEmpty(SelectedItem.Godina.ToString()));
         }
 
         protected override async Task<ObservableCollection<Ispit>> SearchForItemAsync(string text)
