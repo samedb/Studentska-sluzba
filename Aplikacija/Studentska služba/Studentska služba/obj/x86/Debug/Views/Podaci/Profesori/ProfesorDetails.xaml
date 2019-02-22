@@ -35,6 +35,7 @@
                          Style="{StaticResource DetailsElement}" />
             <TextBox x:ConnectionId='4'                                                             
                          Header="JMBG"
+                         InputScope="Number"
                          Style="{StaticResource DetailsElement}" />
             <DatePicker x:ConnectionId='5'                                                                                               
                             HorizontalAlignment="Stretch"

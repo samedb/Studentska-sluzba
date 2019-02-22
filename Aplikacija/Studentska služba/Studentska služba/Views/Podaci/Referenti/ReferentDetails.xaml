@@ -40,6 +40,7 @@
                          Style="{StaticResource DetailsElement}" />
             <TextBox Text="{x:Bind Referent.Jmbg, Mode=TwoWay, FallbackValue=''}"
                          Header="JMBG"
+                         InputScope="Number"
                          Style="{StaticResource DetailsElement}" />
             <DatePicker Date="{x:Bind Referent.DatumRodjenja, Mode=TwoWay, Converter={StaticResource TimeConverter}}" 
                             HorizontalAlignment="Stretch"

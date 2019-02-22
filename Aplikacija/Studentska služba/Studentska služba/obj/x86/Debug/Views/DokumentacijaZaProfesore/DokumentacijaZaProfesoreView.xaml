@@ -16,16 +16,16 @@
     </Page.Resources>
 
     <StackPanel Margin="20" HorizontalAlignment="Center">
-        <ComboBox x:ConnectionId='2' Header="Predmet"
+        <ComboBox x:ConnectionId='2' Header="Predmet*"
                                                                  
                   DisplayMemberPath="Naziv"
                                                                                            
                   Style="{StaticResource DetailsElement}"/>
-        <ComboBox x:ConnectionId='3' Header="Naziv roka"
+        <ComboBox x:ConnectionId='3' Header="Naziv roka*"
                                                                
                                                                                      
                   Style="{StaticResource DetailsElement}"/>
-        <ComboBox x:ConnectionId='4' Header="Godina"
+        <ComboBox x:ConnectionId='4' Header="Godina*"
                                                                
                                                                                   
                   Style="{StaticResource DetailsElement}"/>

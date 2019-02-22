@@ -13,6 +13,7 @@ using System.Linq.Dynamic.Core;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Popups;
 
 namespace Studentska_služba
 {
@@ -135,6 +136,7 @@ namespace Studentska_služba
                     await UpdateItem();
                 }
                 RefreshTable();
+                await new MessageDialog("Gotovo").ShowAsync();
             }
         }
 

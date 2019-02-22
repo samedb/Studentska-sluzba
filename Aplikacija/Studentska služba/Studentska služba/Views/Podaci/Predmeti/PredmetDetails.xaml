@@ -38,6 +38,7 @@
 
             <TextBox Text="{x:Bind Predmet.Espb, Mode=TwoWay, FallbackValue=''}"
                      Header="ESPB"
+                     InputScope="Number"
                      Style="{StaticResource DetailsElement}"/>
 
         </controls:WrapPanel>

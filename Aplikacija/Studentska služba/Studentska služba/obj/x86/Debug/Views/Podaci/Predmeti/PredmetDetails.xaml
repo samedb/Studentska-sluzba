@@ -38,6 +38,7 @@
 
             <TextBox x:ConnectionId='4'                                                            
                      Header="ESPB"
+                     InputScope="Number"
                      Style="{StaticResource DetailsElement}"/>
 
         </controls:WrapPanel>

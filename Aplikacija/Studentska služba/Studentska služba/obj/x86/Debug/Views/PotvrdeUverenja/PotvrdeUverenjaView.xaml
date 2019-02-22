@@ -16,16 +16,16 @@
     </Page.Resources>
 
     <StackPanel Margin="20" HorizontalAlignment="Center">
-        <ComboBox x:ConnectionId='2' Header="Tip dokumenta"
+        <ComboBox x:ConnectionId='2' Header="Tip dokumenta*"
                                                                          
                                                                                         
                   Style="{StaticResource DetailsElement}"/>
-        <ComboBox x:ConnectionId='3' Header="Student"
+        <ComboBox x:ConnectionId='3' Header="Student*"
                   DisplayMemberPath="PunoImeIndeks"
                                                                  
                                                                                            
                   Style="{StaticResource DetailsElement}"/>
-        <TextBox x:ConnectionId='4' Header="Potvrda služi za"
+        <TextBox x:ConnectionId='4' Header="Potvrda služi za*"
                  TextWrapping="Wrap"
                  Height="100"
                                                       
