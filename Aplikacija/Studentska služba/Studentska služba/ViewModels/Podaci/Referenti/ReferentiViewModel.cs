@@ -27,9 +27,9 @@ namespace Studentska_služba.ViewModels.Podaci.Referenti
             await dataProvider.UpdateReferentAsync(SelectedItem);
         }
 
-        protected override async Task RemoveItemAsync()
+        protected override async Task RemoveItemAsync(params Referent[] items)
         {
-            await dataProvider.DeleteReferentAsync(SelectedItem);
+            await dataProvider.DeleteReferentAsync(items);
         }
 
         protected override bool NoEmptyFiels()

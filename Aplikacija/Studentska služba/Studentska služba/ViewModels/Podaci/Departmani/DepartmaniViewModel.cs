@@ -29,9 +29,10 @@ namespace Studentska_služba.ViewModels.Podaci.Departmani
             await dataProvider.UpdateDepartmanAsync(SelectedItem);
         }
 
-        protected override async Task RemoveItemAsync()
+
+        protected override async Task RemoveItemAsync(params Departman[] items)
         {
-            await dataProvider.DeleteDepartmanAsync(SelectedItem);
+            await dataProvider.DeleteDepartmanAsync(items);
         }
 
         protected override bool NoEmptyFiels()
@@ -52,5 +53,6 @@ namespace Studentska_služba.ViewModels.Podaci.Departmani
                 .ToList();
             return new ObservableCollection<Departman>(list);
         }
+
     }
 }

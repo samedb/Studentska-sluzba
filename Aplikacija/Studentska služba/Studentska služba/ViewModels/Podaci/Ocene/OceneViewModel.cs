@@ -36,9 +36,9 @@ namespace Studentska_služba.ViewModels.Podaci.Ocene
             await dataProvider.UpdateOcenaAsync(SelectedItem);
         }
 
-        protected override async Task RemoveItemAsync()
+        protected override async Task RemoveItemAsync(params Ocena[] items)
         {
-            await dataProvider.DeleteOcenaAsync(SelectedItem);
+            await dataProvider.DeleteOcenaAsync(items);
         }
 
         protected override bool NoEmptyFiels()

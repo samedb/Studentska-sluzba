@@ -26,9 +26,9 @@ namespace Studentska_služba
             await dataProvider.UpdateStudentAsync(SelectedItem);
         }
 
-        protected override async Task RemoveItemAsync()
+        protected override async Task RemoveItemAsync(params Student[] items)
         {
-            await dataProvider.DeleteStudentAsync(SelectedItem);
+            await dataProvider.DeleteStudentAsync(items);
         }
 
         protected override bool NoEmptyFiels()

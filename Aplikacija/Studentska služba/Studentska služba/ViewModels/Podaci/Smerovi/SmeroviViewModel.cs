@@ -27,9 +27,9 @@ namespace Studentska_služba.ViewModels.Podaci.Smerovi
             await dataProvider.UpdateSmerAsync(SelectedItem);
         }
 
-        protected override async Task RemoveItemAsync()
+        protected override async Task RemoveItemAsync(params Smer[] items)
         {
-            await dataProvider.DeleteSmerAsync(SelectedItem);
+            await dataProvider.DeleteSmerAsync(items);
         }
 
         protected override bool NoEmptyFiels()

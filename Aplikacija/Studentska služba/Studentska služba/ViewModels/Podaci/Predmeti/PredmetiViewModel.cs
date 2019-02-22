@@ -27,9 +27,9 @@ namespace Studentska_služba.ViewModels.Podaci.Predmeti
             await dataProvider.UpdatePredmetAsync(SelectedItem);
         }
 
-        protected override async Task RemoveItemAsync()
+        protected override async Task RemoveItemAsync(params Predmet[] items)
         {
-            await dataProvider.DeletePredmetAsync(SelectedItem);
+            await dataProvider.DeletePredmetAsync(items);
         }
 
         protected override bool NoEmptyFiels()

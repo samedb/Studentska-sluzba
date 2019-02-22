@@ -95,6 +95,11 @@ namespace Studentska_služba
             RefreshTable();
         }
 
+        private bool IsAnySelected()
+        {
+            return SelectedItem != null;
+        }
+
         #endregion
 
         #region Pomocne Funkcije
@@ -110,19 +115,26 @@ namespace Studentska_služba
             DetailsMode = DetailsMode.Edit;
         }
 
-        private bool IsAnySelected()
-        {
-            return SelectedItem != null;
-        }
 
         virtual protected async void DeleteSelectedStudent()
         {
-            await RemoveItemAsync();
-            ItemList.Remove(SelectedItem);
+            var dialog = new MessageDialog("Da li ste sigurni da zelite da obrisete selektovane stavke?");
+            dialog.Commands.Add(new UICommand("Da", new UICommandInvokedHandler(ObrisiSelektovaniItem)));
+            dialog.Commands.Add(new UICommand("Ne"));
+            dialog.CancelCommandIndex = 1;
+
+            await dialog.ShowAsync();
+
             SelectedItem = default(TModel);
-            //RefreshTable();
+            RefreshTable();
         }
-        
+
+        private async void ObrisiSelektovaniItem(IUICommand command)
+        {
+            await RemoveItemAsync(SelectedItem);
+        }
+
+
         private async void SaveChanges()
         {
             if (NoEmptyFiels())
@@ -136,7 +148,10 @@ namespace Studentska_služba
                     await UpdateItem();
                 }
                 RefreshTable();
-                await new MessageDialog("Gotovo").ShowAsync();
+            }
+            else
+            {
+                await new MessageDialog("Niste popunili sta polja!").ShowAsync();
             }
         }
 
@@ -213,7 +228,7 @@ namespace Studentska_služba
 
         protected abstract Task AddItemAsync();
         protected abstract Task UpdateItem();
-        protected abstract Task RemoveItemAsync();
+        protected abstract Task RemoveItemAsync(params TModel[] items);
         protected abstract Task<IList<TModel>> GetItems();
         abstract protected Task<ObservableCollection<TModel>> SearchForItemAsync(string text);
         abstract protected bool NoEmptyFiels();

@@ -25,6 +25,7 @@ namespace Studentska_služba.Views.Podaci.Ispiti
         {
             this.InitializeComponent();
         }
+
         public IspitiViewModel vm
         {
             get { return (IspitiViewModel)GetValue(vmProperty); }

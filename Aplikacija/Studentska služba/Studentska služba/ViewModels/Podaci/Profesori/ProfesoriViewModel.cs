@@ -27,9 +27,9 @@ namespace Studentska_služba.ViewModels.Podaci.Profesori
             await dataProvider.UpdateProfesorAsync(SelectedItem);
         }
 
-        protected override async Task RemoveItemAsync()
+        protected override async Task RemoveItemAsync(params Profesor[] items)
         {
-            await dataProvider.DeleteProfesorAsync(SelectedItem);
+            await dataProvider.DeleteProfesorAsync(items);
         }
 
         protected override bool NoEmptyFiels()

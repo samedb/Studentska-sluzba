@@ -27,9 +27,9 @@ namespace Studentska_služba.ViewModels.Podaci.Ispiti
             await dataProvider.UpdateIspitAsync(SelectedItem);
         }
 
-        protected override async Task RemoveItemAsync()
+        protected override async Task RemoveItemAsync(params Ispit[] items)
         {
-            await dataProvider.DeleteIspitAsync(SelectedItem);
+            await dataProvider.DeleteIspitAsync(items);
         }
 
         protected override bool NoEmptyFiels()
