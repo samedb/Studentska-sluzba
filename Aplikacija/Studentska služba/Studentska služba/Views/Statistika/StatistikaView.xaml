@@ -24,11 +24,13 @@
         </Grid.RowDefinitions>
         <TextBlock Text="Statistički podaci"
                    FontSize="48"
+                   Margin="10"
                    HorizontalAlignment="Center"/>
         
         <ScrollViewer Grid.Row="1">
 
             <StackPanel>
+
 
                 <TextBlock Text="Uspesnost polaganja ispita po ispitnim rokovima"
                            Style="{StaticResource NaslovGrafikona}"/>
@@ -39,14 +41,15 @@
                                            IndependentValuePath="Name" 
                                            DependentValuePath="Amount"
                                            IsSelectionEnabled="True"
-                                           ItemsSource="{x:Bind vm.PrijavljeniIspitiPoRokovima}"/>
-                    
+                                           ItemsSource="{x:Bind vm.PrijavljeniIspitiPoRokovima, Mode=OneWay}"/>
+
                     <charting:ColumnSeries Title="Broj polozenih ispita" 
                                            IndependentValuePath="Name" 
                                            DependentValuePath="Amount"
                                            IsSelectionEnabled="True"
-                                           ItemsSource="{x:Bind vm.PolozeniIspitiPoRokovima}"/>
+                                           ItemsSource="{x:Bind vm.PolozeniIspitiPoRokovima, Mode=OneWay}"/>
                 </charting:Chart>
+
 
                 <TextBlock Text="Broj studenata po departmanima"
                            Style="{StaticResource NaslovGrafikona}"/>
@@ -58,8 +61,9 @@
                                         IndependentValuePath="Name"  
                                         DependentValuePath="Amount"  
                                         IsSelectionEnabled="True"
-                                        ItemsSource="{x:Bind vm.BrojStudenataPoDepartmanima}"/>
+                                        ItemsSource="{x:Bind vm.BrojStudenataPoDepartmanima, Mode=OneWay}"/>
                 </charting:Chart>
+
 
                 <!--<TextBlock Text="Uspesnost polaganja predmeta"
                            Style="{StaticResource NaslovGrafikona}"/>
@@ -74,6 +78,7 @@
                                         ItemsSource="{x:Bind vm.UspesnostPolaganjePredmeta}"/>
                 </charting:Chart>-->
 
+
                 <TextBlock Text="Prosecna ocena po predmetu"
                            Style="{StaticResource NaslovGrafikona}"/>
                 <charting:Chart HorizontalAlignment="Center" 
@@ -84,8 +89,9 @@
                                          IndependentValuePath="Name"  
                                          DependentValuePath="Amount" CharacterSpacing="5"  
                                          IsSelectionEnabled="True"
-                                         ItemsSource="{x:Bind vm.ProsecnaOcenaPoPredmetu}"/>
+                                         ItemsSource="{x:Bind vm.ProsecnaOcenaPoPredmetu, Mode=OneWay}"/>
                 </charting:Chart>
+
 
                 <TextBlock Text="Prosecna ocena po departmanu"
                            Style="{StaticResource NaslovGrafikona}"/>
@@ -97,7 +103,7 @@
                                         IndependentValuePath="Name"  
                                         DependentValuePath="Amount" CharacterSpacing="5"  
                                         IsSelectionEnabled="True"
-                                        ItemsSource="{x:Bind vm.ProsecnaOcenaPoDepartmanu}"/>
+                                        ItemsSource="{x:Bind vm.ProsecnaOcenaPoDepartmanu, Mode=OneWay}"/>
                 </charting:Chart>
 
 
@@ -111,10 +117,11 @@
                                         IndependentValuePath="Name"  
                                         DependentValuePath="Amount" CharacterSpacing="5"  
                                         IsSelectionEnabled="True"
-                                        ItemsSource="{x:Bind vm.NajboljiStudenti}"/>
+                                        ItemsSource="{x:Bind vm.NajboljiStudenti, Mode=OneWay}"/>
                 </charting:Chart>
-            </StackPanel>
 
+
+            </StackPanel>
         </ScrollViewer>
     </Grid>
 </Page>

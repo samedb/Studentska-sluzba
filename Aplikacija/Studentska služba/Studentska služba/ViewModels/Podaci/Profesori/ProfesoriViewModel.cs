@@ -40,9 +40,10 @@ namespace Studentska_služba.ViewModels.Podaci.Profesori
         {
             var list = (await GetItems() as List<Profesor>)
                 .Where(t =>
-                    t.Ime.Contains(text) ||
-                    t.Prezime.Contains(text) ||
-                    t.Pol.Contains(text))
+                    Sadrzi(t.IdProfesora, text) ||
+                    Sadrzi(t.Ime, text) ||
+                    Sadrzi(t.Prezime, text) ||
+                    Sadrzi(t.Pol, text))
                 .ToList();
             return new ObservableCollection<Profesor>(list);
         }

@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-21T19:28:56.016</Modified>
+      <Modified>2019-02-22T13:55:21.590</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Studentska služba.exe">
       <PackagePath>entrypoint\Studentska služba.exe</PackagePath>
-      <Modified>2019-02-21T19:28:52.568</Modified>
+      <Modified>2019-02-22T13:55:19.109</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\castle.core\4.2.1\lib\netstandard1.3\Castle.Core.dll">
       <PackagePath>Castle.Core.dll</PackagePath>
@@ -272,7 +272,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\source\repos\ClassLibrary4\ClassLibrary4\bin\Debug\netstandard2.0\StudentskaSluzba.Model.dll">
       <PackagePath>StudentskaSluzba.Model.dll</PackagePath>
-      <Modified>2019-02-21T18:22:00.948</Modified>
+      <Modified>2019-02-22T13:21:56.671</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\.nuget\packages\robmikh.compositionsurfacefactory\0.7.3\lib\uap10.0\Robmikh.CompositionSurfaceFactory.winmd">
       <PackagePath>Robmikh.CompositionSurfaceFactory.winmd</PackagePath>
@@ -525,139 +525,139 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Studentska služba.xr.xml">
       <PackagePath>Studentska služba.xr.xml</PackagePath>
-      <Modified>2019-02-21T16:27:26.816</Modified>
+      <Modified>2019-02-22T13:22:16.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.072</Modified>
+      <Modified>2019-02-22T13:55:18.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xbf">
       <PackagePath>Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.073</Modified>
+      <Modified>2019-02-22T13:55:18.169</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\MainPage\MainPage.xbf">
       <PackagePath>Views\MainPage\MainPage.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.073</Modified>
+      <Modified>2019-02-22T13:55:18.170</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\CommandLine.xbf">
       <PackagePath>Views\Podaci\CommandLine.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.074</Modified>
+      <Modified>2019-02-22T13:55:18.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Departmani\DepartmanDetails.xbf">
       <PackagePath>Views\Podaci\Departmani\DepartmanDetails.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.076</Modified>
+      <Modified>2019-02-22T13:55:18.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Departmani\DepartmaniView.xbf">
       <PackagePath>Views\Podaci\Departmani\DepartmaniView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.077</Modified>
+      <Modified>2019-02-22T13:55:18.172</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Departmani\DepartmanList.xbf">
       <PackagePath>Views\Podaci\Departmani\DepartmanList.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.082</Modified>
+      <Modified>2019-02-22T13:55:18.173</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ispiti\IspitDetails.xbf">
       <PackagePath>Views\Podaci\Ispiti\IspitDetails.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.083</Modified>
+      <Modified>2019-02-22T13:55:18.173</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ispiti\IspitiList.xbf">
       <PackagePath>Views\Podaci\Ispiti\IspitiList.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.084</Modified>
+      <Modified>2019-02-22T13:55:18.174</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ispiti\IspitiView.xbf">
       <PackagePath>Views\Podaci\Ispiti\IspitiView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.085</Modified>
+      <Modified>2019-02-22T13:55:18.174</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ocene\OcenaDetails.xbf">
       <PackagePath>Views\Podaci\Ocene\OcenaDetails.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.085</Modified>
+      <Modified>2019-02-22T13:55:18.174</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ocene\OceneList.xbf">
       <PackagePath>Views\Podaci\Ocene\OceneList.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.086</Modified>
+      <Modified>2019-02-22T13:55:18.175</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Ocene\OceneView.xbf">
       <PackagePath>Views\Podaci\Ocene\OceneView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.086</Modified>
+      <Modified>2019-02-22T13:55:18.175</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\PodaciView.xbf">
       <PackagePath>Views\Podaci\PodaciView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.090</Modified>
+      <Modified>2019-02-22T13:55:18.175</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Predmeti\PredmetDetails.xbf">
       <PackagePath>Views\Podaci\Predmeti\PredmetDetails.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.090</Modified>
+      <Modified>2019-02-22T13:55:18.176</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Predmeti\PredmetiList.xbf">
       <PackagePath>Views\Podaci\Predmeti\PredmetiList.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.091</Modified>
+      <Modified>2019-02-22T13:55:18.176</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Predmeti\PredmetiView.xbf">
       <PackagePath>Views\Podaci\Predmeti\PredmetiView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.092</Modified>
+      <Modified>2019-02-22T13:55:18.177</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Profesori\ProfesorDetails.xbf">
       <PackagePath>Views\Podaci\Profesori\ProfesorDetails.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.093</Modified>
+      <Modified>2019-02-22T13:55:18.177</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Profesori\ProfesoriList.xbf">
       <PackagePath>Views\Podaci\Profesori\ProfesoriList.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.094</Modified>
+      <Modified>2019-02-22T13:55:18.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Profesori\ProfesoriView.xbf">
       <PackagePath>Views\Podaci\Profesori\ProfesoriView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.096</Modified>
+      <Modified>2019-02-22T13:55:18.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Referenti\ReferentDetails.xbf">
       <PackagePath>Views\Podaci\Referenti\ReferentDetails.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.097</Modified>
+      <Modified>2019-02-22T13:55:18.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Referenti\ReferentiList.xbf">
       <PackagePath>Views\Podaci\Referenti\ReferentiList.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.098</Modified>
+      <Modified>2019-02-22T13:55:18.179</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Referenti\ReferentiView.xbf">
       <PackagePath>Views\Podaci\Referenti\ReferentiView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.098</Modified>
+      <Modified>2019-02-22T13:55:18.179</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Smerovi\SmerDetails.xbf">
       <PackagePath>Views\Podaci\Smerovi\SmerDetails.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.099</Modified>
+      <Modified>2019-02-22T13:55:18.180</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Smerovi\SmeroviList.xbf">
       <PackagePath>Views\Podaci\Smerovi\SmeroviList.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.100</Modified>
+      <Modified>2019-02-22T13:55:18.180</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Smerovi\SmeroviView.xbf">
       <PackagePath>Views\Podaci\Smerovi\SmeroviView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.101</Modified>
+      <Modified>2019-02-22T13:55:18.180</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Studenti\StudentDetails.xbf">
       <PackagePath>Views\Podaci\Studenti\StudentDetails.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.101</Modified>
+      <Modified>2019-02-22T13:55:18.181</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Studenti\StudentiView.xbf">
       <PackagePath>Views\Podaci\Studenti\StudentiView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.102</Modified>
+      <Modified>2019-02-22T13:55:18.181</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Podaci\Studenti\StudentList.xbf">
       <PackagePath>Views\Podaci\Studenti\StudentList.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.102</Modified>
+      <Modified>2019-02-22T13:55:18.182</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\PotvrdeUverenja\PotvrdeUverenjaView.xbf">
       <PackagePath>Views\PotvrdeUverenja\PotvrdeUverenjaView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.103</Modified>
+      <Modified>2019-02-22T13:55:18.182</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\PrijemniIspit\PrijemniIspitView.xbf">
       <PackagePath>Views\PrijemniIspit\PrijemniIspitView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.104</Modified>
+      <Modified>2019-02-22T13:55:18.182</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Settings\SettingsView.xbf">
       <PackagePath>Views\Settings\SettingsView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.104</Modified>
+      <Modified>2019-02-22T13:55:18.183</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Views\Statistika\StatistikaView.xbf">
       <PackagePath>Views\Statistika\StatistikaView.xbf</PackagePath>
-      <Modified>2019-02-21T19:28:51.105</Modified>
+      <Modified>2019-02-22T13:55:18.183</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -837,11 +837,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-02-21T16:32:40.641</Modified>
+      <Modified>2019-02-21T20:53:22.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Samed\Documents\GitHub\Studentska-sluzba\Aplikacija\Studentska služba\Studentska služba\bin\x86\Debug\Core\Studentska služba.exe">
       <PackagePath>Studentska služba.exe</PackagePath>
-      <Modified>2019-02-21T19:28:56.006</Modified>
+      <Modified>2019-02-22T13:55:21.580</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

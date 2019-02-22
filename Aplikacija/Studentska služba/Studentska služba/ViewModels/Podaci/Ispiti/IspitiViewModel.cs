@@ -39,19 +39,15 @@ namespace Studentska_služba.ViewModels.Podaci.Ispiti
 
         protected override async Task<ObservableCollection<Ispit>> SearchForItemAsync(string text)
         {
-            int broj = -1;
-            int.TryParse(text, out broj);
-
-
             var list = (await GetItems() as List<Ispit>)
-                .Where( t =>
-                    t.IdIspita == broj ||
-                    t.BrojIndeksaStudenta == broj ||
-                    t.BrojIndeksaStudentaNavigation.Ime.Contains(text) ||
-                    t.BrojIndeksaStudentaNavigation.Prezime.Contains(text) ||
-                    t.NazivRoka.Contains(text) ||
-                    t.Godina == broj ||
-                    t.IdPredmetaNavigation.Naziv.Contains(text))
+                .Where(t =>
+                    Sadrzi(t.IdIspita, text) ||
+                    Sadrzi(t.BrojIndeksaStudenta, text) ||
+                    Sadrzi(t.BrojIndeksaStudentaNavigation.Ime, text) ||
+                    Sadrzi(t.BrojIndeksaStudentaNavigation.Prezime, text) ||
+                    Sadrzi(t.NazivRoka, text) ||
+                    Sadrzi(t.Godina, text) ||
+                    Sadrzi(t.IdPredmetaNavigation.Naziv, text))
                 .ToList();
             return new ObservableCollection<Ispit>(list);
         }

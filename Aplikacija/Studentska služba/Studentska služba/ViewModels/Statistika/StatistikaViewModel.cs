@@ -1,5 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using Microsoft.EntityFrameworkCore;
+using StudentskaSluzba.Model.Models;
 using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
@@ -77,41 +78,50 @@ namespace Studentska_služba.ViewModels.Statistika
 
         public StatistikaViewModel()
         {
-            PrijavljeniIspitiPoRokovima = GetPrijavljeniIspitiPoRokovima();
-            PolozeniIspitiPoRokovima = GetPolozeniIspitiPoRokovima();
-            BrojStudenataPoDepartmanima = GetBrojStudenataPoDepartmanima();
+            QueryData();
+        }
+
+        private async void QueryData()
+        {
+            var dataProvider = new EFCoreDataProvider();
+            PrijavljeniIspitiPoRokovima = await dataProvider.GetPrijavljeniIspitiPoRokovima();
+            PolozeniIspitiPoRokovima = await dataProvider.GetPolozeniIspitiPoRokovima();
+            BrojStudenataPoDepartmanima = await dataProvider.GetBrojStudenataPoDepartmanima();
+
+            // Nisam uspeo sve upite da implementiram u EF Core, neki su ostali u SQL-u
             UspesnostPolaganjePredmeta = GetUspesnostPolaganjePredmeta();
             ProsecnaOcenaPoPredmetu = GetProsecnaOcenaPoPredmetu();
             ProsecnaOcenaPoDepartmanu = GetProsecnaOcenaPoDepartmanu();
             NajboljiStudenti = GetNajboljiStudenti();
         }
-        private List<ChartData> GetPrijavljeniIspitiPoRokovima()
-        {
-            string upit = $@"SELECT Ispit.naziv_roka + ' ' + CONVERT(varchar(15), Ispit.godina), Cast(COUNT(*) AS Float)
-                             FROM Ispit
-                             WHERE godina = 2018
-                             GROUP BY Ispit.godina, Ispit.naziv_roka;";
-            return GetChartDataList(upit);
-        }
 
-        private List<ChartData> GetPolozeniIspitiPoRokovima()
-        {
-            string upit = $@"SELECT Ispit.naziv_roka + ' ' + CONVERT(varchar(15), Ispit.godina), Cast(COUNT(*) AS Float)
-                             FROM Ispit INNER JOIN Ocena ON Ispit.id_ispita = Ocena.id_ispita
-                             WHERE godina = 2018
-                             GROUP BY Ispit.godina, Ispit.naziv_roka;";
-            return GetChartDataList(upit);
-        }
+        //private async Task<List<ChartData>> GetPrijavljeniIspitiPoRokovima()
+        //{
+        //    //string upit = $@"SELECT Ispit.naziv_roka + ' ' + CONVERT(varchar(15), Ispit.godina), Cast(COUNT(*) AS Float)
+        //    //                 FROM Ispit
+        //    //                 WHERE godina = 2018
+        //    //                 GROUP BY Ispit.godina, Ispit.naziv_roka;";
+        //    //return GetChartDataList(upit);
+        //}
 
-        private List<ChartData> GetBrojStudenataPoDepartmanima()
-        {
-            string upit = $@"SELECT Departman.naziv, Cast(COUNT(*) AS Float)
-                      FROM Student INNER JOIN Smer ON Student.id_smera = Smer.id_smera
-	                       INNER JOIN Departman ON Departman.id_departmana = Smer.id_departmana
-                      GROUP BY Departman.naziv;";
-            return GetChartDataList(upit);
+        //private async Task<List<ChartData>> GetPolozeniIspitiPoRokovima()
+        //{
+        //    //string upit = $@"SELECT Ispit.naziv_roka + ' ' + CONVERT(varchar(15), Ispit.godina), Cast(COUNT(*) AS Float)
+        //    //                 FROM Ispit INNER JOIN Ocena ON Ispit.id_ispita = Ocena.id_ispita
+        //    //                 WHERE godina = 2018
+        //    //                 GROUP BY Ispit.godina, Ispit.naziv_roka;";
+        //    //return GetChartDataList(upit);
+        //}
+
+        //private List<ChartData> GetBrojStudenataPoDepartmanima()
+        //{
+        //    string upit = $@"SELECT Departman.naziv, Cast(COUNT(*) AS Float)
+        //              FROM Student INNER JOIN Smer ON Student.id_smera = Smer.id_smera
+	       //                INNER JOIN Departman ON Departman.id_departmana = Smer.id_departmana
+        //              GROUP BY Departman.naziv;";
+        //    return GetChartDataList(upit);
                 
-        }
+        //}
 
         private List<ChartData> GetUspesnostPolaganjePredmeta()
         {

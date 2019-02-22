@@ -41,10 +41,12 @@ namespace Studentska_služba.ViewModels.Podaci.Predmeti
         {
             var list = (await GetItems() as List<Predmet>)
                 .Where(t =>
-                    t.Naziv.Contains(text) ||
-                    t.IdProfesoraNavigation.Ime.Contains(text) ||
-                    t.IdProfesoraNavigation.Prezime.Contains(text))
+                    Sadrzi(t.IdPredmeta, text) ||
+                    Sadrzi(t.Naziv, text) ||
+                    Sadrzi(t.IdProfesoraNavigation.Ime, text) ||
+                    Sadrzi(t.IdProfesoraNavigation.Prezime, text))
                 .ToList();
+
             return new ObservableCollection<Predmet>(list);
         }
     }

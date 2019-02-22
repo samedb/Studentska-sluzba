@@ -43,9 +43,10 @@ namespace Studentska_služba.ViewModels.Podaci.Departmani
         {
             var list =  (await GetItems() as List<Departman>)
                 .Where(t =>
-                    t.Naziv.Contains(text) ||
-                    t.IdSefaDepartmanaNavigation.Ime.Contains(text) ||
-                    t.IdSefaDepartmanaNavigation.Prezime.Contains(text))
+                    Sadrzi(t.IdDepartmana, text) ||
+                    Sadrzi(t.Naziv, text) ||
+                    Sadrzi(t.IdSefaDepartmanaNavigation.Ime, text) ||
+                    Sadrzi(t.IdSefaDepartmanaNavigation.Prezime, text))
                 .ToList();
             return new ObservableCollection<Departman>(list);
         }

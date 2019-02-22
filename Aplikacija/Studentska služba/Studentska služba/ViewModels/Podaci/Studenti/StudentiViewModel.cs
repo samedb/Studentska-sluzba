@@ -44,11 +44,12 @@ namespace Studentska_služba
         {
             var list = (await GetItems() as List<Student>)
                           .Where(t =>
-                              t.Ime.Contains(text) ||
-                              t.Prezime.Contains(text) ||
-                              t.Jmbg.Contains(text) ||
-                              t.Pol.Contains(text) ||
-                              t.BrojIndeksa.ToString().Contains(text))
+                              Sadrzi(t.BrojIndeksa, text) ||
+                              Sadrzi(t.Ime, text) ||
+                              Sadrzi(t.Prezime, text) ||
+                              Sadrzi(t.Jmbg, text) ||
+                              Sadrzi(t.IdSmeraNavigation.Naziv, text) ||
+                              Sadrzi(t.Pol, text))
                           .ToList();
             return new ObservableCollection<Student>(list);
         }

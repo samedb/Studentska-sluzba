@@ -142,7 +142,6 @@
     <Compile Include="ViewModels\Podaci\Studenti\StudentiViewModel.cs" />
     <Compile Include="ViewModels\PotvrdeUverenja\PotvrdeUverenjaViewModel.cs" />
     <Compile Include="ViewModels\PrijemniIspit\PrijemniIspitViewModel.cs" />
-    <Compile Include="ViewModels\Statistika\ChartData.cs" />
     <Compile Include="ViewModels\Statistika\StatistikaViewModel.cs" />
     <Compile Include="Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xaml.cs">
       <DependentUpon>DokumentacijaZaProfesoreView.xaml</DependentUpon>

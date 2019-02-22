@@ -186,7 +186,7 @@ namespace Studentska_služba
             string text = SearchBoxText;
             if (text.Length > 1)
             {
-                //Ovo nije dobro, mora da se porpravi
+                // Ovo nije dobro, mora da se porpravi
                 // Uopste ne radi asinhrono
                 // Treba da procitam kako to tacno da uradim
                 ItemList = await SearchForItemAsync(text);
@@ -200,6 +200,7 @@ namespace Studentska_služba
         /// <summary>
         /// Ovo su funkcije koje pojedini ViewModel treba da prekolopi
         /// </summary>
+        /// 
   
 
         abstract protected Task<ObservableCollection<TModel>> SearchForItemAsync(string text);
@@ -207,6 +208,16 @@ namespace Studentska_služba
         //abstract protected object GetDbSet();
 
         abstract protected bool NoEmptyFiels();
+
+        protected bool Sadrzi(string a, string b)
+        {
+            return a.ToUpper().Contains(b.ToUpper());
+        }
+
+        protected bool Sadrzi(double a, string b)
+        {
+            return a.ToString().ToUpper().Contains(b.ToUpper());
+        }
 
         #endregion
     }

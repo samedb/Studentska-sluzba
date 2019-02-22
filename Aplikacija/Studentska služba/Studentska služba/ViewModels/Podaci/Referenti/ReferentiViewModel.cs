@@ -74,9 +74,9 @@ namespace Studentska_služba.ViewModels.Podaci.Referenti
         {
             var list = (await GetItems() as List<Referent>)
                 .Where(t =>
-                    t.UsernameReferenta.Contains(text) ||
-                    t.Ime.Contains(text) ||
-                    t.Prezime.Contains(text))
+                    Sadrzi(t.UsernameReferenta, text) ||
+                    Sadrzi(t.Ime, text) ||
+                    Sadrzi(t.Prezime, text))
                 .ToList();
             return new ObservableCollection<Referent>(list);
         }

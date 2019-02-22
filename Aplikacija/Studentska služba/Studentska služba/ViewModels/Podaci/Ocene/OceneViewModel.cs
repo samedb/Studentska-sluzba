@@ -48,19 +48,16 @@ namespace Studentska_služba.ViewModels.Podaci.Ocene
 
         protected override async Task<ObservableCollection<Ocena>> SearchForItemAsync(string text)
         {
-            int broj = -1;
-            int.TryParse(text, out broj);
-
             var list = (await GetItems() as List<Ocena>)
                 .Where(t =>
-                    t.Ocena1 == broj ||
-                    t.IdIspita == broj ||
-                    t.IdIspitaNavigation.BrojIndeksaStudenta == broj ||
-                    t.IdIspitaNavigation.BrojIndeksaStudentaNavigation.Ime.Contains(text) ||
-                    t.IdIspitaNavigation.BrojIndeksaStudentaNavigation.Prezime.Contains(text) ||
-                    t.IdIspitaNavigation.NazivRoka.Contains(text) ||
-                    t.IdIspitaNavigation.Godina == broj ||
-                    t.IdIspitaNavigation.IdPredmetaNavigation.Naziv.Contains(text))
+                    Sadrzi(t.Ocena1, text) ||
+                    Sadrzi(t.IdIspita, text) ||
+                    Sadrzi(t.IdIspitaNavigation.BrojIndeksaStudenta, text) ||
+                    Sadrzi(t.IdIspitaNavigation.BrojIndeksaStudentaNavigation.Ime, text) ||
+                    Sadrzi(t.IdIspitaNavigation.BrojIndeksaStudentaNavigation.Prezime, text) ||
+                    Sadrzi(t.IdIspitaNavigation.NazivRoka, text) ||
+                    Sadrzi(t.IdIspitaNavigation.Godina, text) ||
+                    Sadrzi(t.IdIspitaNavigation.IdPredmetaNavigation.Naziv, text))
                 .ToList();
 
             return new ObservableCollection<Ocena>(list);

@@ -41,10 +41,11 @@ namespace Studentska_služba.ViewModels.Podaci.Smerovi
         {
             var list = (await GetItems() as List<Smer>)
                 .Where(t =>
-                    t.Naziv.Contains(text) ||
-                    t.IdDepartmanaNavigation.Naziv.Contains(text) ||
-                    t.UsernameReferentaNavigation.Ime.Contains(text) ||
-                    t.UsernameReferentaNavigation.Prezime.Contains(text))
+                    Sadrzi(t.IdSmera, text) ||
+                    Sadrzi(t.Naziv, text) ||
+                    Sadrzi(t.IdDepartmanaNavigation.Naziv, text) ||
+                    Sadrzi(t.UsernameReferentaNavigation.Ime, text) ||
+                    Sadrzi(t.UsernameReferentaNavigation.Prezime, text))
                 .ToList();
             return new ObservableCollection<Smer>(list);
         }
