@@ -478,13 +478,13 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\source\repos\ClassLibrary4\ClassLibrary4\StudentskaSluzba.Model.csproj">
-      <Project>{1221bb44-8ede-4f1a-99db-b51ee7e08e03}</Project>
-      <Name>StudentskaSluzba.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\..\source\repos\pdf uwp drugi pokusaj\iText7Wrapper\iText7Wrapper.csproj">
+    <ProjectReference Include="..\..\iText7Wrapper\iText7Wrapper.csproj">
       <Project>{a423e2b8-9578-49e7-b8e7-b3cea88d3627}</Project>
       <Name>iText7Wrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StudentskaSluzba.Model\StudentskaSluzba.Model.csproj">
+      <Project>{fa6322f4-988a-47e2-97e2-669563d49159}</Project>
+      <Name>StudentskaSluzba.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
