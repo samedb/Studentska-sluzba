@@ -45,13 +45,13 @@
             <local:OceneList vm="{x:Bind vm, Mode=TwoWay}"/>
 
 
-            <StackPanel Margin="10"
+            <!--<StackPanel Margin="10"
                     Background="WhiteSmoke"
                     Grid.Column="1"
                     Visibility="{x:Bind vm.SelectedItem, Mode=OneWay, Converter={StaticResource ObjectToVisibilityConverter}}">
 
-                <local:OcenaDetails Ocena="{x:Bind vm.SelectedItem, Mode=TwoWay}"
-                                                IsEnabled="{x:Bind  vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsModeToBooleanConverter}}"/>
+                --><!--<local:OcenaDetails Ocena="{x:Bind vm.SelectedItem, Mode=TwoWay}"
+                                                IsEnabled="{x:Bind  vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsModeToBooleanConverter}}"/>--><!--
 
                 <StackPanel Orientation="Horizontal"
                             Visibility="{x:Bind vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsButtonVisibilityConverter}}"
@@ -65,9 +65,9 @@
                             Command="{x:Bind vm.CancelCommand, Mode=OneWay}"
                             Margin="10"/>
 
-                </StackPanel>
+                </StackPanel>-->
 
-            </StackPanel>
+            <!--</StackPanel>-->
         </Grid>
 
     </Grid>

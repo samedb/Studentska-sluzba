@@ -1,6 +1,7 @@
 ﻿using Studentska_služba.ViewModels.Podaci.Ispiti;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -24,16 +25,25 @@ namespace Studentska_služba.Views.Podaci
     public sealed partial class IspitiView : Page
     {
         public IspitiViewModel vm;
+
         public IspitiView()
+        {
+                this.InitializeComponent();
+        }
+
+        // Ovo radim jer mi treba Frame u kome se trenutno nalazimo
+        // A ta refernca je u konstruktoru jos null, pa je tek sad, kad se stranica ucita, 
+        // prosledjujem viewmodelu kao parametar
+        // Treba mi referenca na ContentFrame
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             try
             {
-                vm = new IspitiViewModel();
-                this.InitializeComponent();
+                vm = new IspitiViewModel(Frame);
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                Console.WriteLine(e);
+                Debug.WriteLine(ex);
             }
         }
     }

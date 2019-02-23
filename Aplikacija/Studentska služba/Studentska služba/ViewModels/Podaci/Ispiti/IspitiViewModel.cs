@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Studentska_služba.Views.Podaci.Ispiti;
+using Studentska_služba.Views.Podaci.Ocene;
 using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
@@ -6,11 +8,24 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace Studentska_služba.ViewModels.Podaci.Ispiti
 {
     public class IspitiViewModel : GenericCRUDViewModel<Ispit>
     {
+        Frame frame;
+
+        public IspitiViewModel(Frame f)
+            :base()
+        {
+            frame = f;
+        }
+
+        protected override void AddNewItem()
+        {
+            frame.Navigate(typeof(IspitiAdd));
+        }
 
         protected async override Task<IList<Ispit>> GetItems()
         {

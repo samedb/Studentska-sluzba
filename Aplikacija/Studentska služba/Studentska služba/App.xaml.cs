@@ -1,5 +1,7 @@
-﻿using System;
+﻿using StudentskaSluzba.Model.Models;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -28,8 +30,19 @@ namespace Studentska_služba
         /// </summary>
         public App()
         {
+            DBContextWarmUp();
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+        }
+
+        /// <summary>
+        /// Posto pri prvom instanciranu DBContext radi veoma sporo
+        /// ovde ga instanciram pri pokretanju aplikacije
+        /// Posle ovog warm upa on moze da radi kako treba da se aplikacija pokrene
+        /// </summary>
+        private async void DBContextWarmUp()
+        {
+            await new EFCoreDataProvider().GetStudentsAsync();
         }
 
         /// <summary>

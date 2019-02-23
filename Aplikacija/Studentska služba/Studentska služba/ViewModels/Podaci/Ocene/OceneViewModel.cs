@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Studentska_služba.Views.Podaci.Ocene;
 using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
@@ -7,19 +8,27 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 namespace Studentska_služba.ViewModels.Podaci.Ocene
 {
     public class OceneViewModel : GenericCRUDViewModel<Ocena>
     {
-        public OceneViewModel()
+        private Frame frame;
+        public OceneViewModel(Frame f)
             :base()
         {
+            frame = f;
             // Trenutno je ugasena mogucnost azuriranja ocena, moze samo da se doda i da se brise
-            UpdateItemCommand = new GalaSoft.MvvmLight.Command.RelayCommand(() => { });
+            UpdateItemCommand = new GalaSoft.MvvmLight.Command.RelayCommand(() => { }, () => false);
             UpdateItemCommand.RaiseCanExecuteChanged();
         }
 
+        protected override void AddNewItem()
+        {
+            frame.Navigate(typeof(OceneAdd));
+        }
 
         protected async override Task<IList<Ocena>> GetItems()
         {

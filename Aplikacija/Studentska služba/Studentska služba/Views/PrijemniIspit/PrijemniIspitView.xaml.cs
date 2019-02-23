@@ -29,7 +29,7 @@ namespace Studentska_služba.Views
 
         public PrijemniIspitView()
         {
-            vm = new OceneViewModel();
+            vm = new OceneViewModel(Frame);
             this.InitializeComponent();
         }
 

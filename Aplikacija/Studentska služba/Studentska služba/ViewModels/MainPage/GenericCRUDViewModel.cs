@@ -104,7 +104,7 @@ namespace Studentska_služba
 
         #region Pomocne Funkcije
 
-        private void AddNewItem()
+        protected virtual void AddNewItem()
         {
             SelectedItem = new TModel();
             DetailsMode = DetailsMode.Add;

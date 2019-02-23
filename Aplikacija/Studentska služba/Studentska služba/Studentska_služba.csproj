@@ -133,7 +133,9 @@
     <Compile Include="ViewModels\DokumentacijaZaProfesore\DokumentacijaZaProfesoreViewModel.cs" />
     <Compile Include="ViewModels\MainPage\GenericCRUDViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Departmani\DepartmaniViewModel.cs" />
+    <Compile Include="ViewModels\Podaci\Ispiti\IspitiAddViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Ispiti\IspitiViewModel.cs" />
+    <Compile Include="ViewModels\Podaci\Ocene\OceneAddViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Ocene\OceneViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Predmeti\PredmetiViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Profesori\ProfesoriViewModel.cs" />
@@ -167,6 +169,9 @@
     <Compile Include="Views\Podaci\Ispiti\IspitDetails.xaml.cs">
       <DependentUpon>IspitDetails.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Podaci\Ispiti\IspitiAdd.xaml.cs">
+      <DependentUpon>IspitiAdd.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Podaci\Ispiti\IspitiList.xaml.cs">
       <DependentUpon>IspitiList.xaml</DependentUpon>
     </Compile>
@@ -175,6 +180,9 @@
     </Compile>
     <Compile Include="Views\Podaci\Ocene\OcenaDetails.xaml.cs">
       <DependentUpon>OcenaDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Podaci\Ocene\OceneAdd.xaml.cs">
+      <DependentUpon>OceneAdd.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Podaci\Ocene\OceneList.xaml.cs">
       <DependentUpon>OceneList.xaml</DependentUpon>
@@ -334,6 +342,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Podaci\Ispiti\IspitiAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Podaci\Ispiti\IspitiList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -343,6 +355,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Podaci\Ocene\OcenaDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Podaci\Ocene\OceneAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
