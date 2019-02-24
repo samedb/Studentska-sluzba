@@ -8,6 +8,9 @@ namespace StudentskaSluzba.Model.Models
 {
     public interface IDataProvider
     {
+        Task<bool> LoginIspravan(string username, string password);
+        Task<bool> IsAdmin(string username);
+
         Task<Student> GetStudentAsync(long id);
         Task<IList<Student>> GetStudentsAsync();
         Task<int> GetStudentCountAsync();

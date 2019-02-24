@@ -131,6 +131,7 @@
     <Compile Include="DatabaseController.cs" />
     <Compile Include="Helpers\DetailsMode.cs" />
     <Compile Include="ViewModels\DokumentacijaZaProfesore\DokumentacijaZaProfesoreViewModel.cs" />
+    <Compile Include="ViewModels\Login\LoginViewModel.cs" />
     <Compile Include="ViewModels\MainPage\GenericCRUDViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Departmani\DepartmaniViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Ispiti\IspitiAddViewModel.cs" />
@@ -143,10 +144,12 @@
     <Compile Include="ViewModels\Podaci\Smerovi\SmeroviViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Studenti\StudentiViewModel.cs" />
     <Compile Include="ViewModels\PotvrdeUverenja\PotvrdeUverenjaViewModel.cs" />
-    <Compile Include="ViewModels\PrijemniIspit\PrijemniIspitViewModel.cs" />
     <Compile Include="ViewModels\Statistika\StatistikaViewModel.cs" />
     <Compile Include="Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xaml.cs">
       <DependentUpon>DokumentacijaZaProfesoreView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainPage\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -241,9 +244,6 @@
     <Compile Include="Views\PotvrdeUverenja\PotvrdeUverenjaView.xaml.cs">
       <DependentUpon>PotvrdeUverenjaView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\PrijemniIspit\PrijemniIspitView.xaml.cs">
-      <DependentUpon>PrijemniIspitView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\Settings\SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
     </Compile>
@@ -315,6 +315,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Login\LoginView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -435,10 +439,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\PotvrdeUverenja\PotvrdeUverenjaView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\PrijemniIspit\PrijemniIspitView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

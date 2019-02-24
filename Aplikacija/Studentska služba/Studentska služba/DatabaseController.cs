@@ -12,9 +12,11 @@ using Windows.UI.Xaml.Data;
 
 namespace Studentska_služba
 {
+
+    // Zasto je ova klasa ovde, za neke slucajeve sam morao da korsitis cisti sql  pa mi je ovo bilo najlakse resenje
     class DatabaseController
     {
-        private readonly string connectionString = @"Data Source=DESKTOP-B80M3RM\SQLEXPRESS;Initial Catalog=StudentskaSluzbaDB;User Id=sa;
+        private readonly string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=StudentskaSluzbaDB;User Id=sa;
 Password=sifra123;";
 
         private SqlConnection connection = new SqlConnection();

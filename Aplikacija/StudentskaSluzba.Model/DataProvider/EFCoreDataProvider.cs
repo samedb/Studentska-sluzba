@@ -11,6 +11,25 @@ namespace StudentskaSluzba.Model.Models
 
     public class EFCoreDataProvider : IDataProvider
     {
+        #region Login
+        public async Task<bool> LoginIspravan(string username, string password)
+        {
+            using (var context = new StudentskaSluzbaDBContext())
+            {
+                var rez = await context.Korisnik.Where(k => k.Username == username && k.Password == Enkripcija.Enkriptuj(password)).ToListAsync();
+                return rez.Count == 1;
+            }
+        }
+
+        public async Task<bool> IsAdmin(string username)
+        {
+            using (var context = new StudentskaSluzbaDBContext())
+            {
+                var rez = await context.Korisnik.Where(k => k.Username == username).FirstAsync();
+                return rez.Usertype == "admin";
+            }
+        }
+        #endregion
 
         #region Student
         public async Task<Student> GetStudentAsync(long id)
@@ -402,6 +421,7 @@ namespace StudentskaSluzba.Model.Models
         {
             using (var context = new StudentskaSluzbaDBContext())
             {
+                //TODO Unesi novog korisnika i heshiraj password
                 await context.Referent.AddAsync(referent);
                 await context.SaveChangesAsync();
             }
@@ -426,6 +446,7 @@ namespace StudentskaSluzba.Model.Models
         {
             using (var context = new StudentskaSluzbaDBContext())
             {
+                // obrisi i korisnika koji odgovara datom referentu
                 foreach (var s in referents)
                     context.Referent.Remove(s);
                 return await context.SaveChangesAsync();

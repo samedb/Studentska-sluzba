@@ -51,7 +51,8 @@
                     Visibility="{x:Bind vm.SelectedItem, Mode=OneWay, Converter={StaticResource ObjectToVisibilityConverter}}">
 
                 <local:ReferentDetails Referent="{x:Bind vm.SelectedItem, Mode=TwoWay}"
-                                                IsEnabled="{x:Bind  vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsModeToBooleanConverter}}"/>
+                                       IsEnabled="{x:Bind  vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsModeToBooleanConverter}}"
+                                       DetailsMode="{x:Bind vm.DetailsMode, Mode=TwoWay}"/>
 
                 <StackPanel Orientation="Horizontal"
                             Visibility="{x:Bind vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsButtonVisibilityConverter}}"

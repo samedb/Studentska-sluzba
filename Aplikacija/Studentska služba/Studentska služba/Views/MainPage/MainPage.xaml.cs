@@ -21,13 +21,20 @@ namespace Studentska_služba
             { "Podaci", typeof(PodaciView) },
             { "Potvrde i uverenja", typeof(PotvrdeUverenjaView) },
             { "Statistika", typeof(StatistikaView) },
-            { "Dokumentacija za profesore", typeof(DokumentacijaZaProfesoreView) },
-            { "Prijemni ispit", typeof(PrijemniIspitView) }
+            { "Dokumentacija za profesore", typeof(DokumentacijaZaProfesoreView) }
         };
+
+        private bool isAdmin;
 
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            isAdmin = (bool)e.Parameter;
         }
 
         private async Task PrikaziHelpAsync()
@@ -51,7 +58,7 @@ namespace Studentska_služba
             {
 
                 if (selectedPage != null)
-                    ContentFrame.Navigate(selectedPage, true);
+                    ContentFrame.Navigate(selectedPage, isAdmin);
             }
             catch (Exception ex)
             {

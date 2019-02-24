@@ -42,12 +42,12 @@
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
 
-                <NavigationViewItem Tag="Prijemni ispit"
+                <!--<NavigationViewItem Tag="Prijemni ispit"
                                     Content="Prijemni ispit">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE125;"/>
                     </NavigationViewItem.Icon>
-                </NavigationViewItem>
+                </NavigationViewItem>-->
 
             </NavigationView.MenuItems>
 
