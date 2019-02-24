@@ -1,5 +1,6 @@
 ﻿using Studentska_služba.Views.Login;
 using StudentskaSluzba.Model.Models;
+using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -26,6 +27,7 @@ namespace Studentska_služba
     /// </summary>
     sealed partial class App : Application
     {
+        public static Korisnik TrenutniKorisnik { get; set; }
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().

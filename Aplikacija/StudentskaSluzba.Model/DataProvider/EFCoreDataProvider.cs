@@ -421,7 +421,14 @@ namespace StudentskaSluzba.Model.Models
         {
             using (var context = new StudentskaSluzbaDBContext())
             {
-                //TODO Unesi novog korisnika i heshiraj password
+                // Prvo dodajem novog korsnika
+                Korisnik k = new Korisnik
+                {
+                    Username = referent.UsernameReferenta,
+                    Password = Enkripcija.Enkriptuj("1234"),
+                    Usertype = "referent"
+                };
+                await context.Korisnik.AddAsync(k);
                 await context.Referent.AddAsync(referent);
                 await context.SaveChangesAsync();
             }
@@ -447,9 +454,13 @@ namespace StudentskaSluzba.Model.Models
             using (var context = new StudentskaSluzbaDBContext())
             {
                 // obrisi i korisnika koji odgovara datom referentu
-                foreach (var s in referents)
-                    context.Referent.Remove(s);
-                return await context.SaveChangesAsync();
+                foreach (var r in referents)
+                {
+                    Korisnik korisnik = await context.Korisnik.Where(k => k.Username == r.UsernameReferenta).FirstAsync();
+                    context.Referent.Remove(r);
+                    context.Korisnik.Remove(korisnik);
+                }
+                    return await context.SaveChangesAsync();
             }
         }
 

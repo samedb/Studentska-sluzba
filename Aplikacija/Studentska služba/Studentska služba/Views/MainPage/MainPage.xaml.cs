@@ -1,8 +1,10 @@
 ﻿using Studentska_služba.Views;
+using Studentska_služba.Views.Login;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Windows.UI.Popups;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Navigation;
@@ -21,7 +23,8 @@ namespace Studentska_služba
             { "Podaci", typeof(PodaciView) },
             { "Potvrde i uverenja", typeof(PotvrdeUverenjaView) },
             { "Statistika", typeof(StatistikaView) },
-            { "Dokumentacija za profesore", typeof(DokumentacijaZaProfesoreView) }
+            { "Dokumentacija za profesore", typeof(DokumentacijaZaProfesoreView) },
+            { "Settings", typeof(SettingsView) }
         };
 
         private bool isAdmin;
@@ -85,6 +88,17 @@ namespace Studentska_služba
         private async void PrikaziHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             await new MessageDialog("Ovo je help", "Help").ShowAsync();
+        }
+
+        private void Settings_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ContentFrame.Navigate(typeof(SettingsView));
+        }
+
+        private void SingOut_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.BackStack.Clear();
+            Frame.Navigate(typeof(LoginView));
         }
     }
 }

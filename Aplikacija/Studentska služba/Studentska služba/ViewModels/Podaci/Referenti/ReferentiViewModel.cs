@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Popups;
 
 namespace Studentska_služba.ViewModels.Podaci.Referenti
 {
@@ -20,6 +21,7 @@ namespace Studentska_služba.ViewModels.Podaci.Referenti
         protected override async Task AddItemAsync()
         {
             await dataProvider.AddReferentAsync(SelectedItem);
+            await new MessageDialog("Dodat novi referent, lozinka je '1234'.").ShowAsync();
         }
 
         protected override async Task UpdateItem()
@@ -41,39 +43,6 @@ namespace Studentska_služba.ViewModels.Podaci.Referenti
                      string.IsNullOrEmpty(SelectedItem.Jmbg) ||
                      string.IsNullOrEmpty(SelectedItem.Adresa) ||
                      string.IsNullOrEmpty(SelectedItem.Pol));
-        }
-
-
-        ///// <summary>
-        ///// Kad dodajem novog refeernta moram da dodam i novog korsinika u tabeli Korisnik
-        ///// </summary>
-        //protected override void AddItemAsync()
-        //{
-        //    //TODO Da ispravim ovo
-        //    //context.Korisnik.Add(new Korisnik
-        //    //{
-        //    //    Username = SelectedItem.UsernameReferenta,
-        //    //    Password = "1234",
-        //    //    Usertype = "referent"
-        //    //});
-        //    //base.AddItemAsync();
-        //}
-
-
-        ///// <summary>
-        ///// Takodje kad brisem referenta moram posle toga i da ga izbirsem iz tabele korisnik
-        ///// </summary>
-        protected override async void DeleteSelectedStudent()
-        {
-            var k = new Korisnik { Username = SelectedItem.UsernameReferenta };
-            using (var context = new StudentskaSluzbaDBContext())
-            {
-                context.Korisnik.Remove(k);
-                context.Referent.Remove(SelectedItem);
-                await context.SaveChangesAsync();
-            }
-            SelectedItem = default(Referent);
-            RefreshTable();
         }
 
         protected override async Task<ObservableCollection<Referent>> SearchForItemAsync(string text)

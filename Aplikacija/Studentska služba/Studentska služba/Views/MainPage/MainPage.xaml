@@ -10,7 +10,7 @@
 
     <Grid>
         <NavigationView Name="MyNavigationView"
-                        IsSettingsVisible="True"
+                        IsSettingsVisible="False"
                         IsPaneOpen="False"
                         SelectionChanged="MyNavigationView_SelectionChanged"
                         BackRequested="MyNavigationView_BackRequested"
@@ -62,6 +62,14 @@
                     </NavigationViewItem>
 
                     <NavigationViewItem Tag="Help" Icon="Help" Content="Help" Tapped="PrikaziHelp_Tapped"/>
+
+                    <NavigationViewItem Tag="Settings" Content="Settigns" Icon="Setting" Tapped="Settings_Tapped"/>
+                    
+                    <NavigationViewItem Tag="Sign out" Content="Sign out" Tapped="SingOut_Tapped">
+                        <NavigationViewItem.Icon>
+                            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE760;"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
 
                 </StackPanel>
             </NavigationView.PaneFooter>

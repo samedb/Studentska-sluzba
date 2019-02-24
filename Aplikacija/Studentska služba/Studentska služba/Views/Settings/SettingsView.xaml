@@ -8,9 +8,15 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <StackPanel HorizontalAlignment="Center">
         <TextBlock Text="SettingsView"
                    FontSize="48"
                    HorizontalAlignment="Center"/>
-    </Grid>
+        <ComboBox Header="Jezik" Width="300"/>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="DarkMode?"/>
+            <ToggleSwitch/>
+        </StackPanel>
+        <Button Content="Promeni lozinku"/>
+    </StackPanel>
 </Page>
