@@ -1,6 +1,7 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using StudentskaSluzba.Model.Models;
+using StudentskaSluzba.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,10 +43,11 @@ namespace Studentska_služba.ViewModels.Login
         private async void Login()
         {
             IDataProvider dataProvider = new EFCoreDataProvider();
-
-            if (await dataProvider.LoginIspravan(Username, Password))
+            Korisnik korisnik = await dataProvider.LoginIspravan(Username, Password);
+            if (korisnik != default(Korisnik))
             {
-                frame.Navigate(typeof(MainPage), await dataProvider.IsAdmin(Username));
+                App.TrenutniKorisnik = korisnik;
+                frame.Navigate(typeof(MainPage));
             }
             else
             {

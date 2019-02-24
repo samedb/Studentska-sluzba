@@ -1,4 +1,4 @@
-﻿using Studentska_služba.Views.Settings;
+﻿using Studentska_služba.ViewModels.Settings;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +6,6 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -17,21 +16,25 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Studentska_služba.Views
+namespace Studentska_služba.Views.Settings
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SettingsView : Page
+    public sealed partial class PromenaLozinkeView : Page
     {
-        public SettingsView()
+        PromenaLozinkeViewModel vm;
+
+        public PromenaLozinkeView()
         {
             this.InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            Frame.Navigate(typeof(PromenaLozinkeView));
+            base.OnNavigatedTo(e);
+            vm = new PromenaLozinkeViewModel(Frame);
         }
+
     }
 }

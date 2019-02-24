@@ -27,17 +27,9 @@ namespace Studentska_služba
             { "Settings", typeof(SettingsView) }
         };
 
-        private bool isAdmin;
-
         public MainPage()
         {
             this.InitializeComponent();
-        }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            base.OnNavigatedTo(e);
-            isAdmin = (bool)e.Parameter;
         }
 
         private async Task PrikaziHelpAsync()
@@ -61,7 +53,7 @@ namespace Studentska_služba
             {
 
                 if (selectedPage != null)
-                    ContentFrame.Navigate(selectedPage, isAdmin);
+                    ContentFrame.Navigate(selectedPage);
             }
             catch (Exception ex)
             {
@@ -97,6 +89,7 @@ namespace Studentska_služba
 
         private void SingOut_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            App.TrenutniKorisnik = null;
             Frame.BackStack.Clear();
             Frame.Navigate(typeof(LoginView));
         }

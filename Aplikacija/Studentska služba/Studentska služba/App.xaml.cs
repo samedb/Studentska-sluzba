@@ -27,7 +27,11 @@ namespace Studentska_služba
     /// </summary>
     sealed partial class App : Application
     {
+        /// <summary>
+        /// Globalna varijabla koja pamti trenutno ulogovanog korisnika
+        /// </summary>
         public static Korisnik TrenutniKorisnik { get; set; }
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().

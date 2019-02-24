@@ -12,23 +12,25 @@ namespace StudentskaSluzba.Model.Models
     public class EFCoreDataProvider : IDataProvider
     {
         #region Login
-        public async Task<bool> LoginIspravan(string username, string password)
+        public async Task<Korisnik> LoginIspravan(string username, string password)
         {
             using (var context = new StudentskaSluzbaDBContext())
             {
-                var rez = await context.Korisnik.Where(k => k.Username == username && k.Password == Enkripcija.Enkriptuj(password)).ToListAsync();
-                return rez.Count == 1;
+                var rez = await context.Korisnik.FirstOrDefaultAsync(k => k.Username == username && k.Password == Enkripcija.Enkriptuj(password));
+                return rez;
             }
         }
 
-        public async Task<bool> IsAdmin(string username)
+        public async Task<int> PromeniLozinku(Korisnik korisnik, string novaLozinka)
         {
             using (var context = new StudentskaSluzbaDBContext())
             {
-                var rez = await context.Korisnik.Where(k => k.Username == username).FirstAsync();
-                return rez.Usertype == "admin";
+                var entity = await context.Korisnik.FirstOrDefaultAsync(k => k.Username == korisnik.Username);
+                entity.Password = Enkripcija.Enkriptuj(novaLozinka);
+                return await context.SaveChangesAsync();
             }
         }
+
         #endregion
 
         #region Student

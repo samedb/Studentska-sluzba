@@ -8,8 +8,8 @@ namespace StudentskaSluzba.Model.Models
 {
     public interface IDataProvider
     {
-        Task<bool> LoginIspravan(string username, string password);
-        Task<bool> IsAdmin(string username);
+        Task<Korisnik> LoginIspravan(string username, string password);
+        Task<int> PromeniLozinku(Korisnik korisnik, string novaLozinka);
 
         Task<Student> GetStudentAsync(long id);
         Task<IList<Student>> GetStudentsAsync();

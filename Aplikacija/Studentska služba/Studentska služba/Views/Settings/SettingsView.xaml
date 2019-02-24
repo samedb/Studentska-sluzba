@@ -17,6 +17,6 @@
             <TextBlock Text="DarkMode?"/>
             <ToggleSwitch/>
         </StackPanel>
-        <Button Content="Promeni lozinku"/>
+        <Button Content="Promeni lozinku" Click="Button_Click"/>
     </StackPanel>
 </Page>

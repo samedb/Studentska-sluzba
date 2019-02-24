@@ -144,6 +144,8 @@
     <Compile Include="ViewModels\Podaci\Smerovi\SmeroviViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Studenti\StudentiViewModel.cs" />
     <Compile Include="ViewModels\PotvrdeUverenja\PotvrdeUverenjaViewModel.cs" />
+    <Compile Include="ViewModels\Settings\PromenaLozinkeViewModel.cs" />
+    <Compile Include="ViewModels\Settings\SettingsViewModel.cs" />
     <Compile Include="ViewModels\Statistika\StatistikaViewModel.cs" />
     <Compile Include="Views\DokumentacijaZaProfesore\DokumentacijaZaProfesoreView.xaml.cs">
       <DependentUpon>DokumentacijaZaProfesoreView.xaml</DependentUpon>
@@ -243,6 +245,9 @@
     </Compile>
     <Compile Include="Views\PotvrdeUverenja\PotvrdeUverenjaView.xaml.cs">
       <DependentUpon>PotvrdeUverenjaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\PromenaLozinkeView.xaml.cs">
+      <DependentUpon>PromenaLozinkeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Settings\SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
@@ -442,6 +447,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Settings\PromenaLozinkeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Settings\SettingsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -487,9 +496,7 @@
       <Name>StudentskaSluzba.Model</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModels\Settings\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

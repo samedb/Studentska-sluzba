@@ -45,7 +45,8 @@ namespace Studentska_služba.Views
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            AdminMode = (bool)e.Parameter;
+            AdminMode = App.TrenutniKorisnik.Usertype == "admin";
+
             if (!AdminMode)
             {
                 foreach (NavigationViewItem item in MyNavigationView.MenuItems)

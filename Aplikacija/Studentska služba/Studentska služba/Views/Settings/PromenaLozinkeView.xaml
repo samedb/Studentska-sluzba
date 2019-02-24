@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="Studentska_služba.Views.Settings.PromenaLozinkeView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Studentska_služba.Views.Settings"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel HorizontalAlignment="Center"
+                Margin="0, 50, 0, 0">
+        <PasswordBox Header="Stara lozinka"
+                     MinWidth="300"
+                     Margin="15, 25"
+                     Password="{x:Bind vm.StaraLozinka, Mode=TwoWay}"/>
+        <PasswordBox Header="Nova lozinka"
+                     MinWidth="300"
+                     Margin="15"
+                     Password="{x:Bind vm.NovaLozinka1, Mode=TwoWay}"/>
+        <PasswordBox Header="Ponovite novu lozinku"
+                     MinWidth="300"
+                     Margin="15"
+                     Password="{x:Bind vm.NovaLozinka2, Mode=TwoWay}"/>
+
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button Content="Promeni lozinku"
+                    Margin="10"
+                    Command="{x:Bind vm.PromeniLozinkuCommand}"/>
+            <Button Content="Otkazi"
+                    Margin="10"
+                    Command="{x:Bind vm.GoBackCommand}"/>
+        </StackPanel>
+    </StackPanel>
+</Page>
