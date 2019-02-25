@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.ApplicationModel.Resources;
 using Windows.UI.Popups;
 using Windows.UI.Xaml.Controls;
 
@@ -52,7 +53,7 @@ namespace Studentska_služba.ViewModels.Login
             else
             {
                 Username = Password = string.Empty;
-                await new MessageDialog("Nesipravan UserName ili Password!").ShowAsync();
+                await new MessageDialog("Neispravano korisnicko ime ili lozinka!").ShowAsync();
             }
         }
 

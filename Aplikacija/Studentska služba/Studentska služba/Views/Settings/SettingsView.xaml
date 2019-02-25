@@ -15,12 +15,25 @@
 
         <StackPanel HorizontalAlignment="Center" 
                     Margin="0, 20, 0, 0">
-            <ComboBox x:Uid="/Podesavanja/Jezik" Width="300"/>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock x:Uid="/Podesavanja/DarkMode"/>
-                <ToggleSwitch Toggled="ToggleSwitch_Toggled"/>
+            <ComboBox x:Uid="/Podesavanja/Jezik" 
+                      Width="300" 
+                      Name="MyCombobox"
+                      Margin="10">
+                <x:String>English</x:String>
+                <x:String>Srpski</x:String>
+            </ComboBox>
+            <StackPanel Orientation="Horizontal" 
+                        Margin="10"
+                        HorizontalAlignment="Center">
+                <TextBlock x:Uid="/Podesavanja/DarkMode"
+                           VerticalAlignment="Center"/>
+                <ToggleSwitch Toggled="ToggleSwitch_Toggled"
+                              Margin="20, 0"/>
             </StackPanel>
-            <Button x:Uid="/Podesavanja/PromeniLozinku" Click="Button_Click"/>
+            <Button x:Uid="/Podesavanja/PromeniLozinku" 
+                    Click="Button_Click"
+                    Margin="10"
+                    HorizontalAlignment="Center"/>
         </StackPanel>
     </StackPanel>
 </Page>

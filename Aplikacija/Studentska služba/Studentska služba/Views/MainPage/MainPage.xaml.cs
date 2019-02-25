@@ -32,6 +32,12 @@ namespace Studentska_služba
             this.InitializeComponent();
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            if (e.Parameter != null && (bool)e.Parameter)
+                ContentFrame.Navigate(typeof(SettingsView));
+        }
+
         private async Task PrikaziHelpAsync()
         {
             await new MessageDialog("Ovo je help", "Help").ShowAsync();
