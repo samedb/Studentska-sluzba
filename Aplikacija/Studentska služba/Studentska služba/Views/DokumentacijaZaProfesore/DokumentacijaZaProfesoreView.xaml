@@ -15,23 +15,29 @@
         </Style>
     </Page.Resources>
 
-    <StackPanel Margin="20" HorizontalAlignment="Center">
+    <StackPanel Margin="20" HorizontalAlignment="Stretch">
+        <TextBlock Text="Dokumentacija za profesore" 
+                   FontSize="30"
+                   HorizontalAlignment="Left"/>
         <ComboBox Header="Predmet*"
+                  HorizontalAlignment="Center"
+                  Margin="0, 20, 0, 0"
                   ItemsSource="{x:Bind vm.Predmeti, Mode=OneWay}"
                   DisplayMemberPath="Naziv"
                   SelectedItem="{x:Bind vm.SelectedPredmet, Mode=TwoWay, FallbackValue=''}"
                   Style="{StaticResource DetailsElement}"/>
         <ComboBox Header="Naziv roka*"
+                  HorizontalAlignment="Center"
                   ItemsSource="{x:Bind vm.Rokovi, Mode=OneWay}"
                   SelectedItem="{x:Bind vm.NazivRoka, Mode=TwoWay, FallbackValue=''}"
                   Style="{StaticResource DetailsElement}"/>
         <ComboBox Header="Godina*"
+                  HorizontalAlignment="Center"
                   ItemsSource="{x:Bind vm.Godine, Mode=OneWay}"
                   SelectedItem="{x:Bind vm.Godina, Mode=TwoWay, FallbackValue=''}"
                   Style="{StaticResource DetailsElement}"/>
         <Button Content="Štampaj"
                 HorizontalAlignment="Center"
-                VerticalAlignment="Center"
                 Margin="20"
                 Padding="20"
                 FontSize="24"

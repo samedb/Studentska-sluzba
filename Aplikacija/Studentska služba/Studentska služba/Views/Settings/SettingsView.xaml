@@ -8,15 +8,19 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel HorizontalAlignment="Center">
-        <TextBlock Text="SettingsView"
-                   FontSize="48"
-                   HorizontalAlignment="Center"/>
-        <ComboBox Header="Jezik" Width="300"/>
-        <StackPanel Orientation="Horizontal">
-            <TextBlock Text="DarkMode?"/>
-            <ToggleSwitch/>
+    <StackPanel  Margin="20">
+        <TextBlock Text="Settings"
+                   FontSize="30"
+                   HorizontalAlignment="Left"/>
+
+        <StackPanel HorizontalAlignment="Center" 
+                    Margin="0, 20, 0, 0">
+            <ComboBox Header="Jezik" Width="300"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="DarkMode?"/>
+                <ToggleSwitch Toggled="ToggleSwitch_Toggled"/>
+            </StackPanel>
+            <Button Content="Promeni lozinku" Click="Button_Click"/>
         </StackPanel>
-        <Button Content="Promeni lozinku" Click="Button_Click"/>
     </StackPanel>
 </Page>

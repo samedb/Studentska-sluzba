@@ -23,9 +23,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Statistički podaci"
-                   FontSize="48"
+                   FontSize="30"
                    Margin="10"
-                   HorizontalAlignment="Center"/>
+                   HorizontalAlignment="Left"/>
         
         <ScrollViewer Grid.Row="1">
 

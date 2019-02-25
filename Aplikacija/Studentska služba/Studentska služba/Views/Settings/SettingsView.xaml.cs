@@ -33,5 +33,20 @@ namespace Studentska_služba.Views
         {
             Frame.Navigate(typeof(PromenaLozinkeView));
         }
+
+        private void ToggleSwitch_Toggled(object sender, RoutedEventArgs e)
+        {
+            if ((sender as ToggleSwitch).IsOn)
+            {
+                if (Window.Current.Content is FrameworkElement frameworkElement)
+                    frameworkElement.RequestedTheme = ElementTheme.Dark;
+            }
+            else
+            {
+                if (Window.Current.Content is FrameworkElement frameworkElement)
+                    frameworkElement.RequestedTheme = ElementTheme.Light;
+            }
+                
+        }
     }
 }

@@ -15,12 +15,18 @@
         </Style>
     </Page.Resources>
 
-    <StackPanel Margin="20" HorizontalAlignment="Center">
+    <StackPanel Margin="20" HorizontalAlignment="Stretch">
+        <TextBlock Text="Potvrde i uverenja" 
+                   FontSize="30"
+                   HorizontalAlignment="Left"/>
         <ComboBox Header="Tip dokumenta*"
+                  HorizontalAlignment="Center"
+                  Margin="0, 20, 0, 0"
                   ItemsSource="{x:Bind vm.TipoviDokumenata, Mode=OneWay}"
                   SelectedItem="{x:Bind vm.TipDokumenta, Mode=TwoWay, FallbackValue=''}"
                   Style="{StaticResource DetailsElement}"/>
         <ComboBox Header="Student*"
+                  HorizontalAlignment="Center"
                   DisplayMemberPath="PunoImeIndeks"
                   ItemsSource="{x:Bind vm.Studenti, Mode=OneWay}"
                   SelectedItem="{x:Bind vm.SelectedStudent, Mode=TwoWay, FallbackValue=''}"

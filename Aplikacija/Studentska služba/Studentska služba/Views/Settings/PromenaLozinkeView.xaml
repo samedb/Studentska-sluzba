@@ -8,17 +8,22 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel HorizontalAlignment="Center"
-                Margin="0, 50, 0, 0">
+    <StackPanel Margin="20">
+        <TextBlock Text="Promena lozinke" 
+                   FontSize="30"
+                   HorizontalAlignment="Left"/>
         <PasswordBox Header="Stara lozinka"
+                     HorizontalAlignment="Center"
                      MinWidth="300"
                      Margin="15, 25"
                      Password="{x:Bind vm.StaraLozinka, Mode=TwoWay}"/>
         <PasswordBox Header="Nova lozinka"
+                     HorizontalAlignment="Center"
                      MinWidth="300"
                      Margin="15"
                      Password="{x:Bind vm.NovaLozinka1, Mode=TwoWay}"/>
         <PasswordBox Header="Ponovite novu lozinku"
+                     HorizontalAlignment="Center"
                      MinWidth="300"
                      Margin="15"
                      Password="{x:Bind vm.NovaLozinka2, Mode=TwoWay}"/>
