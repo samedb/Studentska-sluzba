@@ -260,6 +260,16 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <PRIResource Include="Strings\sr-Latn\NavigationViewItems.resw" />
+    <PRIResource Include="Strings\sr-Latn\Login.resw" />
+    <PRIResource Include="Strings\sr-Latn\DokumentacijaZaProfesore.resw" />
+    <PRIResource Include="Strings\sr-Latn\PotvrdeIUverenja.resw" />
+    <PRIResource Include="Strings\sr-Latn\Podesavanja.resw" />
+    <PRIResource Include="Strings\sr-Latn\PromenaLozinke.resw" />
+    <PRIResource Include="Strings\sr-Latn\Statistika.resw" />
+    <PRIResource Include="Strings\sr-Latn\PodaciNavigation.resw" />
+    <PRIResource Include="Strings\sr-Latn\CommandLine.resw" />
+    <PRIResource Include="Strings\sr-Latn\Podaci.resw" />
     <None Include="Studentska služba_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -496,7 +506,9 @@
       <Name>StudentskaSluzba.Model</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Strings\en-US\" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

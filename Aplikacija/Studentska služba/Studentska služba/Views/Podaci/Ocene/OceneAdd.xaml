@@ -14,23 +14,23 @@
                     VerticalAlignment="Top">
 
 
-            <ComboBox Header="Predmet"
+            <ComboBox x:Uid="/Podaci/Predmet"
                       MinWidth="300"
                       ItemsSource="{x:Bind vm.Predmeti, Mode=OneWay}"
                       DisplayMemberPath="Naziv"
                       SelectedItem="{x:Bind vm.SelectedPredmet, Mode=TwoWay}"/>
-            <ComboBox Header="Godina"
+            <ComboBox x:Uid="/Podaci/Godina"
                       MinWidth="300"
                       ItemsSource="{x:Bind Godine, Mode=OneWay}"
                       SelectedItem="{x:Bind vm.Godina, Mode=TwoWay}"/>
-            <ComboBox Header="Naziv roka"
+            <ComboBox x:Uid="/Podaci/NazivRoka"
                       MinWidth="300"
                       ItemsSource="{x:Bind Rokovi, Mode=OneWay}"
                       SelectedItem="{x:Bind vm.NazivRoka, Mode=TwoWay}"/>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Content="Unesi ocene" Margin="20" Padding="10" Command="{x:Bind vm.UnesiOceneCommand}"/>
-                <Button Content="Otkazi" Margin="20" Padding="10" Click="Button_Click"/>
+                <Button x:Uid="/Podaci/UnesiOcene" Margin="20" Padding="10" Command="{x:Bind vm.UnesiOceneCommand}"/>
+                <Button x:Uid="/Podaci/Otkazi" Margin="20" Padding="10" Click="Button_Click"/>
             </StackPanel>
         </StackPanel>
 

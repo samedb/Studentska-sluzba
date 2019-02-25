@@ -33,32 +33,32 @@
                           HorizontalAlignment="Stretch"
                           DisplayMemberPath="IdIspita"
                           SelectedValuePath="IdIspita"
-                          Header="ID ispita"
+                          x:Uid="/Podaci/IDIspita"
                           SelectedValue="{x:Bind Ocena.IdIspita, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}"/>
 
             <TextBox Text="{x:Bind Ocena.IdIspitaNavigation.IdPredmetaNavigation.Naziv, Mode=OneWay}"
-                     Header="Predmet"
+                     x:Uid="/Podaci/Predmet"
                      Width="150"
                      Margin="10"/>
 
             <TextBox Text="{x:Bind Ocena.IdIspitaNavigation.BrojIndeksaStudentaNavigation.PunoImeIndeks, Mode=OneWay}"
-                     Header="Student"
+                     x:Uid="/Podaci/Student"
                      Width="150"
                      Margin="10"/>
 
             <TextBox Text="{x:Bind Ocena.IdIspitaNavigation.NazivRoka, Mode=OneWay}"
-                     Header="Ispitni rok"
+                     x:Uid="/Podaci/IspitniRok"
                      Width="150"
                      Margin="10"/>
             
             <TextBox Text="{x:Bind Ocena.IdIspitaNavigation.Godina, Mode=OneWay}"
-                     Header="Godina"
+                     x:Uid="/Podaci/Godina"
                      Width="150"
                      Margin="10"/>
             <TextBox Text="{x:Bind Ocena.Ocena1, Mode=TwoWay, FallbackValue=''}" 
-                         Header="Ocena"
-                         Style="{StaticResource DetailsElement}" />
+                     x:Uid="/Podaci/Ocena"
+                     Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>
 
     </StackPanel>

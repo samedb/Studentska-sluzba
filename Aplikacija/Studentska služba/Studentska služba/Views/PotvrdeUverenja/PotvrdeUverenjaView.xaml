@@ -16,32 +16,32 @@
     </Page.Resources>
 
     <StackPanel Margin="20" HorizontalAlignment="Stretch">
-        <TextBlock Text="Potvrde i uverenja" 
+        <TextBlock x:Uid="/PotvrdeIUverenja/Naslov"
                    FontSize="30"
                    HorizontalAlignment="Left"/>
-        <ComboBox Header="Tip dokumenta*"
+        <ComboBox x:Uid="/PotvrdeIUverenja/TipDokumenta"
                   HorizontalAlignment="Center"
                   Margin="0, 20, 0, 0"
                   ItemsSource="{x:Bind vm.TipoviDokumenata, Mode=OneWay}"
                   SelectedItem="{x:Bind vm.TipDokumenta, Mode=TwoWay, FallbackValue=''}"
                   Style="{StaticResource DetailsElement}"/>
-        <ComboBox Header="Student*"
+        <ComboBox x:Uid="/PotvrdeIUverenja/Student"
                   HorizontalAlignment="Center"
                   DisplayMemberPath="PunoImeIndeks"
                   ItemsSource="{x:Bind vm.Studenti, Mode=OneWay}"
                   SelectedItem="{x:Bind vm.SelectedStudent, Mode=TwoWay, FallbackValue=''}"
                   Style="{StaticResource DetailsElement}"/>
-        <TextBox Header="Potvrda služi za*"
+        <TextBox x:Uid="/PotvrdeIUverenja/Svrha"
                  TextWrapping="Wrap"
                  Height="100"
                  Text="{x:Bind vm.Svrha, Mode=TwoWay}"
                  Style="{StaticResource DetailsElement}"/>
-        <TextBox Header="Dodatak"
+        <TextBox x:Uid="/PotvrdeIUverenja/Dodatak"
                  TextWrapping="Wrap"
                  Height="100"
                  Text="{x:Bind vm.DodatniTekst, Mode=TwoWay}"
                  Style="{StaticResource DetailsElement}"/>
-        <Button Content="Štampaj"
+        <Button x:Uid="/PotvrdeIUverenja/Stampaj"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Margin="20"

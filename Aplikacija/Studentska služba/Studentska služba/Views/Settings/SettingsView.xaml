@@ -9,18 +9,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel  Margin="20">
-        <TextBlock Text="Settings"
+        <TextBlock x:Uid="/Podesavanja/Naslov"
                    FontSize="30"
                    HorizontalAlignment="Left"/>
 
         <StackPanel HorizontalAlignment="Center" 
                     Margin="0, 20, 0, 0">
-            <ComboBox Header="Jezik" Width="300"/>
+            <ComboBox x:Uid="/Podesavanja/Jezik" Width="300"/>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="DarkMode?"/>
+                <TextBlock x:Uid="/Podesavanja/DarkMode"/>
                 <ToggleSwitch Toggled="ToggleSwitch_Toggled"/>
             </StackPanel>
-            <Button Content="Promeni lozinku" Click="Button_Click"/>
+            <Button x:Uid="/Podesavanja/PromeniLozinku" Click="Button_Click"/>
         </StackPanel>
     </StackPanel>
 </Page>

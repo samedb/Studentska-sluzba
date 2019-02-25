@@ -58,11 +58,11 @@
                             Visibility="{x:Bind vm.DetailsMode, Mode=OneWay, Converter={StaticResource DetailsButtonVisibilityConverter}}"
                             HorizontalAlignment="Center">
 
-                    <Button Content="Save" 
+                    <Button x:Uid="/PodaciNavigation/Save" 
                             Command="{x:Bind vm.SaveChangesCommand, Mode=OneWay}" 
                             Margin="10"/>
 
-                    <Button Content="Cancel" 
+                    <Button x:Uid="/PodaciNavigation/Cancel" 
                             Command="{x:Bind vm.CancelCommand, Mode=OneWay}"
                             Margin="10"/>
 

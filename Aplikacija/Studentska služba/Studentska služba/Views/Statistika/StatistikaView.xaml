@@ -22,7 +22,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Statistički podaci"
+        <TextBlock x:Uid="/Statistika/Naslov"
                    FontSize="30"
                    Margin="10"
                    HorizontalAlignment="Left"/>
@@ -32,18 +32,18 @@
             <StackPanel>
 
 
-                <TextBlock Text="Uspesnost polaganja ispita po ispitnim rokovima"
+                <TextBlock x:Uid="/Statistika/UspesnostPolaganjaPoRokovima"
                            Style="{StaticResource NaslovGrafikona}"/>
                 <charting:Chart HorizontalAlignment="Stretch" 
                                 Margin="50, 0"
                                 Height="400">
-                    <charting:ColumnSeries Title="Broj prijavljenih ispita" 
+                    <charting:ColumnSeries x:Uid="/Statistika/BrojPrijavljenihIspita"
                                            IndependentValuePath="Name" 
                                            DependentValuePath="Amount"
                                            IsSelectionEnabled="True"
                                            ItemsSource="{x:Bind vm.PrijavljeniIspitiPoRokovima, Mode=OneWay}"/>
 
-                    <charting:ColumnSeries Title="Broj polozenih ispita" 
+                    <charting:ColumnSeries x:Uid="/Statistika/BrojPolozenihIspita"
                                            IndependentValuePath="Name" 
                                            DependentValuePath="Amount"
                                            IsSelectionEnabled="True"
@@ -51,7 +51,7 @@
                 </charting:Chart>
 
 
-                <TextBlock Text="Broj studenata po departmanima"
+                <TextBlock x:Uid="/Statistika/BrojStudenataPoDepartmanima"
                            Style="{StaticResource NaslovGrafikona}"/>
                 <charting:Chart HorizontalAlignment="Center" 
                                 Margin="0" 
@@ -79,7 +79,7 @@
                 </charting:Chart>-->
 
 
-                <TextBlock Text="Prosecna ocena po predmetu"
+                <TextBlock x:Uid="/Statistika/ProsecnaOcenaPoPredmetu"
                            Style="{StaticResource NaslovGrafikona}"/>
                 <charting:Chart HorizontalAlignment="Center" 
                                 Margin="0"
@@ -93,7 +93,7 @@
                 </charting:Chart>
 
 
-                <TextBlock Text="Prosecna ocena po departmanu"
+                <TextBlock x:Uid="/Statistika/ProsecnaOcenaPoDepartmanu"
                            Style="{StaticResource NaslovGrafikona}"/>
                 <charting:Chart HorizontalAlignment="Center" 
                                 Margin="0" 
@@ -107,7 +107,7 @@
                 </charting:Chart>
 
 
-                <TextBlock Text="Najbolji studenti"
+                <TextBlock x:Uid="/Statistika/NajboljiStudenti"
                            Style="{StaticResource NaslovGrafikona}"/>
                 <charting:Chart HorizontalAlignment="Center" 
                                 Margin="0" 

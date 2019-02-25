@@ -11,14 +11,14 @@
     <Grid>
         <NavigationView Name="MyNavigationView" PaneDisplayMode="Top" IsBackButtonVisible="Collapsed" IsSettingsVisible="False" SelectionChanged="MyNavigationView_SelectionChanged">
             <NavigationView.MenuItems>
-                <NavigationViewItem Tag="Studenti" Content="Studenti"/>
-                <NavigationViewItem Tag="Ocene" Content="Ocene"/>
-                <NavigationViewItem Tag="Ispiti" Content="Prijave ispita"/>
-                <NavigationViewItem Tag="Predmeti" Content="Predmeti"/>
-                <NavigationViewItem Tag="Smerovi" Content="Smerovi"/>
-                <NavigationViewItem Tag="Departmani" Content="Departmani"/>
-                <NavigationViewItem Tag="Profesori" Content="Profesori"/>
-                <NavigationViewItem Tag="Referenti" Content="Referenti"/>
+                <NavigationViewItem Tag="Studenti" x:Uid="/PodaciNavigation/Studenti"/>
+                <NavigationViewItem Tag="Ocene" x:Uid="/PodaciNavigation/Ocene"/>
+                <NavigationViewItem Tag="Ispiti" x:Uid="/PodaciNavigation/PrijaveIspita"/>
+                <NavigationViewItem Tag="Predmeti" x:Uid="/PodaciNavigation/Predmeti"/>
+                <NavigationViewItem Tag="Smerovi" x:Uid="/PodaciNavigation/Smerovi"/>
+                <NavigationViewItem Tag="Departmani" x:Uid="/PodaciNavigation/Departmani"/>
+                <NavigationViewItem Tag="Profesori" x:Uid="/PodaciNavigation/Profesori"/>
+                <NavigationViewItem Tag="Referenti" x:Uid="/PodaciNavigation/Referenti"/>
             </NavigationView.MenuItems>
 
             <Frame Name="ContentFrame" Padding="12,24" IsTabStop="True"

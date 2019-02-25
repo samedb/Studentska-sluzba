@@ -28,29 +28,29 @@
                             HorizontalSpacing="10"
                             Orientation="Horizontal">
             <TextBox Text="{x:Bind Student.Ime, Mode=TwoWay, FallbackValue=''}"  
-                         Header="Ime"
+                         x:Uid="/Podaci/Ime"
                          Style="{StaticResource DetailsElement}"/>
             <TextBox Text="{x:Bind Student.Prezime, Mode=TwoWay, FallbackValue=''}" 
-                         Header="Prezime"
+                         x:Uid="/Podaci/Prezime"
                          Style="{StaticResource DetailsElement}" />
             <TextBox Text="{x:Bind Student.Jmbg, Mode=TwoWay, FallbackValue=''}"
-                         Header="JMBG"
+                         x:Uid="/Podaci/JMBG"
                          InputScope="Number"
                          Style="{StaticResource DetailsElement}" />
             <DatePicker Date="{x:Bind Student.DatumRodjenja, Mode=TwoWay, Converter={StaticResource TimeConverter}}" 
                             HorizontalAlignment="Stretch"
-                            Header="Datum rodjenja"
+                            x:Uid="/Podaci/DatumRodjenja"
                             Style="{StaticResource DetailsElement}" />
             <ComboBox ItemsSource="{x:Bind Polovi, Mode=OneWay}" 
                           HorizontalAlignment="Stretch"
-                          Header="Pol"
+                          x:Uid="/Podaci/Pol"
                           SelectedItem="{x:Bind Student.Pol, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
             <ComboBox ItemsSource="{x:Bind Smerovi, Mode=OneWay}"
                           HorizontalAlignment="Stretch"
                           DisplayMemberPath="Naziv"
                           SelectedValuePath="IdSmera"
-                          Header="Smer"
+                          x:Uid="/Podaci/NazivSmera"
                           SelectedValue="{x:Bind Student.IdSmera, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>

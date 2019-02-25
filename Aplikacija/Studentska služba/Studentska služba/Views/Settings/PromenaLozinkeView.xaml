@@ -9,20 +9,20 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel Margin="20">
-        <TextBlock Text="Promena lozinke" 
+        <TextBlock x:Uid="/PromenaLozinke/Naslov"
                    FontSize="30"
                    HorizontalAlignment="Left"/>
-        <PasswordBox Header="Stara lozinka"
+        <PasswordBox x:Uid="/PromenaLozinke/StaraLozinka"
                      HorizontalAlignment="Center"
                      MinWidth="300"
                      Margin="15, 25"
                      Password="{x:Bind vm.StaraLozinka, Mode=TwoWay}"/>
-        <PasswordBox Header="Nova lozinka"
+        <PasswordBox x:Uid="/PromenaLozinke/NovaLozinka1"
                      HorizontalAlignment="Center"
                      MinWidth="300"
                      Margin="15"
                      Password="{x:Bind vm.NovaLozinka1, Mode=TwoWay}"/>
-        <PasswordBox Header="Ponovite novu lozinku"
+        <PasswordBox x:Uid="/PromenaLozinke/NovaLozinka2"
                      HorizontalAlignment="Center"
                      MinWidth="300"
                      Margin="15"
@@ -30,10 +30,10 @@
 
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Center">
-            <Button Content="Promeni lozinku"
+            <Button x:Uid="/PromenaLozinke/PromeniLozinku"
                     Margin="10"
                     Command="{x:Bind vm.PromeniLozinkuCommand}"/>
-            <Button Content="Otkazi"
+            <Button x:Uid="/PromenaLozinke/Otkazi"
                     Margin="10"
                     Command="{x:Bind vm.GoBackCommand}"/>
         </StackPanel>

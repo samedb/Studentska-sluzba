@@ -93,7 +93,7 @@
                     Command="{x:Bind AddNewItemCommand}">
             <StackPanel Orientation="Horizontal">
                 <SymbolIcon Symbol="Add" Margin="10, 0"/>
-                <TextBlock Text="Dodaj"/>
+                <TextBlock x:Uid="/CommandLine/Dodaj"/>
             </StackPanel>
         </Button>
 
@@ -102,7 +102,7 @@
                     Command="{x:Bind UpdateItemCommand}">
             <StackPanel Orientation="Horizontal">
                 <SymbolIcon Symbol="Edit" Margin="10, 0"/>
-                <TextBlock Text="Izmeni"/>
+                <TextBlock x:Uid="/CommandLine/Izmeni"/>
             </StackPanel>
         </Button>
 
@@ -111,7 +111,7 @@
                     Command="{x:Bind DeleteItemCommand}">
             <StackPanel Orientation="Horizontal">
                 <SymbolIcon Symbol="Delete" Margin="10, 0"/>
-                <TextBlock Text="Izbriši"/>
+                <TextBlock x:Uid="/CommandLine/Izbrisi"/>
             </StackPanel>
         </Button>
 
@@ -119,14 +119,14 @@
                     Command="{x:Bind RefreshTableCommand}">
             <StackPanel Orientation="Horizontal">
                 <SymbolIcon Symbol="Refresh" Margin="10, 0"/>
-                <TextBlock Text="Osveži"/>
+                <TextBlock x:Uid="/CommandLine/Osvezi"/>
             </StackPanel>
         </Button>
 
         <AutoSuggestBox Name="MyAutoSuggestBox" 
                             Width="200"
                             Text="{x:Bind SearchBoxText, Mode=TwoWay}"
-                            PlaceholderText="Traži..."
+                            x:Uid="/CommandLine/Search"
                             Margin="20, 0" 
                             QueryIcon="Find"/>
 

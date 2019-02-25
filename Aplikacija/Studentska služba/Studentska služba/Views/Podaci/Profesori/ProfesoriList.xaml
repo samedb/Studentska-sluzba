@@ -21,19 +21,19 @@
                                SelectedItem="{x:Bind vm.SelectedItem, Mode=TwoWay}">
             <controls:DataGrid.Columns>
                 <controls:DataGridTextColumn
-                        Header="ID profesora"
+                        x:Uid="/Podaci/IDProfesora"
                         Binding="{Binding IdProfesora}"
                         Tag="IdProfesora"/>
                 <controls:DataGridTextColumn
-                        Header="Ime"
+                        x:Uid="/Podaci/Ime"
                         Binding="{Binding Ime}"
                         Tag="Ime"/>
                 <controls:DataGridTextColumn
-                        Header="Prezime"
+                        x:Uid="/Podaci/Prezime"
                         Binding="{Binding Prezime}"
                         Tag="Prezime"/>
                 <controls:DataGridTextColumn
-                        Header="Pol"
+                        x:Uid="/Podaci/Pol"
                         Binding="{Binding Pol}"
                         Tag="Pol"/>
             </controls:DataGrid.Columns>

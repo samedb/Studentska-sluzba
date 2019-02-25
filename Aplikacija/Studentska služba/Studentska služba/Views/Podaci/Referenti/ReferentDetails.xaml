@@ -29,30 +29,30 @@
                             HorizontalSpacing="10"
                             Orientation="Horizontal">
             <TextBox Text="{x:Bind Referent.UsernameReferenta, Mode=TwoWay, FallbackValue=''}"  
-                     Header="Korisnicko ime"
+                     x:Uid="/Podaci/KorisnickoIme"
                      Style="{StaticResource DetailsElement}"
                      IsEnabled="{x:Bind DetailsMode, Mode=OneWay, Converter={StaticResource DetailsModeIsAdd}}"/>
             <TextBox Text="{x:Bind Referent.Ime, Mode=TwoWay, FallbackValue=''}"  
-                         Header="Ime"
+                         x:Uid="/Podaci/Ime"
                          Style="{StaticResource DetailsElement}"/>
             <TextBox Text="{x:Bind Referent.Prezime, Mode=TwoWay, FallbackValue=''}" 
-                         Header="Prezime"
+                         x:Uid="/Podaci/Prezime"
                          Style="{StaticResource DetailsElement}" />
             <TextBox Text="{x:Bind Referent.Jmbg, Mode=TwoWay, FallbackValue=''}"
-                         Header="JMBG"
+                         x:Uid="/Podaci/JMBG"
                          InputScope="Number"
                          Style="{StaticResource DetailsElement}" />
             <DatePicker Date="{x:Bind Referent.DatumRodjenja, Mode=TwoWay, Converter={StaticResource TimeConverter}}" 
                             HorizontalAlignment="Stretch"
-                            Header="Datum rodjenja"
+                            x:Uid="/Podaci/DatumRodjenja"
                             Style="{StaticResource DetailsElement}" />
             <ComboBox ItemsSource="{x:Bind Polovi, Mode=OneWay}" 
                           HorizontalAlignment="Stretch"
-                          Header="Pol"
+                          x:Uid="/Podaci/Pol"
                           SelectedItem="{x:Bind Referent.Pol, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
             <TextBox Text="{x:Bind Referent.Adresa, Mode=TwoWay, FallbackValue=''}"
-                         Header="Adresa"
+                         x:Uid="/Podaci/Adresa"
                          Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>
 

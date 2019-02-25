@@ -28,22 +28,22 @@
                             Orientation="Horizontal">
 
             <TextBox Text="{x:Bind Profesor.Ime, Mode=TwoWay, FallbackValue=''}"  
-                         Header="Ime"
+                         x:Uid="/Podaci/Ime"
                          Style="{StaticResource DetailsElement}"/>
             <TextBox Text="{x:Bind Profesor.Prezime, Mode=TwoWay, FallbackValue=''}" 
-                         Header="Prezime"
+                         x:Uid="/Podaci/Prezime"
                          Style="{StaticResource DetailsElement}" />
             <TextBox Text="{x:Bind Profesor.Jmbg, Mode=TwoWay, FallbackValue=''}"
-                         Header="JMBG"
+                         x:Uid="/Podaci/JMBG"
                          InputScope="Number"
                          Style="{StaticResource DetailsElement}" />
             <DatePicker Date="{x:Bind Profesor.DatumRodjenja, Mode=TwoWay, Converter={StaticResource TimeConverter}}" 
                             HorizontalAlignment="Stretch"
-                            Header="Datum rodjenja"
+                            x:Uid="/Podaci/DatumRodjenja"
                             Style="{StaticResource DetailsElement}" />
             <ComboBox ItemsSource="{x:Bind Polovi, Mode=OneWay}" 
                           HorizontalAlignment="Stretch"
-                          Header="Pol"
+                          x:Uid="/Podaci/Pol"
                           SelectedItem="{x:Bind Profesor.Pol, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>

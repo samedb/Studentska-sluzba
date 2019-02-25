@@ -25,19 +25,19 @@
                             Orientation="Horizontal">
 
             <TextBox Text="{x:Bind Predmet.Naziv, Mode=TwoWay, FallbackValue=''}"
-                     Header="Naziv predmeta"
+                     x:Uid="/Podaci/NazivPredmeta"
                      Style="{StaticResource DetailsElement}"/>
 
             <ComboBox ItemsSource="{x:Bind Profesori, Mode=OneWay}"
                           HorizontalAlignment="Stretch"
                           DisplayMemberPath="PunoIme"
                           SelectedValuePath="IdProfesora"
-                          Header="Profesor"
+                          x:Uid="/Podaci/Profesor"
                           SelectedValue="{x:Bind Predmet.IdProfesora, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
 
             <TextBox Text="{x:Bind Predmet.Espb, Mode=TwoWay, FallbackValue=''}"
-                     Header="ESPB"
+                     x:Uid="/Podaci/ESPB"
                      InputScope="Number"
                      Style="{StaticResource DetailsElement}"/>
 

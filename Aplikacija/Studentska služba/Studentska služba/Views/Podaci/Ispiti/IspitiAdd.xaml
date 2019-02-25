@@ -14,23 +14,23 @@
                     VerticalAlignment="Top">
 
 
-            <ComboBox Header="Student"
+            <ComboBox x:Uid="/Podaci/Student"
                       MinWidth="300"
                       ItemsSource="{x:Bind vm.Studenti, Mode=OneWay}"
                       DisplayMemberPath="PunoImeIndeks"
                       SelectedItem="{x:Bind vm.SelectedStudent, Mode=TwoWay}"/>
-            <ComboBox Header="Godina"
+            <ComboBox x:Uid="/Podaci/Godina"
                       MinWidth="300"
                       ItemsSource="{x:Bind Godine, Mode=OneWay}"
                       SelectedItem="{x:Bind vm.Godina, Mode=TwoWay}"/>
-            <ComboBox Header="Naziv roka"
+            <ComboBox x:Uid="/Podaci/NazivRoka"
                       MinWidth="300"
                       ItemsSource="{x:Bind Rokovi, Mode=OneWay}"
                       SelectedItem="{x:Bind vm.NazivRoka, Mode=TwoWay}"/>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Content="Prijavi ispite" Margin="20" Padding="10" Command="{x:Bind vm.PrijaviIspiteCommand}"/>
-                <Button Content="Otkazi" Margin="20" Padding="10" Click="Button_Click"/>
+                <Button x:Uid="/Podaci/PrijaviIspite" Margin="20" Padding="10" Command="{x:Bind vm.PrijaviIspiteCommand}"/>
+                <Button x:Uid="/Podaci/Otkazi" Margin="20" Padding="10" Click="Button_Click"/>
             </StackPanel>
         </StackPanel>
 

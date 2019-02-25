@@ -18,25 +18,25 @@
             <NavigationView.MenuItems>
 
                 <NavigationViewItem Tag="Podaci"
-                                    Content="Podaci">
+                                    x:Uid="/NavigationViewItems/Podaci">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE1D3;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
 
                 <NavigationViewItem Tag="Potvrde i uverenja"
-                                    Content="Potvrde i uverenja"
+                                    x:Uid="/NavigationViewItems/PotvrdeUverenja"
                                     Icon="Copy"/>
 
                 <NavigationViewItem Tag="Statistika"
-                                    Content="Statistika">
+                                    x:Uid="/NavigationViewItems/Statistika">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE908;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
 
                 <NavigationViewItem Tag="Dokumentacija za profesore"
-                                    Content="Dokumentacija za profesore">
+                                    x:Uid="/NavigationViewItems/DokumentacijaZaProfesore">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xF571;"/>
                     </NavigationViewItem.Icon>
@@ -55,17 +55,17 @@
                 <StackPanel>
 
                     <NavigationViewItem Tag="Code"
-                                        Content="Code" Tapped="PrikaziKod_Tapped">
+                                        x:Uid="/NavigationViewItems/Kod" Tapped="PrikaziKod_Tapped">
                         <NavigationViewItem.Icon>
                             <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE943;"/>
                         </NavigationViewItem.Icon>
                     </NavigationViewItem>
 
-                    <NavigationViewItem Tag="Help" Icon="Help" Content="Help" Tapped="PrikaziHelp_Tapped"/>
+                    <NavigationViewItem Tag="Help" Icon="Help" x:Uid="/NavigationViewItems/Pomoc" Tapped="PrikaziHelp_Tapped"/>
 
-                    <NavigationViewItem Tag="Settings" Content="Settigns" Icon="Setting" Tapped="Settings_Tapped"/>
-                    
-                    <NavigationViewItem Tag="Sign out" Content="Sign out" Tapped="SingOut_Tapped">
+                    <NavigationViewItem Tag="Settings" x:Uid="/NavigationViewItems/Podesavanja" Icon="Setting" Tapped="Settings_Tapped"/>
+
+                    <NavigationViewItem Tag="Sign out" x:Uid="/NavigationViewItems/SignOut" Tapped="SingOut_Tapped">
                         <NavigationViewItem.Icon>
                             <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE760;"/>
                         </NavigationViewItem.Icon>

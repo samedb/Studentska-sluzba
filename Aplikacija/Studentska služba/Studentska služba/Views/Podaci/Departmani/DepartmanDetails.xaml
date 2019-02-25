@@ -25,14 +25,14 @@
                             Orientation="Horizontal">
 
             <TextBox Text="{x:Bind Departman.Naziv, Mode=TwoWay, FallbackValue=''}"
-                     Header="Naziv departmana"
+                     x:Uid="/Podaci/Naziv"
                      Style="{StaticResource DetailsElement}"/>
 
             <ComboBox ItemsSource="{x:Bind Profesori, Mode=TwoWay}"
                           HorizontalAlignment="Stretch"
                           DisplayMemberPath="PunoIme"
                           SelectedValuePath="IdProfesora"
-                          Header="Sef departmana"
+                          x:Uid="/Podaci/SefDepartmana"
                           SelectedValue="{x:Bind Departman.IdSefaDepartmana, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>

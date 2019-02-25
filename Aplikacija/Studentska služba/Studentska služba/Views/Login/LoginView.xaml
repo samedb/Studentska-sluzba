@@ -15,14 +15,14 @@
                     VerticalAlignment="Bottom"
                     HorizontalAlignment="Center"
                     Margin="0, 0, 0, 200">
-            <TextBox x:Name="userName" Text="{x:Bind vm.Username, Mode=TwoWay}" FontSize="18" PlaceholderText="User name" Background="White" BorderThickness="1" BorderBrush="Gray" />
+            <TextBox x:Name="userName" Text="{x:Bind vm.Username, Mode=TwoWay}" FontSize="18" x:Uid="/Login/Username"  Background="White" BorderThickness="1" BorderBrush="Gray" />
             <Rectangle Margin="8" />
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <PasswordBox Password="{x:Bind vm.Password, Mode=TwoWay}" FontSize="18" PlaceholderText="Password" BorderThickness="1" BorderBrush="Gray" />
+                <PasswordBox Password="{x:Bind vm.Password, Mode=TwoWay}" FontSize="18" x:Uid="/Login/Password" BorderThickness="1" BorderBrush="Gray" />
                 <Button Name="loginButton" Grid.Column="1" Padding="5" BorderThickness="1" BorderBrush="Gray" Command="{x:Bind vm.LoginCommand}" IsTapEnabled="False">
                     <SymbolIcon Symbol="Forward" Foreground="Gray" />
                 </Button>

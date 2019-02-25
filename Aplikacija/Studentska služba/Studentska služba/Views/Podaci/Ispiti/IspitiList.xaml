@@ -20,27 +20,27 @@
                                SelectedItem="{x:Bind vm.SelectedItem, Mode=TwoWay}">
             <controls:DataGrid.Columns>
                 <controls:DataGridTextColumn
-                        Header="ID prijave ispita"
+                        x:Uid="/Podaci/IDIspita"
                         Binding="{Binding IdIspita}"
                         Tag="IdIspita"/>
                 <controls:DataGridTextColumn
-                        Header="Broj indeksa studenta"
+                       x:Uid="/Podaci/BrojIndeksa"
                         Binding="{Binding BrojIndeksaStudenta}"
                         Tag="BrojIndeksaStudenta"/>
                 <controls:DataGridTextColumn
-                        Header="Student"
+                        x:Uid="/Podaci/Student"
                         Binding="{Binding BrojIndeksaStudentaNavigation.PunoIme}"
                         Tag="BrojIndeksaStudentaNavigation.PunoIme"/>
                 <controls:DataGridTextColumn
-                        Header="Predmet"
+                        x:Uid="/Podaci/Predmet"
                         Binding="{Binding IdPredmetaNavigation.Naziv}"
                         Tag="IdPredmetaNavigation.Naziv"/>
                 <controls:DataGridTextColumn
-                        Header="Rok"
+                        x:Uid="/Podaci/NazivRoka"
                         Binding="{Binding NazivRoka}"
                         Tag="NazivRoka"/>
                 <controls:DataGridTextColumn
-                        Header="Godina"
+                        x:Uid="/Podaci/Godina"
                         Binding="{Binding Godina}"
                         Tag="Godina"/>
             </controls:DataGrid.Columns>

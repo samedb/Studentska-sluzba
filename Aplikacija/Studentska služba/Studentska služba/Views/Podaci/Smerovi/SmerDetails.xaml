@@ -25,14 +25,14 @@
                             Orientation="Horizontal">
 
             <TextBox Text="{x:Bind Smer.Naziv, Mode=TwoWay, FallbackValue=''}"
-                     Header="Naziv smera"
+                     x:Uid="/Podaci/NazivSmera"
                      Style="{StaticResource DetailsElement}"/>
 
             <ComboBox ItemsSource="{x:Bind Referenti, Mode=OneWay}"
                           HorizontalAlignment="Stretch"
                           DisplayMemberPath="PunoIme"
                           SelectedValuePath="UsernameReferenta"
-                          Header="Referent smera"
+                          x:Uid="/Podaci/ReferentSmera"
                           SelectedValue="{x:Bind Smer.UsernameReferenta, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
             
@@ -40,7 +40,7 @@
                           HorizontalAlignment="Stretch"
                           DisplayMemberPath="Naziv"
                           SelectedValuePath="IdDepartmana"
-                          Header="Departman"
+                          x:Uid="/Podaci/NazivDepartmana"
                           SelectedValue="{x:Bind Smer.IdDepartmana, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
         </controls:WrapPanel>

@@ -28,7 +28,7 @@
                           HorizontalAlignment="Stretch"
                           DisplayMemberPath="PunoImeIndeks"
                           SelectedValuePath="BrojIndeksa"
-                          Header="Student"
+                          x:Uid="/Podaci/Student"
                           SelectedValue="{x:Bind Ispit.BrojIndeksaStudenta, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
             
@@ -36,19 +36,19 @@
                           HorizontalAlignment="Stretch"
                           DisplayMemberPath="Naziv"
                           SelectedValuePath="IdPredmeta"
-                          Header="Predmet"
+                          x:Uid="/Podaci/Predmet"
                           SelectedValue="{x:Bind Ispit.IdPredmeta, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
 
             <ComboBox ItemsSource="{x:Bind Rokovi, Mode=OneWay}"
                           HorizontalAlignment="Stretch"
-                          Header="Naziv roka"
+                          x:Uid="/Podaci/NazivRoka"
                           SelectedValue="{x:Bind Ispit.NazivRoka, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
 
             <ComboBox ItemsSource="{x:Bind Godine, Mode=OneWay}"
                           HorizontalAlignment="Stretch"
-                          Header="Godina"
+                          x:Uid="/Podaci/Godina"
                           SelectedValue="{x:Bind Ispit.Godina, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
             
