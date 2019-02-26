@@ -85,7 +85,7 @@ namespace Studentska_služba
 
         private async void PrikaziHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            await Windows.System.Launcher.LaunchUriAsync(new Uri("Assets/Uputstvo.pdf"));
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("https://drive.google.com/open?id=1fvMbV-xxPn_hSBURj1_uTyzo2FMG9J3p"));
         }
 
         private void Settings_Tapped(object sender, TappedRoutedEventArgs e)

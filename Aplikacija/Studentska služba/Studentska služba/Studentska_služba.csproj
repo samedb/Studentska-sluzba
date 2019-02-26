@@ -281,9 +281,6 @@
     <PRIResource Include="Strings\en-US\PromenaLozinke.resw" />
     <PRIResource Include="Strings\en-US\Statistika.resw" />
     <PRIResource Include="Strings\en-US\DialogMessages.resw" />
-    <None Include="Assets\Uputstvo.pdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Studentska služba_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
