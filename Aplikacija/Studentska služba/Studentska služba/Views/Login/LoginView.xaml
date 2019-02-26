@@ -10,11 +10,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Image Source="/Assets/SplashScreen.scale-400.png" Height="300" Margin="0, 100"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Image Source="/Assets/SplashScreen.scale-400.png" Height="300" Margin="0, 100" Grid.RowSpan="4"/>
         <StackPanel Width="320"
-                    VerticalAlignment="Bottom"
-                    HorizontalAlignment="Center"
-                    Margin="0, 0, 0, 200">
+                    Grid.Row="4"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center">
             <TextBox x:Name="userName" Text="{x:Bind vm.Username, Mode=TwoWay}" FontSize="18" x:Uid="/Login/Username"  Background="White" BorderThickness="1" BorderBrush="Gray" />
             <Rectangle Margin="8" />
             <Grid>
