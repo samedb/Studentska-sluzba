@@ -85,7 +85,7 @@ namespace Studentska_služba
 
         private async void PrikaziHelp_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            await new MessageDialog("Ovo je help", "Help").ShowAsync();
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("Assets/Uputstvo.pdf"));
         }
 
         private void Settings_Tapped(object sender, TappedRoutedEventArgs e)
