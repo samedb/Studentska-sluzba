@@ -28,6 +28,8 @@
                 <TextBlock x:Uid="/Podesavanja/DarkMode"
                            VerticalAlignment="Center"/>
                 <ToggleSwitch Toggled="ToggleSwitch_Toggled"
+                              OffContent="Off"
+                              OnContent="On"
                               Margin="20, 0"/>
             </StackPanel>
             <Button x:Uid="/Podesavanja/PromeniLozinku" 
