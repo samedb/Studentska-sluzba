@@ -44,7 +44,16 @@ namespace Studentska_služba.ViewModels.Login
         private async void Login()
         {
             IDataProvider dataProvider = new EFCoreDataProvider();
-            Korisnik korisnik = await dataProvider.LoginIspravan(Username, Password);
+            Korisnik korisnik = null;
+            try
+            {
+                korisnik = await dataProvider.LoginIspravan(Username, Password);
+            }
+            catch (Exception ex)
+            {
+                await new MessageDialog(ex.ToString()).ShowAsync();
+            }
+
             if (korisnik != default(Korisnik))
             {
                 App.TrenutniKorisnik = korisnik;

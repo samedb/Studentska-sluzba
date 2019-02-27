@@ -11,6 +11,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -50,7 +51,14 @@ namespace Studentska_služba
         /// </summary>
         private async void DBContextWarmUp()
         {
-            await new EFCoreDataProvider().GetStudentsAsync();
+            try
+            {
+                await new EFCoreDataProvider().GetStudentsAsync();
+            }
+            catch (Exception ex)
+            {
+                await new MessageDialog(ex.ToString()).ShowAsync();
+            }
         }
 
         /// <summary>
