@@ -3664,7 +3664,7 @@
 			    location   	(225, 292)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	324
+			    max_width  	360
 			    justify    	0
 			    label      	"")
 			icon       	"Actor"
@@ -3672,10 +3672,10 @@
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5BFDA06C0206"
-			width      	300
+			width      	120
 			height     	1521
-			icon_height 	150
-			icon_width 	108
+			icon_height 	162
+			icon_width 	120
 			icon_y_offset 	0
 			annotation 	1
 			Focus_Of_Control 	(object Focus_Of_Control "" @167
@@ -3730,7 +3730,7 @@
 			icon_y_offset 	0
 			annotation 	1
 			Focus_Of_Control 	(object Focus_Of_Control "" @171
-			    location   	(639, 339)
+			    location   	(639, 338)
 			    line_color 	3342489
 			    InterObjView 	@170
 			    height     	90
@@ -3781,7 +3781,7 @@
 			icon_y_offset 	0
 			annotation 	1
 			Focus_Of_Control 	(object Focus_Of_Control "" @175
-			    location   	(1113, 345)
+			    location   	(1113, 344)
 			    line_color 	3342489
 			    InterObjView 	@174
 			    height     	90
@@ -3832,7 +3832,7 @@
 			icon_y_offset 	0
 			annotation 	1
 			Focus_Of_Control 	(object Focus_Of_Control "" @179
-			    location   	(1599, 351)
+			    location   	(1599, 350)
 			    line_color 	3342489
 			    InterObjView 	@178
 			    height     	90
@@ -3882,7 +3882,7 @@
 			    location   	(2085, 331)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	324
+			    max_width  	360
 			    justify    	0
 			    label      	"")
 			icon       	"Actor"
@@ -3890,10 +3890,10 @@
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5BFDA6AB0310"
-			width      	300
+			width      	120
 			height     	1482
-			icon_height 	150
-			icon_width 	108
+			icon_height 	162
+			icon_width 	120
 			icon_y_offset 	0
 			annotation 	1
 			Focus_Of_Control 	(object Focus_Of_Control "" @185
@@ -4263,7 +4263,7 @@
 			    location   	(360, 250)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	219
+			    max_width  	360
 			    justify    	0
 			    label      	"")
 			icon       	"Actor"
@@ -4271,7 +4271,7 @@
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5BFDA8520177"
-			width      	230
+			width      	120
 			height     	1332
 			icon_height 	162
 			icon_width 	120
@@ -4373,7 +4373,7 @@
 			icon_y_offset 	0
 			annotation 	1
 			Focus_Of_Control 	(object Focus_Of_Control "" @212
-			    location   	(1236, 312)
+			    location   	(1236, 311)
 			    line_color 	3342489
 			    InterObjView 	@211
 			    height     	90
@@ -4431,7 +4431,7 @@
 			icon_y_offset 	0
 			annotation 	1
 			Focus_Of_Control 	(object Focus_Of_Control "" @217
-			    location   	(1722, 318)
+			    location   	(1722, 317)
 			    line_color 	3342489
 			    InterObjView 	@216
 			    height     	90
@@ -4488,7 +4488,7 @@
 			    location   	(2208, 298)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	324
+			    max_width  	360
 			    justify    	0
 			    label      	"")
 			icon       	"Actor"
@@ -4496,10 +4496,10 @@
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5BFDA8520193"
-			width      	300
+			width      	120
 			height     	1284
-			icon_height 	150
-			icon_width 	108
+			icon_height 	162
+			icon_width 	120
 			icon_y_offset 	0
 			annotation 	1
 			Focus_Of_Control 	(object Focus_Of_Control "" @224
@@ -4842,7 +4842,117 @@
 	global     	TRUE
 	subsystem  	"Component View"
 	quidu      	"5BFC4F6A02DA"
-	logical_models 	(list unit_reference_list)
+	logical_models 	(list unit_reference_list
+	    (object Class "NewClass"
+		quid       	"5C781B97016E")
+	    (object Class "NewClass2"
+		quid       	"5C781B9803CF")
+	    (object Class_Category "NewPackage"
+		quid       	"5C781B9C00AA"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list))
+	    (object Class_Category "NewPackage2"
+		quid       	"5C781BCA0046"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list))
+	    (object Class_Category "View"
+		quid       	"5C781BD20151"
+		stereotype 	"layer"
+		visible_categories 	(list visibility_relationship_list
+		    (object Visibility_Relationship
+			quid       	"5C781C7C037D"
+			supplier   	"Logical View::ViewModel"
+			quidu      	"5C781BD500D3")
+		    (object Visibility_Relationship
+			quid       	"5C781CDD006C"
+			supplier   	"Logical View::XAML"
+			quidu      	"5C781C8C0365"))
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list
+		    (object ClassDiagram "Main"
+			quid       	"5C781BDE0112"
+			title      	"Main"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list))))
+	    (object Class_Category "ViewModel"
+		quid       	"5C781BD500D3"
+		stereotype 	"layer"
+		visible_categories 	(list visibility_relationship_list
+		    (object Visibility_Relationship
+			quid       	"5C781C80024B"
+			supplier   	"Logical View::Data Access"
+			quidu      	"5C781BD601AF")
+		    (object Visibility_Relationship
+			quid       	"5C781C850308"
+			supplier   	"Logical View::Model"
+			quidu      	"5C781BDB036F")
+		    (object Visibility_Relationship
+			quid       	"5C781CDE030E"
+			supplier   	"Logical View::C\\#"
+			quidu      	"5C781C8D024B"))
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list))
+	    (object Class_Category "Data Access"
+		quid       	"5C781BD601AF"
+		stereotype 	"layer"
+		visible_categories 	(list visibility_relationship_list
+		    (object Visibility_Relationship
+			quid       	"5C781C86037C"
+			supplier   	"Logical View::Model"
+			quidu      	"5C781BDB036F")
+		    (object Visibility_Relationship
+			quid       	"5C781CE10104"
+			supplier   	"Logical View::C\\#"
+			quidu      	"5C781C8D024B")
+		    (object Visibility_Relationship
+			quid       	"5C781D0A026B"
+			supplier   	"Logical View::SQL Server"
+			quidu      	"5C781CED0163"))
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list))
+	    (object Class_Category "Model"
+		quid       	"5C781BDB036F"
+		stereotype 	"layer"
+		visible_categories 	(list visibility_relationship_list
+		    (object Visibility_Relationship
+			quid       	"5C781CDF03D4"
+			supplier   	"Logical View::C\\#"
+			quidu      	"5C781C8D024B"))
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list))
+	    (object Class_Category "XAML"
+		quid       	"5C781C8C0365"
+		stereotype 	"tehnologija"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list))
+	    (object Class_Category "C#"
+		quid       	"5C781C8D024B"
+		stereotype 	"tehnologija"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list))
+	    (object Class_Category "NewPackage5"
+		quid       	"5C781C8E038E"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list))
+	    (object Class_Category "SQL Server"
+		quid       	"5C781CED0163"
+		stereotype 	"DBMS"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list)
+		logical_presentations 	(list unit_reference_list)))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
 		quid       	"5BFC4F6B0377"
@@ -4852,10 +4962,548 @@
 		max_width  	21600
 		origin_x   	0
 		origin_y   	0
-		items      	(list diagram_item_list))))
+		items      	(list diagram_item_list
+		    (object CategoryView "Logical View::View" @242
+			location   	(729, 429)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@242
+			    location   	(585, 394)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"View")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@242
+			    location   	(585, 344)
+			    fill_color 	13434879
+			    anchor     	10
+			    nlines     	1
+			    max_width  	288
+			    justify    	0
+			    label      	"<<layer>>")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C781BD20151"
+			width      	300
+			height     	182)
+		    (object CategoryView "Logical View::ViewModel" @243
+			location   	(732, 906)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@243
+			    location   	(588, 871)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"ViewModel")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@243
+			    location   	(588, 821)
+			    fill_color 	13434879
+			    anchor     	10
+			    nlines     	1
+			    max_width  	288
+			    justify    	0
+			    label      	"<<layer>>")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C781BD500D3"
+			width      	300
+			height     	182)
+		    (object CategoryView "Logical View::Data Access" @244
+			location   	(759, 1284)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@244
+			    location   	(615, 1249)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"Data Access")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@244
+			    location   	(615, 1199)
+			    fill_color 	13434879
+			    anchor     	10
+			    nlines     	1
+			    max_width  	288
+			    justify    	0
+			    label      	"<<layer>>")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C781BD601AF"
+			width      	300
+			height     	182)
+		    (object CategoryView "Logical View::Model" @245
+			location   	(315, 1062)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@245
+			    location   	(171, 1027)
+			    fill_color 	13434879
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"Model")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@245
+			    location   	(171, 977)
+			    fill_color 	13434879
+			    anchor     	10
+			    nlines     	1
+			    max_width  	288
+			    justify    	0
+			    label      	"<<layer>>")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C781BDB036F"
+			width      	300
+			height     	182)
+		    (object ImportView "" @246
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C781C7C037D"
+			client     	@242
+			supplier   	@243
+			vertices   	(list Points
+			    (729, 520)
+			    (730, 760))
+			line_style 	0)
+		    (object ImportView "" @247
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C781C80024B"
+			client     	@243
+			supplier   	@244
+			vertices   	(list Points
+			    (737, 997)
+			    (747, 1138))
+			line_style 	0)
+		    (object ImportView "" @248
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C781C850308"
+			client     	@243
+			supplier   	@245
+			vertices   	(list Points
+			    (581, 961)
+			    (465, 1004))
+			line_style 	0)
+		    (object ImportView "" @249
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C781C86037C"
+			client     	@244
+			supplier   	@245
+			vertices   	(list Points
+			    (608, 1207)
+			    (465, 1137))
+			line_style 	0)
+		    (object CategoryView "Logical View::XAML" @250
+			location   	(1365, 444)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@250
+			    location   	(1217, 409)
+			    nlines     	2
+			    max_width  	296
+			    justify    	0
+			    label      	"XAML")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@250
+			    location   	(1217, 359)
+			    anchor     	10
+			    nlines     	1
+			    max_width  	296
+			    justify    	0
+			    label      	"<<tehnologija>>")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	16777215
+			quidu      	"5C781C8C0365"
+			width      	308
+			height     	182)
+		    (object CategoryView "Logical View::C\\#" @251
+			location   	(1401, 1116)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@251
+			    location   	(1253, 1081)
+			    nlines     	2
+			    max_width  	296
+			    justify    	0
+			    label      	"C#")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@251
+			    location   	(1253, 1031)
+			    anchor     	10
+			    nlines     	1
+			    max_width  	296
+			    justify    	0
+			    label      	"<<tehnologija>>")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	16777215
+			quidu      	"5C781C8D024B"
+			width      	308
+			height     	182)
+		    (object ImportView "" @252
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C781CDD006C"
+			client     	@242
+			supplier   	@250
+			vertices   	(list Points
+			    (879, 431)
+			    (1210, 440))
+			line_style 	0)
+		    (object ImportView "" @253
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C781CDE030E"
+			client     	@243
+			supplier   	@251
+			vertices   	(list Points
+			    (882, 951)
+			    (1246, 1066))
+			line_style 	0)
+		    (object ImportView "" @254
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C781CDF03D4"
+			client     	@245
+			supplier   	@251
+			vertices   	(list Points
+			    (465, 1068)
+			    (1246, 1107))
+			line_style 	0)
+		    (object ImportView "" @255
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C781CE10104"
+			client     	@244
+			supplier   	@251
+			vertices   	(list Points
+			    (909, 1244)
+			    (1246, 1155))
+			line_style 	0)
+		    (object CategoryView "Logical View::SQL Server" @256
+			location   	(1407, 1530)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@256
+			    location   	(1263, 1495)
+			    nlines     	2
+			    max_width  	288
+			    justify    	0
+			    label      	"SQL Server")
+			stereotype 	(object ItemLabel
+			    Parent_View 	@256
+			    location   	(1263, 1445)
+			    anchor     	10
+			    nlines     	1
+			    max_width  	288
+			    justify    	0
+			    label      	"<<DBMS>>")
+			icon_style 	"Icon"
+			line_color 	3342489
+			quidu      	"5C781CED0163"
+			width      	300
+			height     	182)
+		    (object ImportView "" @257
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C781D0A026B"
+			client     	@244
+			supplier   	@256
+			vertices   	(list Points
+			    (909, 1340)
+			    (1256, 1471))
+			line_style 	0)))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"5BFC4F6A02DA"
-	physical_models 	(list unit_reference_list)
+	physical_models 	(list unit_reference_list
+	    (object module "Observable Object" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792D2700D6"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792E970370"
+			supplier   	"Component View::INotifyPropertyChanged"
+			quidu      	"5C792E580016"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "ViewModelBase" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792D34035F"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792E9603E0"
+			supplier   	"Component View::Observable Object"
+			quidu      	"5C792D2700D6"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "GenericCRUDViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792D53001C"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792E990329"
+			supplier   	"Component View::ViewModelBase"
+			quidu      	"5C792D34035F"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "PromenaLozinkeViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792DCF028C"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792E940061"
+			supplier   	"Component View::ViewModelBase"
+			quidu      	"5C792D34035F"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "SettingsViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792DD000CB"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792E900239"
+			supplier   	"Component View::ViewModelBase"
+			quidu      	"5C792D34035F"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "StatistikaViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792DD10263"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792E8D01B9"
+			supplier   	"Component View::ViewModelBase"
+			quidu      	"5C792D34035F"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "LoginViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792DD40313"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792E7C0322"
+			supplier   	"Component View::ViewModelBase"
+			quidu      	"5C792D34035F"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "PotvrdeUverenjaViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792DD50143"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792E890340"
+			supplier   	"Component View::ViewModelBase"
+			quidu      	"5C792D34035F"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "DokumentacijaZaProfesoreViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792DD600F5"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792E8B0391"
+			supplier   	"Component View::ViewModelBase"
+			quidu      	"5C792D34035F"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "INotifyPropertyChanged" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792E580016"
+		stereotype 	""
+		language   	"")
+	    (object module "NewComponent" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792E5F002D"
+		stereotype 	""
+		language   	"")
+	    (object module "StudentiViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792F0002A3"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792F7100EF"
+			supplier   	"Component View::GenericCRUDViewModel"
+			quidu      	"5C792D53001C"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "IspitiViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792F010104"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792F7400F9"
+			supplier   	"Component View::ProfesoriViewModel"
+			quidu      	"5C792F03004A"
+			supplier_is_spec 	TRUE)
+		    (object Module_Visibility_Relationship
+			quid       	"5C792F77019F"
+			supplier   	"Component View::GenericCRUDViewModel"
+			quidu      	"5C792D53001C"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "OceneViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792F010369"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792F7901C9"
+			supplier   	"Component View::GenericCRUDViewModel"
+			quidu      	"5C792D53001C"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "ProfesoriViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792F03004A"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792F780138"
+			supplier   	"Component View::GenericCRUDViewModel"
+			quidu      	"5C792D53001C"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "ReferentiViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792F0301EB"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792F7A0180"
+			supplier   	"Component View::GenericCRUDViewModel"
+			quidu      	"5C792D53001C"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "SmeroviViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792F03037A"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792F7B00F8"
+			supplier   	"Component View::GenericCRUDViewModel"
+			quidu      	"5C792D53001C"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "DepartmaniViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792F04018C"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792F7E006F"
+			supplier   	"Component View::GenericCRUDViewModel"
+			quidu      	"5C792D53001C"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "PredmetiViewModel" "NotAModuleType" "NotAModulePart"
+		quid       	"5C792F0402CB"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C792F7F0177"
+			supplier   	"Component View::GenericCRUDViewModel"
+			quidu      	"5C792D53001C"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "StudentiView" "NotAModuleType" "NotAModulePart"
+		quid       	"5C7939EB0201"
+		stereotype 	""
+		language   	"")
+	    (object module "StudentDetails" "NotAModuleType" "NotAModulePart"
+		quid       	"5C7939EC0057"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C793A1B00BC"
+			supplier   	"Component View::StudentiView"
+			quidu      	"5C7939EB0201"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "StudentList" "NotAModuleType" "NotAModulePart"
+		quid       	"5C7939EC0160"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C793A1B0305"
+			supplier   	"Component View::StudentiView"
+			quidu      	"5C7939EB0201"
+			supplier_is_spec 	TRUE))
+		language   	"")
+	    (object module "CommandLine" "NotAModuleType" "NotAModulePart"
+		quid       	"5C7939EC0277"
+		stereotype 	""
+		visible_modules 	(list dependency_list
+		    (object Module_Visibility_Relationship
+			quid       	"5C793A1C0221"
+			supplier   	"Component View::StudentiView"
+			quidu      	"5C7939EB0201"
+			supplier_is_spec 	TRUE))
+		language   	""))
 	physical_presentations 	(list unit_reference_list
 	    (object Module_Diagram "Main"
 		quid       	"5BFC4F6B036C"
@@ -4865,7 +5513,843 @@
 		max_width  	21600
 		origin_x   	0
 		origin_y   	0
-		items      	(list diagram_item_list)))
+		items      	(list diagram_item_list
+		    (object ModView "Component View::Observable Object" "NotAModuleType" "NotAModulePart" @258
+			location   	(1686, 324)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@258
+			    location   	(1628, 299)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	219
+			    justify    	1
+			    label      	"Observable Object")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792D2700D6"
+			width      	394
+			autoResize 	TRUE
+			width      	394
+			height     	162)
+		    (object ModView "Component View::ViewModelBase" "NotAModuleType" "NotAModulePart" @259
+			location   	(1692, 543)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@259
+			    location   	(1604, 518)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	333
+			    justify    	1
+			    label      	"ViewModelBase")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792D34035F"
+			width      	600
+			autoResize 	TRUE
+			width      	600
+			height     	162)
+		    (object ModView "Component View::GenericCRUDViewModel" "NotAModuleType" "NotAModulePart" @260
+			location   	(639, 822)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@260
+			    location   	(513, 795)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	478
+			    justify    	1
+			    label      	"GenericCRUDViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792D53001C"
+			width      	862
+			height     	175
+			autoResize 	TRUE
+			width      	862
+			height     	175)
+		    (object ModView "Component View::PromenaLozinkeViewModel" "NotAModuleType" "NotAModulePart" @261
+			location   	(3492, 1284)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@261
+			    location   	(3355, 1259)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	520
+			    justify    	1
+			    label      	"PromenaLozinkeViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792DCF028C"
+			width      	938
+			height     	163
+			autoResize 	TRUE
+			width      	938
+			height     	163)
+		    (object ModView "Component View::SettingsViewModel" "NotAModuleType" "NotAModulePart" @262
+			location   	(2655, 1281)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@262
+			    location   	(2556, 1256)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	375
+			    justify    	1
+			    label      	"SettingsViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792DD000CB"
+			width      	676
+			height     	163
+			autoResize 	TRUE
+			width      	676
+			height     	163)
+		    (object ModView "Component View::StatistikaViewModel" "NotAModuleType" "NotAModulePart" @263
+			location   	(1809, 1281)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@263
+			    location   	(1698, 1256)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	423
+			    justify    	1
+			    label      	"StatistikaViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792DD10263"
+			width      	762
+			height     	163
+			autoResize 	TRUE
+			width      	762
+			height     	163)
+		    (object ModView "Component View::LoginViewModel" "NotAModuleType" "NotAModulePart" @264
+			location   	(2175, 1053)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@264
+			    location   	(2094, 1024)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	305
+			    justify    	1
+			    label      	"LoginViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792DD40313"
+			width      	550
+			height     	194
+			autoResize 	TRUE
+			width      	550
+			height     	194)
+		    (object ModView "Component View::PotvrdeUverenjaViewModel" "NotAModuleType" "NotAModulePart" @265
+			location   	(3072, 1035)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@265
+			    location   	(2937, 1008)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	513
+			    justify    	1
+			    label      	"PotvrdeUverenjaViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792DD50143"
+			width      	925
+			height     	181
+			autoResize 	TRUE
+			width      	925
+			height     	181)
+		    (object ModView "Component View::DokumentacijaZaProfesoreViewModel" "NotAModuleType" "NotAModulePart" @266
+			location   	(3465, 780)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@266
+			    location   	(3287, 751)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	679
+			    justify    	1
+			    label      	"DokumentacijaZaProfesoreViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792DD600F5"
+			width      	1225
+			height     	194
+			autoResize 	TRUE
+			width      	1225
+			height     	194)
+		    (object ModView "Component View::INotifyPropertyChanged" "NotAModuleType" "NotAModulePart" @267
+			location   	(1674, 105)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@267
+			    location   	(1554, 79)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	454
+			    justify    	1
+			    label      	"INotifyPropertyChanged")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792E580016"
+			width      	819
+			height     	169
+			autoResize 	TRUE
+			width      	819
+			height     	169)
+		    (object ModVisView "" @268
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792E7C0322"
+			client     	@264
+			supplier   	@259
+			vertices   	(list Points
+			    (2079, 958)
+			    (1763, 621))
+			line_style 	0)
+		    (object ModVisView "" @269
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792E890340"
+			client     	@265
+			supplier   	@259
+			vertices   	(list Points
+			    (2811, 943)
+			    (1913, 621))
+			line_style 	0)
+		    (object ModVisView "" @270
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792E8B0391"
+			client     	@266
+			supplier   	@259
+			vertices   	(list Points
+			    (2875, 698)
+			    (1979, 579))
+			line_style 	0)
+		    (object ModVisView "" @271
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792E8D01B9"
+			client     	@263
+			supplier   	@259
+			vertices   	(list Points
+			    (1788, 1200)
+			    (1700, 621))
+			line_style 	0)
+		    (object ModVisView "" @272
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792E900239"
+			client     	@262
+			supplier   	@259
+			vertices   	(list Points
+			    (2541, 1200)
+			    (1790, 621))
+			line_style 	0)
+		    (object ModVisView "" @273
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792E940061"
+			client     	@261
+			supplier   	@259
+			vertices   	(list Points
+			    (3283, 1203)
+			    (1886, 621))
+			line_style 	0)
+		    (object ModVisView "" @274
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792E9603E0"
+			client     	@259
+			supplier   	@258
+			vertices   	(list Points
+			    (1683, 461)
+			    (1686, 402))
+			line_style 	0)
+		    (object ModVisView "" @275
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792E970370"
+			client     	@258
+			supplier   	@267
+			vertices   	(list Points
+			    (1678, 242)
+			    (1674, 187))
+			line_style 	0)
+		    (object ModVisView "" @276
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792E990329"
+			client     	@260
+			supplier   	@259
+			vertices   	(list Points
+			    (944, 735)
+			    (1398, 616))
+			line_style 	0)
+		    (object ModView "Component View::StudentiViewModel" "NotAModuleType" "NotAModulePart" @277
+			location   	(177, 1095)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@277
+			    location   	(125, 1070)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	196
+			    justify    	1
+			    label      	"StudentiViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792F0002A3"
+			width      	352
+			autoResize 	TRUE
+			width      	352
+			height     	162)
+		    (object ModView "Component View::IspitiViewModel" "NotAModuleType" "NotAModulePart" @278
+			location   	(180, 1266)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@278
+			    location   	(134, 1241)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	171
+			    justify    	1
+			    label      	"IspitiViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792F010104"
+			width      	308
+			autoResize 	TRUE
+			width      	308
+			height     	162)
+		    (object ModView "Component View::OceneViewModel" "NotAModuleType" "NotAModulePart" @279
+			location   	(258, 1437)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@279
+			    location   	(212, 1412)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	171
+			    justify    	1
+			    label      	"OceneViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792F010369"
+			width      	308
+			autoResize 	TRUE
+			width      	308
+			height     	162)
+		    (object ModView "Component View::ProfesoriViewModel" "NotAModuleType" "NotAModulePart" @280
+			location   	(552, 1071)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@280
+			    location   	(500, 1046)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	196
+			    justify    	1
+			    label      	"ProfesoriViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792F03004A"
+			width      	352
+			autoResize 	TRUE
+			width      	352
+			height     	162)
+		    (object ModView "Component View::ReferentiViewModel" "NotAModuleType" "NotAModulePart" @281
+			location   	(645, 1296)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@281
+			    location   	(593, 1271)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	196
+			    justify    	1
+			    label      	"ReferentiViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792F0301EB"
+			width      	352
+			autoResize 	TRUE
+			width      	352
+			height     	162)
+		    (object ModView "Component View::SmeroviViewModel" "NotAModuleType" "NotAModulePart" @282
+			location   	(690, 1488)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@282
+			    location   	(638, 1463)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	196
+			    justify    	1
+			    label      	"SmeroviViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792F03037A"
+			width      	352
+			autoResize 	TRUE
+			width      	352
+			height     	162)
+		    (object ModView "Component View::DepartmaniViewModel" "NotAModuleType" "NotAModulePart" @283
+			location   	(1101, 1107)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@283
+			    location   	(1041, 1082)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	223
+			    justify    	1
+			    label      	"DepartmaniViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792F04018C"
+			width      	402
+			autoResize 	TRUE
+			width      	402
+			height     	162)
+		    (object ModView "Component View::PredmetiViewModel" "NotAModuleType" "NotAModulePart" @284
+			location   	(1161, 1398)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@284
+			    location   	(1107, 1373)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	200
+			    justify    	1
+			    label      	"PredmetiViewModel")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C792F0402CB"
+			width      	360
+			autoResize 	TRUE
+			width      	360
+			height     	162)
+		    (object ModVisView "" @285
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792F7100EF"
+			client     	@277
+			supplier   	@260
+			vertices   	(list Points
+			    (303, 1015)
+			    (490, 907))
+			line_style 	0)
+		    (object ModVisView "" @286
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792F77019F"
+			client     	@278
+			supplier   	@260
+			vertices   	(list Points
+			    (259, 1184)
+			    (541, 907))
+			line_style 	0)
+		    (object ModVisView "" @287
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792F780138"
+			client     	@280
+			supplier   	@260
+			vertices   	(list Points
+			    (576, 989)
+			    (595, 907))
+			line_style 	0)
+		    (object ModVisView "" @288
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792F7901C9"
+			client     	@279
+			supplier   	@260
+			vertices   	(list Points
+			    (303, 1356)
+			    (572, 907))
+			line_style 	0)
+		    (object ModVisView "" @289
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792F7A0180"
+			client     	@281
+			supplier   	@260
+			vertices   	(list Points
+			    (640, 1214)
+			    (639, 907))
+			line_style 	0)
+		    (object ModVisView "" @290
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792F7B00F8"
+			client     	@282
+			supplier   	@260
+			vertices   	(list Points
+			    (680, 1406)
+			    (639, 907))
+			line_style 	0)
+		    (object ModVisView "" @291
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792F7E006F"
+			client     	@283
+			supplier   	@260
+			vertices   	(list Points
+			    (968, 1027)
+			    (772, 907))
+			line_style 	0)
+		    (object ModVisView "" @292
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C792F7F0177"
+			client     	@284
+			supplier   	@260
+			vertices   	(list Points
+			    (1084, 1318)
+			    (709, 907))
+			line_style 	0)))
+	    (object Module_Diagram "view"
+		quid       	"5C7939DE0287"
+		title      	"view"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object ModView "Component View::StudentiView" "NotAModuleType" "NotAModulePart" @293
+			location   	(1497, 321)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@293
+			    location   	(1412, 296)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	319
+			    justify    	1
+			    label      	"StudentiView")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C7939EB0201"
+			width      	575
+			autoResize 	TRUE
+			width      	575
+			height     	162)
+		    (object ModView "Component View::StudentDetails" "NotAModuleType" "NotAModulePart" @294
+			location   	(915, 789)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@294
+			    location   	(838, 762)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	288
+			    justify    	1
+			    label      	"StudentDetails")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C7939EC0057"
+			width      	519
+			height     	181
+			autoResize 	TRUE
+			width      	519
+			height     	181)
+		    (object ModView "Component View::StudentList" "NotAModuleType" "NotAModulePart" @295
+			location   	(1542, 789)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@295
+			    location   	(1473, 763)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	260
+			    justify    	1
+			    label      	"StudentList")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C7939EC0160"
+			width      	469
+			height     	169
+			autoResize 	TRUE
+			width      	469
+			height     	169)
+		    (object ModView "Component View::CommandLine" "NotAModuleType" "NotAModulePart" @296
+			location   	(2274, 798)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@296
+			    location   	(2189, 771)
+			    fill_color 	13434879
+			    anchor_loc 	3
+			    nlines     	2
+			    max_width  	319
+			    justify    	1
+			    label      	"CommandLine")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5C7939EC0277"
+			width      	575
+			height     	181
+			autoResize 	TRUE
+			width      	575
+			height     	181)
+		    (object ModVisView "" @297
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C793A1B00BC"
+			client     	@294
+			supplier   	@293
+			vertices   	(list Points
+			    (1019, 699)
+			    (1391, 399))
+			line_style 	0)
+		    (object ModVisView "" @298
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C793A1B0305"
+			client     	@295
+			supplier   	@293
+			vertices   	(list Points
+			    (1529, 703)
+			    (1499, 399))
+			line_style 	0)
+		    (object ModVisView "" @299
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5C793A1C0221"
+			client     	@296
+			supplier   	@293
+			vertices   	(list Points
+			    (2126, 708)
+			    (1620, 399))
+			line_style 	0))))
 	category   	"Logical View"
 	quidu      	"5BFC4F6A02D8")
     process_structure 	(object Processes
