@@ -30,6 +30,7 @@ namespace Studentska_služba
         public MainPage()
         {
             this.InitializeComponent();
+            MyNavigationView.SelectedItem = MyNavigationView.MenuItems[0];
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

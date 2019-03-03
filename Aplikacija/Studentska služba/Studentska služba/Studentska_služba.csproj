@@ -139,7 +139,7 @@
     <Compile Include="Helpers\DetailsMode.cs" />
     <Compile Include="ViewModels\DokumentacijaZaProfesore\DokumentacijaZaProfesoreViewModel.cs" />
     <Compile Include="ViewModels\Login\LoginViewModel.cs" />
-    <Compile Include="ViewModels\Podaci\GenericCRUDViewModel.cs" />
+    <Compile Include="ViewModels\MainPage\GenericCRUDViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Departmani\DepartmaniViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Ispiti\IspitiAddViewModel.cs" />
     <Compile Include="ViewModels\Podaci\Ispiti\IspitiViewModel.cs" />

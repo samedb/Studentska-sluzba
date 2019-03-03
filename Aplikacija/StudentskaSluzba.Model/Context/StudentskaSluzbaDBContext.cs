@@ -36,7 +36,7 @@ namespace StudentskaSluzba.Models
             if (!optionsBuilder.IsConfigured)
             {
 //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=StudentskaSluzbaDB;Trusted_Connection=False;User Id=sa; Password = sifra123; ");
+                optionsBuilder.UseSqlServer(@"Data Source=.\SQLExpress;Database=StudentskaSluzbaDB;Trusted_Connection=False;User Id=sa; Password = sifra123;");
             }
         }
 
