@@ -120,14 +120,26 @@
   <data name="Dodaj.Text" xml:space="preserve">
     <value>Dodaj</value>
   </data>
+  <data name="Dodaj.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Dodaj novi zapis</value>
+  </data>
   <data name="Izbrisi.Text" xml:space="preserve">
     <value>Izbriši</value>
+  </data>
+  <data name="Izbrisi.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Izbrisi selektovani zapis</value>
   </data>
   <data name="Izmeni.Text" xml:space="preserve">
     <value>Izmeni</value>
   </data>
+  <data name="Izmeni.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Izmeni selektovani zapis</value>
+  </data>
   <data name="Osvezi.Text" xml:space="preserve">
     <value>Osveži</value>
+  </data>
+  <data name="Osvezi.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Osveži tabelu</value>
   </data>
   <data name="Search.PlaceholderText" xml:space="preserve">
     <value>Traži...</value>

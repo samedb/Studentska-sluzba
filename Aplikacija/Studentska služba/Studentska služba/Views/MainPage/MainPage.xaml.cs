@@ -30,13 +30,14 @@ namespace Studentska_služba
         public MainPage()
         {
             this.InitializeComponent();
-            MyNavigationView.SelectedItem = MyNavigationView.MenuItems[0];
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             if (e.Parameter != null && (bool)e.Parameter)
                 ContentFrame.Navigate(typeof(SettingsView));
+            else
+                MyNavigationView.SelectedItem = MyNavigationView.MenuItems[0];
         }
 
         private async Task PrikaziHelpAsync()

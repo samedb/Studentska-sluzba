@@ -40,11 +40,12 @@ namespace Studentska_služba.Views
         public PodaciView()
         {
             this.InitializeComponent();
-            MyNavigationView.SelectedItem = MyNavigationView.MenuItems[0];
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            MyNavigationView.SelectedItem = MyNavigationView.MenuItems[0];
+
             AdminMode = App.TrenutniKorisnik.Usertype == "admin";
 
             if (!AdminMode)

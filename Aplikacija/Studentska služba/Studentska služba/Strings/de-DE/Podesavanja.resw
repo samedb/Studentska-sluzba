@@ -125,7 +125,7 @@
     <comment>Combobox</comment>
   </data>
   <data name="Naslov.Text" xml:space="preserve">
-    <value>Podesavanja</value>
+    <value>Podešavanja</value>
   </data>
   <data name="PromeniLozinku.Content" xml:space="preserve">
     <value>Promeni lozinku</value>
