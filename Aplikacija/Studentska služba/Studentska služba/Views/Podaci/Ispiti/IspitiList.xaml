@@ -14,6 +14,8 @@
         <controls:DataGrid Name="dataGrid"
                                IsReadOnly="True"
                                CanUserSortColumns="True"
+                               AlternatingRowBackground="WhiteSmoke"
+                               SelectionMode="Single"
                                Sorting="DataGrid_Sorting"
                                ItemsSource="{x:Bind vm.ItemList, Mode=TwoWay}"
                                AutoGenerateColumns="False"

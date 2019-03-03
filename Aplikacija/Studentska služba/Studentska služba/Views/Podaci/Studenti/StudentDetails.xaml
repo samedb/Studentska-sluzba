@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:helpers="using:Studentska_služba.Helpers"
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
@@ -27,13 +28,13 @@
                             VerticalSpacing="10" 
                             HorizontalSpacing="10"
                             Orientation="Horizontal">
-            <TextBox Text="{x:Bind Student.Ime, Mode=TwoWay, FallbackValue=''}"  
+            <helpers:LetterOnlyTextBox Text="{x:Bind Student.Ime, Mode=TwoWay, FallbackValue=''}"  
                          x:Uid="/Podaci/Ime"
                          Style="{StaticResource DetailsElement}"/>
-            <TextBox Text="{x:Bind Student.Prezime, Mode=TwoWay, FallbackValue=''}" 
+            <helpers:LetterOnlyTextBox Text="{x:Bind Student.Prezime, Mode=TwoWay, FallbackValue=''}" 
                          x:Uid="/Podaci/Prezime"
                          Style="{StaticResource DetailsElement}" />
-            <TextBox Text="{x:Bind Student.Jmbg, Mode=TwoWay, FallbackValue=''}"
+            <helpers:IntegerTextBox Text="{x:Bind Student.Jmbg, Mode=TwoWay, FallbackValue=''}"
                          x:Uid="/Podaci/JMBG"
                          InputScope="Number"
                          Style="{StaticResource DetailsElement}" />

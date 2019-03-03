@@ -137,6 +137,8 @@
     <Compile Include="Converters\TimeConverter.cs" />
     <Compile Include="DatabaseController.cs" />
     <Compile Include="Helpers\DetailsMode.cs" />
+    <Compile Include="Helpers\IntegerTextBox.cs" />
+    <Compile Include="Helpers\LetterOnlyTextBox.cs" />
     <Compile Include="ViewModels\DokumentacijaZaProfesore\DokumentacijaZaProfesoreViewModel.cs" />
     <Compile Include="ViewModels\Login\LoginViewModel.cs" />
     <Compile Include="ViewModels\MainPage\GenericCRUDViewModel.cs" />

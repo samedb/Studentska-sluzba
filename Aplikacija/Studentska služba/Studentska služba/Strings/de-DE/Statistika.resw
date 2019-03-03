@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BrojPolozenihIspita.Title" xml:space="preserve">
-    <value>Broj polozenih ispita</value>
+    <value>Broj položenih ispita</value>
   </data>
   <data name="BrojPrijavljenihIspita.Title" xml:space="preserve">
     <value>Broj prijavljenih ispita</value>
@@ -133,12 +133,12 @@
     <value>Statistički podaci</value>
   </data>
   <data name="ProsecnaOcenaPoDepartmanu.Text" xml:space="preserve">
-    <value>Prosecna ocena po departmanu</value>
+    <value>Prosečna ocena po departmanu</value>
   </data>
   <data name="ProsecnaOcenaPoPredmetu.Text" xml:space="preserve">
-    <value>Prosecna ocena po predmetu</value>
+    <value>Prosečna ocena po predmetu</value>
   </data>
   <data name="UspesnostPolaganjaPoRokovima.Text" xml:space="preserve">
-    <value>Uspesnost polaganja ispita po ispitnim rokovima</value>
+    <value>Uspešnost polaganja ispita po ispitnim rokovima</value>
   </data>
 </root>

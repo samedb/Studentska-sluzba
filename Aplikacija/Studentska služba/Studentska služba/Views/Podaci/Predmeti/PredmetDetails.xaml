@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:helpers="using:Studentska_služba.Helpers"
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
@@ -36,7 +37,7 @@
                           SelectedValue="{x:Bind Predmet.IdProfesora, Mode=TwoWay, FallbackValue=''}"
                           Style="{StaticResource DetailsElement}" />
 
-            <TextBox Text="{x:Bind Predmet.Espb, Mode=TwoWay, FallbackValue=''}"
+            <helpers:IntegerTextBox Text="{x:Bind Predmet.Espb, Mode=TwoWay, FallbackValue=''}"
                      x:Uid="/Podaci/ESPB"
                      InputScope="Number"
                      Style="{StaticResource DetailsElement}"/>

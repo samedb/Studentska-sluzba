@@ -124,7 +124,7 @@
     <value>Broj indeksa studenta</value>
   </data>
   <data name="DatumRodjenja.Header" xml:space="preserve">
-    <value>Datum rodjenja</value>
+    <value>Datum rođenja</value>
   </data>
   <data name="ESPB.Header" xml:space="preserve">
     <value>ESPB</value>
@@ -157,7 +157,7 @@
     <value>JMBG</value>
   </data>
   <data name="KorisnickoIme.Header" xml:space="preserve">
-    <value>Korisnicko ime</value>
+    <value>Korisničko ime</value>
   </data>
   <data name="Naziv.Header" xml:space="preserve">
     <value>Naziv departmana</value>
@@ -178,7 +178,7 @@
     <value>Ocena</value>
   </data>
   <data name="Otkazi.Content" xml:space="preserve">
-    <value>Otkazi</value>
+    <value>Otkaži</value>
   </data>
   <data name="Pol.Header" xml:space="preserve">
     <value>Pol</value>
@@ -199,7 +199,7 @@
     <value>Referent smera</value>
   </data>
   <data name="SefDepartmana.Header" xml:space="preserve">
-    <value>Sef departmana</value>
+    <value>Šef departmana</value>
   </data>
   <data name="Student.Header" xml:space="preserve">
     <value>Student</value>

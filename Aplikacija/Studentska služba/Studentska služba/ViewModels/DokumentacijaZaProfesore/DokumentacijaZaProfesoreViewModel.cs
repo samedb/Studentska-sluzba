@@ -96,7 +96,7 @@ namespace Studentska_služba.ViewModels.DokumentacijaZaProfesore
                 {
                     BrojIndeksa = i.BrojIndeksaStudenta,
                     Student = i.BrojIndeksaStudentaNavigation.PunoIme,
-                    BrojBodova = "",
+                    Smer = i.BrojIndeksaStudentaNavigation.IdSmeraNavigation.Naziv,
                     Ocena = ""
                 })
                 .OrderBy(i => i.BrojIndeksa)

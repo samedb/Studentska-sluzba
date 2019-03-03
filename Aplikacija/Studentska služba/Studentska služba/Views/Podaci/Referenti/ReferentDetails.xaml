@@ -7,6 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     xmlns:local1="using:Studentska_služba"
+    xmlns:helpers="using:Studentska_služba.Helpers"
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
@@ -32,13 +33,13 @@
                      x:Uid="/Podaci/KorisnickoIme"
                      Style="{StaticResource DetailsElement}"
                      IsEnabled="{x:Bind DetailsMode, Mode=OneWay, Converter={StaticResource DetailsModeIsAdd}}"/>
-            <TextBox Text="{x:Bind Referent.Ime, Mode=TwoWay, FallbackValue=''}"  
+            <helpers:LetterOnlyTextBox Text="{x:Bind Referent.Ime, Mode=TwoWay, FallbackValue=''}"  
                          x:Uid="/Podaci/Ime"
                          Style="{StaticResource DetailsElement}"/>
-            <TextBox Text="{x:Bind Referent.Prezime, Mode=TwoWay, FallbackValue=''}" 
+            <helpers:LetterOnlyTextBox Text="{x:Bind Referent.Prezime, Mode=TwoWay, FallbackValue=''}" 
                          x:Uid="/Podaci/Prezime"
                          Style="{StaticResource DetailsElement}" />
-            <TextBox Text="{x:Bind Referent.Jmbg, Mode=TwoWay, FallbackValue=''}"
+            <helpers:IntegerTextBox Text="{x:Bind Referent.Jmbg, Mode=TwoWay, FallbackValue=''}"
                          x:Uid="/Podaci/JMBG"
                          InputScope="Number"
                          Style="{StaticResource DetailsElement}" />

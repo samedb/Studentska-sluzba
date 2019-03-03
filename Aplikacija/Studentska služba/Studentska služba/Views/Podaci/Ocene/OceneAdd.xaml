@@ -46,6 +46,9 @@
                             <TextBlock Text="{Binding Ispit.BrojIndeksaStudentaNavigation.PunoImeIndeks}"
                                        VerticalAlignment="Center"
                                        Margin="12,0,0,0"/>
+                            <TextBlock Text="{Binding Ispit.BrojIndeksaStudentaNavigation.IdSmeraNavigation.Naziv}"
+                                       VerticalAlignment="Center"
+                                       Margin="12,0,0,0"/>
                             <ComboBox SelectedItem="{Binding Ocena, Mode=TwoWay}"
                                       VerticalAlignment="Center" 
                                       HorizontalAlignment="Right"

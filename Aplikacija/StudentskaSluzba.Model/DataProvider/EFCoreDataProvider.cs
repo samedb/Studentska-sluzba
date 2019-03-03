@@ -188,6 +188,8 @@ namespace StudentskaSluzba.Model.Models
                     .AsNoTracking()
                     .Include(i => i.BrojIndeksaStudentaNavigation)
                     .Include(i => i.IdPredmetaNavigation)
+                    .Include(i => i.BrojIndeksaStudentaNavigation)
+                    .ThenInclude(s => s.IdSmeraNavigation)
                     .ToListAsync();
             }
         }

@@ -121,6 +121,6 @@
     <value>Lozinka</value>
   </data>
   <data name="Username.PlaceholderText" xml:space="preserve">
-    <value>Korisnicko ime</value>
+    <value>Korisničko ime</value>
   </data>
 </root>
